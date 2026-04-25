@@ -1,0 +1,140 @@
+{
+  "id": "lesson_imperative_01",
+  "topic": "imperative",
+  "category": "grammar",
+  "title": "L'impératif",
+  "difficulty_level": 3,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "formation de l'impératif singulier et pluriel, impératif négatif",
+  "rules": {
+    "explanation_fr": "L'impératif macédonien se forme à partir du présent :\n\nRègle générale :\n1. Prends la forme 'tie' (3e pl.) au présent\n2. Supprime la terminaison -at/-aat\n3. Singulier (tu) : + i (ou la voyelle finale de la racine)\n4. Pluriel (vous) : + ete\n\nExemples :\n• saka → sakaat → sak → saki (chante !) / sakajte (chantez !)\n  En réalité : zboruva → zboruvaj (parle !) / zboruvajte (parlez !)\n• odi → odat → odi ! (va !) / odete ! (allez !)\n• jade → jadat → jadi ! (mange !) / jadete ! (mangez !)\n• dojdi ! (viens !) — irrégulier\n\nImpératif NÉGATIF : ne + impératif\n• Ne odi tamu ! (N'y va pas !)\n• Ne zboruvaj taka ! (Ne parle pas comme ça !)",
+    "table": [
+      { "french": "Mange ! (tu)", "macedonian": "Jadi!", "example_mk": "Jadi brzo!", "example_fr": "Mange vite !" },
+      { "french": "Mangez ! (vous)", "macedonian": "Jadete!", "example_mk": "Jadete, decata!", "example_fr": "Mangez, les enfants !" },
+      { "french": "Va ! (tu)", "macedonian": "Odi!", "example_mk": "Odi doma!", "example_fr": "Va à la maison !" },
+      { "french": "Allez ! (vous)", "macedonian": "Odete!", "example_mk": "Odete na pazar!", "example_fr": "Allez au marché !" },
+      { "french": "Parle ! (tu)", "macedonian": "Zboruvaj!", "example_mk": "Zboruvaj makedonski!", "example_fr": "Parle macédonien !" },
+      { "french": "Parlez ! (vous)", "macedonian": "Zboruvajte!", "example_mk": "Zboruvajte poviкo!", "example_fr": "Parlez plus fort !" },
+      { "french": "Viens ! (tu)", "macedonian": "Dojdi!", "example_mk": "Dojdi ovde!", "example_fr": "Viens ici !" },
+      { "french": "N'y va pas !", "macedonian": "Ne odi tamu!", "example_mk": "Ne odi tamu sama!", "example_fr": "N'y va pas seule !" }
+    ],
+    "notes_fr": [
+      "💡 Singulier (tu) : racine + i ou -aj. Pluriel (vous) : racine + ete ou -ajte",
+      "⚠️ 'Dojdi' (viens !) est irrégulier — à mémoriser",
+      "💡 Impératif négatif = 'ne' + impératif (même structure qu'avec les verbes normaux)",
+      "⚠️ Le macédonien utilise l'impératif aussi pour des demandes polies avec 'ве молам' (s'il vous plaît)"
+    ],
+    "cyrillic_reference": "jadi=јади, odi=оди, zboruvaj=зборувај, dojdi=дојди"
+  },
+  "exercises": [
+    {
+      "id": "ex_imp01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Choisissez la bonne forme de l'impératif.",
+      "question": "Comment dit-on 'Mange !' (à une personne) ?",
+      "options": ["Jadat", "Jade", "Jadi", "Jadete"],
+      "correct_answer": "Jadi",
+      "accept_alternatives": [],
+      "explanation_fr": "'Jadi' = mange (impératif singulier). 'Jadete' = mangez (pluriel). 'Jade' = il/elle mange (présent). 'Jadat' = ils mangent.",
+      "common_mistakes_fr": ["'Jadi' (sing.) vs 'jadete' (pl.) — différence d'une syllabe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle est la traduction correcte de 'Zboruvajte makedonski!' ?",
+      "question": "Zboruvajte makedonski! =",
+      "options": ["Parle macédonien !", "Parlez macédonien !", "Il parle macédonien", "Parler le macédonien"],
+      "correct_answer": "Parlez macédonien !",
+      "accept_alternatives": [],
+      "explanation_fr": "'-ajte' = impératif pluriel (vous). 'Zboruvajte' = parlez. La forme singulière serait 'zboruvaj'.",
+      "common_mistakes_fr": ["'-aj' = sing., '-ajte' = pl. pour les verbes en -uva"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Dojdi ovde!",
+      "correct_answer": "Viens ici !",
+      "accept_alternatives": ["Viens là !"],
+      "explanation_fr": "'Dojdi' = viens ! (impératif singulier irrégulier de dojde). 'Ovde' = ici.",
+      "common_mistakes_fr": ["'Dojdi' est irrégulier — mémorisez-le tel quel", "'Ovde' = ici, 'tamu' = là-bas"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Ne odi tamu sama!",
+      "correct_answer": "N'y va pas seule !",
+      "accept_alternatives": ["Ne va pas là-bas seule !"],
+      "explanation_fr": "'Ne odi' = n'y va pas (impératif négatif), 'tamu' = là-bas, 'sama' = seule (féminin).",
+      "common_mistakes_fr": ["Impératif négatif = 'ne' + impératif", "'Sama' = seule (f.), 'sam' = seul (m.)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Mettez à l'impératif pluriel (vous).",
+      "sentence": "___ brzo! (Mangez vite !)",
+      "correct_answer": "Jadete",
+      "accept_alternatives": ["jadete"],
+      "explanation_fr": "Impératif pluriel de 'jade' (manger) = 'jadete'. Terminaison -ete pour le pluriel.",
+      "common_mistakes_fr": ["'-ete' = pluriel, '-i' = singulier pour ce groupe de verbes"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_006", "phase": 2, "type": "transformation", "level": 3,
+      "instruction_fr": "Mettez à l'impératif négatif.",
+      "sentence": "Odi tamu.",
+      "transformation_instruction_fr": "N'y va pas.",
+      "correct_answer": "Ne odi tamu",
+      "accept_alternatives": ["Ne odi tamu!"],
+      "explanation_fr": "Impératif affirmatif 'odi' → négatif 'ne odi'. Ajoutez simplement 'ne' avant l'impératif.",
+      "common_mistakes_fr": ["'Ne odi' = n'y va pas — même structure qu'avec les verbes normaux"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_007", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Parle macédonien ! (à une personne)",
+      "correct_answer": "Zboruvaj makedonski!",
+      "accept_alternatives": ["zboruvaj makedonski"],
+      "explanation_fr": "Impératif singulier de 'zboruva' = 'zboruvaj' (terminaison -aj). 'Makedonski' = macédonien.",
+      "common_mistakes_fr": ["Verbes en -uva → impératif en -uvaj (sing.) et -uvajte (pl.)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_008", "phase": 3, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez l'impératif.",
+      "sentence": "Odete doma ti! (à une seule personne)",
+      "correct_answer": "Odi doma!",
+      "accept_alternatives": [],
+      "explanation_fr": "'Odete' est le pluriel — pour une seule personne (tu), on utilise 'odi'. 'Ti' (le pronom) n'est généralement pas exprimé à l'impératif.",
+      "common_mistakes_fr": ["'Odi' (sing.) vs 'odete' (pl.) — choix selon le nombre d'interlocuteurs"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_009", "phase": 3, "type": "sentence_builder", "level": 3,
+      "instruction_fr": "Construisez 'Viens ici et mange !'",
+      "scrambled_words": ["Dojdi", "ovde", "i", "jadi", "jadete", "odete"],
+      "correct_answer": "Dojdi ovde i jadi",
+      "accept_alternatives": [],
+      "explanation_fr": "Dojdi (viens, sing.) + ovde (ici) + i (et) + jadi (mange, sing.). 'Jadete' et 'odete' sont des intrus (pluriel).",
+      "common_mistakes_fr": ["La cohérence du nombre : si 'dojdi' est singulier, 'jadi' aussi"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_imp01_010", "phase": 3, "type": "transformation_chain", "level": 4,
+      "instruction_fr": "Transformations de l'impératif.",
+      "base_sentence": "odi (présent, 3e sing. — il/elle va)",
+      "steps": [
+        { "instruction_fr": "Impératif singulier (va !)", "expected_answer": "Odi!" },
+        { "instruction_fr": "Impératif pluriel (allez !)", "expected_answer": "Odete!" },
+        { "instruction_fr": "Impératif négatif singulier (n'y va pas !)", "expected_answer": "Ne odi!" }
+      ],
+      "correct_answer": "Ne odi!",
+      "accept_alternatives": [],
+      "explanation_fr": "odi → Odi! (sing.) → Odete! (pl.) → Ne odi! (négatif sing.). Simple et régulier pour ce verbe.",
+      "common_mistakes_fr": ["L'impératif négatif garde la même forme que l'affirmatif, avec 'ne' devant"],
+      "verbs_present": []
+    }
+  ]
+}

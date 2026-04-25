@@ -1,0 +1,141 @@
+{
+  "id": "lesson_family_01",
+  "topic": "family",
+  "category": "thematic",
+  "title": "La famille",
+  "difficulty_level": 1,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "membres de la famille, adjectifs possessifs avec la famille",
+  "rules": {
+    "explanation_fr": "Le vocabulaire de la famille en macédonien :\n\n• Tatko — père\n• Majka — mère\n• Brat — frère\n• Sestra — sœur\n• Sin — fils\n• Kjerka — fille\n• Dedo — grand-père\n• Baba — grand-mère\n• Chichko — oncle\n• Tetka — tante\n• Bratuchedo — cousin (masc.)\n• Bratuchetka — cousine (fém.)\n\nPossessifs courants avec la famille :\n• Moj brat (mon frère), mojata sestra (ma sœur)\n• Clitique possessif : brat mi (mon frère), sestra mi (ma sœur)\n\nLes Macédoniens utilisent souvent le clitique 'mi' après le nom pour exprimer la possession familiale dans la conversation.",
+    "table": [
+      { "french": "père", "macedonian": "tatko", "example_mk": "Mojot tatko e doktor", "example_fr": "Mon père est médecin" },
+      { "french": "mère", "macedonian": "majka", "example_mk": "Majka mi e doma", "example_fr": "Ma mère est à la maison" },
+      { "french": "frère", "macedonian": "brat", "example_mk": "Brat mi e student", "example_fr": "Mon frère est étudiant" },
+      { "french": "sœur", "macedonian": "sestra", "example_mk": "Sestra mi e ubava", "example_fr": "Ma sœur est belle" },
+      { "french": "fils", "macedonian": "sin", "example_mk": "Sinot mi ima pet godini", "example_fr": "Mon fils a cinq ans" },
+      { "french": "fille", "macedonian": "kjerka", "example_mk": "Kjerka mi e uchenik", "example_fr": "Ma fille est élève" },
+      { "french": "grand-père", "macedonian": "dedo", "example_mk": "Dedo mi e star", "example_fr": "Mon grand-père est vieux" },
+      { "french": "grand-mère", "macedonian": "baba", "example_mk": "Baba mi zboruva makedonski", "example_fr": "Ma grand-mère parle macédonien" }
+    ],
+    "notes_fr": [
+      "💡 Clitique possessif 'mi' après le nom de famille : 'brat mi' (mon frère) — très naturel en macédonien",
+      "⚠️ 'Kjerka' (fille/daughter) contient 'kj' (Ќ) — ne pas oublier le 'j'",
+      "💡 'Tatko' et 'dedo' sont masculins malgré leur terminaison en -o",
+      "⚠️ 'Bratuchedo' (cousin) vs 'bratuchetka' (cousine) — même racine, genre différent"
+    ],
+    "cyrillic_reference": "tatko=татко, majka=мајка, brat=брат, sestra=сестра, kjerka=ќерка, sin=син"
+  },
+  "exercises": [
+    {
+      "id": "ex_fam01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Choisissez la bonne traduction.",
+      "question": "Comment dit-on 'grand-mère' ?",
+      "options": ["dedo", "baba", "tetka", "majka"],
+      "correct_answer": "baba",
+      "accept_alternatives": [],
+      "explanation_fr": "'Baba' = grand-mère. 'Dedo' = grand-père, 'tetka' = tante, 'majka' = mère.",
+      "common_mistakes_fr": ["Confondre 'baba' (grand-mère) et 'majka' (mère)", "'Dedo' est le masculin correspondant à 'baba'"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fam01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Que signifie 'Brat mi e student' ?",
+      "question": "Brat mi e student =",
+      "options": ["Ma sœur est étudiante", "Mon frère est étudiant", "Mon père est étudiant", "Mon cousin est étudiant"],
+      "correct_answer": "Mon frère est étudiant",
+      "accept_alternatives": [],
+      "explanation_fr": "'Brat' = frère, 'mi' = mon/ma (clitique possessif), 'e student' = est étudiant.",
+      "common_mistakes_fr": ["'Brat mi' = mon frère (clitique 'mi' après le nom)", "'Sestra mi' = ma sœur — même structure"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_fam01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Majka mi e doma",
+      "correct_answer": "Ma mère est à la maison",
+      "accept_alternatives": ["Ma mère est chez elle"],
+      "explanation_fr": "'Majka mi' = ma mère, 'e doma' = est à la maison.",
+      "common_mistakes_fr": ["'Mi' après 'majka' = ma (possessif clitique)", "'Doma' = à la maison/chez soi"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_fam01_004", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Kjerka mi ima deset godini",
+      "correct_answer": "Ma fille a dix ans",
+      "accept_alternatives": ["Ma fille a 10 ans"],
+      "explanation_fr": "'Kjerka mi' = ma fille, 'ima deset godini' = a dix ans.",
+      "common_mistakes_fr": ["'Kjerka' (fille/daughter) ≠ 'devojka' (fille/young woman)", "'Kjerka' contient le son Ќ (kj)"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_fam01_005", "phase": 2, "type": "fill_blank", "level": 1,
+      "instruction_fr": "Complétez avec le bon mot de famille.",
+      "sentence": "___ mi e doktor. (Mon père est médecin.)",
+      "correct_answer": "Tatko",
+      "accept_alternatives": ["tatko"],
+      "explanation_fr": "'Tatko mi e doktor' = Mon père est médecin. 'Tatko mi' = mon père (clitique possessif).",
+      "common_mistakes_fr": ["'Tatko' = père (masculin malgré -o)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_fam01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Ma sœur est belle.",
+      "correct_answer": "Sestra mi e ubava",
+      "accept_alternatives": ["Mojata sestra e ubava"],
+      "explanation_fr": "'Sestra mi' = ma sœur (clitique), 'e ubava' = est belle. Ou avec l'adjectif possessif complet : 'mojata sestra'.",
+      "common_mistakes_fr": ["Les deux formes sont correctes — le clitique 'mi' est plus courant à l'oral"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_fam01_007", "phase": 2, "type": "matching", "level": 1,
+      "instruction_fr": "Associez chaque membre de la famille à sa traduction.",
+      "pairs": [
+        { "mk": "tatko", "fr": "père" },
+        { "mk": "brat", "fr": "frère" },
+        { "mk": "dedo", "fr": "grand-père" },
+        { "mk": "tetka", "fr": "tante" },
+        { "mk": "sin", "fr": "fils" }
+      ],
+      "correct_answer": "tatko=père,brat=frère,dedo=grand-père,tetka=tante,sin=fils",
+      "accept_alternatives": [],
+      "explanation_fr": "Membres de la famille masculins : tatko (père), brat (frère), sin (fils), dedo (grand-père), chichko (oncle).",
+      "common_mistakes_fr": ["Confondre 'dedo' (grand-père) et 'tatko' (père)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fam01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez 'Mon grand-père parle macédonien.'",
+      "scrambled_words": ["Dedo", "mi", "zboruva", "makedonski", "baba", "e"],
+      "correct_answer": "Dedo mi zboruva makedonski",
+      "accept_alternatives": [],
+      "explanation_fr": "Dedo mi (mon grand-père) + zboruva (parle) + makedonski. 'Baba' (grand-mère) et 'e' sont des intrus.",
+      "common_mistakes_fr": ["'Zboruva' = 3e pers. sing. de zboruva (parler)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fam01_009", "phase": 3, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Mon oncle et ma tante sont à Paris.",
+      "correct_answer": "Chichko mi i tetka mi se vo Pariz",
+      "accept_alternatives": ["Mojot chichko i mojata tetka se vo Pariz"],
+      "explanation_fr": "'Chichko mi' = mon oncle, 'i' = et, 'tetka mi' = ma tante, 'se vo Pariz' = sont à Paris.",
+      "common_mistakes_fr": ["'Se' = sont (3e pl. de sum)", "'Vo Pariz' = à Paris"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_fam01_010", "phase": 3, "type": "transformation", "level": 2,
+      "instruction_fr": "Transformez en remplaçant le nom par le clitique possessif.",
+      "sentence": "Mojot brat e student.",
+      "transformation_instruction_fr": "Utilisez le clitique 'mi' à la place de 'mojot'.",
+      "correct_answer": "Brat mi e student",
+      "accept_alternatives": [],
+      "explanation_fr": "'Mojot brat' (forme longue) → 'brat mi' (forme clitique). Les deux signifient 'mon frère' mais le clitique est plus naturel à l'oral.",
+      "common_mistakes_fr": ["Le clitique 'mi' se place APRÈS le nom (pas avant)", "Structure : nom + mi (pas mi + nom)"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

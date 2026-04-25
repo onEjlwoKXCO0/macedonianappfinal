@@ -1,0 +1,140 @@
+{
+  "id": "lesson_verbal_aspect_01",
+  "topic": "verbal_aspect",
+  "category": "grammar",
+  "title": "L'aspect verbal — perfectif et imperfectif",
+  "difficulty_level": 4,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "distinction perfectif/imperfectif, paires de verbes, usage au passé et futur",
+  "rules": {
+    "explanation_fr": "L'aspect verbal est une des particularités les plus importantes du macédonien (et de toutes les langues slaves).\n\nChaque action verbale a deux aspects :\n\n1. IMPERFECTIF (durée, répétition, processus en cours) :\n   → Utilisé pour : habitudes, actions en cours, descriptions de passé\n   → Exemple : 'jadeше' (il était en train de manger / il mangeait)\n\n2. PERFECTIF (action complétée, ponctuelle, résultat) :\n   → Utilisé pour : actions achevées, séquences d'événements\n   → Exemple : 'go izede' (il a mangé / il a fini de manger)\n\nPaires imperfectif/perfectif courantes :\n• jade / izede — manger / finir de manger\n• pie / ispie — boire / finir de boire\n• pishуva / napiша — écrire / finir d'écrire\n• chita / proчita — lire / finir de lire\n• odi / dojde — aller (process) / arriver",
+    "table": [
+      { "french": "il mangeait (processus)", "macedonian": "jadеshe", "example_mk": "Jadеshe koga vlezov", "example_fr": "Il mangeait quand j'entrai" },
+      { "french": "il a mangé (fini)", "macedonian": "go izede", "example_mk": "Go izede cela pica", "example_fr": "Il a mangé toute la pizza" },
+      { "french": "elle lisait", "macedonian": "chitashe", "example_mk": "Taa chitashe kniga", "example_fr": "Elle lisait un livre" },
+      { "french": "elle a lu (fini)", "macedonian": "ja proчita", "example_mk": "Ja proчita celata kniga", "example_fr": "Elle a lu tout le livre" },
+      { "french": "je buvais", "macedonian": "piev", "example_mk": "Piev kafe sekoe utro", "example_fr": "Je buvais du café chaque matin" },
+      { "french": "j'ai bu (fini)", "macedonian": "go ispiv", "example_mk": "Go ispiv kafeto", "example_fr": "J'ai bu le café (tout)" }
+    ],
+    "notes_fr": [
+      "⚠️ L'aspect est une catégorie sans équivalent direct en français — c'est le plus difficile pour un francophone",
+      "💡 Règle simple : action terminée/ponctuelle = perfectif ; action répétée/en cours = imperfectif",
+      "💡 Le perfectif a souvent un préfixe (iz-, pro-, na-, za-) par rapport à l'imperfectif",
+      "⚠️ Au futur avec 'kje' : imperfectif = action en cours ; perfectif = action qui sera complétée"
+    ],
+    "cyrillic_reference": "jade=јаде, izede=изеде, chita=чита, proчita=прочита"
+  },
+  "exercises": [
+    {
+      "id": "ex_va01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quel aspect exprime une action terminée ?",
+      "question": "Pour dire 'il a fini de manger', on utilise :",
+      "options": ["jadеshe (imperfectif)", "go izede (perfectif)", "jade (présent)", "kje jade (futur)"],
+      "correct_answer": "go izede (perfectif)",
+      "accept_alternatives": [],
+      "explanation_fr": "Le perfectif 'izede' exprime une action achevée. L'imperfectif 'jadеshe' exprime une action en cours ou habituelle dans le passé.",
+      "common_mistakes_fr": ["Perfectif = action finie/ponctuelle (iz-ede)", "Imperfectif = action en cours/répétée (-ashe)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_002", "phase": 1, "type": "multiple_choice", "level": 4,
+      "instruction_fr": "Choisissez la forme correcte pour une habitude passée.",
+      "question": "Chaque matin, je buvais du café = Sekoe utro ___",
+      "options": ["go ispiv kafeto", "piev kafe", "kje pijam kafe", "ispiv kafe"],
+      "correct_answer": "piev kafe",
+      "accept_alternatives": [],
+      "explanation_fr": "'Sekoe utro' (chaque matin) indique une habitude → imperfectif 'piev' (je buvais). L'perfectif 'ispiv' indiquerait une action ponctuelle terminée.",
+      "common_mistakes_fr": ["Habitude/répétition = imperfectif", "Action ponctuelle terminée = perfectif"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez en notant l'aspect.",
+      "sentence_mk": "Taa ja proчita celata kniga",
+      "correct_answer": "Elle a lu tout le livre",
+      "accept_alternatives": ["Elle a fini de lire tout le livre"],
+      "explanation_fr": "'Proчita' est le perfectif de 'чita' — elle a terminé de lire. 'Celata kniga' = tout le livre (l'article défini souligne la totalité).",
+      "common_mistakes_fr": ["'Proчita' (perfectif) = a lu et terminé", "'Chitashe' (imperfectif) = était en train de lire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_004", "phase": 1, "type": "translate_to_fr", "level": 4,
+      "instruction_fr": "Expliquez la différence de sens.",
+      "sentence_mk": "Piev kafe koga telefonirashe",
+      "correct_answer": "Je buvais du café quand il a téléphoné",
+      "accept_alternatives": ["J'étais en train de boire du café quand il a appelé"],
+      "explanation_fr": "'Piev' (imperfectif passé) = je buvais (action en cours). 'Telefonirashe' = a téléphoné (action ponctuelle qui s'est produite pendant). L'imperfectif crée l'arrière-plan, le perfectif l'événement.",
+      "common_mistakes_fr": ["Imparfait français ↔ imperfectif macédonien dans ce contexte", "Passé composé ponctuels ↔ perfectif macédonien"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_005", "phase": 2, "type": "fill_blank", "level": 4,
+      "instruction_fr": "Choisissez l'aspect correct.",
+      "sentence": "Go ___ kafeto i otide. (Il a fini son café et est parti.)",
+      "correct_answer": "ispи",
+      "accept_alternatives": ["ispiv", "ispi"],
+      "explanation_fr": "Séquence d'actions complétées (il a bu ET est parti) → perfectif 'ispi' (a bu et terminé). L'imperfectif 'pie' ne convient pas ici.",
+      "common_mistakes_fr": ["Séquence d'événements achevés = perfectif", "'Ispi' = a bu jusqu'au bout (iz- = préfixe perfectif)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_006", "phase": 2, "type": "spot_the_difference", "level": 4,
+      "instruction_fr": "Expliquez la différence de sens.",
+      "sentence_a": "Chitashe kniga koga vlezov.",
+      "sentence_b": "Ja proчita knigata pred da vlezam.",
+      "correct_answer": "a = il lisait (en cours, imperfectif), b = il a lu le livre (terminé, perfectif)",
+      "accept_alternatives": ["a = action en cours, b = action terminée", "imperfectif vs perfectif"],
+      "expected_keywords_fr": ["en cours", "terminé", "imperfectif", "perfectif"],
+      "explanation_fr": "a) 'Chitashe' = imperfectif passé (était en train de lire). b) 'Proчita' = perfectif (a lu et terminé). Le perfectif implique l'achèvement total de l'action.",
+      "common_mistakes_fr": ["Cette distinction n'existe pas en français — c'est la plus grande difficulté pour un francophone"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_007", "phase": 3, "type": "multiple_choice", "level": 5,
+      "instruction_fr": "Au futur, quel aspect utiliser ?",
+      "question": "Pour dire 'Je vais lire un peu chaque soir' (habitude future), on utilise :",
+      "options": ["Kje proчitam kniga", "Kje chitam kniga", "Proчitam kniga", "Chitam kniga sekoja vecher"],
+      "correct_answer": "Kje chitam kniga",
+      "accept_alternatives": ["Kje chitam kniga sekoja vecher"],
+      "explanation_fr": "Habitude future = imperfectif + kje. 'Kje chitam' = je vais lire (en habitude). 'Kje proчitam' = je vais finir de lire (une fois, complètement).",
+      "common_mistakes_fr": ["Futur imperfectif = kje + verbe imperfectif (habitude/processus)", "Futur perfectif = kje + verbe perfectif (action qui sera complétée)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_008", "phase": 3, "type": "transformation", "level": 5,
+      "instruction_fr": "Transformez de l'imperfectif au perfectif.",
+      "sentence": "Sekoja vecher piev kafe. (Chaque soir je buvais du café — habitude)",
+      "transformation_instruction_fr": "Ce soir-là, j'ai bu tout le café (action unique et terminée).",
+      "correct_answer": "Taa vecher go ispiv kafeto",
+      "accept_alternatives": ["Go ispiv kafeto"],
+      "explanation_fr": "Habitude imperfective 'piev' → action ponctuelle perfective 'ispiv'. L'article défini 'kafeto' (le café) souligne que c'est un café spécifique et terminé.",
+      "common_mistakes_fr": ["Imperfectif 'pie' → perfectif 'ispie' (préfixe iz-)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_009", "phase": 3, "type": "error_correction", "level": 5,
+      "instruction_fr": "Corrigez l'aspect du verbe.",
+      "sentence": "Sekoe utro go ispivam kafeto i potoa odam na rabota.",
+      "correct_answer": "Sekoe utro pijam kafe i potoa odam na rabota",
+      "accept_alternatives": [],
+      "explanation_fr": "'Sekoe utro' (chaque matin) indique une habitude → imperfectif 'pijam'. 'Ispivam' (perfectif) serait incorrect pour une habitude. 'Kafe' sans article défini car c'est du café en général.",
+      "common_mistakes_fr": ["Habitude = imperfectif", "Potoa = ensuite/après"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_va01_010", "phase": 3, "type": "transformation_chain", "level": 5,
+      "instruction_fr": "Construisez un récit en deux temps.",
+      "base_sentence": "chitam kniga (présent imperfectif — je lis un livre)",
+      "steps": [
+        { "instruction_fr": "Imparfait — j'étais en train de lire (action de fond)", "expected_answer": "Chitav kniga" },
+        { "instruction_fr": "Perfectif passé — j'ai fini de lire le livre", "expected_answer": "Ja proчitav knigata" }
+      ],
+      "correct_answer": "Ja proчitav knigata",
+      "accept_alternatives": [],
+      "explanation_fr": "Présent imperfectif → passé imperfectif (chitav, arrière-plan) → passé perfectif (proчitav, action terminée). Les préfixes changent l'aspect.",
+      "common_mistakes_fr": ["Chitav (imperfectif, j'étais en train de lire) ≠ proчitav (perfectif, j'ai terminé de lire)"],
+      "verbs_present": []
+    }
+  ]
+}

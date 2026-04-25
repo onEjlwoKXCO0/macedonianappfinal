@@ -1,0 +1,142 @@
+{
+  "id": "lesson_questions_dali_01",
+  "topic": "questions_dali",
+  "category": "grammar",
+  "title": "Questions oui/non — Particule 'dali' et intonation",
+  "difficulty_level": 2,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "former les questions oui/non avec dali, li et l'intonation montante",
+  "rules": {
+    "explanation_fr": "En macédonien, il y a 3 façons de poser une question oui/non :\n\n1. INTONATION montante (le plus courant à l'oral) :\n   → 'Ti si student?' (Tu es étudiant ? — même ordre que l'affirmation)\n\n2. Particule 'li' après le premier mot/verbe :\n   → 'Si li student?' (Es-tu étudiant ?)\n   → 'Sakash li da odish?' (Veux-tu y aller ?)\n\n3. Particule 'dali' en début de phrase (questions formelles/indirectes) :\n   → 'Dali si student?' (Est-ce que tu es étudiant ?)\n   → 'Ne znam dali e doma' (Je ne sais pas s'il est à la maison)\n\nRéponses :\n• Da — oui\n• Ne — non\n• Da, se razбira — oui, bien sûr\n• Ne znam — je ne sais pas",
+    "table": [
+      { "french": "Tu es étudiant ?", "macedonian": "Ti si student? / Si li student?", "example_mk": "Si li student vo Skopje?", "example_fr": "Es-tu étudiant à Skopje ?" },
+      { "french": "Est-ce qu'il est à la maison ?", "macedonian": "Dali e doma?", "example_mk": "Dali e doma toj?", "example_fr": "Est-il à la maison ?" },
+      { "french": "Veux-tu du café ?", "macedonian": "Sakash li kafe?", "example_mk": "Sakash li crno kafe?", "example_fr": "Veux-tu un café noir ?" },
+      { "french": "Parles-tu macédonien ?", "macedonian": "Zboruvash li makedonski?", "example_mk": "Zboruvash li makedonski?", "example_fr": "Parles-tu macédonien ?" },
+      { "french": "Oui", "macedonian": "Da", "example_mk": "Da, zboruvam makedonski", "example_fr": "Oui, je parle macédonien" },
+      { "french": "Non", "macedonian": "Ne", "example_mk": "Ne, ne sum doma", "example_fr": "Non, je ne suis pas à la maison" },
+      { "french": "Je ne sais pas si...", "macedonian": "Ne znam dali...", "example_mk": "Ne znam dali kje dojde", "example_fr": "Je ne sais pas s'il viendra" }
+    ],
+    "notes_fr": [
+      "💡 'Li' se place directement après le verbe ou le premier élément question : 'Sakash li?' 'Si li?'",
+      "⚠️ 'Dali' en début de phrase = 'est-ce que' — utilisé aussi dans les questions indirectes",
+      "💡 L'intonation montante (sans mot spécial) est la façon la plus naturelle à l'oral",
+      "⚠️ Ne pas confondre 'ne' (non) et 'ne' (préfixe de négation) — le contexte est clair"
+    ],
+    "cyrillic_reference": "dali=дали, li=ли, da=да"
+  },
+  "exercises": [
+    {
+      "id": "ex_dali01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Quelle est la question correcte pour 'Veux-tu du café?' ?",
+      "question": "Veux-tu du café ? =",
+      "options": ["Kafe ti saka?", "Sakash li kafe?", "Dali kafe sakash?", "Zboruvash kafe?"],
+      "correct_answer": "Sakash li kafe?",
+      "accept_alternatives": ["Dali sakash kafe?", "Sakash kafe?"],
+      "explanation_fr": "'Sakash li kafe?' = Veux-tu du café ? 'Li' après le verbe 'sakash' forme la question. Ou 'Dali sakash kafe?' avec la particule 'dali' en tête.",
+      "common_mistakes_fr": ["'Li' se place après le verbe ou le premier mot interrogé", "'Dali' se place en début de phrase"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_dali01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Que signifie 'Dali e doma?' ?",
+      "question": "Dali e doma? =",
+      "options": ["Il est à la maison.", "Est-il à la maison ?", "Où est-il à la maison ?", "Quand est-il à la maison ?"],
+      "correct_answer": "Est-il à la maison ?",
+      "accept_alternatives": ["Est-ce qu'il est à la maison ?"],
+      "explanation_fr": "'Dali' = est-ce que / particule interrogative, 'e doma' = est à la maison. 'Dali e doma' = Est-il à la maison ?",
+      "common_mistakes_fr": ["'Dali' transforme toute phrase en question oui/non"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dali01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Zboruvash li makedonski?",
+      "correct_answer": "Parles-tu macédonien ?",
+      "accept_alternatives": ["Tu parles macédonien ?", "Est-ce que tu parles macédonien ?"],
+      "explanation_fr": "'Zboruvash li' = parles-tu (li après le verbe = question). 'Makedonski' = macédonien.",
+      "common_mistakes_fr": ["'Li' après le verbe = inversion français / question macédonienne"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dali01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez cette question indirecte.",
+      "sentence_mk": "Ne znam dali kje dojde",
+      "correct_answer": "Je ne sais pas s'il viendra",
+      "accept_alternatives": ["Je ne sais pas s'il va venir"],
+      "explanation_fr": "'Ne znam' = je ne sais pas, 'dali' = si (subordonnant indirect), 'kje dojde' = il viendra.",
+      "common_mistakes_fr": ["'Dali' dans une question indirecte = 'si' en français ('je me demande si...')"],
+      "verbs_present": ["znae"]
+    },
+    {
+      "id": "ex_dali01_005", "phase": 2, "type": "fill_blank", "level": 1,
+      "instruction_fr": "Formez une question avec 'dali'.",
+      "sentence": "___ si student?",
+      "correct_answer": "Dali",
+      "accept_alternatives": ["dali"],
+      "explanation_fr": "'Dali si student?' = Est-ce que tu es étudiant ? 'Dali' en début de phrase = question oui/non formelle.",
+      "common_mistakes_fr": ["'Dali' se place obligatoirement en début de phrase"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dali01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Formez la question avec 'li'.",
+      "sentence_fr": "Êtes-vous de France ?",
+      "correct_answer": "Ste li od Francija?",
+      "accept_alternatives": ["Dali ste od Francija?", "Ste od Francija?"],
+      "explanation_fr": "'Ste li od Francija?' = Êtes-vous de France ? 'Li' après 'ste' (vous êtes). Ou 'Dali ste od Francija?' avec 'dali'.",
+      "common_mistakes_fr": ["'Ste' = vous êtes → 'ste li?' = êtes-vous?"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dali01_007", "phase": 2, "type": "matching", "level": 1,
+      "instruction_fr": "Associez chaque réponse à sa traduction.",
+      "pairs": [
+        { "mk": "Da", "fr": "Oui" },
+        { "mk": "Ne", "fr": "Non" },
+        { "mk": "Ne znam", "fr": "Je ne sais pas" },
+        { "mk": "Da, se razбira", "fr": "Oui, bien sûr" },
+        { "mk": "Mozhebi", "fr": "Peut-être" }
+      ],
+      "correct_answer": "Da=Oui,Ne=Non,Ne znam=Je ne sais pas,Da se razбira=Oui bien sûr,Mozhebi=Peut-être",
+      "accept_alternatives": [],
+      "explanation_fr": "Réponses utiles : Da (oui), Ne (non), Ne znam (je ne sais pas), Da, se razбira (oui, bien sûr), Mozhebi (peut-être).",
+      "common_mistakes_fr": ["'Mozhebi' = peut-être — très utile dans les conversations quotidiennes"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dali01_008", "phase": 3, "type": "transformation", "level": 2,
+      "instruction_fr": "Transformez en question avec 'li'.",
+      "sentence": "Ti sakash da odish vo kino.",
+      "transformation_instruction_fr": "Veux-tu aller au cinéma ?",
+      "correct_answer": "Sakash li da odish vo kino?",
+      "accept_alternatives": ["Dali sakash da odish vo kino?"],
+      "explanation_fr": "Affirmation → question avec 'li' : 'Ti sakash...' → 'Sakash li...' Le verbe monte en première position, 'li' suit.",
+      "common_mistakes_fr": ["Avec 'li', le verbe vient en premier dans la question"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_dali01_009", "phase": 3, "type": "spot_the_difference", "level": 3,
+      "instruction_fr": "Quelle est la différence entre ces deux questions ?",
+      "sentence_a": "Si li student?",
+      "sentence_b": "Dali si student?",
+      "correct_answer": "Les deux signifient 'Es-tu étudiant ?' — li est plus courant à l'oral, dali est plus formel",
+      "accept_alternatives": ["même sens, li = informel, dali = formel", "li oral, dali écrit/formel"],
+      "expected_keywords_fr": ["même sens", "formel", "informel", "oral"],
+      "explanation_fr": "Les deux questions ont le même sens. 'Li' après le verbe est plus naturel à l'oral. 'Dali' en début de phrase est légèrement plus formel ou plus accentué.",
+      "common_mistakes_fr": ["Les deux formes sont correctes — préférence stylistique"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dali01_010", "phase": 3, "type": "sentence_builder", "level": 3,
+      "instruction_fr": "Construisez 'Je ne sais pas s'il viendra demain.'",
+      "scrambled_words": ["Ne", "znam", "dali", "kje", "dojde", "utre", "da", "odi"],
+      "correct_answer": "Ne znam dali kje dojde utre",
+      "accept_alternatives": [],
+      "explanation_fr": "Ne znam (je ne sais pas) + dali (si) + kje dojde (il viendra) + utre (demain). 'Da' et 'odi' sont des intrus.",
+      "common_mistakes_fr": ["'Dali' dans une subordonnée = si (pas 'da')", "'Utre' = demain"],
+      "verbs_present": ["znae"]
+    }
+  ]
+}

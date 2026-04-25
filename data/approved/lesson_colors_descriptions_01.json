@@ -1,0 +1,141 @@
+{
+  "id": "lesson_colors_descriptions_01",
+  "topic": "colors_descriptions",
+  "category": "thematic",
+  "title": "Couleurs et descriptions",
+  "difficulty_level": 1,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "couleurs, adjectifs physiques, accord en genre",
+  "rules": {
+    "explanation_fr": "Les couleurs en macédonien sont des adjectifs qui s'accordent en genre :\n\nFormes de l'adjectif par genre :\n• Masculin : crven, sin, zelen, zholt, bel, crn\n• Féminin : crvena, sina, zelena, zholra, bela, crna\n• Neutre : crveno, sino, zeleno, zholto, belo, crno\n\nPrincipales couleurs :\n• Crven/a/o — rouge\n• Sin/a/o — bleu\n• Zelen/a/o — vert\n• Zholt/a/o — jaune\n• Bel/a/o — blanc\n• Crn/a/o — noir\n• Poranzhev/a/o — orange\n• Violen/a/o — violet\n• Rozov/a/o — rose\n• Kafev/a/o — marron\n• Siv/a/o — gris",
+    "table": [
+      { "french": "rouge", "macedonian": "crven (m.) / crvena (f.)", "example_mk": "Crvenata kola e ubava", "example_fr": "La voiture rouge est belle" },
+      { "french": "bleu", "macedonian": "sin (m.) / sina (f.)", "example_mk": "Sinoto nebo e jasno", "example_fr": "Le ciel bleu est clair" },
+      { "french": "vert", "macedonian": "zelen (m.) / zelena (f.)", "example_mk": "Zelenata treva e svesha", "example_fr": "L'herbe verte est fraîche" },
+      { "french": "jaune", "macedonian": "zholt (m.) / zholra (f.)", "example_mk": "Zholto cveche", "example_fr": "Fleur jaune" },
+      { "french": "blanc", "macedonian": "bel (m.) / bela (f.)", "example_mk": "Beliot sneg", "example_fr": "La neige blanche" },
+      { "french": "noir", "macedonian": "crn (m.) / crna (f.)", "example_mk": "Crniot machkor", "example_fr": "Le chat noir" },
+      { "french": "grand", "macedonian": "golem (m.) / golema (f.)", "example_mk": "Golema kuka", "example_fr": "Grande maison" },
+      { "french": "petit", "macedonian": "mal (m.) / mala (f.)", "example_mk": "Malo dete", "example_fr": "Petit enfant" }
+    ],
+    "notes_fr": [
+      "💡 Les adjectifs s'accordent en genre avec le nom qu'ils modifient",
+      "⚠️ 'Crven' (rouge) contient 'cr' — pas de équivalent direct en français",
+      "⚠️ 'Zholt' (jaune) commence par 'zh' — c'est le son Ж",
+      "💡 Avec l'article défini : crvenata kola (la voiture rouge), sinoto nebo (le ciel bleu)"
+    ],
+    "cyrillic_reference": "crven=црвен, sin=син, zelen=зелен, zholt=жолт, bel=бел, crn=црн"
+  },
+  "exercises": [
+    {
+      "id": "ex_col01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Quelle est la traduction de 'sin' ?",
+      "question": "sin (adjectif) =",
+      "options": ["vert", "rouge", "bleu", "noir"],
+      "correct_answer": "bleu",
+      "accept_alternatives": [],
+      "explanation_fr": "'Sin' = bleu (masculin). Attention : 'sin' comme adjectif = bleu, mais 'sin' comme nom = fils. Le contexte fait la différence.",
+      "common_mistakes_fr": ["'Sin' (bleu, adjectif) ≠ 'sin' (fils, nom) — homonymes en macédonien", "'Sino nebo' = ciel bleu"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_col01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Quelle est la bonne forme féminine ?",
+      "question": "La voiture rouge = Crvena___",
+      "options": ["crvena kola", "crven kola", "crveno kola", "crveni kola"],
+      "correct_answer": "crvena kola",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kola' (voiture) est féminin (terminaison -a) → adjectif au féminin : 'crvena'. 'Crvena kola' = voiture rouge.",
+      "common_mistakes_fr": ["'Kola' est féminin → adjectif féminin en -a", "L'adjectif s'accorde toujours avec le genre du nom"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_col01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Sinoto nebo e jasno",
+      "correct_answer": "Le ciel bleu est clair",
+      "accept_alternatives": ["Le ciel est bleu et clair"],
+      "explanation_fr": "'Sinoto nebo' = le ciel bleu (sino + to article neutre, nebo = ciel neutre). 'Jasno' = clair.",
+      "common_mistakes_fr": ["'Nebo' est neutre → adjectif neutre : sino, article neutre : -to"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_col01_004", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Maloto dete spi",
+      "correct_answer": "Le petit enfant dort",
+      "accept_alternatives": ["Le petit enfant est en train de dormir"],
+      "explanation_fr": "'Maloto dete' = le petit enfant (malo = petit neutre + to article, dete = enfant neutre). 'Spi' = dort.",
+      "common_mistakes_fr": ["'Dete' est neutre → adjectif neutre 'malo'", "'Spi' = dort (3e pers. sing. de spi)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_col01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Accordez l'adjectif correctement.",
+      "sentence": "Taa ima ___ kosa. (Elle a les cheveux noirs. — kosa = cheveux, fém.)",
+      "correct_answer": "crna",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kosa' (cheveux) est féminin → adjectif féminin : 'crna' (noire). 'Taa ima crna kosa' = Elle a les cheveux noirs.",
+      "common_mistakes_fr": ["'Crn' (masc.) → 'crna' (fém.) → 'crno' (n.) — l'accord est obligatoire"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_col01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "La grande maison est blanche.",
+      "correct_answer": "Golemata kuka e bela",
+      "accept_alternatives": ["Golema kuka e bela"],
+      "explanation_fr": "'Golema' (grande, fém.) + 'kuka' (maison, fém.) + 'ta' (article défini fém.) + 'e bela' (est blanche, fém.).",
+      "common_mistakes_fr": ["Tous les adjectifs s'accordent en féminin avec 'kuka'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_col01_007", "phase": 2, "type": "matching", "level": 1,
+      "instruction_fr": "Associez chaque couleur à sa traduction.",
+      "pairs": [
+        { "mk": "crven", "fr": "rouge" },
+        { "mk": "zelen", "fr": "vert" },
+        { "mk": "zholt", "fr": "jaune" },
+        { "mk": "bel", "fr": "blanc" },
+        { "mk": "crn", "fr": "noir" }
+      ],
+      "correct_answer": "crven=rouge,zelen=vert,zholt=jaune,bel=blanc,crn=noir",
+      "accept_alternatives": [],
+      "explanation_fr": "Couleurs masculines de base : crven (rouge), sin (bleu), zelen (vert), zholt (jaune), bel (blanc), crn (noir).",
+      "common_mistakes_fr": ["'Zholt' (jaune) commence par zh (Ж)", "'Bel' (blanc) ≠ 'bela' (fém.)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_col01_008", "phase": 3, "type": "error_correction", "level": 2,
+      "instruction_fr": "Corrigez l'accord de l'adjectif.",
+      "sentence": "Taa ima crven kosa.",
+      "correct_answer": "Taa ima crna kosa",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kosa' est féminin → adjectif féminin 'crna', pas masculin 'crven'. 'Taa ima crna kosa' = Elle a les cheveux noirs.",
+      "common_mistakes_fr": ["L'adjectif doit toujours s'accorder avec le nom, pas avec le sujet"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_col01_009", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez 'Le chat noir est petit.'",
+      "scrambled_words": ["Crniot", "machkor", "e", "mal", "mala", "crvena"],
+      "correct_answer": "Crniot machkor e mal",
+      "accept_alternatives": [],
+      "explanation_fr": "Crniot (le noir, m. défini) + machkor (chat, m.) + e + mal (petit, m.). 'Mala' (f.) et 'crvena' (f.) sont des intrus.",
+      "common_mistakes_fr": ["'Machkor' est masculin → 'crniot' (défini masc.) + 'mal' (masc.)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_col01_010", "phase": 3, "type": "transformation", "level": 2,
+      "instruction_fr": "Transformez au féminin : la voiture noire est grande.",
+      "sentence": "Crniot avtobus e golem.",
+      "transformation_instruction_fr": "Remplacez 'avtobus' (bus, m.) par 'kola' (voiture, f.) avec les accords corrects.",
+      "correct_answer": "Crnata kola e golema",
+      "accept_alternatives": [],
+      "explanation_fr": "Masculin (avtobus) → féminin (kola) : crniot → crnata, golem → golema. Tout s'accorde au féminin.",
+      "common_mistakes_fr": ["Changement de genre : tous les adjectifs et articles doivent changer"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}
