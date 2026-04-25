@@ -1,0 +1,173 @@
+{
+  "id": "lesson_definite_articles_01",
+  "topic": "definite_articles",
+  "category": "grammar",
+  "title": "L'article défini — suffixes postposés",
+  "difficulty_level": 3,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "articles définis masculins, féminins, neutres et pluriels — suffixes -ot, -ta, -to, -te",
+  "rules": {
+    "explanation_fr": "Grande différence avec le français : en macédonien, l'article défini (le/la/les) est un SUFFIXE collé à la fin du nom, pas un mot séparé.\n\nArticles définis :\n• Masculin singulier : -ot (grad → gradot = la ville)\n• Féminin singulier : -ta (zhena → zhenata = la femme)\n• Neutre singulier : -to (dete → deteto = l'enfant)\n• Pluriel : -te (gradovi → gradovite = les villes)\n\nIl existe aussi des formes de proximité :\n• -ov/-ov (proche, 'ce...ci') et -on/-on (loin, 'ce...là')\n\nExemples :\n• Chovek (un homme) → chovekot (l'homme)\n• Kuka (une maison) → kukata (la maison)\n• Uchilishte (une école) → uchilisheto (l'école)",
+    "table": [
+      { "french": "la ville", "macedonian": "gradot", "example_mk": "Gradot e ubav", "example_fr": "La ville est belle" },
+      { "french": "la femme", "macedonian": "zhenata", "example_mk": "Zhenata e doma", "example_fr": "La femme est à la maison" },
+      { "french": "l'enfant", "macedonian": "deteto", "example_mk": "Deteto spi", "example_fr": "L'enfant dort" },
+      { "french": "l'homme", "macedonian": "chovekot", "example_mk": "Chovekot zboruva", "example_fr": "L'homme parle" },
+      { "french": "la maison", "macedonian": "kukata", "example_mk": "Kukata e golema", "example_fr": "La maison est grande" },
+      { "french": "les villes", "macedonian": "gradovite", "example_mk": "Gradovite se ubavi", "example_fr": "Les villes sont belles" },
+      { "french": "le livre", "macedonian": "knigata", "example_mk": "Knigata e interesna", "example_fr": "Le livre est intéressant" },
+      { "french": "l'eau", "macedonian": "vodata", "example_mk": "Vodata e studena", "example_fr": "L'eau est froide" }
+    ],
+    "notes_fr": [
+      "⚠️ L'article défini est un SUFFIXE en macédonien — collé à la fin du nom (contrairement au français)",
+      "💡 Masculin -ot : gradot, denot, patot. Féminin -ta : zhenata, kukata, vodata. Neutre -to : deteto, imeto",
+      "⚠️ Si le nom masculin finit en voyelle, l'article peut changer légèrement (gradot → mais 'tatko' → tatkoто)",
+      "💡 Pluriel universel -te : gradovite, zhenite, decata (irrégulier pour enfants)"
+    ],
+    "cyrillic_reference": "-ot=от, -ta=та, -to=то, -te=те"
+  },
+  "exercises": [
+    {
+      "id": "ex_da01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Quel est l'article défini féminin ?",
+      "question": "Comment dit-on 'la femme' (forme définie de 'zhena') ?",
+      "options": ["zhenot", "zhenata", "zhenate", "zhenoto"],
+      "correct_answer": "zhenata",
+      "accept_alternatives": [],
+      "explanation_fr": "Les noms féminins prennent le suffixe -ta : zhena → zhenata (la femme). Le suffixe -ot est masculin, -to est neutre, -te est pluriel.",
+      "common_mistakes_fr": ["Confondre -ta (féminin) et -ot (masculin)", "Le féminin en macédonien se reconnaît souvent à la terminaison -a du nom de base"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_da01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Quelle est la forme définie correcte ?",
+      "question": "Grad (ville, masc.) → la ville =",
+      "options": ["gradta", "gradte", "gradot", "gradoto"],
+      "correct_answer": "gradot",
+      "accept_alternatives": [],
+      "explanation_fr": "'Grad' est masculin → article défini -ot → 'gradot' (la ville). Masculin = -ot, féminin = -ta, neutre = -to.",
+      "common_mistakes_fr": ["Le masculin prend -ot, pas -ta", "'Grad' (sans article) = une ville / ville en général"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_da01_003",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Kukata e golema",
+      "correct_answer": "La maison est grande",
+      "accept_alternatives": ["La maison est grande."],
+      "explanation_fr": "'Kukata' = la maison (kuka + ta, féminin défini). 'E' = est. 'Golema' = grande (féminin de golem).",
+      "common_mistakes_fr": ["'Kukata' ≠ 'kuka' — le suffixe -ta indique que c'est défini (LA maison)", "Traduire 'kukata' par 'une maison' serait incorrect — c'est 'la maison'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_da01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 3,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Gradovite se ubavi",
+      "correct_answer": "Les villes sont belles",
+      "accept_alternatives": ["Les villes sont jolies"],
+      "explanation_fr": "'Gradovite' = les villes (gradovi + te, pluriel défini). 'Se' = sont (verbe sum, 3e pl.). 'Ubavi' = belles/beaux (pluriel de ubav).",
+      "common_mistakes_fr": ["Le suffixe pluriel défini est -te : gradovite (les villes)", "'Ubavi' est la forme plurielle de l'adjectif — pas de distinction m/f au pluriel"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_da01_005",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Ajoutez l'article défini correct.",
+      "sentence": "Chovek___ e visok. (L'homme est grand.)",
+      "correct_answer": "ot",
+      "accept_alternatives": [],
+      "explanation_fr": "'Chovek' est masculin → suffixe -ot → 'Chovekot'. La phrase : 'Chovekot e visok' = L'homme est grand.",
+      "common_mistakes_fr": ["Masculin = -ot (pas -ta ni -to)", "'Visok' = grand (taille), 'golem' = grand (taille/importance)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_da01_006",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 3,
+      "instruction_fr": "Corrigez l'erreur.",
+      "sentence": "Vodata e studeno.",
+      "correct_answer": "Vodata e studena",
+      "accept_alternatives": [],
+      "explanation_fr": "'Voda' est féminin → l'adjectif doit s'accorder au féminin : 'studena' (froide), pas 'studeno' (forme neutre). 'Vodata e studena' = L'eau est froide.",
+      "common_mistakes_fr": ["L'adjectif s'accorde avec le genre du nom : studena (fém.), stuден (masc.), studeno (neutre)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_da01_007",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Le livre est intéressant.",
+      "correct_answer": "Knigata e interesna",
+      "accept_alternatives": ["Knigata е interesna"],
+      "explanation_fr": "'Kniga' (livre, féminin) + ta = knigata (le livre). 'Interesna' = intéressante/intéressant (s'accorde avec le féminin 'kniga').",
+      "common_mistakes_fr": ["'Kniga' est féminin malgré sa traduction — article -ta", "'Interesna' au féminin pour s'accorder avec 'kniga'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_da01_008",
+      "phase": 3,
+      "type": "matching",
+      "level": 3,
+      "instruction_fr": "Associez chaque forme indéfinie à sa forme définie.",
+      "pairs": [
+        { "mk": "grad (ville, m.)", "fr": "gradot" },
+        { "mk": "zhena (femme, f.)", "fr": "zhenata" },
+        { "mk": "dete (enfant, n.)", "fr": "deteto" },
+        { "mk": "kuka (maison, f.)", "fr": "kukata" },
+        { "mk": "gradovi (villes, pl.)", "fr": "gradovite" }
+      ],
+      "correct_answer": "grad=gradot,zhena=zhenata,dete=deteto,kuka=kukata,gradovi=gradovite",
+      "accept_alternatives": [],
+      "explanation_fr": "Masculin -ot, féminin -ta, neutre -to, pluriel -te. Ce système remplace nos articles 'le/la/les'.",
+      "common_mistakes_fr": ["Le neutre -to est rare mais important pour les jeunes enfants, les diminutifs"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_da01_009",
+      "phase": 3,
+      "type": "transformation",
+      "level": 3,
+      "instruction_fr": "Mettez au pluriel défini.",
+      "sentence": "Zhenata e tuka.",
+      "transformation_instruction_fr": "Les femmes sont ici (pluriel défini).",
+      "correct_answer": "Zhenite se tuka",
+      "accept_alternatives": [],
+      "explanation_fr": "'Zhena' (féminin) → pluriel 'zheni' + article pluriel -te = 'zhenite'. Le verbe passe de 'e' (sing.) à 'se' (pl.).",
+      "common_mistakes_fr": ["'Zhenata' (sing. défini) → 'zhenite' (pl. défini) — la forme plurielle change aussi"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_da01_010",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 4,
+      "instruction_fr": "Quelle est la différence grammaticale entre ces deux phrases ?",
+      "sentence_a": "Ima kuka tuka.",
+      "sentence_b": "Kukata e tuka.",
+      "correct_answer": "kuka = une maison (indéfini), kukata = la maison (défini avec suffixe -ta)",
+      "accept_alternatives": ["indéfini vs défini", "sans article vs avec article -ta"],
+      "expected_keywords_fr": ["défini", "indéfini", "article", "suffixe"],
+      "explanation_fr": "'Kuka' sans suffixe = une maison (indéfini). 'Kukata' avec -ta = la maison (défini). 'Ima kuka tuka' = Il y a une maison ici. 'Kukata e tuka' = La maison est ici.",
+      "common_mistakes_fr": ["En macédonien, l'absence de suffixe = indéfini (un/une)", "L'ajout de -ta/-ot/-to/-te = défini (le/la/les)"],
+      "verbs_present": ["sum", "ima"]
+    }
+  ]
+}

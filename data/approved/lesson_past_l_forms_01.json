@@ -1,0 +1,169 @@
+{
+  "id": "lesson_past_l_forms_01",
+  "topic": "past_l_forms",
+  "category": "grammar",
+  "title": "Le passé — formes en L (perfekt)",
+  "difficulty_level": 3,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "perfectif passé avec formes en -l, accord en genre et nombre",
+  "rules": {
+    "explanation_fr": "Le passé macédonien le plus courant est le 'perfekt' — formé avec le participe en -L + l'auxiliaire 'sum' (être) :\n\nParticipe passé en L :\n• Masculin : orel → orel (mangé, m.)\n• Féminin : orela (mangé, f.)\n• Neutre : orelo (mangé, n.)\n• Pluriel : orele (mangé, pl.)\n\nFormation : auxiliaire sum + participe en L :\n• Jas sum orel/orela (j'ai mangé)\n• Ti si orel/orela (tu as mangé)\n• Toj e orel / Taa e orela (il a mangé / elle a mangé)\n• Nie sme orele (nous avons mangé)\n• Vie ste orele (vous avez mangé)\n• Tie se orele (ils ont mangé)\n\nLe participe s'accorde avec le SUJET (comme en français pour l'accord avec être).",
+    "table": [
+      { "french": "j'ai mangé (m.)", "macedonian": "sum orel", "example_mk": "Jas sum orel pizza", "example_fr": "J'ai mangé une pizza (masc.)" },
+      { "french": "j'ai mangé (f.)", "macedonian": "sum orela", "example_mk": "Jas sum orela pizza", "example_fr": "J'ai mangé une pizza (fém.)" },
+      { "french": "il a mangé", "macedonian": "e orel", "example_mk": "Toj e orel", "example_fr": "Il a mangé" },
+      { "french": "elle a mangé", "macedonian": "e orela", "example_mk": "Taa e orela", "example_fr": "Elle a mangé" },
+      { "french": "nous avons mangé", "macedonian": "sme orele", "example_mk": "Nie sme orele", "example_fr": "Nous avons mangé" },
+      { "french": "j'ai vu (m.)", "macedonian": "sum videl", "example_mk": "Sum videl toj film", "example_fr": "J'ai vu ce film (masc.)" },
+      { "french": "elle est partie", "macedonian": "e otishla", "example_mk": "Taa e otishla", "example_fr": "Elle est partie" }
+    ],
+    "notes_fr": [
+      "⚠️ Le participe en L s'accorde avec le SUJET : masculin -el, féminin -ela, pluriel -ele",
+      "💡 Pour former le participe : remplacez -a de l'infinitif par -el (saka → sakal, odi → odil)",
+      "⚠️ L'auxiliaire est 'sum' conjugué — il peut être omis à la 3e personne dans le langage courant",
+      "💡 'Otishol/otishla/otishle' (parti/partie/partis) — verbe irrégulier très courant"
+    ],
+    "cyrillic_reference": "orel=орел, orela=орела, orele=ореле, videl=видел"
+  },
+  "exercises": [
+    {
+      "id": "ex_pl01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Choisissez la forme correcte du passé.",
+      "question": "Comment dit-on 'elle a mangé' ?",
+      "options": ["Taa e orel", "Taa e orela", "Taa e orelo", "Taa e orele"],
+      "correct_answer": "Taa e orela",
+      "accept_alternatives": [],
+      "explanation_fr": "Le participe s'accorde avec le sujet : 'taa' est féminin → forme féminine -ela → 'orela'. 'Orel' est masculin, 'orelo' est neutre, 'orele' est pluriel.",
+      "common_mistakes_fr": ["Le participe doit s'accorder avec le sujet", "'Taa' (féminin) → participe féminin en -ela"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 3,
+      "instruction_fr": "Quelle est la forme correcte ?",
+      "question": "Nous avons mangé =",
+      "options": ["Nie sme orel", "Nie sme orela", "Nie sme orele", "Nie se orele"],
+      "correct_answer": "Nie sme orele",
+      "accept_alternatives": [],
+      "explanation_fr": "'Nie' (nous) + 'sme' (1re pers. pl. de sum) + 'orele' (participe pluriel). Le pluriel utilise toujours la forme -ele.",
+      "common_mistakes_fr": ["Le pluriel prend la terminaison -ele, pas -el ni -ela", "'Sme' est la forme de 'sum' pour 'Nie' (nous)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_003",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Toj e videl toj film",
+      "correct_answer": "Il a vu ce film",
+      "accept_alternatives": ["Il a regardé ce film"],
+      "explanation_fr": "'Toj e videl' = il a vu (toj + e + videl, participe masc. de vide). 'Toj film' = ce film.",
+      "common_mistakes_fr": ["'Videl' est le participe passé masculin de 'vide' (voir)", "'Toj film' = ce film (toj = il, mais aussi 'ce' démonstratif selon le contexte)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 3,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Taa e otishla vo Ohrid",
+      "correct_answer": "Elle est partie à Ohrid",
+      "accept_alternatives": ["Elle est allée à Ohrid"],
+      "explanation_fr": "'Taa e otishla' = elle est partie (otishla = féminin de otishol, aller/partir). 'Vo Ohrid' = à Ohrid.",
+      "common_mistakes_fr": ["'Otishla' est le participe féminin d'un verbe irrégulier (odi/otide = aller)", "Avec les verbes de mouvement, le français utilise 'être' — même chose en macédonien"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_005",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 3,
+      "instruction_fr": "Complétez avec la bonne forme du participe.",
+      "sentence": "Taa e ___. (Elle a vu. — forme féminine de videl)",
+      "correct_answer": "videla",
+      "accept_alternatives": [],
+      "explanation_fr": "Le participe passé de 'vide' (voir) : masculin 'videl', féminin 'videla'. Avec 'taa' (féminin), on utilise 'videla'.",
+      "common_mistakes_fr": ["Féminin du participe = remplacez -el par -ela", "'Taa e videla' = elle a vu"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_006",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 3,
+      "instruction_fr": "Corrigez l'erreur d'accord.",
+      "sentence": "Taa e orel.",
+      "correct_answer": "Taa e orela",
+      "accept_alternatives": [],
+      "explanation_fr": "'Taa' est féminin → le participe doit être au féminin : 'orela'. 'Orel' est la forme masculine.",
+      "common_mistakes_fr": ["L'accord du participe avec le sujet est obligatoire en macédonien"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_007",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "J'ai vu un film. (sujet masculin)",
+      "correct_answer": "Jas sum videl eden film",
+      "accept_alternatives": ["Sum videl eden film", "Videl sum eden film"],
+      "explanation_fr": "J'ai vu = Jas sum videl (sum + videl, masc.). 'Eden film' = un film.",
+      "common_mistakes_fr": ["'Sum videl' = j'ai vu (masc.) — si le locuteur est féminin, ce serait 'sum videla'", "L'auxiliaire 'sum' peut être déplacé après le participe dans la conversation"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_008",
+      "phase": 3,
+      "type": "transformation",
+      "level": 4,
+      "instruction_fr": "Mettez au passé.",
+      "sentence": "Taa odi vo prodavnica.",
+      "transformation_instruction_fr": "Elle est allée au magasin.",
+      "correct_answer": "Taa e otishla vo prodavnica",
+      "accept_alternatives": [],
+      "explanation_fr": "Présent 'odi' (elle va) → passé 'e otishla' (elle est allée). 'Otishla' = forme féminine du participe passé irrégulier d'odi.",
+      "common_mistakes_fr": ["'Otishla' est irrégulier — pas 'odila'", "'Prodavnica' = magasin"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_009",
+      "phase": 3,
+      "type": "sentence_builder",
+      "level": 4,
+      "instruction_fr": "Construisez 'Nous avons mangé une pizza.'",
+      "scrambled_words": ["Nie", "sme", "orele", "orela", "edna", "pizza"],
+      "correct_answer": "Nie sme orele edna pizza",
+      "accept_alternatives": [],
+      "explanation_fr": "Nie (nous) + sme (avons, pl.) + orele (mangé, pluriel) + edna (une, fém.) + pizza. 'Orela' (féminin sing.) est un intrus.",
+      "common_mistakes_fr": ["Avec 'Nie' (nous), le participe est au pluriel : orele", "'Edna' = une (article indéfini féminin)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pl01_010",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 4,
+      "instruction_fr": "Conjuguez au passé à toutes les personnes.",
+      "base_sentence": "orel (participe masc. de ore — manger)",
+      "steps": [
+        { "instruction_fr": "Je (masculin) — j'ai mangé", "expected_answer": "Jas sum orel" },
+        { "instruction_fr": "Elle — elle a mangé", "expected_answer": "Taa e orela" },
+        { "instruction_fr": "Nous — nous avons mangé", "expected_answer": "Nie sme orele" }
+      ],
+      "correct_answer": "Nie sme orele",
+      "accept_alternatives": [],
+      "explanation_fr": "Le passé macédonien conjugué : sum orel (je), si orel/orela (tu), e orel/orela (il/elle), sme orele (nous), ste orele (vous), se orele (ils).",
+      "common_mistakes_fr": ["L'auxiliaire change (sum/si/e/sme/ste/se) mais le participe s'accorde seulement en genre/nombre"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "lesson_noun_gender_01",
+  "topic": "noun_gender",
+  "category": "grammar",
+  "title": "Le genre des noms",
+  "difficulty_level": 2,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "masculin, féminin, neutre — règles de reconnaissance par terminaison",
+  "rules": {
+    "explanation_fr": "En macédonien, il y a 3 genres : masculin, féminin, neutre.\n\nRègles générales par terminaison :\n\nMASCULIN — finit souvent par une consonne :\n• chovek (homme), grad (ville), den (jour), brat (frère)\n\nFÉMININ — finit souvent par -a :\n• zhena (femme), kuka (maison), kniga (livre), voda (eau)\n\nNEUTRE — finit souvent par -o ou -e :\n• dete (enfant), ime (prénom), selo (village), okno (fenêtre)\n\nExceptions importantes :\n• Tatko (père) = masculin malgré la terminaison -o\n• Majka (mère) = féminin (terminaison -a)\n• Nok (nuit) = féminin malgré la consonne finale",
+    "table": [
+      { "french": "l'homme (m.)", "macedonian": "chovek", "example_mk": "Toj chovek e visok", "example_fr": "Cet homme est grand" },
+      { "french": "la femme (f.)", "macedonian": "zhena", "example_mk": "Taa zhena e ubava", "example_fr": "Cette femme est belle" },
+      { "french": "l'enfant (n.)", "macedonian": "dete", "example_mk": "Toa dete e malo", "example_fr": "Cet enfant est petit" },
+      { "french": "le frère (m.)", "macedonian": "brat", "example_mk": "Moj brat e student", "example_fr": "Mon frère est étudiant" },
+      { "french": "la sœur (f.)", "macedonian": "sestra", "example_mk": "Mojata sestra e doma", "example_fr": "Ma sœur est à la maison" },
+      { "french": "le père (m.)", "macedonian": "tatko", "example_mk": "Mojot tatko raboti", "example_fr": "Mon père travaille" },
+      { "french": "la mère (f.)", "macedonian": "majka", "example_mk": "Mojata majka e doma", "example_fr": "Ma mère est à la maison" },
+      { "french": "le village (n.)", "macedonian": "selo", "example_mk": "Ova e ubavo selo", "example_fr": "C'est un beau village" }
+    ],
+    "notes_fr": [
+      "💡 Règle générale : consonne finale → masculin ; -a finale → féminin ; -o/-e finale → neutre",
+      "⚠️ Exception : 'tatko' (père) est MASCULIN malgré -o (comme 'dedo' = grand-père)",
+      "⚠️ 'Nok' (nuit) est FÉMININ malgré la consonne finale — à mémoriser",
+      "💡 Le genre détermine l'article défini : -ot (m.), -ta (f.), -to (n.), -te (pl.)"
+    ],
+    "cyrillic_reference": "chovek=човек, zhena=жена, dete=дете, brat=брат, sestra=сестра"
+  },
+  "exercises": [
+    {
+      "id": "ex_ng01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Quel est le genre de 'kniga' (livre) ?",
+      "question": "kniga (livre) =",
+      "options": ["Masculin", "Féminin", "Neutre", "Invariable"],
+      "correct_answer": "Féminin",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kniga' finit par -a → féminin. Article défini : knigata (la livre → le livre). En macédonien, 'kniga' est féminin.",
+      "common_mistakes_fr": ["La terminaison -a indique presque toujours le féminin", "'Kniga' → knigata (article féminin -ta)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ng01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Quel article défini utilise-t-on avec 'tatko' (père) ?",
+      "question": "tatko → la forme définie est :",
+      "options": ["tatkata", "tatkoto", "tatkot", "tatkote"],
+      "correct_answer": "tatkot",
+      "accept_alternatives": ["tatko + t → tatkot"],
+      "explanation_fr": "'Tatko' (père) est masculin malgré sa terminaison -o. Article défini masculin = -ot → tatkot (le père). Exception à mémoriser.",
+      "common_mistakes_fr": ["'Tatko' semble neutre à cause de -o, mais c'est masculin", "Autres masculins en -o : dedo (grand-père) → dedoto/dedot"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ng01_003",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Quel est le genre de 'dete' (enfant) ?",
+      "question": "dete (enfant) =",
+      "options": ["Masculin", "Féminin", "Neutre", "Dépend du contexte"],
+      "correct_answer": "Neutre",
+      "accept_alternatives": [],
+      "explanation_fr": "'Dete' finit par -e → neutre. Article défini : deteto (l'enfant). Le neutre est courant pour les enfants et diminutifs.",
+      "common_mistakes_fr": ["La terminaison -e indique généralement le neutre", "'Deteto' (l'enfant) → article neutre -to"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ng01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en précisant l'article défini.",
+      "sentence_mk": "Brat mi e doma",
+      "correct_answer": "Mon frère est à la maison",
+      "accept_alternatives": ["Mon frère est chez lui"],
+      "explanation_fr": "'Brat mi' = mon frère (brat = frère, mi = mon/ma, forme clitique). 'E doma' = est à la maison.",
+      "common_mistakes_fr": ["'Brat mi' utilise le clitique possessif 'mi' après le nom", "'Brat' = frère (masculin, terminaison consonne)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ng01_005",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Ajoutez l'article défini correct.",
+      "sentence": "Sel___ e malo. (Le village est petit.)",
+      "correct_answer": "oto",
+      "accept_alternatives": ["o + to"],
+      "explanation_fr": "'Selo' est neutre (terminaison -o) → article défini neutre -to → 'seloto' (le village). 'Malo' = petit (neutre).",
+      "common_mistakes_fr": ["'Selo' (neutre) → seloto (article -to)", "L'adjectif 'malo' s'accorde au neutre"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ng01_006",
+      "phase": 2,
+      "type": "matching",
+      "level": 2,
+      "instruction_fr": "Associez chaque nom à son genre.",
+      "pairs": [
+        { "mk": "grad (ville)", "fr": "Masculin" },
+        { "mk": "voda (eau)", "fr": "Féminin" },
+        { "mk": "okno (fenêtre)", "fr": "Neutre" },
+        { "mk": "majka (mère)", "fr": "Féminin" },
+        { "mk": "brat (frère)", "fr": "Masculin" }
+      ],
+      "correct_answer": "grad=Masculin,voda=Féminin,okno=Neutre,majka=Féminin,brat=Masculin",
+      "accept_alternatives": [],
+      "explanation_fr": "Consonne finale = masculin (grad, brat). Terminaison -a = féminin (voda, majka). Terminaison -o = neutre (okno).",
+      "common_mistakes_fr": ["Mémorisez les 3 règles de base : consonne→m, -a→f, -o/-e→n"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ng01_007",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 3,
+      "instruction_fr": "Corrigez l'accord.",
+      "sentence": "Toa zhena e ubav.",
+      "correct_answer": "Taa zhena e ubava",
+      "accept_alternatives": [],
+      "explanation_fr": "Deux erreurs : 1) 'Zhena' est féminin → pronom 'taa' (elle), pas 'toa' (neutre). 2) L'adjectif doit s'accorder au féminin : 'ubava' (belle), pas 'ubav' (beau/masculin).",
+      "common_mistakes_fr": ["'Toa' est neutre — utilisez 'taa' pour les femmes et les noms féminins", "Adjectif féminin : ubava (belle), masculin : ubav (beau), neutre : ubavo"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ng01_008",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien avec les accords corrects.",
+      "sentence_fr": "Ma sœur est belle.",
+      "correct_answer": "Mojata sestra e ubava",
+      "accept_alternatives": ["Sestra mi e ubava"],
+      "explanation_fr": "'Ma sœur' = mojata sestra (moj = mon/ma + ta = article féminin de l'adjectif possessif). 'Ubava' = belle (féminin). Ou plus simplement : 'sestra mi' (ma sœur avec clitique).",
+      "common_mistakes_fr": ["'Mojata' = ma (adjectif possessif féminin avec article)", "'Ubava' = belle (féminin), pas 'ubav'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ng01_009",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 3,
+      "instruction_fr": "Expliquez la différence grammaticale.",
+      "sentence_a": "Toj chovek e visok.",
+      "sentence_b": "Taa zhena e visoka.",
+      "correct_answer": "chovek est masculin (toj/visok), zhena est féminin (taa/visoka) — l'adjectif et le pronom s'accordent en genre",
+      "accept_alternatives": ["masculin vs féminin", "accord du pronom et de l'adjectif"],
+      "expected_keywords_fr": ["masculin", "féminin", "accord", "genre"],
+      "explanation_fr": "a) 'Chovek' (masculin) → pronom 'toj', adjectif 'visok'. b) 'Zhena' (féminin) → pronom 'taa', adjectif 'visoka'. Tout s'accorde : pronom, adjectif, article défini.",
+      "common_mistakes_fr": ["En macédonien, le genre détermine le pronom, l'adjectif et l'article"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ng01_010",
+      "phase": 3,
+      "type": "sentence_builder",
+      "level": 3,
+      "instruction_fr": "Construisez 'L'enfant est petit.' (neutre)",
+      "scrambled_words": ["Deteto", "e", "malo", "mala", "malot"],
+      "correct_answer": "Deteto e malo",
+      "accept_alternatives": [],
+      "explanation_fr": "Deteto (l'enfant, neutre défini) + e (est) + malo (petit, neutre). 'Mala' (féminin) et 'malot' (incorrect) sont des intrus.",
+      "common_mistakes_fr": ["Neutre de l'adjectif 'mal-' = malo", "'Deteto' = l'enfant (article neutre -to collé à 'dete')"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

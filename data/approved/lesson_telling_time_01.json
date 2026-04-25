@@ -1,0 +1,172 @@
+{
+  "id": "lesson_telling_time_01",
+  "topic": "telling_time",
+  "category": "thematic",
+  "title": "L'heure",
+  "difficulty_level": 2,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "demander et dire l'heure, heures pleines et demies",
+  "rules": {
+    "explanation_fr": "Demander l'heure : 'Kolku e chasot?' (Quelle heure est-il ? litt. Combien est l'heure ?)\n\nRepondre :\n• 1h : Edna e chasot (Il est une heure)\n• 2h : Dva e chasot (Il est deux heures)\n• 3h : Tri e chasot\n• Et ainsi de suite...\n\nEt demi : + i pol\n• 1h30 : Edna i pol\n• 2h30 : Dva i pol\n\nEt quart : + i chetvrt\n• 1h15 : Edna i chetvrt\n\nMoins le quart : be chetvrt\n• 1h45 : Dva be chetvrt (deux heures moins le quart)\n\nMatin/soir : nautro (le matin), na vecher (le soir), nautro popladne (l'après-midi)\nMidnight : polnok. Midi : podne.",
+    "table": [
+      { "french": "Quelle heure est-il ?", "macedonian": "Kolku e chasot?", "example_mk": "Izvinete, kolku e chasot?", "example_fr": "Excusez-moi, quelle heure est-il ?" },
+      { "french": "Il est une heure", "macedonian": "Edna e chasot", "example_mk": "Edna e chasot nautro", "example_fr": "Il est une heure du matin" },
+      { "french": "Il est deux heures", "macedonian": "Dva e chasot", "example_mk": "Dva e chasot na vecher", "example_fr": "Il est deux heures du soir" },
+      { "french": "Il est midi", "macedonian": "Podne e", "example_mk": "Podne e — ajde da jademe", "example_fr": "Il est midi — allons manger" },
+      { "french": "Il est minuit", "macedonian": "Polnok e", "example_mk": "Polnok e veke", "example_fr": "Il est déjà minuit" },
+      { "french": "1h30", "macedonian": "Edna i pol", "example_mk": "Edna i pol e", "example_fr": "Il est une heure et demie" },
+      { "french": "2h15", "macedonian": "Dva i chetvrt", "example_mk": "Dva i chetvrt e", "example_fr": "Il est deux heures et quart" },
+      { "french": "1h45", "macedonian": "Dva be chetvrt", "example_mk": "Dva be chetvrt e", "example_fr": "Il est deux heures moins le quart" }
+    ],
+    "notes_fr": [
+      "💡 'Chasot' = l'heure (défini masculin de 'chas'). Dans les réponses courtes on peut dire juste 'Tri e' (Il est trois heures)",
+      "⚠️ 'Chetvrt' contient 'ch' (Ч) — c'est le son Ч. N'oubliez pas le 'h'",
+      "⚠️ Pour 1h, on utilise 'edna' (féminin) car 'chas' est masculin mais on compte en féminin par convention",
+      "💡 'Be' = sans (préfixe) dans 'be chetvrt' (sans quart = moins le quart)"
+    ],
+    "cyrillic_reference": "chasot=часот, pol=пол, chetvrt=четврт, podne=пладне"
+  },
+  "exercises": [
+    {
+      "id": "ex_tt01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Comment demande-t-on l'heure en macédonien ?",
+      "question": "Quelle heure est-il ? =",
+      "options": ["Kade e chasot?", "Kolku e chasot?", "Kako e chasot?", "Koj e chasot?"],
+      "correct_answer": "Kolku e chasot?",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kolku' = combien (quantité). 'Kolku e chasot' = combien est l'heure = quelle heure est-il. 'Chasot' = l'heure (défini).",
+      "common_mistakes_fr": ["'Kolku' (combien) est le mot interrogatif pour l'heure", "'Kade' = où, 'Kako' = comment, 'Koj' = qui — aucun ne convient ici"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Que signifie 'Tri e chasot' ?",
+      "question": "Tri e chasot =",
+      "options": ["Il est midi", "Il est minuit", "Il est trois heures", "Il est trente heures"],
+      "correct_answer": "Il est trois heures",
+      "accept_alternatives": ["Il est 3h"],
+      "explanation_fr": "'Tri' = trois, 'e' = est, 'chasot' = l'heure. 'Tri e chasot' = Il est trois heures.",
+      "common_mistakes_fr": ["Structure : chiffre + e + chasot", "Pour toutes les heures sauf une : chiffre (masculin) + e + chasot"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_003",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Pet i pol e chasot",
+      "correct_answer": "Il est cinq heures et demie",
+      "accept_alternatives": ["Il est 5h30"],
+      "explanation_fr": "'Pet' = cinq, 'i pol' = et demi, 'e chasot' = est l'heure. Cinq heures et demie.",
+      "common_mistakes_fr": ["'I pol' = et demi (pol = moitié/demi)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Osum be chetvrt e",
+      "correct_answer": "Il est huit heures moins le quart",
+      "accept_alternatives": ["Il est 7h45"],
+      "explanation_fr": "'Osum be chetvrt' = huit moins le quart = 7h45. 'Be' = sans/moins, 'chetvrt' = quart.",
+      "common_mistakes_fr": ["'Be chetvrt' = moins le quart (pas 'et quart' = i chetvrt)", "Osum be chetvrt = 8h - 15min = 7h45"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_005",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Complétez pour dire 'Il est deux heures et demie.'",
+      "sentence": "Dva i ___ e.",
+      "correct_answer": "pol",
+      "accept_alternatives": [],
+      "explanation_fr": "'Pol' = demi/moitié. 'Dva i pol e' = Il est deux heures et demie.",
+      "common_mistakes_fr": ["'Pol' = demi — mot simple et courant"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_006",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Il est sept heures du soir.",
+      "correct_answer": "Sedum e chasot na vecher",
+      "accept_alternatives": ["Sedum na vecher e chasot", "Sedum e na vecher"],
+      "explanation_fr": "'Sedum' = sept, 'e chasot' = est l'heure, 'na vecher' = du soir/le soir.",
+      "common_mistakes_fr": ["'Na vecher' = du soir, 'nautro' = du matin, 'popladne' = de l'après-midi"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_007",
+      "phase": 2,
+      "type": "matching",
+      "level": 2,
+      "instruction_fr": "Associez l'heure macédonienne à l'heure française.",
+      "pairs": [
+        { "mk": "Eden i pol", "fr": "1h30" },
+        { "mk": "Deset i chetvrt", "fr": "10h15" },
+        { "mk": "Podne", "fr": "12h00 (midi)" },
+        { "mk": "Sedum be chetvrt", "fr": "6h45" },
+        { "mk": "Polnok", "fr": "00h00 (minuit)" }
+      ],
+      "correct_answer": "Eden i pol=1h30,Deset i chetvrt=10h15,Podne=12h00 (midi),Sedum be chetvrt=6h45,Polnok=00h00 (minuit)",
+      "accept_alternatives": [],
+      "explanation_fr": "i pol = et demie, i chetvrt = et quart, be chetvrt = moins le quart.",
+      "common_mistakes_fr": ["'Sedum be chetvrt' = 7h - 15min = 6h45, pas 7h15"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tt01_008",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Le train part à neuf heures moins le quart.",
+      "correct_answer": "Vozot zaminuva vo deset be chetvrt",
+      "accept_alternatives": ["Vozot zaminuva vo devet be chetvrt"],
+      "explanation_fr": "'Vozot' = le train (défini masc.), 'zaminuva' = part, 'vo' = à (préposition de temps), 'devet be chetvrt' = neuf heures moins le quart.",
+      "common_mistakes_fr": ["'Be chetvrt' = moins le quart — c'est une heure AVANT l'heure suivante"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tt01_009",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 3,
+      "instruction_fr": "Corrigez l'heure.",
+      "sentence": "Edna i chetvrt e chasot. (Je voulais dire 1h45)",
+      "correct_answer": "Dva be chetvrt e chasot",
+      "accept_alternatives": [],
+      "explanation_fr": "1h45 = deux heures moins le quart = 'Dva be chetvrt'. 'Edna i chetvrt' = 1h15 (une heure et quart).",
+      "common_mistakes_fr": ["1h45 = 'Dva be chetvrt' (deux heures moins le quart), pas 'edna i chetvrt' (1h15)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tt01_010",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 3,
+      "instruction_fr": "Quelle est la différence ?",
+      "sentence_a": "Tri i chetvrt e.",
+      "sentence_b": "Chetiri be chetvrt e.",
+      "correct_answer": "Les deux signifient 3h45 — ce sont deux façons d'exprimer la même heure",
+      "accept_alternatives": ["3h45 dit de deux façons différentes", "trois heures et trois quarts = quatre heures moins le quart"],
+      "expected_keywords_fr": ["même heure", "3h45", "deux façons"],
+      "explanation_fr": "'Tri i chetvrt' = trois heures et trois quarts = 3h45. 'Chetiri be chetvrt' = quatre heures moins le quart = 3h45. Les deux sont corrects pour 3h45.",
+      "common_mistakes_fr": ["Les deux formes sont acceptables — 'be chetvrt' est plus courant"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "lesson_regular_verbs_present_01",
+  "topic": "regular_verbs_present",
+  "category": "grammar",
+  "title": "Verbes réguliers au présent — 3 groupes",
+  "difficulty_level": 2,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "terminaisons -am, -am/-ish, -uvam — conjugaison complète",
+  "rules": {
+    "explanation_fr": "Les verbes macédoniens au présent se divisent en 3 groupes selon leurs terminaisons :\n\nGroupe 1 — terminaison -am (verbes en -a) :\nSaka (vouloir/aimer) : sakam, sakash, saka, sakame, sakate, sakaat\n\nGroupe 2 — terminaison -am/-ish (verbes en -i) :\nPie (boire) : pijam, pijesh, pie, pieme, piete, pieat\n\nGroupe 3 — terminaison -uvam (verbes en -uva) :\nRazuva (enlever les chaussures) / verbes empruntés :\nStudira (étudier) : studiram, studirash, studira, studirame, studirate, studiraat\n\nPersonnes : jas (-m), ti (-sh), toj/taa/toa (-), nie (-me), vie (-te), tie (-at/-aat)",
+    "table": [
+      { "french": "je veux/j'aime", "macedonian": "sakam", "example_mk": "Sakam kafe", "example_fr": "Je veux un café" },
+      { "french": "tu veux", "macedonian": "sakash", "example_mk": "Sakash li da odish?", "example_fr": "Veux-tu y aller ?" },
+      { "french": "il/elle veut", "macedonian": "saka", "example_mk": "Toj saka voda", "example_fr": "Il veut de l'eau" },
+      { "french": "nous voulons", "macedonian": "sakame", "example_mk": "Nie sakame da ucime", "example_fr": "Nous voulons apprendre" },
+      { "french": "vous voulez", "macedonian": "sakate", "example_mk": "Shto sakate?", "example_fr": "Que voulez-vous ?" },
+      { "french": "ils/elles veulent", "macedonian": "sakaat", "example_mk": "Tie sakaat da idat", "example_fr": "Ils veulent partir" },
+      { "french": "je parle", "macedonian": "zboruvam", "example_mk": "Zboruvam makedonski", "example_fr": "Je parle macédonien" },
+      { "french": "j'étudie", "macedonian": "studiram", "example_mk": "Studiram francuski", "example_fr": "J'étudie le français" }
+    ],
+    "notes_fr": [
+      "💡 Terminaisons du présent : -m (jas), -sh (ti), - (toj/taa), -me (nie), -te (vie), -at/-aat (tie)",
+      "⚠️ 'Saka' (il/elle veut) est identique à l'infinitif — le contexte indique la personne",
+      "💡 'Zboruvam' = je parle (langue) — très utile : 'Zboruvam makedonski/francuski/anglski'",
+      "⚠️ Verbes en -uva : 'zboruva, studira, raboti' — la terminaison tie est -aat (double a)"
+    ],
+    "cyrillic_reference": "saka=сака, zboruva=зборува, studira=студира"
+  },
+  "exercises": [
+    {
+      "id": "ex_rv01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Quelle est la forme correcte ?",
+      "question": "Comment dit-on 'nous voulons' ?",
+      "options": ["sakam", "sakaat", "sakame", "sakate"],
+      "correct_answer": "sakame",
+      "accept_alternatives": [],
+      "explanation_fr": "'Sakame' = nous voulons (1re pers. pl.). Terminaison -me pour 'nie' (nous). Sakam = je veux, sakaat = ils veulent, sakate = vous voulez.",
+      "common_mistakes_fr": ["Confondre -me (nous) et -te (vous)", "La terminaison -me est toujours la 1re personne du pluriel"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Traduisez cette phrase.",
+      "question": "Que signifie 'Tie sakaat da idat' ?",
+      "options": ["Nous voulons partir", "Ils veulent partir", "Vous voulez partir", "Elle veut partir"],
+      "correct_answer": "Ils veulent partir",
+      "accept_alternatives": ["Elles veulent partir"],
+      "explanation_fr": "'Tie' = ils/elles, 'sakaat' = veulent (3e pers. pl. — noter le double 'a'), 'da idat' = partir (litt. qu'ils aillent).",
+      "common_mistakes_fr": ["'Sakaat' (3e pl.) se distingue de 'saka' (3e sing.) par -at final", "'Da idat' = qu'ils aillent / partir — construction infinitive macédonienne"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_003",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Choisissez la bonne forme.",
+      "question": "Je parle macédonien = Jas ___ makedonski.",
+      "options": ["zboruva", "zboruvash", "zboruvam", "zboruvaat"],
+      "correct_answer": "zboruvam",
+      "accept_alternatives": [],
+      "explanation_fr": "'Zboruvam' = je parle (1re pers. sing. du verbe zboruva). La terminaison -m indique la 1re personne du singulier.",
+      "common_mistakes_fr": ["'Zboruva' sans terminaison = 3e pers. sing. (il parle)", "Pour 'je', ajoutez toujours -m : zboruvam"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Studiram makedonski vo Pariz",
+      "correct_answer": "J'étudie le macédonien à Paris",
+      "accept_alternatives": ["J'apprends le macédonien à Paris"],
+      "explanation_fr": "'Studiram' = j'étudie (1re pers. sing.), 'makedonski' = le macédonien, 'vo Pariz' = à Paris.",
+      "common_mistakes_fr": ["'Vo' = à/dans (préposition de lieu)", "'Studiram' est la 1re pers. sing. — terminaison -m"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_005",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Shto sakate?",
+      "correct_answer": "Que voulez-vous ?",
+      "accept_alternatives": ["Qu'est-ce que vous voulez ?", "Qu'est-ce que vous désirez ?"],
+      "explanation_fr": "'Shto' = que/quoi, 'sakate' = vous voulez (2e pers. pl.). Très utilisé dans les restaurants ou boutiques.",
+      "common_mistakes_fr": ["'Sakate' (vous voulez) vs 'sakash' (tu veux) — attention au registre"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_006",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Conjuguez au temps correct.",
+      "sentence": "Nie ___ da ucime makedonski. (Nous voulons apprendre le macédonien.)",
+      "correct_answer": "sakame",
+      "accept_alternatives": [],
+      "explanation_fr": "Avec 'Nie' (nous), la forme de 'saka' est 'sakame' (terminaison -me).",
+      "common_mistakes_fr": ["Ne pas confondre -me (nous) avec -te (vous) ou -at (ils)"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_007",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 3,
+      "instruction_fr": "Corrigez l'erreur de conjugaison.",
+      "sentence": "Tie saka da idat.",
+      "correct_answer": "Tie sakaat da idat",
+      "accept_alternatives": [],
+      "explanation_fr": "Avec 'Tie' (ils/elles), la forme correcte est 'sakaat' (3e pers. pl., terminaison -aat). 'Saka' est la 3e pers. sing.",
+      "common_mistakes_fr": ["'Saka' = il/elle veut (sing.), 'sakaat' = ils/elles veulent (pl.)", "Le doublement -aat est caractéristique du pluriel pour ce groupe de verbes"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_008",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Tu parles macédonien ?",
+      "correct_answer": "Zboruvash makedonski?",
+      "accept_alternatives": ["Ti zboruvash makedonski?", "Zboruvash li makedonski?"],
+      "explanation_fr": "'Tu parles' = zboruvash (2e pers. sing., terminaison -sh). 'Li' peut s'ajouter pour marquer la question mais n'est pas obligatoire avec l'intonation.",
+      "common_mistakes_fr": ["Terminaison -sh = 2e personne singulier (tu)", "'Li' est une particule interrogative optionnelle"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_009",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 3,
+      "instruction_fr": "Conjuguez le verbe 'saka' à toutes les personnes.",
+      "base_sentence": "saka (infinitif/3e sing.)",
+      "steps": [
+        { "instruction_fr": "1re personne singulier (je veux)", "expected_answer": "sakam" },
+        { "instruction_fr": "2e personne singulier (tu veux)", "expected_answer": "sakash" },
+        { "instruction_fr": "1re personne pluriel (nous voulons)", "expected_answer": "sakame" },
+        { "instruction_fr": "3e personne pluriel (ils veulent)", "expected_answer": "sakaat" }
+      ],
+      "correct_answer": "sakaam",
+      "accept_alternatives": [],
+      "explanation_fr": "Conjugaison complète : sakam (je), sakash (tu), saka (il/elle), sakame (nous), sakate (vous), sakaat (ils). La terminaison de base est -a, sur laquelle on ajoute : -m, -sh, -, -me, -te, -at.",
+      "common_mistakes_fr": ["Ne pas doubler le 'a' dans sakaat (ils) — c'est -aat et non -at"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_010",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 3,
+      "instruction_fr": "Expliquez la différence.",
+      "sentence_a": "Toj saka kafe.",
+      "sentence_b": "Tie sakaat kafe.",
+      "correct_answer": "saka = il/elle veut (singulier), sakaat = ils/elles veulent (pluriel)",
+      "accept_alternatives": ["singulier vs pluriel", "3e sing. vs 3e pl."],
+      "expected_keywords_fr": ["singulier", "pluriel"],
+      "explanation_fr": "'Saka' est la 3e personne du singulier (il/elle veut). 'Sakaat' est la 3e personne du pluriel (ils/elles veulent). La terminaison -aat distingue le pluriel.",
+      "common_mistakes_fr": ["Une lettre de différence peut changer le sens : saka ≠ sakaat"],
+      "verbs_present": ["saka"]
+    }
+  ]
+}

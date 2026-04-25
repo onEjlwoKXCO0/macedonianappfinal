@@ -1,0 +1,170 @@
+{
+  "id": "lesson_future_kje_01",
+  "topic": "future_kje",
+  "category": "grammar",
+  "title": "Le futur avec 'kje'",
+  "difficulty_level": 3,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "formation du futur — particule kje + présent, futur négatif avec nema da",
+  "rules": {
+    "explanation_fr": "Le futur macédonien se forme avec la particule 'kje' placée devant le verbe au présent :\n\nkje + présent du verbe\n\nExemples :\n• Jas kje odam. (J'irai / Je vais aller.)\n• Toj kje jade. (Il mangera.)\n• Nie kje zboruvame. (Nous parlerons.)\n\nFutur négatif : 'nema da' + présent (PAS 'ne kje') :\n• Nema da odam. (Je n'irai pas.)\n• Taa nema da dojde. (Elle ne viendra pas.)\n\nLe futur proche (intention immédiate) utilise aussi 'kje'.\nForme complète : kje + verbe conjugué au présent.",
+    "table": [
+      { "french": "j'irai", "macedonian": "kje odam", "example_mk": "Jas kje odam doma", "example_fr": "J'irai à la maison" },
+      { "french": "tu iras", "macedonian": "kje odish", "example_mk": "Ti kje odish na pazar", "example_fr": "Tu iras au marché" },
+      { "french": "il/elle ira", "macedonian": "kje odi", "example_mk": "Toj kje odi vo shkolo", "example_fr": "Il ira à l'école" },
+      { "french": "nous irons", "macedonian": "kje odime", "example_mk": "Nie kje odime zajedno", "example_fr": "Nous irons ensemble" },
+      { "french": "ils iront", "macedonian": "kje odat", "example_mk": "Tie kje odat vo Ohrid", "example_fr": "Ils iront à Ohrid" },
+      { "french": "je ne viendrai pas", "macedonian": "nema da dojdam", "example_mk": "Nema da dojdam denes", "example_fr": "Je ne viendrai pas aujourd'hui" },
+      { "french": "elle ne mangera pas", "macedonian": "nema da jade", "example_mk": "Taa nema da jade meso", "example_fr": "Elle ne mangera pas de viande" }
+    ],
+    "notes_fr": [
+      "💡 Structure : kje + verbe au présent (même conjugaison qu'au présent)",
+      "⚠️ Futur NÉGATIF : 'nema da' + présent — pas 'ne kje' qui est incorrect",
+      "⚠️ 'Kje' est une particule invariable — elle ne se conjugue pas",
+      "💡 'Kje' ressemble au conditionnel dans certains contextes — le contexte détermine le sens"
+    ],
+    "cyrillic_reference": "kje=ќе, nema da=нема да"
+  },
+  "exercises": [
+    {
+      "id": "ex_fut01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Choisissez la forme du futur correcte.",
+      "question": "Comment dit-on 'J'irai' ?",
+      "options": ["Jas odam", "Jas kje odam", "Jas da odam", "Jas kje odav"],
+      "correct_answer": "Jas kje odam",
+      "accept_alternatives": [],
+      "explanation_fr": "Futur = kje + présent. 'Odam' est le présent de 'odi' (aller, 1re pers. sing.). 'Jas kje odam' = J'irai.",
+      "common_mistakes_fr": ["'Kje' seul ne suffit pas — il faut aussi le verbe au présent", "'Da odam' est une construction subjonctive, pas le futur"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 3,
+      "instruction_fr": "Quel est le futur négatif correct ?",
+      "question": "Je ne viendrai pas =",
+      "options": ["Jas ne kje dojdam", "Nema da dojdam", "Kje ne dojdam", "Ne dojdam"],
+      "correct_answer": "Nema da dojdam",
+      "accept_alternatives": [],
+      "explanation_fr": "Le futur négatif utilise 'nema da' + présent, et NON 'ne kje'. 'Nema da dojdam' = Je ne viendrai pas.",
+      "common_mistakes_fr": ["'Ne kje' est incorrect en macédonien standard", "'Nema da' est la seule construction correcte pour le futur négatif"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_003",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Nie kje zboruvame makedonski",
+      "correct_answer": "Nous parlerons macédonien",
+      "accept_alternatives": ["Nous allons parler macédonien"],
+      "explanation_fr": "'Kje' = marqueur du futur, 'zboruvame' = nous parlons (présent, 1re pers. pl.). Futur = kje + zboruvame.",
+      "common_mistakes_fr": ["'Kje' devant le présent = futur — même forme verbale qu'au présent"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 3,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Taa nema da jade meso",
+      "correct_answer": "Elle ne mangera pas de viande",
+      "accept_alternatives": ["Elle ne va pas manger de viande"],
+      "explanation_fr": "'Taa' = elle, 'nema da' = futur négatif, 'jade' = mange (3e pers. sing.), 'meso' = viande.",
+      "common_mistakes_fr": ["'Nema da' = futur négatif (pas 'ne kje')", "'Meso' = viande"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_005",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Mettez au futur.",
+      "sentence": "Toj ___ odi vo Skopje. (Il ira à Skopje.)",
+      "correct_answer": "kje",
+      "accept_alternatives": [],
+      "explanation_fr": "Pour former le futur, on insère 'kje' avant le verbe. 'Toj kje odi vo Skopje' = Il ira à Skopje.",
+      "common_mistakes_fr": ["'Kje' se place directement avant le verbe", "'Vo Skopje' = à Skopje"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_006",
+      "phase": 2,
+      "type": "transformation",
+      "level": 3,
+      "instruction_fr": "Mettez au futur négatif.",
+      "sentence": "Jas kje odam doma.",
+      "transformation_instruction_fr": "Je n'irai pas à la maison.",
+      "correct_answer": "Nema da odam doma",
+      "accept_alternatives": ["Jas nema da odam doma"],
+      "explanation_fr": "Futur positif 'kje odam' → futur négatif 'nema da odam'. On remplace 'kje' par 'nema da'.",
+      "common_mistakes_fr": ["Ne pas écrire 'ne kje odam' — c'est incorrect", "'Kje' → 'nema da' pour la négation"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_007",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Ils iront ensemble à Ohrid.",
+      "correct_answer": "Tie kje odat zajedno vo Ohrid",
+      "accept_alternatives": ["Kje odat zajedno vo Ohrid"],
+      "explanation_fr": "'Ils iront' = Tie kje odat (kje + odat, 3e pers. pl.), 'ensemble' = zajedno, 'à Ohrid' = vo Ohrid.",
+      "common_mistakes_fr": ["'Odat' = 3e pers. pl. de odi (aller)", "'Vo' = à/dans (préposition de lieu)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_008",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 4,
+      "instruction_fr": "Corrigez l'erreur.",
+      "sentence": "Taa ne kje dojde utre.",
+      "correct_answer": "Taa nema da dojde utre",
+      "accept_alternatives": [],
+      "explanation_fr": "'Ne kje' est incorrect pour le futur négatif. La forme correcte est 'nema da'. 'Utre' = demain.",
+      "common_mistakes_fr": ["Règle absolue : futur négatif = nema da + présent (jamais ne kje)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_009",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 4,
+      "instruction_fr": "Transformations au futur.",
+      "base_sentence": "Jas odam vo kino. (présent)",
+      "steps": [
+        { "instruction_fr": "Mettez au futur (j'irai au cinéma)", "expected_answer": "Jas kje odam vo kino" },
+        { "instruction_fr": "Mettez au futur négatif (je n'irai pas au cinéma)", "expected_answer": "Nema da odam vo kino" }
+      ],
+      "correct_answer": "Nema da odam vo kino",
+      "accept_alternatives": [],
+      "explanation_fr": "Présent → futur : ajout de 'kje'. Futur → futur négatif : 'kje' → 'nema da'.",
+      "common_mistakes_fr": ["L'ordre : nema da + verbe au présent (sans changer la conjugaison du verbe)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_fut01_010",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 4,
+      "instruction_fr": "Quelle est la différence entre ces deux phrases ?",
+      "sentence_a": "Jas odam doma.",
+      "sentence_b": "Jas kje odam doma.",
+      "correct_answer": "a = présent (je vais/j'y vais), b = futur (j'irai)",
+      "accept_alternatives": ["présent vs futur", "sans kje = présent, avec kje = futur"],
+      "expected_keywords_fr": ["présent", "futur", "kje"],
+      "explanation_fr": "'Odam' sans 'kje' = présent (je vais à la maison, maintenant). 'Kje odam' = futur (j'irai à la maison, plus tard). La seule différence est la particule 'kje'.",
+      "common_mistakes_fr": ["'Kje' est le seul marqueur du futur — sans lui, c'est le présent"],
+      "verbs_present": []
+    }
+  ]
+}
