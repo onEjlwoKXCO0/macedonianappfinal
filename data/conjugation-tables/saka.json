@@ -1,0 +1,35 @@
+{
+  "infinitive": "saka",
+  "meaning_fr": "vouloir / aimer",
+  "aspect": "imperfective",
+  "tables": {
+    "present": {
+      "jas": "sakam",
+      "ti": "sakash",
+      "toj_taa": "saka",
+      "nie": "sakame",
+      "vie": "sakate",
+      "tie": "sakaat"
+    },
+    "past_imperfect": {
+      "jas": "sakav",
+      "ti": "sakase",
+      "toj_taa": "sakase",
+      "nie": "sakavme",
+      "vie": "sakavte",
+      "tie": "sakaa"
+    },
+    "future": {
+      "jas": "kje sakam",
+      "ti": "kje sakash",
+      "toj_taa": "kje saka",
+      "nie": "kje sakame",
+      "vie": "kje sakate",
+      "tie": "kje sakaat"
+    }
+  },
+  "notes_fr": [
+    "💡 'Sakam' = je veux / j'aime (selon le contexte)",
+    "💡 'Sakam kafe' = Je veux un café / J'aime le café"
+  ]
+}

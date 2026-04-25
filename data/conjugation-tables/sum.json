@@ -1,0 +1,36 @@
+{
+  "infinitive": "sum",
+  "meaning_fr": "être",
+  "aspect": "imperfective",
+  "tables": {
+    "present": {
+      "jas": "sum",
+      "ti": "si",
+      "toj_taa": "e",
+      "nie": "sme",
+      "vie": "ste",
+      "tie": "se"
+    },
+    "past_imperfect": {
+      "jas": "bev",
+      "ti": "bese",
+      "toj_taa": "bese",
+      "nie": "bevme",
+      "vie": "bevte",
+      "tie": "bea"
+    },
+    "future": {
+      "jas": "kje bidam",
+      "ti": "kje bidesh",
+      "toj_taa": "kje bide",
+      "nie": "kje bideme",
+      "vie": "kje bidete",
+      "tie": "kje bidat"
+    }
+  },
+  "notes_fr": [
+    "⚠️ Verbe irrégulier — très fréquent, à mémoriser absolument",
+    "💡 Au présent 3e pers. pl. : 'se' (ils sont), à ne pas confondre avec le pronom réfléchi",
+    "💡 Le pronom sujet peut être omis dans un contexte clair"
+  ]
+}

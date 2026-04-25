@@ -1,0 +1,169 @@
+{
+  "id": "lesson_negation_advanced_01",
+  "topic": "negation",
+  "category": "grammar",
+  "title": "Négation avancée — doubles négatifs et nikogash",
+  "difficulty_level": 5,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "nikogash, nikoj, nichto, nigde — double négation obligatoire",
+  "rules": {
+    "explanation_fr": "En macédonien, contrairement au français, la double négation est OBLIGATOIRE. Chaque mot négatif indéfini doit être accompagné de 'ne' devant le verbe.\n\nMots négatifs indéfinis :\n• nikogash = jamais\n• nikoj = personne\n• nichto = rien\n• nigde = nulle part\n• nikakov = aucun\n\nStructure : nikogash/nikoj/nichto + ne + verbe\n\nExemples :\n• Nikogash ne odam tamu. (Je ne vais jamais là-bas.)\n• Nikoj ne dojde. (Personne n'est venu.)\n• Nichto ne znam. (Je ne sais rien.)\n• Nigde ne go najdov. (Je ne l'ai trouvé nulle part.)\n\nDifférence avec le français : 'ne...jamais' = nikogash ne (pas *samo 'ne').",
+    "table": [
+      { "french": "jamais", "macedonian": "nikogash", "example_mk": "Nikogash ne sum tamu", "example_fr": "Je ne suis jamais là" },
+      { "french": "personne", "macedonian": "nikoj", "example_mk": "Nikoj ne znaе", "example_fr": "Personne ne sait" },
+      { "french": "rien", "macedonian": "nichto", "example_mk": "Nichto ne razbiram", "example_fr": "Je ne comprends rien" },
+      { "french": "nulle part", "macedonian": "nigde", "example_mk": "Nigde ne go najdov", "example_fr": "Je ne l'ai trouvé nulle part" },
+      { "french": "aucun/e", "macedonian": "nikakov", "example_mk": "Nikakvo resenie nema", "example_fr": "Il n'y a aucune solution" }
+    ],
+    "notes_fr": [
+      "⚠️ RÈGLE ABSOLUE : mot négatif + 'ne' + verbe — les deux sont toujours présents ensemble",
+      "⚠️ 'Nikogash' contient 'sh' (Ш) et 'gash' — ne pas oublier le 'sh' final",
+      "💡 'Nichto' contient 'ch' (Ч) et commence par 'ni' — mémorisez la séquence ni-ch-to",
+      "⚠️ Contrairement au français, cette double négation n'est pas populaire/incorrecte — elle est OBLIGATOIRE et correcte"
+    ],
+    "cyrillic_reference": "nikogash=никогаш, nikoj=никој, nichto=ништо, nigde=нигде"
+  },
+  "exercises": [
+    {
+      "id": "ex_negadv_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 4,
+      "instruction_fr": "Choisissez la traduction correcte.",
+      "question": "Comment dit-on 'Je ne vais jamais là-bas' ?",
+      "options": ["Jas ne odam tamu", "Jas nikogash odam tamu", "Nikogash ne odam tamu", "Ne nikogash odam"],
+      "correct_answer": "Nikogash ne odam tamu",
+      "accept_alternatives": ["Jas nikogash ne odam tamu"],
+      "explanation_fr": "La double négation est obligatoire : 'nikogash' (jamais) + 'ne' (ne) + verbe. Les deux éléments négatifs doivent tous les deux être présents.",
+      "common_mistakes_fr": ["Oublier 'ne' devant le verbe quand 'nikogash' est déjà là", "L'ordre : nikogash + ne + verbe (pas l'inverse)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 4,
+      "instruction_fr": "Quelle phrase signifie 'Personne ne sait' ?",
+      "question": "Personne ne sait =",
+      "options": ["Nikoj znae", "Ne znae nikoj", "Nikoj ne znae", "Nigde znae"],
+      "correct_answer": "Nikoj ne znae",
+      "accept_alternatives": [],
+      "explanation_fr": "'Nikoj' (personne) + 'ne' (ne) + 'znae' (sait). La double négation : nikoj ne znae.",
+      "common_mistakes_fr": ["'Nikoj znae' est incorrect — il manque le 'ne' obligatoire", "Mémorisez : en macédonien, chaque mot négatif exige un 'ne' devant le verbe"],
+      "verbs_present": ["znae"]
+    },
+    {
+      "id": "ex_negadv_003",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 4,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Nichto ne razbiram",
+      "correct_answer": "Je ne comprends rien",
+      "accept_alternatives": ["Rien ne me comprend", "Je ne comprends absolument rien"],
+      "explanation_fr": "'Nichto' = rien, 'ne razbiram' = je ne comprends pas. Double négation : nichto + ne = ne...rien.",
+      "common_mistakes_fr": ["'Nichto' commence par 'ni' et contient 'ch' (Ч)", "La double négation macédonienne correspond à 'ne...rien' en français"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 5,
+      "instruction_fr": "Traduisez cette phrase complexe.",
+      "sentence_mk": "Nikogash nigde nichto ne kazuva",
+      "correct_answer": "Il ne dit jamais rien nulle part",
+      "accept_alternatives": ["Il ne dit jamais rien, nulle part", "Jamais, nulle part, il ne dit rien"],
+      "explanation_fr": "Trois mots négatifs + 'ne' : nikogash (jamais) + nigde (nulle part) + nichto (rien) + ne kazuva (ne dit). En macédonien, on peut accumuler plusieurs négatifs — tous exigent un seul 'ne' devant le verbe.",
+      "common_mistakes_fr": ["Plusieurs négatifs sont possibles — un seul 'ne' suffit devant le verbe", "'Kazuva' = dit (3e pers. sing. du verbe kazhуva)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_005",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 4,
+      "instruction_fr": "Corrigez l'erreur.",
+      "sentence": "Nikogash odam tamu.",
+      "correct_answer": "Nikogash ne odam tamu",
+      "accept_alternatives": [],
+      "explanation_fr": "Il manque 'ne' devant le verbe. Avec 'nikogash' (jamais), le 'ne' devant le verbe est OBLIGATOIRE : Nikogash ne odam tamu.",
+      "common_mistakes_fr": ["En macédonien, 'nikogash' seul ne suffit pas — le 'ne' est toujours requis aussi"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_006",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 4,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Je ne l'ai trouvé nulle part.",
+      "correct_answer": "Nigde ne go najdov",
+      "accept_alternatives": ["nigde ne go najdov"],
+      "explanation_fr": "'Nulle part' = nigde, 'ne' (obligatoire), 'go' = le (clitique masc.), 'najdov' = j'ai trouvé (passé). Double structure : nigde + ne + clitique + verbe.",
+      "common_mistakes_fr": ["Ne pas oublier le clitique 'go' avant le verbe", "'Najdov' est une forme du passé — niveau suivant !"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_007",
+      "phase": 2,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Transformez en utilisant 'nikogash' (jamais).",
+      "sentence": "Jas odam vo kino.",
+      "transformation_instruction_fr": "Je ne vais jamais au cinéma.",
+      "correct_answer": "Nikogash ne odam vo kino",
+      "accept_alternatives": ["Jas nikogash ne odam vo kino"],
+      "explanation_fr": "Ajoutez 'nikogash' en début de phrase et 'ne' devant le verbe. Les deux sont obligatoires.",
+      "common_mistakes_fr": ["Ajouter seulement 'nikogash' sans 'ne' est une erreur fréquente", "'Vo kino' = au cinéma"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_008",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Défi — traduisez cette phrase complexe.",
+      "sentence_fr": "Personne ne m'a jamais rien dit.",
+      "correct_answer": "Nikoj nikogash nichto ne mi kaza",
+      "accept_alternatives": ["Nikoj nikogash nichto ne mi kazа"],
+      "explanation_fr": "nikoj (personne) + nikogash (jamais) + nichto (rien) + ne mi kaza (ne m'a dit). Trois négatifs + 'mi' (clitique datif me) + verbe au passé 'kaza'.",
+      "common_mistakes_fr": ["Trois négatifs, un seul 'ne' devant le verbe — c'est la règle", "'Mi' = me (datif, clitique indirect) — différent de 'me' (accusatif)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_negadv_009",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 5,
+      "instruction_fr": "Expliquez la différence grammaticale.",
+      "sentence_a": "Ne znam nichto.",
+      "sentence_b": "Nichto ne znam.",
+      "correct_answer": "Les deux sont correctes mais b met l'emphase sur 'rien' en le plaçant en début de phrase",
+      "accept_alternatives": ["même sens, ordre différent, emphase différente", "a = neutre, b = emphase sur nichto"],
+      "expected_keywords_fr": ["emphase", "ordre", "même sens", "début"],
+      "explanation_fr": "Les deux phrases sont grammaticalement correctes et signifient 'Je ne sais rien'. La différence est stylistique : mettre 'nichto' en début de phrase accentue le 'rien'. C'est comme dire en français 'Rien, je ne sais' vs 'Je ne sais rien'.",
+      "common_mistakes_fr": ["Les deux formes sont correctes — il n'y a pas d'erreur dans les deux cas", "L'ordre des mots en macédonien est relativement flexible pour l'emphase"],
+      "verbs_present": ["znae"]
+    },
+    {
+      "id": "ex_negadv_010",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Série de transformations.",
+      "base_sentence": "Toj sekogash jade tamu.",
+      "steps": [
+        { "instruction_fr": "Mettez à la forme négative simple (il ne mange pas là-bas)", "expected_answer": "Toj ne jade tamu" },
+        { "instruction_fr": "Transformez 'ne... pas' en 'ne... jamais' avec nikogash", "expected_answer": "Toj nikogash ne jade tamu" },
+        { "instruction_fr": "Ajoutez 'nigde' (nulle part) : il ne mange jamais nulle part là-bas", "expected_answer": "Toj nikogash nigde ne jade tamu" }
+      ],
+      "correct_answer": "Toj nikogash nigde ne jade tamu",
+      "accept_alternatives": [],
+      "explanation_fr": "Étape 1 : simple négation. Étape 2 : ajout de nikogash (jamais) + maintien de ne. Étape 3 : ajout de nigde (nulle part) — le 'ne' reste unique devant le verbe.",
+      "common_mistakes_fr": ["Ne pas dupliquer 'ne' pour chaque négatif — un seul 'ne' devant le verbe", "'Sekogash' = toujours (opposé de 'nikogash' = jamais)"],
+      "verbs_present": []
+    }
+  ]
+}

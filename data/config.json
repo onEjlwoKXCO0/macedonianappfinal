@@ -1,0 +1,27 @@
+{
+  "app_version": "1.0.0",
+  "romanization_convention": "ASCII-latin",
+  "source_urls": [
+    "https://polyglotclub.com/wiki/Language/Macedonian/Vocabulary/Basic-Greetings",
+    "https://macedonianlanguage.org/",
+    "https://www.lingohut.com/en/l123/learn-macedonian",
+    "https://macedonianlanguagecorner.com/learnmacedonian/",
+    "https://ilanguages.org/macedonian.php"
+  ],
+  "topics_grammar": [
+    "pronouns_personal", "pronouns_possessive", "pronouns_demonstrative",
+    "sum_present", "sum_past_future", "regular_verbs_present",
+    "past_l_forms", "past_gender_agreement", "future_kje", "negation",
+    "questions_dali", "question_words", "noun_gender", "definite_articles",
+    "adjective_agreement", "possessives", "comparative_superlative",
+    "prepositions", "direct_object_pronouns", "indirect_object_pronouns",
+    "clitic_doubling", "reflexive_verbs", "verbal_aspect", "imperative",
+    "subordinate_clauses"
+  ],
+  "topics_thematic": [
+    "numbers_1_100", "ordinals", "telling_time", "calendar", "greetings",
+    "food_restaurant", "family", "colors_descriptions", "directions",
+    "shopping_money", "weather", "daily_routine", "work_school",
+    "health_body", "travel"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "lesson_question_words_01",
+  "topic": "question_words",
+  "category": "grammar",
+  "title": "Les mots interrogatifs",
+  "difficulty_level": 2,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "koj, shto, kade, koga, zoshto, kako, kolku",
+  "rules": {
+    "explanation_fr": "Les mots interrogatifs macédoniens permettent de poser des questions ouvertes.\n\nLes principaux mots interrogatifs :\n• Koj / Koja / Koi — qui (m/f/pl)\n• Shto — quoi / que\n• Kade — où\n• Koga — quand\n• Zoshto — pourquoi\n• Kako — comment\n• Kolku — combien\n• Koj — quel / laquelle\n\nContrairement au français, pas d'inversion sujet-verbe. La structure est simplement : mot interrogatif + sujet + verbe.",
+    "table": [
+      { "french": "Qui (masc.)", "macedonian": "Koj", "example_mk": "Koj e toj?", "example_fr": "Qui est-il ?" },
+      { "french": "Qui (fém.)", "macedonian": "Koja", "example_mk": "Koja e taa?", "example_fr": "Qui est-elle ?" },
+      { "french": "Quoi / Que", "macedonian": "Shto", "example_mk": "Shto sakash?", "example_fr": "Que veux-tu ?" },
+      { "french": "Où", "macedonian": "Kade", "example_mk": "Kade si?", "example_fr": "Où es-tu ?" },
+      { "french": "Quand", "macedonian": "Koga", "example_mk": "Koga dodesh?", "example_fr": "Quand viens-tu ?" },
+      { "french": "Pourquoi", "macedonian": "Zoshto", "example_mk": "Zoshto ne si doma?", "example_fr": "Pourquoi n'es-tu pas à la maison ?" },
+      { "french": "Comment", "macedonian": "Kako", "example_mk": "Kako si?", "example_fr": "Comment vas-tu ?" },
+      { "french": "Combien", "macedonian": "Kolku", "example_mk": "Kolku chini?", "example_fr": "Combien ça coûte ?" }
+    ],
+    "notes_fr": [
+      "💡 'Kako si' (comment es-tu ?) est la façon de demander 'comment vas-tu ?' en macédonien",
+      "⚠️ 'Koj' s'accorde en genre : koj (masc.), koja (fém.), koi (pluriel)",
+      "⚠️ 'Shto' contient 'sh' — c'est le son Ш. Ne pas écrire 'sto' (qui signifie 100 !)",
+      "💡 'Zoshto' contient 'zh' et 'sh' — deux sons spéciaux"
+    ],
+    "cyrillic_reference": "koj=кој, koja=која, shto=што, kade=каде, koga=кога, zoshto=зошто, kako=како, kolku=колку"
+  },
+  "exercises": [
+    {
+      "id": "ex_qw01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Choisissez le bon mot interrogatif.",
+      "question": "Comment dit-on 'où' en macédonien ?",
+      "options": ["Koga", "Kako", "Kade", "Kolku"],
+      "correct_answer": "Kade",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kade' = où. Les quatre options commencent par 'k', donc faites attention : Koga = quand, Kako = comment, Kade = où, Kolku = combien.",
+      "common_mistakes_fr": ["Confondre 'Kade' (où) et 'Koga' (quand) — les deux commencent par 'Ko'", "Mémorisez : KaDe = où (D comme Destination)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_qw01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Quelle est la traduction de 'Shto sakash' ?",
+      "question": "Shto sakash =",
+      "options": ["Quand veux-tu ?", "Que veux-tu ?", "Qui veux-tu ?", "Comment veux-tu ?"],
+      "correct_answer": "Que veux-tu ?",
+      "accept_alternatives": ["Qu'est-ce que tu veux ?"],
+      "explanation_fr": "'Shto' = quoi/que. 'Sakash' = tu veux (2e pers. sing. de 'saka'). 'Shto sakash' = Que veux-tu ?",
+      "common_mistakes_fr": ["'Shto' = que/quoi, pas 'qui' (qui = koj/koja)", "Attention : 'sto' (sans h) = cent — ajoutez le 'h' pour 'shto' (que)"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_qw01_003",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Choisissez la traduction correcte.",
+      "question": "Que signifie 'Zoshto ne si doma' ?",
+      "options": ["Où n'es-tu pas ?", "Pourquoi n'es-tu pas à la maison ?", "Quand n'es-tu pas à la maison ?", "Comment n'es-tu pas à la maison ?"],
+      "correct_answer": "Pourquoi n'es-tu pas à la maison ?",
+      "accept_alternatives": [],
+      "explanation_fr": "'Zoshto' = pourquoi, 'ne si' = n'es pas (négation de 'si'), 'doma' = à la maison. La question complète : Pourquoi n'es-tu pas à la maison ?",
+      "common_mistakes_fr": ["'Zoshto' = pourquoi (pas 'où' ni 'quand')", "La structure : mot interrogatif + négation + complément"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_qw01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Kako si?",
+      "correct_answer": "Comment vas-tu ?",
+      "accept_alternatives": ["Comment tu vas ?", "Ça va ?", "Comment es-tu ?"],
+      "explanation_fr": "'Kako si' est la façon standard de demander 'comment vas-tu' en macédonien. Littéralement : 'Comment es-tu ?'. C'est une salutation très courante.",
+      "common_mistakes_fr": ["'Kako si' se traduit souvent par 'comment vas-tu ?' même si littéralement c'est 'comment es-tu ?'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_qw01_005",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Kolku chini?",
+      "correct_answer": "Combien ça coûte ?",
+      "accept_alternatives": ["Combien coûte ça ?", "C'est combien ?", "Ça fait combien ?"],
+      "explanation_fr": "'Kolku' = combien, 'chini' = ça coûte (de 'chini', verbe coûter, 3e pers. sing.). Phrase très utile au marché ou en boutique.",
+      "common_mistakes_fr": ["'Chini' vient du verbe 'chini' (coûter) — le son 'ch' correspond à Ч", "'Kolku' = combien (quantité et prix)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_qw01_006",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Complétez avec le bon mot interrogatif.",
+      "sentence": "___ si? (Où es-tu ?)",
+      "correct_answer": "Kade",
+      "accept_alternatives": ["kade"],
+      "explanation_fr": "'Kade si' = Où es-tu ? 'Kade' = où, 'si' = tu es (verbe sum, 2e pers. sing.).",
+      "common_mistakes_fr": ["Ne pas mettre 'Koga' (quand) à la place de 'Kade' (où)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_qw01_007",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Complétez avec le mot interrogatif correct.",
+      "sentence": "___ e taa? (Qui est-elle ?)",
+      "correct_answer": "Koja",
+      "accept_alternatives": ["koja", "Koj"],
+      "explanation_fr": "'Koja e taa' = Qui est-elle ? 'Koja' est la forme féminine de 'koj' (qui). Puisque 'taa' est féminin, on utilise 'koja'.",
+      "common_mistakes_fr": ["Utiliser 'koj' (masc.) pour une femme — avec 'taa', utilisez 'koja' (fém.)", "'Koj' (masc.), 'koja' (fém.), 'koi' (pl.) — s'accorde avec le genre"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_qw01_008",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Pourquoi es-tu ici ?",
+      "correct_answer": "Zoshto si tuka",
+      "accept_alternatives": ["Zoshto si tuka?", "zoshto si tuka"],
+      "explanation_fr": "'Pourquoi' = Zoshto, 'es-tu' = si (pas d'inversion en macédonien — on garde l'ordre normal), 'ici' = tuka.",
+      "common_mistakes_fr": ["Pas d'inversion verbe-sujet en macédonien : Zoshto + si (et non 'si zoshto')", "'Zoshto' contient zh (Ж) et sh (Ш)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_qw01_009",
+      "phase": 3,
+      "type": "matching",
+      "level": 2,
+      "instruction_fr": "Associez chaque mot interrogatif à sa traduction.",
+      "pairs": [
+        { "mk": "Koga", "fr": "Quand" },
+        { "mk": "Kako", "fr": "Comment" },
+        { "mk": "Shto", "fr": "Quoi / Que" },
+        { "mk": "Zoshto", "fr": "Pourquoi" },
+        { "mk": "Kolku", "fr": "Combien" }
+      ],
+      "correct_answer": "Koga=Quand,Kako=Comment,Shto=Quoi/Que,Zoshto=Pourquoi,Kolku=Combien",
+      "accept_alternatives": [],
+      "explanation_fr": "Mémorisez les 7 mots interrogatifs : Koj (qui), Shto (quoi), Kade (où), Koga (quand), Zoshto (pourquoi), Kako (comment), Kolku (combien).",
+      "common_mistakes_fr": ["Confondre Koga (quand) et Kako (comment)", "Confondre Shto (quoi) et Kolku (combien)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_qw01_010",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 3,
+      "instruction_fr": "Expliquez la différence entre ces deux questions.",
+      "sentence_a": "Kade si?",
+      "sentence_b": "Koga si tuka?",
+      "correct_answer": "Kade si demande l'endroit où tu es (où es-tu), Koga si tuka demande le moment (quand es-tu ici)",
+      "accept_alternatives": ["kade = où, koga = quand", "lieu vs temps"],
+      "expected_keywords_fr": ["où", "quand", "lieu", "moment"],
+      "explanation_fr": "'Kade si ?' = Où es-tu ? (question sur le lieu). 'Koga si tuka ?' = Quand es-tu ici ? (question sur le moment). 'Kade' = où (lieu), 'Koga' = quand (temps).",
+      "common_mistakes_fr": ["Confondre 'kade' (où, lieu) et 'koga' (quand, temps) est une erreur fréquente"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

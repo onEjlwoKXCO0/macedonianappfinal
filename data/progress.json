@@ -1,0 +1,13 @@
+{
+  "user": {
+    "daily_goal_minutes": 15,
+    "streak_current": 0,
+    "streak_best": 0,
+    "total_lessons_completed": 0,
+    "total_exercises_done": 0,
+    "last_session_date": null
+  },
+  "topics": {},
+  "weak_items": [],
+  "session_history": []
+}

@@ -1,0 +1,170 @@
+{
+  "id": "lesson_pronouns_advanced_01",
+  "topic": "pronouns_personal",
+  "category": "grammar",
+  "title": "Pronoms — Formes accentuées et atones (clitiques)",
+  "difficulty_level": 4,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "pronoms objets directs accentués et atones, ordre des clitiques",
+  "rules": {
+    "explanation_fr": "En macédonien, les pronoms objets existent en deux formes :\n\n1. Forme ACCENTUÉE (longue) — utilisée après une préposition ou pour insister :\nmene (moi), tebe (toi), nego (lui), nea (elle), nas (nous), vas (vous), niv (eux/elles)\n\n2. Forme ATONE (courte = clitique) — placée obligatoirement avant le verbe :\nme, te, go, ja, ne, ve, gi\n\nRègle d'or : le clitique se place AVANT le verbe, jamais après.\n\nExemples :\n• Toj me vika. (Il m'appelle.) ← 'me' avant 'vika'\n• Jas go gledam. (Je le regarde.) ← 'go' avant 'gledam'\n• Ne go videv. (Je ne l'ai pas vu.) ← 'ne' + 'go' + verbe\n• Mene ne me razbira. (Il ne me comprend pas — moi.) ← forme accentuée pour emphase + clitique obligatoire",
+    "table": [
+      { "french": "me / moi", "macedonian": "me / mene", "example_mk": "Toj me vika", "example_fr": "Il m'appelle" },
+      { "french": "te / toi", "macedonian": "te / tebe", "example_mk": "Jas te gledam", "example_fr": "Je te regarde" },
+      { "french": "le / lui", "macedonian": "go / nego", "example_mk": "Jas go znam", "example_fr": "Je le connais" },
+      { "french": "la / elle", "macedonian": "ja / nea", "example_mk": "Toj ja saka", "example_fr": "Il l'aime" },
+      { "french": "nous / nous", "macedonian": "ne / nas", "example_mk": "Tie ne sakaat", "example_fr": "Ils nous aiment" },
+      { "french": "vous / vous", "macedonian": "ve / vas", "example_mk": "Jas ve razbiram", "example_fr": "Je vous comprends" },
+      { "french": "les / eux", "macedonian": "gi / niv", "example_mk": "Jas gi poznavам", "example_fr": "Je les connais" }
+    ],
+    "notes_fr": [
+      "⚠️ Le clitique est OBLIGATOIRE même quand la forme accentuée est présente : 'Mene me vika' (pas *'Mene vika')",
+      "💡 Avec la négation : ne + clitique + verbe : 'Ne go gledam' (Je ne le regarde pas)",
+      "⚠️'go' pour le masculin (le), 'ja' pour le féminin (la), 'gi' pour le pluriel (les)",
+      "💡 Ce système de 'doubling' (doublement du clitique) est unique au macédonien balkanique"
+    ],
+    "cyrillic_reference": "me=ме, te=те, go=го, ja=ја, ne=не, ve=ве, gi=ги"
+  },
+  "exercises": [
+    {
+      "id": "ex_padv_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 3,
+      "instruction_fr": "Choisissez le bon clitique pour compléter la phrase.",
+      "question": "Jas ___ gledam. (Je la regarde.)",
+      "options": ["go", "ja", "gi", "te"],
+      "correct_answer": "ja",
+      "accept_alternatives": [],
+      "explanation_fr": "'Ja' est le clitique féminin singulier (la). 'Go' = le (masc.), 'gi' = les (pl.), 'te' = te (2e pers.).",
+      "common_mistakes_fr": ["Confondre 'go' (le, masc.) et 'ja' (la, fém.)", "'Ja' en position clitique = la ; mais 'jas' (sujet) = je — attention à la confusion"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_padv_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 3,
+      "instruction_fr": "Quelle est la traduction correcte de 'Toj me vika' ?",
+      "question": "Toj me vika =",
+      "options": ["Je l'appelle", "Il m'appelle", "Il te visite", "Il nous voit"],
+      "correct_answer": "Il m'appelle",
+      "accept_alternatives": [],
+      "explanation_fr": "'Toj' = il, 'me' = me/m' (clitique 1re pers. sing.), 'vika' = appelle/crie. La phrase : Il m'appelle.",
+      "common_mistakes_fr": ["'Me' est le clitique objet de 1re personne (me, moi)", "'Vika' = appelle (aussi : crie)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_padv_003",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 4,
+      "instruction_fr": "Laquelle de ces phrases est correcte ?",
+      "question": "Comment dit-on 'Je ne le regarde pas' ?",
+      "options": ["Jas gledam ne go", "Jas go ne gledam", "Ne go gledam", "Go gledam ne"],
+      "correct_answer": "Ne go gledam",
+      "accept_alternatives": ["Jas ne go gledam"],
+      "explanation_fr": "Avec la négation : 'ne' + clitique + verbe. L'ordre est ne → go → gledam. On ne sépare jamais le 'ne' du clitique.",
+      "common_mistakes_fr": ["L'ordre est TOUJOURS : ne + clitique + verbe", "Ne jamais mettre le clitique après le verbe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_padv_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 4,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Mene ne me razбira",
+      "correct_answer": "Il ne me comprend pas, moi",
+      "accept_alternatives": ["Il ne me comprend pas", "Moi, il ne me comprend pas"],
+      "explanation_fr": "'Mene' = moi (forme accentuée, emphase), 'ne me' = ne me (négation + clitique), 'razбira' = comprend. L'accentuée 'mene' exprime l'emphase ('moi, en particulier').",
+      "common_mistakes_fr": ["Le doublement : 'mene' (emphase) + 'me' (clitique obligatoire) sont tous les deux présents", "'Razбira' vient de 'razбira' (comprendre, 3e pers. sing.)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_padv_005",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 4,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Tie gi sakaat",
+      "correct_answer": "Ils les aiment",
+      "accept_alternatives": ["Elles les aiment", "Ils les veulent"],
+      "explanation_fr": "'Tie' = ils/elles, 'gi' = les (clitique pluriel), 'sakaat' = aiment/veulent (3e pers. pl. de saka).",
+      "common_mistakes_fr": ["'Gi' = clitique pluriel (les), pas 'go' (le) ni 'ja' (la)", "'Sakaat' = 3e pers. pluriel de 'saka'"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_padv_006",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 4,
+      "instruction_fr": "Complétez avec le bon clitique.",
+      "sentence": "Jas ___ znam. (Je le connais — masc.)",
+      "correct_answer": "go",
+      "accept_alternatives": [],
+      "explanation_fr": "'Go' est le clitique masculin singulier objet direct (le). Il se place avant le verbe 'znam' (je connais).",
+      "common_mistakes_fr": ["'Go' = le (masc. sing.), 'ja' = la (fém. sing.), 'gi' = les (pluriel)"],
+      "verbs_present": ["znae"]
+    },
+    {
+      "id": "ex_padv_007",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 4,
+      "instruction_fr": "Corrigez l'erreur dans cette phrase.",
+      "sentence": "Toj saka ja.",
+      "correct_answer": "Toj ja saka",
+      "accept_alternatives": [],
+      "explanation_fr": "Le clitique 'ja' doit se placer AVANT le verbe, jamais après. La phrase correcte est 'Toj ja saka' (Il l'aime).",
+      "common_mistakes_fr": ["Règle absolue : clitique AVANT le verbe, toujours", "En français on dit 'il l'aime' — même ordre : pronom avant le verbe"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_padv_008",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 4,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Je vous comprends.",
+      "correct_answer": "Jas ve razbiram",
+      "accept_alternatives": ["Ve razbiram", "jas ve razbiram"],
+      "explanation_fr": "'Je' = Jas, 've' = vous (clitique 2e pers. pl.), 'razbiram' = je comprends. Le pronom sujet 'jas' peut être omis.",
+      "common_mistakes_fr": ["'Ve' = vous (clitique objet), pas 'vie' (pronom sujet)", "Ordre : sujet + clitique + verbe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_padv_009",
+      "phase": 3,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Mettez à la forme négative.",
+      "sentence": "Taa te gleda.",
+      "transformation_instruction_fr": "Elle ne te regarde pas.",
+      "correct_answer": "Taa ne te gleda",
+      "accept_alternatives": ["Ne te gleda"],
+      "explanation_fr": "Négation avec clitique : ne + clitique + verbe → 'ne te gleda'. L'ordre est fixe et ne change pas.",
+      "common_mistakes_fr": ["Ne pas insérer 'pas' — 'ne' seul suffit", "Ordre : ne → te → gleda (ne jamais séparer)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_padv_010",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Enchaînement de transformations.",
+      "base_sentence": "Jas gledam Marija.",
+      "steps": [
+        { "instruction_fr": "Remplacez 'Marija' par le clitique correct (elle = objet féminin)", "expected_answer": "Jas ja gledam" },
+        { "instruction_fr": "Mettez à la forme négative", "expected_answer": "Jas ne ja gledam" },
+        { "instruction_fr": "Ajoutez l'emphase 'Nea' (elle, accentuée) en début de phrase", "expected_answer": "Nea ne ja gledam" }
+      ],
+      "correct_answer": "Nea ne ja gledam",
+      "accept_alternatives": [],
+      "explanation_fr": "Étape 1 : Marija (fém.) → clitique 'ja' avant le verbe. Étape 2 : ajout de 'ne' avant le clitique. Étape 3 : forme accentuée 'nea' en début de phrase pour l'emphase (le clitique 'ja' reste obligatoire).",
+      "common_mistakes_fr": ["Le clitique est toujours obligatoire même quand la forme accentuée est présente", "L'ordre final : Nea (emphase) + ne (négation) + ja (clitique) + gledam (verbe)"],
+      "verbs_present": []
+    }
+  ]
+}

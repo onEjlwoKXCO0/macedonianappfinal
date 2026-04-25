@@ -1,0 +1,35 @@
+{
+  "infinitive": "znae",
+  "meaning_fr": "savoir / connaître",
+  "aspect": "imperfective",
+  "tables": {
+    "present": {
+      "jas": "znаm",
+      "ti": "znaesh",
+      "toj_taa": "znae",
+      "nie": "znaeme",
+      "vie": "znaete",
+      "tie": "znаat"
+    },
+    "past_imperfect": {
+      "jas": "znaev",
+      "ti": "znaese",
+      "toj_taa": "znaese",
+      "nie": "znaevme",
+      "vie": "znaevte",
+      "tie": "znаea"
+    },
+    "future": {
+      "jas": "kje znam",
+      "ti": "kje znaesh",
+      "toj_taa": "kje znae",
+      "nie": "kje znaeme",
+      "vie": "kje znaete",
+      "tie": "kje znaat"
+    }
+  },
+  "notes_fr": [
+    "💡 'Znam makedonski' = Je sais le macédonien",
+    "💡 'Ne znam' = Je ne sais pas"
+  ]
+}

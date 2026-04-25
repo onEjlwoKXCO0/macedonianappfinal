@@ -1,0 +1,170 @@
+{
+  "id": "lesson_pronouns_personal_01",
+  "topic": "pronouns_personal",
+  "category": "grammar",
+  "title": "Les pronoms personnels — Introduction",
+  "difficulty_level": 1,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "pronoms sujets de base",
+  "rules": {
+    "explanation_fr": "En macédonien, les pronoms personnels sujets sont : Jas (je), Ti (tu), Toj (il), Taa (elle), Toa (ça/il neutre), Nie (nous), Vie (vous), Tie (ils/elles).\n\nContrairement au français, le sujet peut souvent être omis car la conjugaison du verbe indique déjà la personne. On dit 'Sum tuka' (je suis ici) au lieu de 'Jas sum tuka'.\n\nAttention : 'Toa' désigne les choses neutres ou abstraites, pas les personnes.",
+    "table": [
+      { "french": "Je", "macedonian": "Jas", "example_mk": "Jas sum tuka", "example_fr": "Je suis ici" },
+      { "french": "Tu", "macedonian": "Ti", "example_mk": "Ti si doma", "example_fr": "Tu es à la maison" },
+      { "french": "Il", "macedonian": "Toj", "example_mk": "Toj e ubav", "example_fr": "Il est beau" },
+      { "french": "Elle", "macedonian": "Taa", "example_mk": "Taa e ubava", "example_fr": "Elle est belle" },
+      { "french": "Ça / Il (neutre)", "macedonian": "Toa", "example_mk": "Toa e dobro", "example_fr": "C'est bien" },
+      { "french": "Nous", "macedonian": "Nie", "example_mk": "Nie sme tuka", "example_fr": "Nous sommes ici" },
+      { "french": "Vous", "macedonian": "Vie", "example_mk": "Vie ste doma", "example_fr": "Vous êtes à la maison" },
+      { "french": "Ils / Elles", "macedonian": "Tie", "example_mk": "Tie se studenti", "example_fr": "Ils sont étudiants" }
+    ],
+    "notes_fr": [
+      "⚠️ 'Toa' ne s'utilise pas pour désigner des personnes — utilisez 'Toj' (il) ou 'Taa' (elle)",
+      "💡 Le pronom sujet est souvent omis dans la conversation courante",
+      "⚠️ 'Tie' (ils/elles) est identique au masculin et au féminin pluriel"
+    ],
+    "cyrillic_reference": "Jas=Јас, Ti=Ти, Toj=Тој, Taa=Таа, Toa=Тоа, Nie=Ние, Vie=Вие, Tie=Тие"
+  },
+  "exercises": [
+    {
+      "id": "ex_pp01_001",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Choisissez la bonne traduction du pronom.",
+      "question": "Que signifie 'Taa' ?",
+      "options": ["Il", "Elle", "Vous", "Nous"],
+      "correct_answer": "Elle",
+      "accept_alternatives": [],
+      "explanation_fr": "'Taa' est le pronom personnel féminin singulier de la 3e personne : elle. Ne pas confondre avec 'Toj' (il, masculin) ni 'Tie' (ils/elles, pluriel).",
+      "common_mistakes_fr": ["Confondre 'Taa' (elle) avec 'Toj' (il)", "Confondre 'Taa' avec 'Tie' (ils/elles, pluriel)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pp01_002",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Choisissez le bon pronom macédonien.",
+      "question": "Comment dit-on 'Nous' en macédonien ?",
+      "options": ["Vie", "Tie", "Nie", "Toa"],
+      "correct_answer": "Nie",
+      "accept_alternatives": [],
+      "explanation_fr": "'Nie' signifie 'nous'. 'Vie' signifie 'vous', 'Tie' signifie 'ils/elles', et 'Toa' signifie 'ça'.",
+      "common_mistakes_fr": ["Confondre 'Nie' (nous) avec 'Vie' (vous) — les deux finissent en -ie", "Attention à 'Tie' (ils/elles) qui ressemble phonétiquement"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pp01_003",
+      "phase": 1,
+      "type": "multiple_choice",
+      "level": 1,
+      "instruction_fr": "Quelle est la traduction correcte ?",
+      "question": "Que signifie 'Toj e ubav' ?",
+      "options": ["Elle est belle", "Il est beau", "C'est bien", "Tu es beau"],
+      "correct_answer": "Il est beau",
+      "accept_alternatives": [],
+      "explanation_fr": "'Toj' = il (masculin). 'E' = est (verbe être, 3e personne singulier). 'Ubav' est l'adjectif masculin pour 'beau'. La forme féminine 'ubava' s'utilise avec 'Taa'.",
+      "common_mistakes_fr": ["Confondre 'Toj' (il) avec 'Taa' (elle)", "Ubav (masculin) vs ubava (féminin)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pp01_004",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 1,
+      "instruction_fr": "Traduisez cette phrase en français.",
+      "sentence_mk": "Nie sme tuka",
+      "correct_answer": "Nous sommes ici",
+      "accept_alternatives": ["On est ici", "Nous sommes là"],
+      "explanation_fr": "'Nie' = nous, 'sme' = sommes (1re pers. pl. du verbe 'sum'), 'tuka' = ici.",
+      "common_mistakes_fr": ["Confondre 'sme' (sommes) avec 'se' (sont)", "Traduire 'tuka' par 'là' est acceptable en contexte"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pp01_005",
+      "phase": 1,
+      "type": "translate_to_fr",
+      "level": 1,
+      "instruction_fr": "Traduisez cette phrase en français.",
+      "sentence_mk": "Tie se studenti",
+      "correct_answer": "Ils sont étudiants",
+      "accept_alternatives": ["Elles sont étudiantes", "Ils/elles sont étudiants"],
+      "explanation_fr": "'Tie' = ils/elles (3e pers. pl.), 'se' = sont (verbe être, 3e pers. pl.), 'studenti' = étudiants. Le macédonien ne distingue pas le genre au pluriel.",
+      "common_mistakes_fr": ["'Se' ici est le verbe être (sont), pas un pronom réfléchi", "Le pluriel macédonien ne distingue pas masculin/féminin"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pp01_006",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 1,
+      "instruction_fr": "Complétez avec le bon pronom.",
+      "sentence": "___ si doma. (Tu es à la maison.)",
+      "correct_answer": "Ti",
+      "accept_alternatives": ["ti"],
+      "explanation_fr": "'Si' est la forme du verbe 'sum' (être) pour 'Ti' (tu). La phrase signifie 'Tu es à la maison.'",
+      "common_mistakes_fr": ["Mettre 'Jas' à la place de 'Ti' — mais 'si' est la forme de 'tu', pas de 'je'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pp01_007",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 1,
+      "instruction_fr": "Complétez avec le bon pronom.",
+      "sentence": "___ e dobro. (C'est bien.)",
+      "correct_answer": "Toa",
+      "accept_alternatives": ["toa"],
+      "explanation_fr": "'Toa' désigne une chose ou une situation (neutre). 'E' est la forme de 'sum' pour la 3e pers. sing. On utilise 'Toa' pour dire 'c'est...' quand on parle d'une chose abstraite.",
+      "common_mistakes_fr": ["Ne pas utiliser 'Toj' ou 'Taa' pour les choses — réservez-les aux personnes"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pp01_008",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 2,
+      "instruction_fr": "Traduisez en macédonien (utilisez le pronom sujet).",
+      "sentence_fr": "Vous êtes à la maison.",
+      "correct_answer": "Vie ste doma",
+      "accept_alternatives": ["Vie ste doma.", "vie ste doma"],
+      "explanation_fr": "'Vous' = Vie, 'êtes' = ste (2e pers. pl. du verbe sum), 'à la maison' = doma.",
+      "common_mistakes_fr": ["Confondre 'ste' (vous êtes) avec 'sme' (nous sommes)", "Écrire 'doma' comme 'dome' ou 'dom' — la forme correcte est 'doma'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pp01_009",
+      "phase": 3,
+      "type": "matching",
+      "level": 2,
+      "instruction_fr": "Associez chaque pronom macédonien à sa traduction.",
+      "pairs": [
+        { "mk": "Jas", "fr": "Je" },
+        { "mk": "Toj", "fr": "Il" },
+        { "mk": "Taa", "fr": "Elle" },
+        { "mk": "Nie", "fr": "Nous" },
+        { "mk": "Vie", "fr": "Vous" }
+      ],
+      "correct_answer": "Jas=Je,Toj=Il,Taa=Elle,Nie=Nous,Vie=Vous",
+      "accept_alternatives": [],
+      "explanation_fr": "Les pronoms sujets macédoniens : Jas (je), Ti (tu), Toj (il), Taa (elle), Toa (ça), Nie (nous), Vie (vous), Tie (ils/elles).",
+      "common_mistakes_fr": ["Confondre Nie/Vie (nous/vous)", "Confondre Toj/Taa (il/elle)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pp01_010",
+      "phase": 3,
+      "type": "sentence_builder",
+      "level": 2,
+      "instruction_fr": "Construisez la phrase 'Elle est belle' en macédonien.",
+      "scrambled_words": ["Taa", "e", "ubava", "Toj", "sum"],
+      "correct_answer": "Taa e ubava",
+      "accept_alternatives": [],
+      "explanation_fr": "'Taa' (elle) + 'e' (est, 3e pers. sing.) + 'ubava' (belle, féminin). Le mot 'Toj' (il) et 'sum' (suis) sont des intrus.",
+      "common_mistakes_fr": ["Utiliser 'ubav' au lieu de 'ubava' — les adjectifs s'accordent en genre", "Choisir 'Toj' au lieu de 'Taa' pour 'elle'"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

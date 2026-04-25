@@ -1,0 +1,35 @@
+{
+  "infinitive": "ima",
+  "meaning_fr": "avoir / il y a",
+  "aspect": "imperfective",
+  "tables": {
+    "present": {
+      "jas": "imam",
+      "ti": "imash",
+      "toj_taa": "ima",
+      "nie": "imame",
+      "vie": "imate",
+      "tie": "imaat"
+    },
+    "past_imperfect": {
+      "jas": "imav",
+      "ti": "imase",
+      "toj_taa": "imase",
+      "nie": "imavme",
+      "vie": "imavte",
+      "tie": "imaa"
+    },
+    "future": {
+      "jas": "kje imam",
+      "ti": "kje imash",
+      "toj_taa": "kje ima",
+      "nie": "kje imame",
+      "vie": "kje imate",
+      "tie": "kje imaat"
+    }
+  },
+  "notes_fr": [
+    "💡 'Ima' à la 3e pers. sg. signifie aussi 'il y a' : 'Ima chovek tuka' = Il y a un homme ici",
+    "⚠️ La négation 'nema' (il n'y a pas) est la forme négative de 'ima' impersonnel"
+  ]
+}
