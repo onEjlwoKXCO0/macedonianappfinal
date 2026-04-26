@@ -1,0 +1,154 @@
+{
+  "id": "lesson_aorist_01",
+  "topic": "past_l_forms",
+  "category": "grammar",
+  "title": "L'aoriste — Passé défini perfectif",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "formation de l'aoriste (3 groupes), usage vs passé en L, irréguliers courants",
+  "rules": {
+    "explanation_fr": "Le macédonien possède DEUX passés distincts. L'aoriste (минато определено свршено) exprime une action passée concrète et terminée que le locuteur a vécue personnellement.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nTERMINAISONS DE L'AORISTE (identiques pour tous les groupes)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Jas     |  -v     (radical + v)\n  Ti      |  -∅     (radical seul)\n  Toj/Taa |  -∅     (radical seul)\n  Nie     |  -vme\n  Vie     |  -vte\n  Tie     |  -a\n\nNotez : Ti et Toj/Taa ont la MÊME forme (zéro terminaison).\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nGROUPE A — radical en -а conservé\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nModèle : prochita (lire jusqu'au bout), sheta (se promener)\n\n  Jas     |  prochitav   |  shetav\n  Ti      |  prochita    |  sheta\n  Toj/Taa |  prochita    |  sheta\n  Nie     |  prochitavme |  shetavme\n  Vie     |  prochitavte |  shetavte\n  Tie     |  prochitaa   |  shetaa\n\n⚠️ Tie : radical + -aa (double a) — comme au présent.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nGROUPE I — radical en -и conservé\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nModèle : napravi (faire/finir), isprati (envoyer)\n\n  Jas     |  napraviv    |  isprativ\n  Ti      |  napravi     |  isprati\n  Toj/Taa |  napravi     |  isprati\n  Nie     |  napravivme  |  ispративme\n  Vie     |  napravivte  |  isprationvte\n  Tie     |  napravija   |  ispratija\n\n⚠️ Tie : radical + -ija (j inséré entre -i et -a selon les règles orthographiques).\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nGROUPE E — changement de voyelle : -е → -а\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nModèle : kazhe (dire), pochne (commencer)\n\n  Jas     |  kazhav      |  pochnav\n  Ti      |  kazha       |  pochna\n  Toj/Taa |  kazha       |  pochna\n  Nie     |  kazhavme    |  pochnavme\n  Vie     |  kazhavte    |  pochnavte\n  Tie     |  kazhaa      |  pochnaa\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSOUS-GROUPE E-O — verbes à alternance E/O (très fréquents !)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nVerbes : dojde (venir), donese (apporter), otide (partir), najde (trouver), dade (donner)\n\n  DOJDE       |  DONESE      |  OTIDE\n  dojdov      |  donesov     |  otidov\n  dojde       |  donese      |  otide\n  dojde       |  donese      |  otide\n  dojdovme    |  donesovme   |  otidovme\n  dojdovte    |  donesovte   |  otidovte\n  dojdoa      |  donesoa     |  otidoa\n\n⚠️ Ti/Toj formes = présent ! Distinguez par contexte : 'Toj dojde.' = Il est venu / 'Toj ke dojde.' = Il viendra.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nIRRÉGULIERS INDISPENSABLES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Infinitif  |  Jas       |  Toj      |  Tie\n  dade       |  dadov     |  dade     |  dadoa\n  izede      |  izEdov    |  izede    |  izEdoa\n  vide       |  vidov     |  vide     |  vidoa\n  rece       |  rekov     |  reche    |  rekoa\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAORISTE vs PASSÉ EN L — DIFFÉRENCE FONDAMENTALE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAORISTE = action passée que J'AI VÉCUE PERSONNELLEMENT :\n  Otidov vo Ohrid vchera. = Je suis allé à Ohrid hier. (j'y étais)\n\nPASSÉ EN L = action rapportée ou dont je ne suis pas témoin :\n  Otishol vo Ohrid. = Il paraît qu'il est allé à Ohrid. (on me l'a dit)\n\nLe passé en L est aussi le PASSÉ STANDARD dans la conversation courante.\nL'aoriste est plus littéraire mais très utilisé à l'oral également.",
+    "table": [
+      { "french": "je suis allé/e (aor.)", "macedonian": "otidov", "example_mk": "Vchera otidov vo kino", "example_fr": "Hier je suis allé au cinéma" },
+      { "french": "tu es allé/e (aor.)", "macedonian": "otide", "example_mk": "Kade otide?", "example_fr": "Où es-tu allé ?" },
+      { "french": "il/elle est allé/e (aor.)", "macedonian": "otide", "example_mk": "Toj otide doma", "example_fr": "Il est rentré chez lui" },
+      { "french": "nous sommes allés (aor.)", "macedonian": "otidovme", "example_mk": "Otidovme vo Ohrid", "example_fr": "Nous sommes allés à Ohrid" },
+      { "french": "j'ai fait (aor. gr. I)", "macedonian": "napraviv", "example_mk": "Napraviv vecherа", "example_fr": "J'ai préparé le dîner" },
+      { "french": "j'ai dit (aor. E-O)", "macedonian": "kazhav", "example_mk": "Mu kazhav vistina", "example_fr": "Je lui ai dit la vérité" },
+      { "french": "il est venu (aor. E-O)", "macedonian": "dojde", "example_mk": "Toj dojde navreme", "example_fr": "Il est venu à l'heure" },
+      { "french": "ils ont donné (aor. E-O)", "macedonian": "dadoa", "example_mk": "Tie dadoa pari", "example_fr": "Ils ont donné de l'argent" }
+    ],
+    "notes_fr": [
+      "⚠️ L'aoriste se forme presque UNIQUEMENT à partir de verbes PERFECTIFS",
+      "⚠️ Ti et Toj/Taa ont la même forme (zéro terminaison) — seul le contexte distingue",
+      "💡 Verbes E-O (dojde, otide, donese, dade, vide) : pattern -ov/-e/-e/-ovme/-ovte/-oa",
+      "⚠️ Tie groupe I : napravija (-ija, pas -ia) — j inséré selon l'orthographe macédonienne",
+      "💡 Aoriste = action passée personnelle et concrète. Passé en L = rapporté ou distancé",
+      "⚠️ 'Toj dojde' = Il est venu (aoriste) vs 'Toj ke dojde' = Il viendra (futur) — même forme, contexte différent"
+    ],
+    "cyrillic_reference": "aoriste=аорист, минато определено свршено, dojde=дојде, otide=отиде"
+  },
+  "exercises": [
+    {
+      "id": "ex_aor01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Choisissez la bonne forme de l'aoriste.",
+      "question": "J'ai lu le journal. = Jas ___ vesnikot.",
+      "options": ["chitav", "prochitav", "chitaam", "prochitam"],
+      "correct_answer": "prochitav",
+      "accept_alternatives": [],
+      "explanation_fr": "Aoriste 1re sg. du groupe A perfectif : prochita (base) + v = prochitav. Chitav serait l'imparfait de chita (imperfectif).",
+      "common_mistakes_fr": ["Aoriste = verbe perfectif (prochita = lire jusqu'au bout)", "Imparfait chitav = j'étais en train de lire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quelle est la forme aoriste correcte de 'napravi' à la 3e pers. pl. ?",
+      "question": "Ils ont fait = Tie ___",
+      "options": ["napravija", "napravaa", "napravile", "napravivte"],
+      "correct_answer": "napravija",
+      "accept_alternatives": [],
+      "explanation_fr": "Groupe I, 3e pl. aoriste : napravi + ja = napravija. Le j est inséré entre i et a.",
+      "common_mistakes_fr": ["Groupe I 3e pl. : -ija (pas -aa qui est le groupe A)", "Le j s'insère obligatoirement entre i et a en macédonien"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_003", "phase": 1, "type": "multiple_choice", "level": 4,
+      "instruction_fr": "Conjuguez 'kazhe' à l'aoriste, groupe E.",
+      "question": "Elle a dit = Taa ___",
+      "options": ["kazhe", "kazha", "kazhav", "kazhela"],
+      "correct_answer": "kazha",
+      "accept_alternatives": [],
+      "explanation_fr": "Groupe E aoriste : le -e change en -a pour toutes les formes sauf Jas (kazhav). Taa = forme zéro = kazha.",
+      "common_mistakes_fr": ["Groupe E : -е → -а à l'aoriste. Kazhe (présent) vs kazha (aoriste 3e sg)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Vchera otidovme vo restoran i jadovme pizza",
+      "correct_answer": "Hier nous sommes allés au restaurant et nous avons mangé une pizza",
+      "accept_alternatives": ["Hier on est allé au restaurant et on a mangé une pizza"],
+      "explanation_fr": "Otidovme = nous sommes allés (aoriste E-O, 1re pl.). Jadovme = nous avons mangé (aoriste E, 1re pl.). Vchera = hier.",
+      "common_mistakes_fr": ["Otidovme = aoriste du verbe otide (aller une fois)"],
+      "verbs_present": ["jade"]
+    },
+    {
+      "id": "ex_aor01_005", "phase": 1, "type": "translate_to_fr", "level": 4,
+      "instruction_fr": "Traduisez cette séquence d'actions passées.",
+      "sentence_mk": "Toj dojde, jade, i si otide",
+      "correct_answer": "Il est venu, a mangé, et est reparti",
+      "accept_alternatives": ["Il vint, mangea, et repartit"],
+      "explanation_fr": "Séquence d'aoristes : dojde (vint, E-O), jade (mangea, E), otide (repartit, E-O). Chaque action est complète et séquentielle.",
+      "common_mistakes_fr": ["L'aoriste exprime parfaitement les séquences d'événements passés", "Si = réfléchi possessif ici — 'si otide' = est reparti (chez lui)"],
+      "verbs_present": ["jade"]
+    },
+    {
+      "id": "ex_aor01_006", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Mettez le verbe à l'aoriste.",
+      "sentence": "Bilјana mu ___ vistina na Marko. (Biljana dit la vérité à Marko.)",
+      "correct_answer": "kazha",
+      "accept_alternatives": [],
+      "explanation_fr": "Aoriste de 'kazhe' (dire), 3e sg. groupe E : e → a → kazha. Mu = clitique datif (à Marko).",
+      "common_mistakes_fr": ["Kazhe (présent/futur) vs kazha (aoriste 3e sg)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_007", "phase": 2, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez la forme verbale.",
+      "sentence": "Toj dojde vchera na mojata zabava.",
+      "correct_answer": "Toj dojde vchera na mojata zabava",
+      "accept_alternatives": [],
+      "explanation_fr": "La phrase est CORRECTE ! 'Dojde' est à la fois la forme présent ET l'aoriste 3e sg du groupe E-O. Avec 'vchera' (hier), c'est clairement l'aoriste.",
+      "common_mistakes_fr": ["Pour le groupe E-O : Ti/Toj ont la même forme au présent et à l'aoriste", "Le contexte temporel (vchera, denot, etc.) indique le temps"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_008", "phase": 2, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez à l'aoriste.",
+      "sentence_fr": "Nous avons envoyé la lettre et ils ont répondu.",
+      "correct_answer": "Go ispративme pismoto i tie odgovorija",
+      "accept_alternatives": ["Ispративme go pismoto i tie odgovorija"],
+      "explanation_fr": "Ispративме = nous avons envoyé (aoriste gr. I, 1re pl. isprati+vme). Odgovorija = ils ont répondu (aoriste gr. I, 3e pl. odgovori+ja).",
+      "common_mistakes_fr": ["1re pl. : -vme. 3e pl. groupe I : -ija"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_009", "phase": 3, "type": "multiple_choice", "level": 4,
+      "instruction_fr": "Quel passé exprime une action RAPPORTÉE (non-témoin) ?",
+      "question": "On m'a dit qu'il est allé à Ohrid. Laquelle est correcte ?",
+      "options": ["Toj otide vo Ohrid.", "Toj otishol vo Ohrid.", "Toj ke otide vo Ohrid.", "Toj otidov vo Ohrid."],
+      "correct_answer": "Toj otishol vo Ohrid.",
+      "accept_alternatives": [],
+      "explanation_fr": "Otishol = passé en L (masculin), qui exprime une action rapportée ou dont le locuteur n'est pas témoin. Otide = aoriste, action personnellement vécue.",
+      "common_mistakes_fr": ["Aoriste = j'y étais, je l'ai vu. Passé en L = on me l'a dit, ou c'est une information générale"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_010", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Conjuguez à toutes les personnes.",
+      "sentence": "dojde (venir, E-O) — donnez l'aoriste complet",
+      "transformation_instruction_fr": "Jas, Ti, Toj, Nie, Vie, Tie — donnez la forme de la 1re sg.",
+      "correct_answer": "dojdov",
+      "accept_alternatives": [],
+      "explanation_fr": "Aoriste complet de dojde (E-O) : dojdov / dojde / dojde / dojdovme / dojdovte / dojdoa. Pattern E-O : -ov/-e/-e/-ovme/-ovte/-oa.",
+      "common_mistakes_fr": ["Pattern E-O mémo : -ov/-e/-e/-ovme/-ovte/-oa", "Dojdoa (3e pl.) sans -j contrairement au groupe I (napravija)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aor01_011", "phase": 3, "type": "transformation_chain", "level": 5,
+      "instruction_fr": "Transformations sur le même verbe.",
+      "base_sentence": "Toj napravi vecherа. (Il prépare le dîner — présent)",
+      "steps": [
+        { "instruction_fr": "Aoriste — Il a préparé le dîner.", "expected_answer": "Toj napravi vecherа" },
+        { "instruction_fr": "Futur — Il préparera le dîner.", "expected_answer": "Toj ke napravi vecherа" },
+        { "instruction_fr": "Passé en L — On dit qu'il a préparé le dîner.", "expected_answer": "Toj napravil vecherа" }
+      ],
+      "correct_answer": "Toj napravil vecherа",
+      "accept_alternatives": [],
+      "explanation_fr": "Napravi : présent (napravi) = aoriste 3e sg (napravi) = même forme ! Futur : ke napravi. Passé en L : napravil (l-form masculin).",
+      "common_mistakes_fr": ["Pour les verbes perfectifs du groupe I, présent/aoriste 3e sg. sont identiques", "Seul le contexte (ke, passé ou présent) distingue le temps"],
+      "verbs_present": []
+    }
+  ]
+}

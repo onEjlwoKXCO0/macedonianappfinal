@@ -1,0 +1,143 @@
+{
+  "id": "lesson_modal_da_01",
+  "topic": "subordinate_clauses",
+  "category": "grammar",
+  "title": "Les constructions avec да — verbes modaux",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "moze da, treba da, mora da, saka da, pochnuva da — infinitif macédonien avec да",
+  "rules": {
+    "explanation_fr": "Le macédonien n'a PAS d'infinitif. Pour exprimer 'pouvoir faire', 'vouloir faire', 'devoir faire', on utilise la construction :\n\n  verbe modal + да + verbe conjugué au présent\n\nC'est l'équivalent macédonien de l'infinitif français.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nTABLEAU DES MODAUX PRINCIPAUX\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Modal         | Sens                | Exemple\n  mozhe da      | pouvoir (capacité)  | Mozhe da chitam (je peux lire)\n  moze li da    | pouvoir (permission)| Moze li da vlezam? (puis-je entrer?)\n  treba da      | devoir (nécessité)  | Treba da odam (je dois aller)\n  mora da       | devoir (obligation) | Mora da rabotam (je dois travailler)\n  saka da       | vouloir             | Saka da jade (il veut manger)\n  pochnuva da   | commencer à         | Pochnuva da zboruva (il commence à parler)\n  prestanuva da | arrêter de          | Prestanuva da pije (il arrête de boire)\n  bide da       | être en train de    | construction subordonnée\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCONJUGAISON DU MODAL — le modal se conjugue, да reste invariable\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nMozhe (pouvoir) — groupe A, irrégulier :\n  mozham, mozhesh, mozhe, mozheme, mozhete, mozhaat\n\nExemple complet avec mozhe :\n  Jas mozham da odam.    (Je peux aller.)\n  Ti mozhesh da ostanesh. (Tu peux rester.)\n  Toj mozhe da dojde.   (Il peut venir.)\n  Nie mozheme da mu pomogneme. (Nous pouvons l'aider.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nPOSITION DES CLITIQUES avec да\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nLe clitique se place avant le verbe dans la subordonnée да :\n  Saka da go vidi. (Il veut le voir.)\n  Treba da mu kazham. (Je dois lui dire.)\n  Mozhesh li da mi go dadesh? (Peux-tu me le donner?)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nNÉGATION — ne + modal OU nema + да\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Ne mozham da odam. (Je ne peux pas y aller.)\n  Nema da odam. (Je n'irai pas — futur négatif avec da.)\n  Ne treba da kazhuvash. (Tu ne devrais pas dire.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nMOZHE LI + да — DEMANDE DE PERMISSION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFormule très utile pour demander poliment :\n  Moze li da platam so kartica? (Est-ce que je peux payer par carte?)\n  Moze li da vlezam? (Puis-je entrer?)\n  Moze li da te prashаm neshto? (Puis-je te poser une question?)\n\nAvec un sujet spécifié :\n  Mozhe li Marko da dojde? (Marko peut-il venir?)",
+    "table": [
+      { "french": "je peux (aller)", "macedonian": "mozham (da odam)", "example_mk": "Ne mozham da dojdam denes", "example_fr": "Je ne peux pas venir aujourd'hui" },
+      { "french": "tu peux", "macedonian": "mozhesh (da)", "example_mk": "Mozhesh da ostanesh", "example_fr": "Tu peux rester" },
+      { "french": "il/elle peut", "macedonian": "mozhe (da)", "example_mk": "Toj mozhe da ti pomogne", "example_fr": "Il peut t'aider" },
+      { "french": "je dois (nécessité)", "macedonian": "treba da", "example_mk": "Treba da odam na rabota", "example_fr": "Je dois aller au travail" },
+      { "french": "je dois (obligation)", "macedonian": "mora da", "example_mk": "Mora da se ucham", "example_fr": "Je dois étudier (obligation)" },
+      { "french": "il/elle veut", "macedonian": "saka da", "example_mk": "Saka da jаde pica", "example_fr": "Il/Elle veut manger une pizza" },
+      { "french": "puis-je ? (permission)", "macedonian": "Moze li da...?", "example_mk": "Moze li da platam so kartica?", "example_fr": "Puis-je payer par carte ?" },
+      { "french": "commencer à", "macedonian": "pochnuva da", "example_mk": "Pochna da zboruva makedonski", "example_fr": "Il a commencé à parler macédonien" }
+    ],
+    "notes_fr": [
+      "⚠️ PAS D'INFINITIF en macédonien — toujours verbe modal + да + verbe conjugué",
+      "💡 Le verbe après да se conjugue normalement (même personne que le sujet principal)",
+      "⚠️ Treba da (nécessité légère) vs mora da (obligation plus forte) — nuance importante",
+      "💡 Moze li da = demande de permission polie — formule très utilisée au quotidien",
+      "⚠️ Position des clitiques : toujours avant le verbe dans la subordonnée да (pas avant le modal)",
+      "💡 'Saka da dojde' (veut venir) — même sujet. 'Saka Marko da dojde' (veut que Marko vienne) — sujets différents"
+    ],
+    "cyrillic_reference": "mozhe=може, treba=треба, mora=мора, da=да, moze li=може ли"
+  },
+  "exercises": [
+    {
+      "id": "ex_mod01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Complétez avec la construction correcte.",
+      "question": "Je dois aller au travail = Jas ___ na rabota.",
+      "options": ["moze da odam", "treba da odam", "saka da odam", "treba odam"],
+      "correct_answer": "treba da odam",
+      "accept_alternatives": ["mora da odam"],
+      "explanation_fr": "Treba da = je dois (nécessité). La structure obligatoire : modal + да + verbe. Sans да c'est incorrect.",
+      "common_mistakes_fr": ["Jamais de modal sans да en macédonien — toujours modal + да + verbe"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_mod01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle phrase demande poliment la permission ?",
+      "question": "Puis-je entrer ? =",
+      "options": ["Moze da vlezam", "Moze li da vlezam?", "Treba da vlezam?", "Mozham da vlezam?"],
+      "correct_answer": "Moze li da vlezam?",
+      "accept_alternatives": [],
+      "explanation_fr": "Moze li da + verbe = demande de permission. Le 'li' est la particule interrogative. Sans 'li' c'est une affirmation.",
+      "common_mistakes_fr": ["Moze li = est-il possible / puis-je — invariable (pas conjugué)", "'Moze li da vlezam' = puis-je entrer (demande polie)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mod01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Ne mozham da go najdam mojot kljuch",
+      "correct_answer": "Je ne trouve pas ma clé / Je n'arrive pas à trouver ma clé",
+      "accept_alternatives": ["Je ne peux pas trouver ma clé"],
+      "explanation_fr": "Ne mozham da = je ne peux pas. Go najdam = le trouver (go = clitique). Mojot kljuch = ma clé (masc. défini).",
+      "common_mistakes_fr": ["Ne mozham da + verbe = je n'arrive pas à / je ne peux pas"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mod01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Taa saka da mu kazhe neshto vazhen",
+      "correct_answer": "Elle veut lui dire quelque chose d'important",
+      "accept_alternatives": [],
+      "explanation_fr": "Taa saka da = elle veut. Mu kazhe = lui dire (mu = clitique datif, lui). Neshto vazhno = quelque chose d'important.",
+      "common_mistakes_fr": ["Position du clitique : DANS la subordonnée da, avant le verbe (mu kazhe, pas kazhe mu)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mod01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Complétez la construction.",
+      "sentence": "Toj ne ___ da zboruva pred mnogu lugje. (Il ne peut pas parler devant beaucoup de gens.)",
+      "correct_answer": "mozhe",
+      "accept_alternatives": ["mozhe"],
+      "explanation_fr": "Ne mozhe da = il ne peut pas (3e sg. de mozhe). Lugje = gens.",
+      "common_mistakes_fr": ["Mozhe (3e sg.) — la conjugaison du modal suit le sujet (toj → mozhe)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mod01_006", "phase": 2, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez l'erreur.",
+      "sentence": "Jas saka da odam vo kino.",
+      "correct_answer": "Jas sakam da odam vo kino",
+      "accept_alternatives": ["Sakam da odam vo kino"],
+      "explanation_fr": "Le modal doit se conjuguer avec le sujet : Jas → sakam (1re sg.), pas saka (3e sg.). Tous les modaux se conjuguent.",
+      "common_mistakes_fr": ["Le modal SE CONJUGUE avec le sujet — saka = il/elle veut, sakam = je veux"],
+      "verbs_present": ["saka", "odi"]
+    },
+    {
+      "id": "ex_mod01_007", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Tu dois apprendre le macédonien chaque jour.",
+      "correct_answer": "Treba da ucish makedonski sekoj den",
+      "accept_alternatives": ["Mora da ucish makedonski sekoj den"],
+      "explanation_fr": "Treba da ucish = tu dois apprendre (treba invariable + da + ucish conjugué 2e sg.). Sekoj den = chaque jour.",
+      "common_mistakes_fr": ["Treba est souvent invariable dans cette construction (ou conjugué comme normal)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mod01_008", "phase": 3, "type": "matching", "level": 3,
+      "instruction_fr": "Associez chaque modal à son sens.",
+      "pairs": [
+        { "mk": "mozhe da", "fr": "pouvoir (capacité)" },
+        { "mk": "treba da", "fr": "devoir (nécessité)" },
+        { "mk": "mora da", "fr": "devoir (obligation forte)" },
+        { "mk": "saka da", "fr": "vouloir" },
+        { "mk": "pochnuva da", "fr": "commencer à" }
+      ],
+      "correct_answer": "mozhe da=pouvoir,treba da=devoir nécessité,mora da=devoir obligation,saka da=vouloir,pochnuva da=commencer à",
+      "accept_alternatives": [],
+      "explanation_fr": "Hiérarchie d'obligation : mozhe (peut) < saka (veut) < treba (doit légèrement) < mora (doit absolument).",
+      "common_mistakes_fr": ["Treba (léger) vs mora (fort) — comme 'il faut' vs 'il est obligatoire'"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mod01_009", "phase": 3, "type": "transformation", "level": 3,
+      "instruction_fr": "Transformez en demande de permission polie.",
+      "sentence": "Jas odam na banya.",
+      "transformation_instruction_fr": "Demandez poliment si vous pouvez aller aux toilettes.",
+      "correct_answer": "Moze li da odam na banya?",
+      "accept_alternatives": [],
+      "explanation_fr": "Demande de permission : Moze li da + verbe. La formule est invariable.",
+      "common_mistakes_fr": ["Moze li est invariable — pas mozhe li, pas mozhat li"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_mod01_010", "phase": 3, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez cette phrase complexe.",
+      "sentence_fr": "Je voudrais lui montrer quelque chose, mais je ne peux pas le trouver.",
+      "correct_answer": "Sakam da mu pokazham neshto, no ne mozham da go najdam",
+      "accept_alternatives": ["Sakam da mu pokazham neshto, ama ne mozham da go najdam"],
+      "explanation_fr": "Sakam da mu pokazham (je veux lui montrer — mu clitique datif). No/ama = mais. Ne mozham da go najdam (je ne peux pas le trouver — go clitique accusatif).",
+      "common_mistakes_fr": ["Deux constructions da dans la même phrase — chaque verbe a son propre da"],
+      "verbs_present": ["saka"]
+    }
+  ]
+}
