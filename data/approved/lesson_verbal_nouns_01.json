@@ -1,0 +1,142 @@
+{
+  "id": "lesson_verbal_nouns_01",
+  "topic": "regular_verbs_present",
+  "category": "grammar",
+  "title": "Les noms verbaux — Глаголски именки (-nje/-enje)",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "formation des noms verbaux, usage, différences avec l'infinitif français",
+  "rules": {
+    "explanation_fr": "Les noms verbaux (глаголски именки) correspondent à l'infinitif substantivé français (la lecture, l'écriture, le chant). Ils sont très fréquents en macédonien standard.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFORMATION — 3 étapes\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. Prenez la L-forme plurielle du verbe (forme en -le)\n2. Supprimez le -le final\n3. Ajoutez -nje ou -enje\n\n  chita → chitale → chita-NJE  (la lecture)\n  peva  → pevale  → peva-NJE   (le chant)\n  raboti → rabotele → rabote-NJE (le travail)\n  jade  → jadale → jadE-NJE   (l'action de manger)\n  zboruva → zboruvale → zboruva-NJE (le fait de parler)\n  uchi → uchele → uche-NJE    (l'apprentissage)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nPROPRIÉTÉS GRAMMATICALES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n• Genre : NEUTRE (toujours)\n• Article défini : -to → chitanjeto (la lecture [définie])\n• Pluriel rare : zanimanja (passe-temps/activités)\n• Invariable en dehors de l'article\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nUSAGES COURANTS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. SUJET de la phrase :\n   Chitanjeto e vazno. (La lecture est importante.)\n   Ucheњeto odnesuva vreme. (L'apprentissage prend du temps.)\n\n2. COMPLÉMENT d'objet :\n   Sakam chitanje. (J'aime lire / J'aime la lecture.)\n   Pochnaa pevanje. (Ils ont commencé à chanter.)\n\n3. Après PRÉPOSITIONS :\n   Za jadenje ke trebaat 30 minuti. (Il faudra 30 minutes pour manger.)\n   Pred zaspivanje, chita. (Avant de dormir, il lit.)\n   Bez znachenje e. (C'est sans importance.)\n\n4. COMPLÉMENT nominal :\n   Klub za zboruvanje makedonski. (Club de parole macédonienne.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nNOMS VERBAUX COURANTS À MÉMORISER\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Verbe        | Nom verbal      | Traduction\n  chita        | chitanje        | la lecture\n  peva         | pevanje         | le chant\n  raboti       | rabotenje       | le travail\n  jade         | jadenje         | l'alimentation, manger\n  pie          | pieenje         | boire\n  zboruva      | zboruvanje      | la parole, parler\n  uchi         | uchenje         | l'apprentissage\n  slüsha       | slushuanje      | l'écoute\n  gleda        | gledanje        | le regard, regarder\n  pishüva      | pishuanje       | l'écriture\n  spie         | spienje         | le sommeil, dormir\n  zhivee       | zhiveenje       | le fait de vivre\n  zanaet       | zanimanje       | occupation, passe-temps (pl: zanimanja)",
+    "table": [
+      { "french": "la lecture", "macedonian": "chitanje", "example_mk": "Chitanjeto e ubavo hobi", "example_fr": "La lecture est un beau passe-temps" },
+      { "french": "le chant", "macedonian": "pevanje", "example_mk": "Sakam pevanje", "example_fr": "J'aime le chant / chanter" },
+      { "french": "le travail (action)", "macedonian": "rabotenje", "example_mk": "Rabotenjeto e zamorno", "example_fr": "Le travail est épuisant" },
+      { "french": "apprendre / apprentissage", "macedonian": "uchenje", "example_mk": "Uchenjeto na jazici e interesno", "example_fr": "L'apprentissage des langues est intéressant" },
+      { "french": "parler / la parole", "macedonian": "zboruvanje", "example_mk": "Pred zboruvanje, mishli", "example_fr": "Avant de parler, réfléchis" },
+      { "french": "manger / l'alimentation", "macedonian": "jadenje", "example_mk": "Za jadenje nema vreme", "example_fr": "Il n'y a pas le temps pour manger" },
+      { "french": "regarder", "macedonian": "gledanje", "example_mk": "Gledanjeto televizija e relaksirashko", "example_fr": "Regarder la télé est relaxant" },
+      { "french": "passe-temps (pl.)", "macedonian": "zanimanja", "example_mk": "Koi se tvoite zanimanja?", "example_fr": "Quels sont tes passe-temps ?" }
+    ],
+    "notes_fr": [
+      "💡 Le nom verbal est toujours NEUTRE — article -to : chitanjeto (la lecture)",
+      "⚠️ Après prépositions : za (pour), pred (avant de), bez (sans), so (en) + nom verbal",
+      "💡 'Sakam chitanje' = j'aime lire. 'Sakam da chitam' = je veux lire (maintenant/futur)",
+      "⚠️ Le pluriel est rare sauf : zanimanja (passe-temps), znachenja (significations), shchenja (désirs)",
+      "💡 Très utilisé dans le registre formel/écrit — indispensable pour C1"
+    ],
+    "cyrillic_reference": "читање, пеење, работење, зборување, учење"
+  },
+  "exercises": [
+    {
+      "id": "ex_vn01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quel est le nom verbal de 'peva' (chanter) ?",
+      "question": "chanter (nom verbal) =",
+      "options": ["pevanje", "peval", "pevanje to", "pevachka"],
+      "correct_answer": "pevanje",
+      "accept_alternatives": [],
+      "explanation_fr": "Peva → pevale → peva-nje = pevanje. Neutre, article -to → pevanjeto.",
+      "common_mistakes_fr": ["Nom verbal = neutre, toujours en -nje/-enje"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_vn01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Formez le nom verbal de 'raboti' (travailler).",
+      "question": "le travail / travailler (nom verbal) =",
+      "options": ["rabotal", "rabotnje", "rabotenje", "rabotica"],
+      "correct_answer": "rabotenje",
+      "accept_alternatives": [],
+      "explanation_fr": "Raboti → rabotele → rabote-nje → rabotenje. Le -le devient -nje (ou -enje pour les verbes I).",
+      "common_mistakes_fr": ["Groupe I : -ele → -enje (rabotenje, nosenje, pravenje)"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_vn01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Chitanjeto na knigi e vazhno za uchenjeto na jazikot",
+      "correct_answer": "La lecture de livres est importante pour l'apprentissage de la langue",
+      "accept_alternatives": ["Lire des livres est important pour apprendre la langue"],
+      "explanation_fr": "Chitanjeto = la lecture (nom verbal défini). Uchenjeto = l'apprentissage (nom verbal défini). Jazikot = la langue (défini).",
+      "common_mistakes_fr": ["Noms verbaux définis avec -to : chitanjeto, uchenjeto"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_vn01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Koi se tvoite zanimanja?",
+      "correct_answer": "Quels sont tes passe-temps ?",
+      "accept_alternatives": ["Quelles sont tes activités ?"],
+      "explanation_fr": "Zanimanja = pluriel de zanimanje (occupation/passe-temps). Tvoi = tes. Koi = quels.",
+      "common_mistakes_fr": ["Zanimanja (pluriel) est le seul pluriel courant des noms verbaux"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_vn01_005", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Formez le nom verbal correct.",
+      "sentence": "___ na makedonski e lesno? (Parler macédonien est-il facile ?)",
+      "correct_answer": "Zboruvanjeto",
+      "accept_alternatives": ["zboruvanjeto"],
+      "explanation_fr": "Zboruva → zboruvale → zboruva-nje → zboruvanje. Défini : zboruvanjeto (sujet de la phrase).",
+      "common_mistakes_fr": ["Nom verbal sujet → forme définie en -to"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_vn01_006", "phase": 2, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Utilisez le nom verbal.",
+      "sentence_fr": "Il n'y a pas le temps pour dormir.",
+      "correct_answer": "Nema vreme za spienje",
+      "accept_alternatives": ["Nema vreme za zaspivanje"],
+      "explanation_fr": "Za spienje = pour dormir (préposition za + nom verbal). Spi → spiele → spie-nje → spienje.",
+      "common_mistakes_fr": ["Za + nom verbal = pour + infinitif"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_vn01_007", "phase": 2, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez l'usage.",
+      "sentence": "Pred da jade, se mie rakite.",
+      "correct_answer": "Pred jadenje, si gi mie racete",
+      "accept_alternatives": ["Pred da jade, si gi mie racete"],
+      "explanation_fr": "Les deux constructions sont acceptables : pred da jade (avant de manger, subordonnée) OU pred jadenje (avant le manger, nom verbal). La deuxième est plus formelle. La phrase originale n'est pas incorrecte mais le clitique réfléchi 'si' et le clitique 'gi' manquent.",
+      "common_mistakes_fr": ["Si gi mie racete = il se lave les mains (si = réfléchi possessif, gi = les [mains])"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_vn01_008", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Transformez en utilisant un nom verbal.",
+      "sentence": "Sakam da zboruvam makedonski.",
+      "transformation_instruction_fr": "Exprimez la même idée avec un nom verbal.",
+      "correct_answer": "Sakam zboruvanje na makedonski",
+      "accept_alternatives": ["Mi se saka zboruvanje makedonski"],
+      "explanation_fr": "Da zboruvam (subordonnée da) → zboruvanje (nom verbal). Les deux sont correctes mais le nom verbal est plus nominal et formel.",
+      "common_mistakes_fr": ["Sakam + nom verbal = j'aime/je veux (habitude). Sakam + da = je veux (action ponctuelle)"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_vn01_009", "phase": 3, "type": "matching", "level": 4,
+      "instruction_fr": "Associez chaque verbe à son nom verbal.",
+      "pairs": [
+        { "mk": "chita (lire)", "fr": "chitanje" },
+        { "mk": "gleda (regarder)", "fr": "gledanje" },
+        { "mk": "pishüva (écrire)", "fr": "pishuanje" },
+        { "mk": "slüsha (écouter)", "fr": "slushanje" },
+        { "mk": "uchi (apprendre)", "fr": "uchenje" }
+      ],
+      "correct_answer": "chita=chitanje,gleda=gledanje,piShuva=pishuanje,slUsha=slushanje,uchi=uchenje",
+      "accept_alternatives": [],
+      "explanation_fr": "Formation des noms verbaux : groupe A → -nje, groupe I → -enje.",
+      "common_mistakes_fr": ["Groupe A : -nje (chitanje, gledanje). Groupe I : -enje (uchenje, rabotenje)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_vn01_010", "phase": 3, "type": "translate_to_mk", "level": 5,
+      "instruction_fr": "Traduisez en utilisant des noms verbaux.",
+      "sentence_fr": "Apprendre une langue étrangère demande du travail, mais la récompense est la communication avec des étrangers.",
+      "correct_answer": "Uchenjeto na stranski jazik odnesuva rabota, no nagradата e zboruvanje so stranci",
+      "accept_alternatives": ["Uchenjeto stranski jazik bara rabotenje, no nagradato e komunikacija so stranci"],
+      "explanation_fr": "Uchenjeto (sujet, défini), na stranski jazik (de langue étrangère), rabota (travail), zboruvanje (parler, nom verbal).",
+      "common_mistakes_fr": ["Mélange possible : certains préféreront le verbe 'da uchish' — les deux sont correctes"],
+      "verbs_present": []
+    }
+  ]
+}

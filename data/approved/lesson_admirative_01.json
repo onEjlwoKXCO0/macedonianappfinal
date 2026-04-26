@@ -1,0 +1,86 @@
+{
+  "id": "lesson_admirative_01",
+  "topic": "subordinate_clauses",
+  "category": "grammar",
+  "title": "L'admiratif — discours rapporté et étonnement",
+  "difficulty_level": 5,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "ke + L-forme (admiratif), discours rapporté, distanciation, surprise",
+  "rules": {
+    "explanation_fr": "L'admiratif (изјавен начин / препераскажувачки начин) est une forme unique au macédonien et aux langues balkaniques. Il exprime :\n1. Une information rapportée (qu'on n'a pas vérifiée personnellement)\n2. La surprise ou l'incrédulité du locuteur\n3. Un constat dont le locuteur prend ses distances\n\nC'est la différence entre :\n  Toj e bogat. (Il est riche — je le sais directement.)\n  Toj ke bil bogat. (Il serait riche / Il paraît qu'il est riche — on me l'a dit.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFORMATION — ke + L-forme\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAdmiratif présent/passé : ke + L-forme (accord genre/nombre)\n\n  Toj ke bil doma.        (Il serait/paraît être à la maison.)\n  Taa ke bila vo Pariz.   (Elle serait/paraît être allée à Paris.)\n  Nie ke bile tamu.       (Nous aurions été là-bas, paraît-il.)\n  Tie ke imale pari.      (Ils auraient de l'argent, paraît-il.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nUSAGES DÉTAILLÉS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n1. INFORMATION RAPPORTÉE (comme 'il paraît que' en français)\n   Kazhal deka ke bil bolen. = Il a dit qu'il était malade.\n   Rekle deka ke imale problema. = Il paraît qu'ils ont des problèmes.\n\n2. SURPRISE / INCRÉDULITÉ\n   Ke bil bogat! = Il serait riche ! (je suis surpris)\n   Ke znael makedonski! = Il saurait le macédonien ! (incroyable)\n\n3. DISTANCIATION (on se désolidarise)\n   Ke rekol deka e visten. = Il aurait dit que c'est vrai. (je ne confirme pas)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nADMIRATIF vs PASSÉ EN L — distinction subtile\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Toj e bil doma.   = Il a été à la maison. (passé en L, neutre)\n  Toj ke bil doma.  = Il serait à la maison. (admiratif, rapporté/surprise)\n\nSeul le KE distingue ces deux formes !\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nADMIRATIF AU FUTUR et CONDITIONNEL\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFutur admiratif : ke + ke + L-forme\n  Ke ke odil tamu. = Il irait là-bas, paraît-il. (futur rapporté)\n\nConditionnel admiratif : ke + bi + L-forme\n  Ke bi otishol. = Il serait allé, paraît-il.",
+    "table": [
+      { "french": "il serait (admiratif)", "macedonian": "ke bil", "example_mk": "Toj ke bil vo Ohrid", "example_fr": "Il serait à Ohrid (paraît-il)" },
+      { "french": "elle serait", "macedonian": "ke bila", "example_mk": "Taa ke bila bolna", "example_fr": "Elle serait malade (on dit)" },
+      { "french": "ils auraient (eu)", "macedonian": "ke imale", "example_mk": "Tie ke imale pari", "example_fr": "Ils auraient de l'argent, paraît-il" },
+      { "french": "il aurait fait", "macedonian": "ke napravil", "example_mk": "Toj ke napravil greshka", "example_fr": "Il aurait commis une erreur" },
+      { "french": "il saurait (surprise)", "macedonian": "ke znael", "example_mk": "Ke znael makedonski!", "example_fr": "Il saurait le macédonien ! (incroyable)" },
+      { "french": "ils seraient venus", "macedonian": "ke doshle", "example_mk": "Ke doshle vchera", "example_fr": "Ils seraient venus hier (on me l'a dit)" },
+      { "french": "il aurait dit que", "macedonian": "ke rekol deka", "example_mk": "Ke rekol deka e vistina", "example_fr": "Il aurait dit que c'est vrai" },
+      { "french": "passé en L (neutre)", "macedonian": "e bil (sans ke)", "example_mk": "Toj e bil doma", "example_fr": "Il a été à la maison (constaté)" }
+    ],
+    "notes_fr": [
+      "⚠️ KE devant la L-forme = admiratif. E devant la L-forme = passé composé normal",
+      "💡 Très courant dans les conversations macédoniennes — indispensable pour comprendre les natifs",
+      "💡 Équivalent du conditionnel de politesse en français : 'il aurait dit', 'il serait'",
+      "⚠️ La L-forme s'accorde toujours en genre/nombre avec le sujet (ke bil m. / ke bila f.)",
+      "💡 Usage journalistique fréquent : distancer une information non-vérifiée ('le suspect aurait...)"
+    ],
+    "cyrillic_reference": "препераскажувачки начин, ke bil=ќе бил, ke bila=ќе билa"
+  },
+  "exercises": [
+    {
+      "id": "ex_adm01_001", "phase": 1, "type": "multiple_choice", "level": 4,
+      "instruction_fr": "Quelle phrase exprime une information rapportée ?",
+      "question": "Il serait à Paris (information rapportée) =",
+      "options": ["Toj e vo Pariz.", "Toj bil vo Pariz.", "Toj ke bil vo Pariz.", "Toj kje bide vo Pariz."],
+      "correct_answer": "Toj ke bil vo Pariz.",
+      "accept_alternatives": [],
+      "explanation_fr": "Ke + bil (L-forme) = admiratif (information rapportée). 'E vo Pariz' = il est à Paris (direct). 'Ke bide' = il sera (futur).",
+      "common_mistakes_fr": ["KE + L-forme = admiratif (rapporté/surprise)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_adm01_002", "phase": 1, "type": "translate_to_fr", "level": 4,
+      "instruction_fr": "Traduisez avec la nuance correcte.",
+      "sentence_mk": "Tie ke imale mnogu pari!",
+      "correct_answer": "Ils auraient beaucoup d'argent ! (paraît-il / quelle surprise !)",
+      "accept_alternatives": ["Ils auraient eu beaucoup d'argent !", "Il paraît qu'ils ont beaucoup d'argent !"],
+      "explanation_fr": "Ke imale = admiratif pluriel (L-forme de ima + ke). Le point d'exclamation suggère la surprise.",
+      "common_mistakes_fr": ["Ke imale ≠ bi imale (conditionnel). Ke = rapporté, bi = hypothétique"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_adm01_003", "phase": 1, "type": "spot_the_difference", "level": 5,
+      "instruction_fr": "Expliquez la différence cruciale.",
+      "sentence_a": "Toj e bil doma.",
+      "sentence_b": "Toj ke bil doma.",
+      "correct_answer": "a = passé composé normal (il a été à la maison, je le sais), b = admiratif (il serait à la maison, paraît-il / je suis surpris)",
+      "accept_alternatives": ["a = constaté directement, b = rapporté ou inattendu"],
+      "expected_keywords_fr": ["passé", "admiratif", "rapporté", "surprise"],
+      "explanation_fr": "La seule différence : 'e' vs 'ke' devant bil. E = auxiliaire du passé composé. Ke = marqueur admiratif. Cette distinction est très subtile mais fondamentale.",
+      "common_mistakes_fr": ["Une seule lettre (ke vs e) change tout le sens modal"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_adm01_004", "phase": 2, "type": "fill_blank", "level": 4,
+      "instruction_fr": "Formez l'admiratif correct.",
+      "sentence": "Taa ___ napravila greshka, no ne go znaevme. (Elle aurait commis une erreur, mais nous ne le savions pas.)",
+      "correct_answer": "ke",
+      "accept_alternatives": [],
+      "explanation_fr": "Ke + napravila = admiratif féminin (elle aurait fait). La L-forme napravila est déjà accordée au féminin.",
+      "common_mistakes_fr": ["Admiratif = ke + L-forme — ke est invariable"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_adm01_005", "phase": 2, "type": "translate_to_mk", "level": 5,
+      "instruction_fr": "Exprimez en admiratif.",
+      "sentence_fr": "Il paraît qu'ils sont partis hier soir.",
+      "correct_answer": "Ke otishle vcheravecherta",
+      "accept_alternatives": ["Ke bile otishle vcheravecherta"],
+      "explanation_fr": "Ke + otishle (L-forme plurielle irrégulière de otide). Vcheravecherta = hier soir.",
+      "common_mistakes_fr": ["Otishle = pluriel irrégulier de otide (L-forme)"],
+      "verbs_present": []
+    }
+  ]
+}

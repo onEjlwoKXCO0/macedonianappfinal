@@ -1,0 +1,116 @@
+{
+  "id": "lesson_relative_clauses_01",
+  "topic": "subordinate_clauses",
+  "category": "grammar",
+  "title": "Les propositions relatives — shto, koj, chij",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "relatif shto (invariable), relatif koj/koja/koi (accordé), chij (dont/possessif)",
+  "rules": {
+    "explanation_fr": "Le macédonien a deux relatifs principaux et un possessif relatif.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. SHTO — relatif invariable (le plus courant)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nInvariable — ne s'accorde pas en genre ni en nombre.\nUtilisé pour TOUT : personnes, choses, animaux.\n\n  Chovekot SHTO go videv e tuka. (L'homme que j'ai vu est ici.)\n  Knigata SHTO ja chitam e interesna. (Le livre que je lis est intéressant.)\n  Deteto SHTO pee e ubavo. (L'enfant qui chante est joli.)\n\n⚠️ Quand shto est objet, le clitique correspondant DOIT être présent :\n  Chovekot shto GO videv... (GO = clitique obligatoire pour 'que')\n  Knigata shto JA chitam... (JA = clitique obligatoire pour 'que' féminin)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n2. KOJ/KOJA/KOI — relatif accordé (formel/littéraire)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nS'accorde avec l'antécédent. Plus formel que shto.\n\n  Chovekot KOJ dojde e moj prijatel. (L'homme qui est venu est mon ami.)\n  Zhenata KOJA zboruva e doktorka. (La femme qui parle est médecin.)\n  Lugjet KOI rabotaat se umori. (Les gens qui travaillent sont fatigués.)\n\nForme du relatif avec préposition :\n  Zhenata SO KOJA zboruvav... (La femme avec qui je parlais...)\n  Gradot VO KOJ zhivee... (La ville dans laquelle il habite...)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n3. CHIJ/CHIJA/CHIE — relatif possessif (dont)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nS'accorde avec LE NOM POSSÉDÉ (pas avec le possesseur).\n\n  Masc. possédé : chijot (chovekot chijot sin... = l'homme dont le fils...)\n  Fém. possédée : chijata (zhenata chijata kuka... = la femme dont la maison...)\n  Neutre possédé : chijeto (deteto chijeto ime... = l'enfant dont le prénom...)\n  Pluriel possédé : chiishto (lugjet chiishto deca... = les gens dont les enfants...)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÈGLE CLITIQUE avec shto objet\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nQuand shto est OBJET DIRECT de la relative, le clitique est obligatoire :\n  Chovekot [shto go videv] = l'homme [que je l'ai vu] → que j'ai vu\n  Knigata [shto ja chitam] = le livre [que je la lis] → que je lis\n  Decata [shto gi poznavav] = les enfants [que je les connaissais] → que je connaissais\n\nQuand shto est SUJET de la relative, pas de clitique :\n  Chovekot [shto dojde] = l'homme qui est venu (shto = sujet, pas d'objet direct)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCOMPARATIF shto vs koj\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Shto : conversationnel, universel, avec clitique si objet\n  Koj : formel, littéraire, avec préposition obligatoire",
+    "table": [
+      { "french": "que (objet direct, masc.)", "macedonian": "shto + go", "example_mk": "Chovekot shto go videv", "example_fr": "L'homme que j'ai vu" },
+      { "french": "que (objet direct, fém.)", "macedonian": "shto + ja", "example_mk": "Knigata shto ja chitam", "example_fr": "Le livre que je lis" },
+      { "french": "qui (sujet, masc.)", "macedonian": "shto (pas de clitique)", "example_mk": "Chovekot shto dojde", "example_fr": "L'homme qui est venu" },
+      { "french": "qui (accordé, masc.)", "macedonian": "koj", "example_mk": "Chovekot koj dojde", "example_fr": "L'homme qui est venu (formel)" },
+      { "french": "qui (accordé, fém.)", "macedonian": "koja", "example_mk": "Zhenata koja zboruva", "example_fr": "La femme qui parle" },
+      { "french": "avec qui", "macedonian": "so koj/koja", "example_mk": "Chovekot so koj zboruvav", "example_fr": "L'homme avec qui je parlais" },
+      { "french": "dont (masc. possédé)", "macedonian": "chijot", "example_mk": "Chovekot chijot sin stüdira", "example_fr": "L'homme dont le fils étudie" },
+      { "french": "dont (fém. possédée)", "macedonian": "chijata", "example_mk": "Zhenata chijata kuka e golema", "example_fr": "La femme dont la maison est grande" }
+    ],
+    "notes_fr": [
+      "⚠️ Shto + objet direct : le CLITIQUE est obligatoire (shto go videv, shto ja chitam, shto gi poznavav)",
+      "⚠️ Shto + sujet : PAS de clitique (shto dojde, shto raboti)",
+      "💡 Shto est universel et conversationnel. Koj est formel et s'utilise avec prépositions",
+      "⚠️ Chij s'accorde avec LE NOM POSSÉDÉ (pas le possesseur) — comme en français 'dont le fils'",
+      "💡 Après préposition : toujours koj (pas shto) — 'od koj' (de qui), 'vo koj' (dans lequel)"
+    ],
+    "cyrillic_reference": "shto=што, koj=кој, koja=која, chij=чиј, chijot=чијот"
+  },
+  "exercises": [
+    {
+      "id": "ex_rel01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Choisissez le bon relatif (shto = objet).",
+      "question": "Le livre que je lis = Knigata ___ ja chitam",
+      "options": ["koja", "shto", "koj", "chijata"],
+      "correct_answer": "shto",
+      "accept_alternatives": [],
+      "explanation_fr": "Shto est le relatif invariable. Kniga est féminin donc le clitique 'ja' est obligatoire.",
+      "common_mistakes_fr": ["Shto + objet féminin : clitique 'ja' obligatoire (shto ja chitam)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rel01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Shto sujet ou objet ? Faut-il un clitique ?",
+      "question": "L'homme qui est venu = Chovekot ___",
+      "options": ["shto go dojde", "shto dojde", "koj go dojde", "shto ja dojde"],
+      "correct_answer": "shto dojde",
+      "accept_alternatives": ["koj dojde"],
+      "explanation_fr": "Shto = SUJET de la relative (c'est shto qui fait l'action de dojde) → pas de clitique objet direct.",
+      "common_mistakes_fr": ["Shto sujet = pas de clitique. Shto objet = clitique obligatoire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rel01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Knigata shto mi ja dade e mnogu dobra",
+      "correct_answer": "Le livre qu'il m'a donné est très bon",
+      "accept_alternatives": ["Le livre que tu m'as donné est très bon"],
+      "explanation_fr": "Shto mi ja dade = qu'il m'a donné. Mi = datif 1re sg (à moi), ja = accusatif féminin (le livre), dade = aoriste de dade (donner).",
+      "common_mistakes_fr": ["Deux clitiques : mi (à moi) + ja (la [kniga]) avant le verbe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rel01_004", "phase": 1, "type": "translate_to_fr", "level": 4,
+      "instruction_fr": "Traduisez cette relative avec dont.",
+      "sentence_mk": "Chovekot chijot sin studiira vo Francija e moј sosedot",
+      "correct_answer": "L'homme dont le fils étudie en France est mon voisin",
+      "accept_alternatives": [],
+      "explanation_fr": "Chijot = dont (masc. sg., s'accorde avec 'sin' = fils = masculin). Studiira = étudier.",
+      "common_mistakes_fr": ["Chijot s'accorde avec SIN (fils, masculin), pas avec chovek (l'homme)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_rel01_005", "phase": 2, "type": "fill_blank", "level": 4,
+      "instruction_fr": "Complétez avec le relatif correct (préposition + relatif).",
+      "sentence": "Gradot vo ___ zhivee e Skopje. (La ville dans laquelle il habite est Skopje.)",
+      "correct_answer": "koj",
+      "accept_alternatives": [],
+      "explanation_fr": "Après préposition (vo), on utilise KOJ (pas shto). Grad est masculin → koj.",
+      "common_mistakes_fr": ["Après préposition : koj/koja/koi (JAMAIS shto)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_rel01_006", "phase": 2, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "La femme avec qui je parle est professeur.",
+      "correct_answer": "Zhenata so koja zboruvam e nastavnicka",
+      "accept_alternatives": [],
+      "explanation_fr": "So koja = avec qui (féminin, préposition so + relative koja). Nastavnicka = professeur (féminin).",
+      "common_mistakes_fr": ["Féminin après préposition : koja (pas shto)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_rel01_007", "phase": 3, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez l'erreur.",
+      "sentence": "Chovekot shto videv e tuka.",
+      "correct_answer": "Chovekot shto go videv e tuka",
+      "accept_alternatives": [],
+      "explanation_fr": "Quand shto est objet direct (je l'ai vu), le clitique GO est obligatoire. 'Shto videv' sans clitique = incorrect.",
+      "common_mistakes_fr": ["Shto objet → clitique OBLIGATOIRE avant le verbe de la relative"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_rel01_008", "phase": 3, "type": "transformation", "level": 5,
+      "instruction_fr": "Combinez les deux phrases en une relative.",
+      "sentence": "Videv edna zhena. Taa zhena zboruva makedonski.",
+      "transformation_instruction_fr": "La femme que j'ai vue parle macédonien.",
+      "correct_answer": "Zhenata shto ja videv zboruva makedonski",
+      "accept_alternatives": ["Zhenata koja ja videv zboruva makedonski"],
+      "explanation_fr": "Relative : zhenata (antécédent) + shto ja videv (que je l'ai vue — clitique ja pour féminin) + zboruva makedonski (prédicat).",
+      "common_mistakes_fr": ["Clitique ja obligatoire car 'zhenata' est objet direct de 'videv'"],
+      "verbs_present": []
+    }
+  ]
+}

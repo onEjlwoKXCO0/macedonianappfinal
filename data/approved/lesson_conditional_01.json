@@ -1,0 +1,138 @@
+{
+  "id": "lesson_conditional_01",
+  "topic": "subordinate_clauses",
+  "category": "grammar",
+  "title": "Le conditionnel — bi + L-forme et ako (si)",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "conditionnel présent bi+L, conditionnel passé ako+imparfait, souhait et hypothèse",
+  "rules": {
+    "explanation_fr": "Le macédonien exprime le conditionnel avec la particule BI + la L-forme du verbe.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCONDITIONNEL PRÉSENT — souhait ou possibilité\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nStructure : bi + L-forme (accordée avec le sujet)\n\n  Jas bi otishol/otishla.     (J'irais.)\n  Ti bi otishol/otishla.      (Tu irais.)\n  Toj bi otishol.             (Il irait.)\n  Taa bi otishla.             (Elle irait.)\n  Nie bi otishle.             (Nous irions.)\n  Vie bi otishle.             (Vous iriez.)\n  Tie bi otishle.             (Ils/elles iraient.)\n\nBi est INVARIABLE — seule la L-forme s'accorde.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAKO — propositions conditionnelles\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n1. RÉEL/PROBABLE — ako + présent → présent/futur\n   Ako imas vreme, dojdi. (Si tu as le temps, viens.)\n   Ako doida, ke mu kazham. (Si je viens, je lui dirai.)\n\n2. HYPOTHÉTIQUE (présent/futur) — ako + imparfait → bi + L-forme\n   Ako imav pari, bi kupal kola.\n   (Si j'avais de l'argent, j'achèterais une voiture.)\n   Ako bev toj, bi otishol.\n   (Si j'étais lui, j'irais.)\n\n3. IRRÉEL/PASSÉ — ako + imparfait → bi + L-forme passée\n   Ako znael, bi kazhal.\n   (S'il avait su, il aurait dit. — dans le passé)\n   Ako ne bev bolen, ke/bi otishol.\n   (Si je n'avais pas été malade, je serais allé.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nBI + DA — souhait poli\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nTrès poli, équivalent de 'je voudrais...' :\n  Bi sakal da poaram neshto. (Je voudrais demander quelque chose.)\n  Bi sakal da piami edna kafe. (Je voudrais prendre un café.)\n  Dali bi mozhal da mi pomognesh? (Pourriez-vous m'aider?)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÉSUMÉ — tableau des condtionnels\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Type            | Si...             | Alors...\n  Réel            | ako + présent     | présent/futur (ke)\n  Hypothétique    | ako + imparfait   | bi + L-forme\n  Irréel passé    | ako + imparfait   | bi/ke + L-forme",
+    "table": [
+      { "french": "j'irais (m.)", "macedonian": "bi otishol", "example_mk": "Bi otishol vo Ohrid", "example_fr": "J'irais à Ohrid" },
+      { "french": "elle irait", "macedonian": "bi otishla", "example_mk": "Taa bi otishla so mene", "example_fr": "Elle irait avec moi" },
+      { "french": "nous irions", "macedonian": "bi otishle", "example_mk": "Nie bi otishle vo Grcija", "example_fr": "Nous irions en Grèce" },
+      { "french": "si j'avais (de l'argent)", "macedonian": "ako imav (pari)", "example_mk": "Ako imav pari, bi kupal kola", "example_fr": "Si j'avais de l'argent, j'achèterais une voiture" },
+      { "french": "si tu étais (lui)", "macedonian": "ako bev toj", "example_mk": "Ako bev toj, bi otishol", "example_fr": "Si j'étais lui, j'irais" },
+      { "french": "je voudrais (poli)", "macedonian": "bi sakal da", "example_mk": "Bi sakal da piаm kafe", "example_fr": "Je voudrais prendre un café" },
+      { "french": "pourriez-vous ? (très poli)", "macedonian": "Dali bi mozhal da...?", "example_mk": "Dali bi mozhal da mi pomognesh?", "example_fr": "Pourriez-vous m'aider ?" },
+      { "french": "si (condition réelle)", "macedonian": "ako + présent", "example_mk": "Ako imas vreme, dojdi", "example_fr": "Si tu as le temps, viens" }
+    ],
+    "notes_fr": [
+      "💡 BI est invariable — seule la L-forme s'accorde en genre/nombre avec le sujet",
+      "⚠️ Hypothétique : ako + IMPARFAIT (pas présent) dans la condition",
+      "💡 'Bi sakal da...' = je voudrais... (forme très polie pour les demandes)",
+      "⚠️ La L-forme dans le conditionnel s'accorde : bi otishol (m.) / bi otishla (f.) / bi otishle (pl.)",
+      "💡 Le futur ke peut remplacer bi dans certains contextes : Ako doida, ke mu kazham."
+    ],
+    "cyrillic_reference": "bi=би, ako=ако, би отишол, условен начин"
+  },
+  "exercises": [
+    {
+      "id": "ex_cond01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Choisissez la forme conditionnelle correcte.",
+      "question": "J'irais à Skopje. (sujet masculin) = Jas ___",
+      "options": ["ke odam", "bi otishol", "bi otishla", "odev"],
+      "correct_answer": "bi otishol",
+      "accept_alternatives": [],
+      "explanation_fr": "Conditionnel présent : bi + L-forme. Otide → otishol (L-forme masculine irrégulière). Bi est invariable.",
+      "common_mistakes_fr": ["Bi + L-forme (accordée) = conditionnel. Ke + présent = futur"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cond01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quelle structure utilise-t-on pour une hypothèse irréelle ?",
+      "question": "Si j'avais de l'argent, j'achèterais une voiture = ___",
+      "options": ["Ako imam pari, ke kupam kola", "Ako imav pari, bi kupal kola", "Ako imam pari, bi kupam kola", "Bi imav pari, kupal kola"],
+      "correct_answer": "Ako imav pari, bi kupal kola",
+      "accept_alternatives": [],
+      "explanation_fr": "Hypothèse irréelle : ako + IMPARFAIT (imav) → bi + L-forme (kupal). Ako + présent serait une condition réelle.",
+      "common_mistakes_fr": ["Hypothèse : ako + imparfait. Condition réelle : ako + présent"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_cond01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Bi sakal da poaram neshto",
+      "correct_answer": "Je voudrais demander quelque chose",
+      "accept_alternatives": ["J'aimerais poser une question", "J'aimerais demander quelque chose"],
+      "explanation_fr": "Bi sakal da = je voudrais (poli). Poaram = demander (1re sg.). Neshto = quelque chose.",
+      "common_mistakes_fr": ["Bi sakal da = formule polie pour les requêtes"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_cond01_004", "phase": 1, "type": "translate_to_fr", "level": 4,
+      "instruction_fr": "Traduisez cette hypothèse.",
+      "sentence_mk": "Ako bev toj, ne bi otishol tamu",
+      "correct_answer": "Si j'étais lui, je n'irais pas là-bas",
+      "accept_alternatives": ["Si j'avais été lui, je ne serais pas allé là-bas"],
+      "explanation_fr": "Ako bev toj = si j'étais lui (imparfait de sum). Ne bi otishol = je n'irais pas (conditionnel négatif).",
+      "common_mistakes_fr": ["Bev = imparfait de sum (j'étais)", "Ne bi + L-forme = conditionnel négatif"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_cond01_005", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Complétez avec la bonne L-forme pour le conditionnel.",
+      "sentence": "Taa bi ___ so nas ako imash vreme. (Elle viendrait avec nous si tu avais le temps.)",
+      "correct_answer": "doshla",
+      "accept_alternatives": [],
+      "explanation_fr": "Dojde → doshol/doshla (L-forme irrégulière). Taa = féminin → doshla.",
+      "common_mistakes_fr": ["L-forme féminine irrégulière de dojde = doshla"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cond01_006", "phase": 2, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez l'erreur.",
+      "sentence": "Ako imam vreme, bi odevme.",
+      "correct_answer": "Ako imavme vreme, bi otishle",
+      "accept_alternatives": ["Ako imavme vreme, ke odime"],
+      "explanation_fr": "Hypothèse irréelle → ako + IMPARFAIT (imavme pour nie). Odevme est imparfait (nous allions) mais le conditionnel nécessite bi + L-forme (bi otishle).",
+      "common_mistakes_fr": ["Hypothèse irréelle : ako + imparfait → bi + L-forme (pas imparfait dans les deux)"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_cond01_007", "phase": 2, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez au conditionnel.",
+      "sentence_fr": "Si elle savait, elle nous le dirait.",
+      "correct_answer": "Ako znаela, bi ni kazала",
+      "accept_alternatives": ["Ako znаeshe, bi ni kazаla"],
+      "explanation_fr": "Ako znаela/znaeshe (imparfait) → bi ni kazala (conditionnel fém., clitique ni = à nous).",
+      "common_mistakes_fr": ["Ni = clitique datif pl. (à nous)", "L-forme féminine de kazhe : kazhala"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cond01_008", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Transformez en demande polie avec bi.",
+      "sentence": "Moze li da mi pomognesh?",
+      "transformation_instruction_fr": "Rendez très polie avec bi (pourriez-vous...).",
+      "correct_answer": "Dali bi mozhal da mi pomognesh?",
+      "accept_alternatives": ["Bi mozhal li da mi pomognesh?"],
+      "explanation_fr": "Moze li → Dali bi mozhal da (conditionnel poli). Mozhal = L-forme masculine de mozhe.",
+      "common_mistakes_fr": ["Bi mozhal da = pourriez-vous (très poli)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cond01_009", "phase": 3, "type": "spot_the_difference", "level": 4,
+      "instruction_fr": "Expliquez la différence.",
+      "sentence_a": "Ako imas vreme, dojdi.",
+      "sentence_b": "Ako imav vreme, bi doshol.",
+      "correct_answer": "a = condition réelle (ako + présent = si tu as le temps — possible), b = hypothèse irréelle (ako + imparfait = si j'avais le temps — mais je n'en ai pas)",
+      "accept_alternatives": ["réel vs hypothétique", "possible vs impossible"],
+      "expected_keywords_fr": ["réel", "hypothétique", "possible"],
+      "explanation_fr": "Ako + présent = condition réelle/probable. Ako + imparfait = hypothèse irréelle (opposée à la réalité). La même distinction existe en français : 'si tu as' (réel) vs 'si j'avais' (irréel).",
+      "common_mistakes_fr": ["Ako + présent (comme le français 'si' + présent) vs ako + imparfait (comme 'si' + imparfait)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cond01_010", "phase": 3, "type": "translate_to_mk", "level": 5,
+      "instruction_fr": "Défi — traduisez cette phrase complexe.",
+      "sentence_fr": "Si j'avais su que tu venais, j'aurais préparé quelque chose à manger.",
+      "correct_answer": "Ako znаev deka ke dojdesh, bi napravil neshto za jadenje",
+      "accept_alternatives": ["Ako znаev deka ke dojdesh, bi napravil jadenje"],
+      "explanation_fr": "Ako znаev (imparfait : si j'avais su) + deka ke dojdesh (futur : que tu viendrais) → bi napravil (conditionnel : j'aurais préparé) + neshto za jadenje (quelque chose à manger).",
+      "common_mistakes_fr": ["Jadenje = nom verbal (l'action de manger) — za jadenje = pour manger"],
+      "verbs_present": []
+    }
+  ]
+}
