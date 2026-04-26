@@ -1,0 +1,101 @@
+{
+  "id": "lesson_motion_verbs_01",
+  "topic": "regular_verbs_present",
+  "category": "grammar",
+  "title": "Les verbes de mouvement — odi, doagja, minuva et leurs perfectifs",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "paires aspectuelles de mouvement, entrer/sortir, venir/partir, prépositions de direction",
+  "rules": {
+    "explanation_fr": "Les verbes de mouvement macédoniens ont tous des paires aspectuelles et des prépositions spécifiques.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSYSTÈME ASPECTUEL DES VERBES DE MOUVEMENT\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Imperfectif (processus/hab.) | Perfectif (résultat/une fois)\n  ─────────────────────────────────────────────\n  odi (aller, en général)     | otide (partir et arriver)\n  doagja (venir, en général)  | dojde (arriver)\n  minuva (passer, habituel)   | pomine (passer une fois)\n  vleghuva (entrer, habit.)   | vleze (entrer une fois)\n  izleguva (sortir, habit.)   | izleze (sortir une fois)\n  se vraki (rentrer, hab.)    | se vrati (rentrer une fois)\n  otagja (s'en aller, hab.)   | zamíne (partir définitivement)\n  se priblizhüva (s'approcher)| se priblizhI (s'être approché)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nPRÉPOSITIONS DE DIRECTION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  vo + lieu fermé  : odi vo Skopje, vleze vo kuka\n  na + surface/marché : odi na pazar, odi na rabota\n  od + origine     : dojde od Ohrid, vleze od portata\n  do + destination : odi do bankа, dojde do mene\n  pored/pokraj     : mine pokraj kukata (passe à côté de)\n  niz              : mine niz gradot (traverse la ville)\n  preku            : mine preku mostot (traverse le pont)\n  kade             : kade odish? (où vas-tu?)\n  odakle           : odakle dojde? (d'où viens-tu?)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCONJUGAISONS CLÉS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nODI (aller — groupe I) :\n  odam/odish/odi/odime/odite/odat\n  Aoriste : odov/ode/ode/odovme/odovte/odoa\n  L-forme : otishol/otishla/otishle\n\nDOAGJA (venir — groupe A) :\n  doagam/doagash/doagа/doagame/doagate/doagaat\n  Aoriste perfectif DOJDE : dojdov/dojde/dojde/dojdovme/dojdovte/dojdoa\n  L-forme : doshol/doshla/doshle\n\nVLEZE (entrer — perfectif) :\n  Aoriste : vlezov/vleze/vleze/vlezovme/vlezovte/vlezoa\n  L-forme : vlezol/vlezla/vlezle\n\nIZLEZE (sortir — perfectif) :\n  Aoriste : izlezov/izleze/izleze/izlezovme/izlezovte/izlezoa\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nEXPRESSIONS UTILES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Odam na rabota = je vais au travail\n  Se vrakjam od rabota = je rentre du travail\n  Dojdi tuka! = Viens ici!\n  Otide si. = Il est parti.\n  Vleze vo soba. = Il entra dans la pièce.\n  Izleze nadvor. = Il sortit dehors.\n  Mine niz parkot. = Il traverse le parc.\n  Dojde vreme. = Le moment est venu.",
+    "table": [
+      { "french": "aller (processus/hab.)", "macedonian": "odi", "example_mk": "Odam na rabota sekoe utro", "example_fr": "Je vais au travail chaque matin" },
+      { "french": "partir (résultat)", "macedonian": "otide", "example_mk": "Toj otide vo Ohrid", "example_fr": "Il est parti à Ohrid" },
+      { "french": "venir (processus/hab.)", "macedonian": "doagja", "example_mk": "Sekoj vikend doagja kaj nas", "example_fr": "Chaque week-end il vient chez nous" },
+      { "french": "arriver (résultat)", "macedonian": "dojde", "example_mk": "Dojde navreme", "example_fr": "Il est arrivé à l'heure" },
+      { "french": "entrer (une fois)", "macedonian": "vleze", "example_mk": "Vleze vo kancelarijata", "example_fr": "Il entra dans le bureau" },
+      { "french": "sortir (une fois)", "macedonian": "izleze", "example_mk": "Izleze od kucata", "example_fr": "Il sortit de la maison" },
+      { "french": "traverser (une fois)", "macedonian": "pomine", "example_mk": "Pomine niz gradot", "example_fr": "Il traversa la ville" },
+      { "french": "rentrer (une fois)", "macedonian": "se vrati", "example_mk": "Se vrati doma kasno", "example_fr": "Il rentra à la maison tard" }
+    ],
+    "notes_fr": [
+      "⚠️ Odi/otide, doagja/dojde — paires fondamentales : processus vs résultat",
+      "💡 Vo = destination lieu fermé. Na = destination surface/marché/travail. Do = jusqu'à",
+      "⚠️ L-formes irrégulières : otishol/doshol/nashol/poshol (pattern en -shol pour les verbes en -de)",
+      "💡 'Otide si' = il est parti (définitivement, ne reviendra pas). 'Se vrati' = il est rentré",
+      "⚠️ Niz = à travers, preku = par-dessus/à travers (pont, frontière)"
+    ],
+    "cyrillic_reference": "odi=оди, doagja=доаѓа, dojde=дојде, vleze=влезе, izleze=излезе"
+  },
+  "exercises": [
+    {
+      "id": "ex_mv01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quel verbe pour une action habituelle ?",
+      "question": "Chaque semaine elle vient chez nous = Sekoja nedela ___ kaj nas.",
+      "options": ["dojde", "doagja", "doshla", "ke dojde"],
+      "correct_answer": "doagja",
+      "accept_alternatives": [],
+      "explanation_fr": "Habitude répétée (sekoj nedela) → imperfectif doagja. Dojde = perfectif (une seule arrivée).",
+      "common_mistakes_fr": ["Habitude = imperfectif doagja. Arrivée unique = perfectif dojde"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mv01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Préposition correcte pour aller au marché ?",
+      "question": "Je vais au marché = Odam ___ pazar.",
+      "options": ["vo", "od", "na", "do"],
+      "correct_answer": "na",
+      "accept_alternatives": [],
+      "explanation_fr": "Pazar (marché) = destination surface/activité → na. Vo s'utilise pour les lieux fermés (villes, bâtiments).",
+      "common_mistakes_fr": ["Na pazar/rabota/Ohrid (activité/surface). Vo kukata/gradot (lieu fermé)"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_mv01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Vleze vo soba i izleze po pet minuti",
+      "correct_answer": "Il entra dans la chambre et ressortit après cinq minutes",
+      "accept_alternatives": ["Il est entré dans la chambre et est sorti cinq minutes plus tard"],
+      "explanation_fr": "Vleze = entra (perfectif). Izleze = sortit (perfectif). Séquence d'actions complètes.",
+      "common_mistakes_fr": ["Vleze/izleze = perfectifs (entrer/sortir une fois)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mv01_004", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Choisissez odi ou otide.",
+      "sentence": "Toj veke ___ — ne go cekaj. (Il est déjà parti — ne l'attends pas.)",
+      "correct_answer": "otide",
+      "accept_alternatives": [],
+      "explanation_fr": "Otide = il est parti (résultat — il n'est plus là). 'Veke' (déjà) renforce le perfectif.",
+      "common_mistakes_fr": ["Otide = il est parti (et n'est plus là). Odi = il va (processus en cours)"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_mv01_005", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Elle traverse le parc chaque matin.",
+      "correct_answer": "Sekoe utro minuva niz parkot",
+      "accept_alternatives": ["Sekoe utro mine niz parkot"],
+      "explanation_fr": "Habitude = imperfectif minuva. Niz = à travers. Parkot = le parc (défini).",
+      "common_mistakes_fr": ["Niz = à travers (traverse un espace)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_mv01_006", "phase": 3, "type": "transformation_chain", "level": 3,
+      "instruction_fr": "Racontez une séquence : il est arrivé, est entré, a mangé et est reparti.",
+      "base_sentence": "Toj (arriver, entrer, manger, repartir)",
+      "steps": [
+        { "instruction_fr": "Il est arrivé.", "expected_answer": "Toj dojde" },
+        { "instruction_fr": "Il entra.", "expected_answer": "Vleze" },
+        { "instruction_fr": "Il mangea.", "expected_answer": "Jade" },
+        { "instruction_fr": "Il repartit.", "expected_answer": "Otide si" }
+      ],
+      "correct_answer": "Otide si",
+      "accept_alternatives": [],
+      "explanation_fr": "Séquence d'aoristes perfectifs : dojde → vleze → jade → otide si. Tous perfectifs car actions uniques et séquentielles.",
+      "common_mistakes_fr": ["Séquence narrative = perfectifs. Otide si = il est parti (emphase sur la séparation)"],
+      "verbs_present": ["jade"]
+    }
+  ]
+}

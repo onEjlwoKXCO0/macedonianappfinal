@@ -1,0 +1,123 @@
+{
+  "id": "lesson_demonstratives_01",
+  "topic": "pronouns_demonstrative",
+  "category": "grammar",
+  "title": "Les démonstratifs — ovoj/toj/onoj et vakov/takov/onakov",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "trois niveaux de démonstration, adjectifs démonstratifs, démonstratifs qualitatifs",
+  "rules": {
+    "explanation_fr": "Le macédonien a TROIS niveaux de démonstratifs (contre deux en français).\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nTABLEAU COMPLET DES DÉMONSTRATIFS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Niveau    | Masc.sg | Fém.sg | Neutre sg | Pluriel\n  Proximal  | ovoj    | ovaa   | ova       | ovie\n  (ce...ci, près du locuteur)\n\n  Médial    | toj     | taa    | toa       | tie\n  (ce...là, neutre ou proche de l'interlocuteur)\n\n  Distal    | onoj    | onaa   | ona       | onie\n  (ce...là-bas, loin des deux)\n\nExemples :\n  OVOJ chovek (cet homme-ci — il est près de moi)\n  TOJ chovek (cet homme — neutre, on parle de lui)\n  ONOJ chovek (cet homme là-bas — il est loin)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFORME NEUTRE SINGULIER — usage spécial\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nOva/toa/ona sans accord = identification de quelque chose :\n  Ova e moja kniga. (Ceci est mon livre.)\n  Toa e Branko. (Voilà Branko. / C'est Branko.)\n  Shto e ova? Toa e kuche. (Qu'est-ce que c'est ? C'est un chien.)\n  Ova se moi prijateli. (Ce sont mes amis. — pluriel même avec ova!)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nDÉMONSTRATIFS QUALITATIFS (vakov/takov/onakov)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nExpriment la qualité/type selon la distance :\n  VAKOV = tel (comme celui ici, de ce type-ci)\n  TAKOV = tel (de ce type-là, neutre)\n  ONAKOV = tel (de ce type là-bas)\n\n  | Type    | Masc. | Fém.   | Neutre | Pluriel |\n  | Proximal| vakov | vakva  | vakvo  | vakvi   |\n  | Médial  | takov | takva  | takvo  | takvi   |\n  | Distal  | onakov| onakva | onakvo | onakvi  |\n  | Question| kakov | kakva  | kakvo  | kakvi   |\n\nExemples :\n  Vakov chovek ne sum sretal. (Je n'ai jamais rencontré quelqu'un comme ça.)\n  Kakva e taa zhena? (Quel genre de femme est-elle?)\n  Takva muzika ne mi se dopaga. (Ce genre de musique ne me plaît pas.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nDÉMONSTRATIFS QUANTITATIFS (olku/tolku/onolku)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  OLKU = autant (ici, proche)\n  TOLKU = autant (neutre/médial)\n  ONOLKU = autant (là-bas)\n  KOLKU = combien? (interrogatif)\n\n  Tolku pari nemam. (Autant d'argent, je n'en ai pas.)\n  Kolku chini? (Combien ça coûte?)",
+    "table": [
+      { "french": "cet homme-ci (proximal)", "macedonian": "ovoj chovek", "example_mk": "Ovoj chovek e moj brat", "example_fr": "Cet homme-ci est mon frère" },
+      { "french": "cette femme-là (médial)", "macedonian": "taa zhena", "example_mk": "Taa zhena e doktorka", "example_fr": "Cette femme est médecin" },
+      { "french": "cet enfant là-bas (distal)", "macedonian": "ona dete", "example_mk": "Ona dete e mnogu tiho", "example_fr": "Cet enfant là-bas est très calme" },
+      { "french": "ces livres-ci (proximal pl.)", "macedonian": "ovie knigi", "example_mk": "Ovie knigi se moi", "example_fr": "Ces livres-ci sont les miens" },
+      { "french": "ceux là-bas (distal pl.)", "macedonian": "onie lugje", "example_mk": "Onie lugje se Makedonci", "example_fr": "Ces gens là-bas sont Macédoniens" },
+      { "french": "c'est (identification)", "macedonian": "Toa e...", "example_mk": "Toa e Skopje", "example_fr": "C'est Skopje" },
+      { "french": "tel/pareil (médial)", "macedonian": "takov/takva", "example_mk": "Takva muzika mi se dopaga", "example_fr": "Ce genre de musique me plaît" },
+      { "french": "quel genre de ? (qualitatif)", "macedonian": "kakov/kakva", "example_mk": "Kakva e taa zhena?", "example_fr": "Quel genre de femme est-elle ?" }
+    ],
+    "notes_fr": [
+      "💡 Trois niveaux : ovoj (près de moi/ci), toj (neutre/médial), onoj (là-bas/distal)",
+      "⚠️ Toj/taa/toa servent à la fois de pronoms personnels ET de démonstratifs médials",
+      "💡 Ova/toa/ona en fonction prédicative = neutre invariable (identification) : Toa e Branko.",
+      "⚠️ Vakov/takov/onakov = qualitatif démonstratif (ce genre de...) — très expressifs",
+      "💡 Kolku/tolku/olku = quantitatifs démonstratifs (combien/autant)"
+    ],
+    "cyrillic_reference": "ovoj=овој, onoj=оној, toj=тој, vakov=ваков, takov=таков"
+  },
+  "exercises": [
+    {
+      "id": "ex_dem01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Quelle forme pour 'ces livres-ci' (proches du locuteur) ?",
+      "question": "Ces livres-ci (près de moi) =",
+      "options": ["onie knigi", "tие knigi", "ovie knigi", "nekoi knigi"],
+      "correct_answer": "ovie knigi",
+      "accept_alternatives": [],
+      "explanation_fr": "Ovie = pluriel proximal (proche du locuteur). Tие = médial. Onie = distal (loin). Nekoi = quelques.",
+      "common_mistakes_fr": ["Proximal (près de moi) = ov- : ovoj/ovaa/ova/ovie"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dem01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Identification : ova ou autre forme ?",
+      "question": "C'est Branko. =",
+      "options": ["Toj e Branko", "Ova e Branko", "Toa e Branko", "Ovoj e Branko"],
+      "correct_answer": "Toa e Branko",
+      "accept_alternatives": ["Ova e Branko"],
+      "explanation_fr": "Pour identifier quelqu'un/quelque chose : forme neutre (toa/ova) invariable. Toa e Branko = C'est Branko.",
+      "common_mistakes_fr": ["Identification = neutre invariable (toa/ova), pas la forme accordée"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dem01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Ovaa kniga e interesna, a onaa ne e",
+      "correct_answer": "Ce livre-ci est intéressant, mais celui-là ne l'est pas",
+      "accept_alternatives": ["Ce livre est intéressant, mais celui là-bas ne l'est pas"],
+      "explanation_fr": "Ovaa (fém. proximal) = ce...ci. Onaa (fém. distal) = celui là-bas.",
+      "common_mistakes_fr": ["Ovaa = proximal (fém.). Onaa = distal (fém.). Les deux féminins de ov- et on-"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dem01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez le qualitatif.",
+      "sentence_mk": "Vakov chovek ne sum sretal vo mojot zhivot",
+      "correct_answer": "Je n'ai jamais rencontré quelqu'un comme ça de toute ma vie",
+      "accept_alternatives": ["Un tel homme, je n'en ai jamais rencontré"],
+      "explanation_fr": "Vakov = tel/comme ça (proximal qualitatif). Sretal = L-forme de srete (rencontrer).",
+      "common_mistakes_fr": ["Vakov = ce genre de... / tel (proximal)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dem01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Choisissez le bon démonstratif.",
+      "sentence": "___ lugje se Makedonci. (Ces gens là-bas sont Macédoniens.)",
+      "correct_answer": "Onie",
+      "accept_alternatives": [],
+      "explanation_fr": "Distal pluriel = onie. Là-bas = loin du locuteur ET de l'interlocuteur.",
+      "common_mistakes_fr": ["Distal = on- : onoj/onaa/ona/onie"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dem01_006", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez en utilisant le bon niveau de démonstratif.",
+      "sentence_fr": "Je n'aime pas ce genre de nourriture.",
+      "correct_answer": "Ne mi se dopaga takva hrana",
+      "accept_alternatives": ["Takva hrana ne mi se dopaga"],
+      "explanation_fr": "Takva = telle/ce genre de (qualitatif médial). Ne mi se dopaga = ne me plaît pas.",
+      "common_mistakes_fr": ["Mi se dopaga = me plaît (verbe de sentiment avec clitique indirect)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dem01_007", "phase": 3, "type": "matching", "level": 2,
+      "instruction_fr": "Associez chaque démonstratif à son niveau.",
+      "pairs": [
+        { "mk": "ovoj", "fr": "ce...ci (proximal masc.)" },
+        { "mk": "onaa", "fr": "celle là-bas (distal fém.)" },
+        { "mk": "toa", "fr": "cela (médial neutre / identification)" },
+        { "mk": "ovie", "fr": "ceux-ci (proximal pl.)" },
+        { "mk": "onie", "fr": "ceux là-bas (distal pl.)" }
+      ],
+      "correct_answer": "ovoj=proximal masc.,onaa=distal fém.,toa=médial neutre,ovie=proximal pl.,onie=distal pl.",
+      "accept_alternatives": [],
+      "explanation_fr": "Proximal ov-, médial toj/taa/toa/tie, distal on-.",
+      "common_mistakes_fr": ["Les trois niveaux : ov- (ici), toj- (là), on- (là-bas)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dem01_008", "phase": 3, "type": "spot_the_difference", "level": 3,
+      "instruction_fr": "Expliquez la différence.",
+      "sentence_a": "Ovoj chovek e moj brat.",
+      "sentence_b": "Onoj chovek e moj brat.",
+      "correct_answer": "ovoj = cet homme-ci (près du locuteur), onoj = cet homme là-bas (loin du locuteur et de l'interlocuteur)",
+      "accept_alternatives": ["proximal vs distal"],
+      "expected_keywords_fr": ["proche", "loin", "proximal", "distal"],
+      "explanation_fr": "La distance physique détermine le choix. Ovoj = je pourrais presque le toucher. Onoj = il est de l'autre côté.",
+      "common_mistakes_fr": ["Le choix du démonstratif dépend de la distance réelle ou figurée"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "lesson_vo_na_od_01",
+  "topic": "prepositions",
+  "category": "grammar",
+  "title": "VO, NA, OD — distinctions avancées",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "vo (lieu fermé/mouvement entrant), na (surface/activité/datif), od (origine/séparation/comparaison)",
+  "rules": {
+    "explanation_fr": "VO, NA et OD sont les trois prépositions les plus importantes. Chacune a plusieurs usages.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nVO — dans, en, à (intérieur ou ville/pays)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Lieu statique : Sum VO Skopje. (Je suis à Skopje.)\n  Mouvement vers : Odam VO Skopje. (Je vais à Skopje.)\n  Lieu fermé : Knigata e VO masata. (Le livre est dans le tiroir.)\n  Période de temps : VO nedela (le dimanche) / VO 2026 godina\n  Dans une matière : VO makedonski jazik (en langue macédonienne)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nNA — sur, à (surface, marché, activité)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Surface : Knigata e NA masata. (Le livre est sur la table.)\n  Marché/activité ouverte : Odam NA pazar. (Je vais au marché.)\n  Travail/école : Odam NA rabota / NA uchilishte.\n  Concert/fête : Odam NA koncert / NA zabava.\n  Possession : Ovaa kniga e NA Mira. (Ce livre est à Mira.)\n  Datif indirect : NA Marko mu rekl... (À Marko il lui a dit...)\n  Quantitatif : NA sekoj (chacun), NA eden (à un certain)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nOD — de, depuis, à partir de\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Origine : Sum OD Francija. (Je suis de France.)\n  Séparation : Dojde OD Ohrid. (Il vint d'Ohrid.)\n  Matière : Napravena OD drvo. (Faite en bois.)\n  Comparaison : Po-golem OD mene. (Plus grand que moi.)\n  Temps depuis : OD ponedelnik (depuis lundi) / OD utro (depuis le matin)\n  Partitif : Eden OD nas (l'un d'entre nous)\n  Cause : OD radost (de joie) / OD strav (de peur)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nVO vs NA — TABLEAU DE DÉCISION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  VO (intérieur/ville/fermé) | NA (surface/activité/ouvert)\n  ──────────────────────────────────────────────────\n  vo Skopje (en ville)       | na pazar (au marché)\n  vo kuka (dans la maison)   | na masa (sur la table)\n  vo shkolo (à l'école-bâtiment) | na uchilishte (à l'école-activité)\n  vo restoran (au restaurant)| na vecherа (au dîner)\n  vo bolnica (à l'hôpital)   | na lekar (chez le médecin)\n  vo biblioteka (bibliothèque)| na predavanje (au cours)\n\n⚠️ Souvent les deux sont possibles avec une nuance :\n  Vo shkolo = dans le bâtiment de l'école (physiquement là)\n  Na uchilishte = en train d'aller à l'école (activité scolaire)",
+    "table": [
+      { "french": "Je suis à Skopje", "macedonian": "Sum vo Skopje", "example_mk": "Sum vo Skopje od vchera", "example_fr": "Je suis à Skopje depuis hier" },
+      { "french": "le livre est sur la table", "macedonian": "Knigata e na masata", "example_mk": "Knigata e na masata", "example_fr": "Le livre est sur la table" },
+      { "french": "je vais au marché", "macedonian": "odam na pazar", "example_mk": "Odam na pazar vo sabota", "example_fr": "Je vais au marché le samedi" },
+      { "french": "il est de France", "macedonian": "e od Francija", "example_mk": "Toj e od Pariz, Francija", "example_fr": "Il est de Paris, France" },
+      { "french": "plus grand que moi", "macedonian": "po-golem od mene", "example_mk": "Toj e po-golem od mene", "example_fr": "Il est plus grand que moi" },
+      { "french": "de joie (cause)", "macedonian": "od radost", "example_mk": "Plache od radost", "example_fr": "Il pleure de joie" },
+      { "french": "en bois (matière)", "macedonian": "od drvo", "example_mk": "Masata e napravena od drvo", "example_fr": "La table est en bois" },
+      { "french": "à chacun", "macedonian": "na sekoj", "example_mk": "Na sekoj po eden", "example_fr": "À chacun une unité" }
+    ],
+    "notes_fr": [
+      "⚠️ Vo = intérieur/ville. Na = surface/activité. Od = origine/séparation/comparaison",
+      "💡 Comparaison toujours avec od : po-golem OD (plus grand que) — jamais 'od' pour 'que' après superlatif",
+      "⚠️ Matière : od drvo (en bois), od metal (en métal) — utiliser od, pas 'en'",
+      "💡 Cause émotionnelle : od radost/strav/ljubov (de joie/peur/amour)",
+      "💡 Na pour les activités : na rabota, na pazar, na koncert, na predavanje"
+    ],
+    "cyrillic_reference": "vo=во, na=на, od=од"
+  },
+  "exercises": [
+    {
+      "id": "ex_vno01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Vo ou Na pour aller au marché ?",
+      "question": "Je vais au marché = Odam ___ pazar.",
+      "options": ["vo", "od", "na", "do"],
+      "correct_answer": "na",
+      "accept_alternatives": [],
+      "explanation_fr": "Pazar (marché) = activité ouverte/surface → na. Si c'était un lieu fermé comme un restaurant : vo.",
+      "common_mistakes_fr": ["Na = activité ouverte (pazar, rabota, koncert). Vo = lieu fermé (kuka, grad)"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_vno01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle préposition pour exprimer la matière ?",
+      "question": "La table est en bois = Masata e napravena ___ drvo.",
+      "options": ["vo", "na", "od", "so"],
+      "correct_answer": "od",
+      "accept_alternatives": [],
+      "explanation_fr": "Matière = od : od drvo (en bois), od metal (en métal), od plastika (en plastique).",
+      "common_mistakes_fr": ["Matière = od (de/en). 'En bois' en français = od drvo en macédonien"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_vno01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Taa e od Skopje no sega zhivee vo Pariz",
+      "correct_answer": "Elle est de Skopje mais maintenant elle vit à Paris",
+      "accept_alternatives": [],
+      "explanation_fr": "Od Skopje = de Skopje (origine). Vo Pariz = à Paris (lieu de résidence — ville).",
+      "common_mistakes_fr": ["Origine = od. Lieu actuel (ville) = vo"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_vno01_004", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Complétez.",
+      "sentence": "Plache ___ radost. (Il pleure de joie.)",
+      "correct_answer": "od",
+      "accept_alternatives": [],
+      "explanation_fr": "Cause émotionnelle = od : od radost (de joie), od strav (de peur), od bolka (de douleur).",
+      "common_mistakes_fr": ["Cause/émotion = od"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_vno01_005", "phase": 3, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez la préposition.",
+      "sentence": "Odam vo rabota sekoe utro.",
+      "correct_answer": "Odam na rabota sekoe utro",
+      "accept_alternatives": [],
+      "explanation_fr": "Rabota = activité → na (pas vo). 'Na rabota' = au travail (activité). 'Vo kancelarijata' = dans le bureau (lieu fermé).",
+      "common_mistakes_fr": ["Na rabota (au travail-activité). Vo kancelarijata (dans le bureau-lieu)"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_vno01_006", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez avec les bonnes prépositions.",
+      "sentence_fr": "La chaise est en bois et elle est dans la cuisine.",
+      "correct_answer": "Stolот e od drvo i e vo kujnata",
+      "accept_alternatives": [],
+      "explanation_fr": "Od drvo = en bois (matière). Vo kujnata = dans la cuisine (lieu fermé).",
+      "common_mistakes_fr": ["Matière (od) vs lieu (vo) — deux prépositions différentes"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

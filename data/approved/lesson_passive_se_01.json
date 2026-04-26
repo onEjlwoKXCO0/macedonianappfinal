@@ -1,0 +1,105 @@
+{
+  "id": "lesson_passive_se_01",
+  "topic": "reflexive_verbs",
+  "category": "grammar",
+  "title": "Le passif et le 'se' impersonnel",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "passif avec se, participe passif adjectival (-en/-an), se impersonnel, constructions passives",
+  "rules": {
+    "explanation_fr": "Le macédonien exprime le passif principalement de DEUX façons.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. PASSIF AVEC SE — le plus courant\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nStructure : se + verbe (verbe s'accorde avec le sujet logique)\n\n  Makedonski se zboruva vo Makedonija.\n  (Le macédonien est parlé en Macédoine.)\n\n  Pismoto se pishuva sekoja sedmica.\n  (La lettre est écrite chaque semaine.)\n\n  Tuka se proda knigi.\n  (Ici on vend des livres.)\n\n  Nashol se reShenie. / Se naShol resenie.\n  (Une solution a été trouvée.)\n\nSE IMPERSONNEL — action sans agent connu :\n  Tuka se jade dobro. (Ici on mange bien.)\n  Se slushna glasna muzika. (On entendit de la musique forte.)\n  Ke se prodava novata kuka. (La nouvelle maison sera vendue.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n2. PARTICIPE PASSIF ADJECTIVAL — formel/écrit\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFormé depuis le radical perfectif + -en/-an/-ен/-ан :\n\n  napravi → napraven (fait/réalisé)\n  napíshe → napíshen (écrit)\n  proveri → proveren (vérifié)\n  ochistі → ochistеn (nettoyé)\n  zatvori → zatvoren (fermé)\n  otvori → otvoren (ouvert)\n\nAccord comme adjectif :\n  napraven/napravena/napraveno/napraveni\n\nUsage :\n  Pismoto e napishano. (La lettre est écrite.)\n  Prozorецот e otvoren. (La fenêtre est ouverte.)\n  Rabotata e napravena. (Le travail est fait.)\n  Vратata e zatvorena. (La porte est fermée.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nDISTINCTION SE RÉFLÉCHI vs SE PASSIF\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Toj se mie.           = Il SE lave. (réfléchi — il fait l'action sur lui-même)\n  Se mie kolata.        = La voiture EST LAVÉE. (passif — quelqu'un lave la voiture)\n\n  Taa se oblekuva.      = Elle S'HABILLE. (réfléchi)\n  Se prodava kuka.      = On VEND une maison. (passif/impersonnel)",
+    "table": [
+      { "french": "est parlé (en Macédoine)", "macedonian": "se zboruva", "example_mk": "Makedonski se zboruva vo Makedonija", "example_fr": "Le macédonien est parlé en Macédoine" },
+      { "french": "on vend / est vendu", "macedonian": "se prodava", "example_mk": "Tuka se prodava leb", "example_fr": "Ici on vend du pain" },
+      { "french": "on mange bien (impersonnel)", "macedonian": "se jade dobro", "example_mk": "Vo Makedonija se jade dobro", "example_fr": "En Macédoine on mange bien" },
+      { "french": "est écrit (participe)", "macedonian": "e napishan", "example_mk": "Pismoto e napiShano", "example_fr": "La lettre est écrite" },
+      { "french": "est ouvert/ouverte", "macedonian": "e otvoren / e otvorena", "example_mk": "Prozorецot e otvoren", "example_fr": "La fenêtre est ouverte" },
+      { "french": "est fermé/fermée", "macedonian": "e zatvoren / e zatvorena", "example_mk": "Dukánot e zatvoren", "example_fr": "Le magasin est fermé" },
+      { "french": "c'est fait", "macedonian": "e napraven(o)", "example_mk": "Rabotata e napravena", "example_fr": "Le travail est fait" },
+      { "french": "on entend", "macedonian": "se slüsha", "example_mk": "Se slüsha muzika", "example_fr": "On entend de la musique" }
+    ],
+    "notes_fr": [
+      "⚠️ Se passif ≠ se réfléchi — contexte obligatoire pour distinguer (sujet = personne → réfléchi, sujet = chose → passif)",
+      "💡 Se impersonnel (sans sujet explicite) = on + verbe actif en français",
+      "⚠️ Participe passif adjectival (-en/-an) = état résultant. Se passif = processus",
+      "💡 Très courant dans les annonces, panneaux, guides : 'Tuka se primer rezidencii' = Ici on accepte les résidences",
+      "⚠️ Accord du participe passif avec le nom : napíshen (m.) / napíshena (f.) / napísheno (n.)"
+    ],
+    "cyrillic_reference": "se=се, napraven=направен, otvoren=отворен, zatvoren=затворен"
+  },
+  "exercises": [
+    {
+      "id": "ex_pas01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quel type de 'se' est utilisé ?",
+      "question": "Tuka se jade dobro. Le 'se' est :",
+      "options": ["Réfléchi (on se mange)", "Passif/impersonnel (on mange)", "Réciproque (ils se mangent)", "Particule verbale"],
+      "correct_answer": "Passif/impersonnel (on mange)",
+      "accept_alternatives": [],
+      "explanation_fr": "'Se jade dobro' = on mange bien ici. Se impersonnel sans agent. Pas de sujet humain explicite → passif/impersonnel.",
+      "common_mistakes_fr": ["Se impersonnel = on + verbe actif en français"],
+      "verbs_present": ["jade"]
+    },
+    {
+      "id": "ex_pas01_002", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Makedonski se zboruva vo Makedonija i vo delovi od Grcija",
+      "correct_answer": "Le macédonien est parlé en Macédoine et dans des parties de la Grèce",
+      "accept_alternatives": ["On parle macédonien en Macédoine et dans des parties de la Grèce"],
+      "explanation_fr": "Se zboruva = est parlé / on parle. Passif avec se. Vo delovi od = dans des parties de.",
+      "common_mistakes_fr": ["Se + verbe = passif ou on + verbe actif"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pas01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez ce participe passif.",
+      "sentence_mk": "Prozorецot e otvoren, a vratata e zatvorena",
+      "correct_answer": "La fenêtre est ouverte, mais la porte est fermée",
+      "accept_alternatives": [],
+      "explanation_fr": "Otvoren (m.) = ouvert (prozorec, masculin). Zatvorena (f.) = fermée (vrata, féminin).",
+      "common_mistakes_fr": ["Participe passif accordé : otvoren (m.) vs otvorena (f.)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pas01_004", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Formez le passif avec se.",
+      "sentence": "Vo Makedonija ___ mnogu kafe. (En Macédoine on boit beaucoup de café.)",
+      "correct_answer": "se pie",
+      "accept_alternatives": [],
+      "explanation_fr": "Se pie = on boit / est bu. Passif/impersonnel avec se.",
+      "common_mistakes_fr": ["Se + présent = passif impersonnel"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pas01_005", "phase": 2, "type": "error_correction", "level": 4,
+      "instruction_fr": "Identifiez : réfléchi ou passif ?",
+      "sentence": "Toj se otvori. Vratata se otvori.",
+      "correct_answer": "Toj se otvori = il s'est ouvert (réfléchi, au sens figuré) ou on l'a ouvert. Vratata se otvori = la porte s'est ouverte (passif).",
+      "accept_alternatives": ["les deux sont grammaticalement corrects mais avec sens différents"],
+      "explanation_fr": "Avec un sujet PERSONNE (toj), se peut être réfléchi ou passif. Avec sujet CHOSE (vratata), se = passif.",
+      "common_mistakes_fr": ["Contexte crucial : sujet-personne = ambigu, sujet-chose = passif"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pas01_006", "phase": 3, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez avec le passif se.",
+      "sentence_fr": "Ici on vend des livres d'occasion.",
+      "correct_answer": "Tuka se prodavaat polovna knigi",
+      "accept_alternatives": ["Tuka se prodava polovna knigi"],
+      "explanation_fr": "Se prodavaat = on vend (pluriel car knigi est pluriel). Polovna = d'occasion.",
+      "common_mistakes_fr": ["Le verbe passif s'accorde avec le sujet logique (knigi → pluriel)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pas01_007", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Passez à la forme passive.",
+      "sentence": "Nekojsi ja napiSha knigata.",
+      "transformation_instruction_fr": "Le livre a été écrit (passif).",
+      "correct_answer": "Knigata e napishana",
+      "accept_alternatives": ["Knigata se napisha"],
+      "explanation_fr": "Deux options : participe passif 'e napishana' (état résultant) ou se passif 'se napisha' (action).",
+      "common_mistakes_fr": ["Participe passif (état) vs se passif (action) — les deux sont corrects"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

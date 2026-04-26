@@ -1,0 +1,106 @@
+{
+  "id": "lesson_indirect_object_pronouns_01",
+  "topic": "indirect_object_pronouns",
+  "category": "grammar",
+  "title": "L'objet indirect — Pronoms datifs et doublement",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "clitiques datifs (mi/ti/mu/i/ni/vi/im), na + objet nommé, doublement obligatoire",
+  "rules": {
+    "explanation_fr": "L'objet indirect répond à 'à qui ?' ou 'pour qui ?'. En macédonien il est exprimé par :\n1. La préposition na + nom/pronom fort\n2. Un clitique datif (obligatoire)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nTABLEAU COMPLET DES DATIFS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Personne  | Forme forte | Clitique\n  1re sg    | mene        | mi\n  2e sg     | tebe        | ti\n  3e sg m.  | nemu        | mu\n  3e sg f.  | nejze       | i (ì)\n  réfléchi  | sebe        | si\n  1re pl    | nam         | ni\n  2e pl     | vam         | vi\n  3e pl     | nim         | im\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÈGLE FONDAMENTALE — doublement OBLIGATOIRE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nQuand l'objet indirect est NOMMÉ, le clitique est OBLIGATOIRE en plus :\n\n  MU davam pari NA Ivan. (Je donne de l'argent à Ivan.)\n  IM chitam pisma NA baba i dedo. (Je leur lis des lettres à grand-mère et grand-père.)\n  I nosam kafe NA Bilkjana. (J'apporte du café à Biljana.)\n\n⚠️ La préposition na INTRODUIT le nom, mais le clitique RÉPÈTE l'information.\nLes deux sont présents ensemble — c'est le 'doublement du clitique' (clitic doubling).\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAVEC DEUX CLITIQUES (datif + accusatif)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nOrdre FIXE : (ne) + DATIF + ACCUSATIF + verbe\n\n  MI GO dade. (Il me le donna.) — mi=datif, go=accusatif\n  MU JA nosam. (Je la lui porte.) — mu=datif, ja=accusatif\n  NE MI GA davaj! (Ne me le donne pas!) — ne+mi+go+verbe\n  IM GI dadov. (Je les leur ai donnés.) — im=datif, gi=accusatif pl.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nPOSSESSIF AVEC DATIF (si + propre à soi)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSi = clitique datif réfléchi (à soi-même) :\n  Biljana si kupuva vesnici. (Biljana s'achète des journaux.)\n  Si go pravi sam. (Il le fait lui-même.)\n  Si e svoja rabota. (C'est sa propre affaire.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCONSTRUCTIONS AVEC DATIF\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  MI kaza. (Il me l'a dit.)\n  MU se kazhuva. (On lui dit/raconte.)\n  MI e zhalko. (Je suis désolé — litt. il m'est dommage.)\n  MI e studeno. (J'ai froid — litt. il m'est froid.)\n  MI fali. (Il/elle me manque — litt. il me fait défaut.)\n  MI treba. (J'en ai besoin — litt. il m'est nécessaire.)",
+    "table": [
+      { "french": "Je lui donne (à lui)", "macedonian": "Mu davam", "example_mk": "Mu davam pari na Marko", "example_fr": "Je donne de l'argent à Marko" },
+      { "french": "Je lui porte (à elle)", "macedonian": "I nosam", "example_mk": "I nosam kafe na Mira", "example_fr": "Je porte du café à Mira" },
+      { "french": "Je leur lis (à eux)", "macedonian": "Im chitam", "example_mk": "Im chitam prikazni na decata", "example_fr": "Je leur lis des histoires aux enfants" },
+      { "french": "Il me le donna (datif+acc.)", "macedonian": "Mi go dade", "example_mk": "Mi go dade pismoto", "example_fr": "Il me donna la lettre" },
+      { "french": "je me l'achète (réfl.)", "macedonian": "Si go kupuvam", "example_mk": "Si go kupuvam vesnikot", "example_fr": "Je m'achète le journal" },
+      { "french": "il me manque", "macedonian": "Mi fali", "example_mk": "Mi fali Makedonija", "example_fr": "La Macédoine me manque" },
+      { "french": "j'ai froid (datif impersonnel)", "macedonian": "Mi e studeno", "example_mk": "Mi e studeno denes", "example_fr": "J'ai froid aujourd'hui" },
+      { "french": "Nous leur avons montré", "macedonian": "Nie im pokazavme", "example_mk": "Nie im pokazavme slikite", "example_fr": "Nous leur avons montré les photos" }
+    ],
+    "notes_fr": [
+      "⚠️ DOUBLEMENT OBLIGATOIRE : quand l'objet indirect est nommé, le clitique est aussi présent",
+      "💡 Ordre avec deux clitiques : ne + datif + accusatif + verbe (ordre strict, jamais inversé)",
+      "⚠️ Si = réfléchi datif (à soi-même). Biljana si kupuva = Biljana s'achète pour elle-même",
+      "💡 Mi fali = me manque. Mi e zhalko = je suis désolé. Mi treba = j'ai besoin — expressions figées avec datif",
+      "💡 I (accent grave: ì) = à elle (3e sg. fém.). Mu = à lui (3e sg. masc.)"
+    ],
+    "cyrillic_reference": "mi=ми, mu=му, i=и, ni=ни, im=им"
+  },
+  "exercises": [
+    {
+      "id": "ex_io01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quel clitique pour 'à elle' ?",
+      "question": "Je porte du café à Mira. = ___ nosam kafe na Mira.",
+      "options": ["Mu", "I", "Mi", "Im"],
+      "correct_answer": "I",
+      "accept_alternatives": [],
+      "explanation_fr": "I = clitique datif 3e sg. féminin (à elle). Mu = à lui (masc.). Mi = à moi. Im = à eux.",
+      "common_mistakes_fr": ["I (fém. datif) ≠ mu (masc. datif) — distinguer le genre du destinataire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_io01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Ordre correct avec deux clitiques ?",
+      "question": "Il me la donna (la lettre). = Toj ___",
+      "options": ["go mi dade pismoto", "mi go dade pismoto", "mi dade go pismoto", "dade mi go"],
+      "correct_answer": "mi go dade pismoto",
+      "accept_alternatives": [],
+      "explanation_fr": "Ordre fixe : datif (mi) + accusatif (go) + verbe. Mi go dade = il me le donna. Pismoto = la lettre (défini).",
+      "common_mistakes_fr": ["DATIF avant ACCUSATIF — ordre strictement fixe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_io01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Im chitam prikazni na decata sekoja vecher",
+      "correct_answer": "Je leur lis des histoires aux enfants chaque soir",
+      "accept_alternatives": ["Je lis des histoires aux enfants chaque soir"],
+      "explanation_fr": "Im = clitique datif pluriel (à eux). Na decata = aux enfants (doublement obligatoire).",
+      "common_mistakes_fr": ["Doublement : im (clitique) ET na decata (nom) — les deux obligatoires"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_io01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez cette expression figée.",
+      "sentence_mk": "Mi fali Makedonija koga sum vo stranstvo",
+      "correct_answer": "La Macédoine me manque quand je suis à l'étranger",
+      "accept_alternatives": ["La Macédoine me manque quand je suis à l'étranger"],
+      "explanation_fr": "Mi fali = me manque (datif mi + fali). Construction inverse au français : 'la Macédoine me fait défaut'.",
+      "common_mistakes_fr": ["Mi fali X = X me manque (X est le sujet grammatical, mi est le datif)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_io01_005", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Complétez avec le bon clitique datif.",
+      "sentence": "Toj ___ kaza vistina na Bilkjana. (Il dit la vérité à Biljana.)",
+      "correct_answer": "i",
+      "accept_alternatives": [],
+      "explanation_fr": "Biljana = féminin → datif féminin i. + na Biljana (doublement obligatoire).",
+      "common_mistakes_fr": ["I (à elle) + na Biljana — les deux obligatoires ensemble"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_io01_006", "phase": 3, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez avec tous les clitiques corrects.",
+      "sentence_fr": "Je ne lui ai pas montré les photos.",
+      "correct_answer": "Ne mu gi pokazav fotografiite",
+      "accept_alternatives": ["Ne i gi pokazav fotografiite (si féminin)"],
+      "explanation_fr": "Ne + mu (datif masc.) + gi (accusatif pl.) + pokazav. Fotografiite = les photos (défini pl.).",
+      "common_mistakes_fr": ["Ordre : ne + mu + gi + verbe. Jamais : ne + gi + mu"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_io01_007", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Ajoutez le doublement de clitique.",
+      "sentence": "Davam pari na tatko mi.",
+      "transformation_instruction_fr": "Ajoutez le clitique datif obligatoire.",
+      "correct_answer": "Mu davam pari na tatko mi",
+      "accept_alternatives": [],
+      "explanation_fr": "Na tatko mi (à mon père = masc.) → clitique mu obligatoire avant le verbe.",
+      "common_mistakes_fr": ["Na + nom = doublement obligatoire → clitique mu/i/im avant le verbe"],
+      "verbs_present": []
+    }
+  ]
+}

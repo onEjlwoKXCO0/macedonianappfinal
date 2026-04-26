@@ -1,0 +1,123 @@
+{
+  "id": "lesson_aspect_pairs_01",
+  "topic": "verbal_aspect",
+  "category": "grammar",
+  "title": "L'aspect verbal — Paires perfectif/imperfectif et règles d'usage",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "50 paires courantes, 5 types de formation, règle koga, aspect au futur et impératif",
+  "rules": {
+    "explanation_fr": "Maîtrise complète de l'aspect — indispensable pour le C1.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCINQ TYPES DE PAIRES ASPECTUELLES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nType 1 — Préfixe ajoute le sens perfectif :\n  chita / PROchita     = lire / finir de lire\n  pravi / NApravi      = faire / finir de faire\n  pee / ZApee          = chanter / commencer à chanter\n  pishuva / NApishe    = écrire / finir d'écrire\n  odi / OTide          = aller / être parti\n  doagja / DOjde       = venir / arriver\n\nType 2 — Suffixe -uva (imperfectif) vs base (perfectif) :\n  kazhuva / kazhe      = dire / avoir dit\n  kupuva / kupi        = acheter / avoir acheté\n  davа / dade          = donner / avoir donné\n  pratjuva / prati     = envoyer / avoir envoyé\n  pochenuva / pochne   = commencer / avoir commencé\n\nType 3 — Suffixe -ne marque le perfectif :\n  slusha / slushne     = écouter / entendre\n  gleda / vidi         = regarder / voir (suppletif!)\n\nType 4 — Verbes entièrement différents (suppletifs) :\n  gleda / vidi         = regarder / voir\n  slusha / chue        = écouter / entendre\n  veli / rece          = dire habit. / dire une fois\n  zboruva / prozbori   = parler / prendre la parole\n\nType 5 — Double aspect (même forme) :\n  telefoniram          = appeler (imperf. et perf.)\n  pita                 = demander (imperf. et perf.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÈGLE D'USAGE — QUAND CHOISIR QUEL ASPECT\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nIMPERFECTIF quand :\n  • Action en cours : Sega chitam (je lis maintenant)\n  • Habitude : Sekoj den chitam (je lis chaque jour)\n  • Action répétée : Sakaat da doagjaаt (ils veulent venir souvent)\n  • Description : Mnogu sakate da zboruvate (vous aimez parler)\n\nPERFECTIF quand :\n  • Action unique et complète : Ja prochitav knigata (j'ai fini le livre)\n  • Séquence d'événements : Dojde, jade, otide\n  • Résultat : Napipi (il a écrit et fini)\n  • Début : Sakaаt da zapeat (ils veulent commencer à chanter)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÈGLE AVEC KOGA (quand/pendant que)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nKoga + IMPERFECTIF = PENDANT QUE (simultané) :\n  Koga ти ke chitash, nie ke gledame televizija.\n  (Pendant que tu liras, nous regarderons la télé.)\n\nKoga + PERFECTIF = QUAND (séquentiel) :\n  Koga ke ja prochitam knigata, ke ti ja dаdam.\n  (Quand j'aurai fini le livre, je te le donnerai.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nASPECT À L'IMPÉRATIF\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Chitaj! (lis! — en général, prends l'habitude)\n  Prochitaj! (lis jusqu'au bout — finis-le!)\n  Jadete! (mangez — en général)\n  Jadete go! (mangez-le — finissez-le!)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n30 PAIRES ESSENTIELLES À MÉMORISER\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Imperfectif   | Perfectif   | Sens\n  chita         | prochita    | lire\n  pishuva       | napíshe     | écrire\n  pravi         | napravi     | faire\n  jade          | izede       | manger\n  pie           | ispie       | boire\n  kupuva        | kupi        | acheter\n  dava          | dade        | donner\n  kazhuva       | kazhe       | dire\n  gleda         | vidi        | regarder/voir\n  slusha        | chue        | écouter/entendre\n  odi           | otide       | aller\n  doagja        | dojde       | venir\n  vleghuva      | vleze       | entrer\n  izleguva      | izleze      | sortir\n  minuva        | pomine      | passer\n  pomagа        | pomogne     | aider\n  razgovara     | razgovori   | discuter\n  objasnuva     | objasni     | expliquer\n  poczhnuva     | pochne      | commencer\n  zavrzhuva     | zavrshi     | finir\n  plakja        | plati       | payer\n  prodava       | proda       | vendre\n  kupuva        | kupi        | acheter\n  bara          | pobara      | chercher/trouver\n  znaе          | doznaе      | savoir/apprendre (info)\n  prata         | isprati     | envoyer\n  dobiva        | dobie       | recevoir\n  zblaknuva     | zblizhi     | s'approcher\n  zblaknuva     | najde       | trouver (chercher puis)\n  cheka         | pocheka     | attendre",
+    "table": [
+      { "french": "lire (en cours)", "macedonian": "chita", "example_mk": "Sega chitam kniga", "example_fr": "Je lis un livre en ce moment" },
+      { "french": "finir de lire", "macedonian": "prochita", "example_mk": "Ja prochitav knigata", "example_fr": "J'ai fini de lire le livre" },
+      { "french": "regarder", "macedonian": "gleda", "example_mk": "Gleda vo prozorec", "example_fr": "Il regarde par la fenêtre" },
+      { "french": "voir (avoir vu)", "macedonian": "vidi", "example_mk": "Vidov ubava kola", "example_fr": "J'ai vu une belle voiture" },
+      { "french": "écouter (processus)", "macedonian": "slusha", "example_mk": "Slusha muzika", "example_fr": "Il écoute de la musique" },
+      { "french": "entendre (résultat)", "macedonian": "chue", "example_mk": "Chue nekakov shumot", "example_fr": "Il entendit un bruit" },
+      { "french": "donner (habitude)", "macedonian": "dava", "example_mk": "Sekoj den mu dava pari", "example_fr": "Il lui donne de l'argent chaque jour" },
+      { "french": "avoir donné (une fois)", "macedonian": "dade", "example_mk": "Mu dade sto evra", "example_fr": "Il lui donna cent euros" }
+    ],
+    "notes_fr": [
+      "💡 Règle pratique : si c'est une habitude ou en cours → imperfectif. Si c'est fini/ponctuel → perfectif",
+      "⚠️ Koga + imperfectif = pendant que. Koga + perfectif = quand (séquentiel)",
+      "⚠️ Gleda/vidi et slusha/chue sont des suppletifs — deux verbes complètement différents",
+      "💡 Le futur avec ke peut être imperfectif (en cours futur) ou perfectif (résultat futur)",
+      "⚠️ Impératif : imperfectif = conseil général. Perfectif = demande d'accomplir complètement"
+    ],
+    "cyrillic_reference": "chita/prochita=чита/прочита, gleda/vidi=гледа/види, slusha/chue=слуша/чуе"
+  },
+  "exercises": [
+    {
+      "id": "ex_ap01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Choisissez l'aspect correct.",
+      "question": "Chaque matin, je bois un café. = Sekoe utro ___",
+      "options": ["go ispijam kafeto", "pijam kafe", "ispiev kafeto", "ke pijam kafe"],
+      "correct_answer": "pijam kafe",
+      "accept_alternatives": [],
+      "explanation_fr": "Habitude répétée (sekoj den/sekoe utro) → imperfectif pijam. Ispijam/ispiev = perfectif (finir de boire une fois).",
+      "common_mistakes_fr": ["Habitude + répétition = toujours imperfectif"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quel aspect pour une action unique et complète ?",
+      "question": "J'ai bu tout le café. = ___",
+      "options": ["Piev kafeto", "Go ispiev kafeto", "Pijam kafeto", "Ispijav kafe"],
+      "correct_answer": "Go ispiev kafeto",
+      "accept_alternatives": [],
+      "explanation_fr": "Action unique et complète (tout le café = kafeto défini) → perfectif ispiev. Kafeto (défini) souligne la totalité.",
+      "common_mistakes_fr": ["Perfectif = action terminée/complète. go = clitique (le café, masc.)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_003", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Aspect avec koga — simultané ou séquentiel ?",
+      "question": "Pendant que tu lisais, je regardais la télé. = Koga ti ___",
+      "options": ["ke prochitash", "chitashe", "prochita", "ke ja prochitash knigata"],
+      "correct_answer": "chitashe",
+      "accept_alternatives": ["chitashe"],
+      "explanation_fr": "Pendant que = simultané → imperfectif chitashe (imparfait). Koga + perfectif = séquentiel (après que).",
+      "common_mistakes_fr": ["Koga + imperfectif = pendant que. Koga + perfectif = quand (après)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez et expliquez l'aspect.",
+      "sentence_mk": "Koga ke ja prochitam knigata, ke ti ja dаdam",
+      "correct_answer": "Quand j'aurai fini le livre, je te le donnerai",
+      "accept_alternatives": ["Quand j'aurai lu le livre, je te le donnerai"],
+      "explanation_fr": "Koga ke ja prochitam = quand j'aurai fini de lire (perfectif → séquentiel). Ke ti ja dadam = je te la donnerai.",
+      "common_mistakes_fr": ["Prochitam = perfectif → l'action sera TERMINÉE avant l'autre"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_005", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Choisissez la bonne paire (imperfectif ou perfectif).",
+      "sentence": "Dali mozhe da ___ toa za mene? (Peut-il faire ça pour moi — une seule fois ?)",
+      "correct_answer": "napravi",
+      "accept_alternatives": [],
+      "explanation_fr": "Action unique → perfectif napravi. Pravi (imperfectif) = faire en général, de façon habituelle.",
+      "common_mistakes_fr": ["Demande ponctuelle = perfectif napravi"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_006", "phase": 2, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez l'aspect.",
+      "sentence": "Sekoj den go prochituvav vesnikot.",
+      "correct_answer": "Sekoj den go chitav vesnikot",
+      "accept_alternatives": [],
+      "explanation_fr": "Habitude quotidienne (sekoj den) → imperfectif chitav. Le perfectif prochituvav serait contradictoire avec l'idée de répétition.",
+      "common_mistakes_fr": ["Habitude = imperfectif. Perfectif + habitude = contradiction"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_007", "phase": 3, "type": "matching", "level": 4,
+      "instruction_fr": "Associez chaque verbe à son perfectif.",
+      "pairs": [
+        { "mk": "jade (manger en cours)", "fr": "izede" },
+        { "mk": "gleda (regarder)", "fr": "vidi" },
+        { "mk": "slusha (écouter)", "fr": "chue" },
+        { "mk": "dava (donner habit.)", "fr": "dade" },
+        { "mk": "pishuva (écrire)", "fr": "napíshe" }
+      ],
+      "correct_answer": "jade=izede,gleda=vidi,slusha=chue,dava=dade,piShuva=napíshe",
+      "accept_alternatives": [],
+      "explanation_fr": "Paires suppletives : gleda/vidi, slusha/chue. Paires préfixées : jade/izede, pishuva/napíshe.",
+      "common_mistakes_fr": ["Vidi ≠ gleda (suppletifs) — deux verbes entièrement différents"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ap01_008", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Exprimez la même action en imperfectif (habitude) puis perfectif (une fois).",
+      "sentence": "Sekoja vecher pie mleko. (habitude)",
+      "transformation_instruction_fr": "Ce soir-là, il a bu tout le lait (une fois, complètement).",
+      "correct_answer": "Taa vecher go ispie mlekoto",
+      "accept_alternatives": ["Taa vecher go ispiev mlekoto"],
+      "explanation_fr": "Habitude 'pie' (imperfectif) → action unique 'ispie/ispiev' (perfectif). Mlekoto (défini) = tout le lait.",
+      "common_mistakes_fr": ["Pie (imperfectif) → ispie (perfectif) : le préfixe is- ajoute l'idée de complétion"],
+      "verbs_present": []
+    }
+  ]
+}

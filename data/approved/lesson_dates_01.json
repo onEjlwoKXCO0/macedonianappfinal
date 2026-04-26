@@ -1,0 +1,84 @@
+{
+  "id": "lesson_dates_01",
+  "topic": "calendar",
+  "category": "thematic",
+  "title": "Les dates — jours, mois, années",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "exprimer une date complète, les mois, les années, les anniversaires",
+  "rules": {
+    "explanation_fr": "Exprimer une date complète en macédonien.\n\nSTRUCTURE D'UNE DATE COMPLÈTE :\nordinal (masc.) + mois + année\n\nExemple : 26-ti april 2026 godina\n\nMOIS DE L'ANNÉE (tous masculins en macédonien !) :\n  januari (janvier), fevruari (février), mart (mars)\n  april (avril), maj (mai), juni (juin)\n  juli (juillet), avgust (août), septemvri (septembre)\n  oktomvri (octobre), noemvri (novembre), dekemvri (décembre)\n\nFORMAT DE LA DATE :\n  Denes e prviot april. (Aujourd'hui c'est le premier avril.)\n  Rodena sum na desettiot juni. (Je suis née le dix juin.)\n  Toj e roden na triесеttiot oktomvri 1995 godina.\n\nPOUR L'ANNIVERSAIRE :\n  Koga e tvojot roden den? (Quand est ton anniversaire?)\n  Roden sum na... / Rodena sum na... (Je suis né/e le...)\n  Imash roden den! / Sreken roden den! (Joyeux anniversaire!)\n\nANNÉES :\n  Vo 2026 godina. (En l'an 2026.)\n  Toj e roden vo 1990 godina. (Il est né en 1990.)\n  Vo dvaeset i prv vek. (Au 21e siècle.)\n\nFRACTIONS DE L'ANNÉE :\n  Vo pochеtokot na godinata. (Au début de l'année.)\n  Vo sredinata na godinata. (Au milieu de l'année.)\n  Na krajot na godinata. (À la fin de l'année.)\n\nSAISONS avec mois :\n  Zima: dekemvri, januari, fevruari\n  Prolet: mart, april, maj\n  Leto: juni, juli, avgust\n  Esen: septemvri, oktomvri, noemvri",
+    "table": [
+      { "french": "le premier janvier", "macedonian": "prviot januari", "example_mk": "Denes e prviot januari", "example_fr": "Aujourd'hui c'est le premier janvier" },
+      { "french": "le quinze mars", "macedonian": "petnaesettiot mart", "example_mk": "Rodena sum na petnaesettiot mart", "example_fr": "Je suis née le quinze mars" },
+      { "french": "en quelle année ?", "macedonian": "Vo koja godina?", "example_mk": "Vo koja godina si roden?", "example_fr": "En quelle année es-tu né ?" },
+      { "french": "en l'an 1999", "macedonian": "vo 1999 godina", "example_mk": "Toj e roden vo 1999 godina", "example_fr": "Il est né en 1999" },
+      { "french": "Joyeux anniversaire !", "macedonian": "Sreken roden den!", "example_mk": "Sreken roden den, Marko!", "example_fr": "Joyeux anniversaire, Marko !" },
+      { "french": "Quand es-tu né/e ?", "macedonian": "Koga si roden/rodena?", "example_mk": "Koga si roden?", "example_fr": "Quand es-tu né ?" },
+      { "french": "le vingt-six avril 2026", "macedonian": "dvаeset i shestiot april 2026 godina", "example_mk": "Denes e dvaeset i shestiot april 2026 godina", "example_fr": "Aujourd'hui c'est le 26 avril 2026" },
+      { "french": "au 21e siècle", "macedonian": "vo dvaeset i prv vek", "example_mk": "Zhiveeme vo dvaeset i prv vek", "example_fr": "Nous vivons au 21e siècle" }
+    ],
+    "notes_fr": [
+      "⚠️ Tous les mois sont MASCULINS en macédonien — ordinal masculin défini : prviot, vtoriot...",
+      "💡 Format date : ordinal masc. défini + mois (+ godina pour les années)",
+      "⚠️ Roden (m.) / Rodena (f.) = né/née — accord avec le genre du locuteur",
+      "💡 'Na' + date pour les dates de naissance : roden sum na prviot mart",
+      "💡 'Vo' + année : vo 1990 godina = en 1990"
+    ],
+    "cyrillic_reference": "januari=јануари, fevruari=февруари, mart=март, april=април"
+  },
+  "exercises": [
+    {
+      "id": "ex_dt01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on 'le premier mars' ?",
+      "question": "le premier mars =",
+      "options": ["edna mart", "prvata mart", "prviot mart", "eden mart"],
+      "correct_answer": "prviot mart",
+      "accept_alternatives": [],
+      "explanation_fr": "Mart est masculin → ordinal masculin défini : prvIOT. Pour les dates, toujours l'ordinal masculin défini.",
+      "common_mistakes_fr": ["Mois = masculins → ordinal masculin défini : -iot"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dt01_002", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Roden sum na dvaeset i petiot juni 1995 godina",
+      "correct_answer": "Je suis né le vingt-cinq juin 1995",
+      "accept_alternatives": ["Je suis né le 25 juin 1995"],
+      "explanation_fr": "Roden sum = je suis né (masculin). Na = le (préposition de date). Dvaeset i petiot = vingt-cinquième.",
+      "common_mistakes_fr": ["Roden (m.) vs Rodena (f.) — accord avec le locuteur"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dt01_003", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Dites votre anniversaire (femme, 3 septembre).",
+      "sentence_fr": "Je suis née le 3 septembre.",
+      "correct_answer": "Rodena sum na tretiot septemvri",
+      "accept_alternatives": [],
+      "explanation_fr": "Rodena = née (féminin). Na = le (date). Tretiot septemvri = le troisième septembre.",
+      "common_mistakes_fr": ["Rodena (f.) = née. Tretiot = le troisième (masc. défini car septemvri est masc.)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dt01_004", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Souhaitez un joyeux anniversaire.",
+      "sentence_fr": "Joyeux anniversaire, Marie !",
+      "correct_answer": "Sreken roden den, Marie!",
+      "accept_alternatives": ["Sreken rodenден, Marie!"],
+      "explanation_fr": "Sreken roden den = joyeux anniversaire (litt. heureux jour de naissance).",
+      "common_mistakes_fr": ["Sreken roden den = formule fixe pour les anniversaires"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dt01_005", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Dites la date d'aujourd'hui complète.",
+      "sentence_fr": "Aujourd'hui c'est le 26 avril 2026.",
+      "correct_answer": "Denes e dvaeset i shestiot april 2026 godina",
+      "accept_alternatives": ["Denes e 26-ti april 2026 godina"],
+      "explanation_fr": "Dvaeset i shestiot = vingt-sixième (masc. défini). Nota: souvent les dates s'écrivent avec le chiffre en macédonien.",
+      "common_mistakes_fr": ["Format : ordinal défini + mois + (godina)"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

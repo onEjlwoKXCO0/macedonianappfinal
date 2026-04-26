@@ -1,0 +1,97 @@
+{
+  "id": "lesson_sentiment_verbs_01",
+  "topic": "reflexive_verbs",
+  "category": "grammar",
+  "title": "Les verbes de sentiment — Mi se saka, Mi se jade",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "constructions avec se + clitique indirect (mi se saka, mi se jade, mi se spie), envie et émotion",
+  "rules": {
+    "explanation_fr": "Une construction typiquement macédonienne (et balkanique) exprime les états physiques et émotionnels : CLITIQUE DATIF + SE + VERBE.\n\nLe sujet grammatical est l'EXPÉRIENCE elle-même, pas la personne.\nLa personne est exprimée par le CLITIQUE DATIF.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSTRUCTURE FONDAMENTALE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nDatif + se + verbe (verbe à la 3e sg., invariable)\n\n  MI se jade. = J'ai envie de manger. (litt. le manger-se me fait.)\n  TI se jade. = Tu as envie de manger.\n  MU se jade. = Il a envie de manger.\n  I se jade. = Elle a envie de manger.\n  NI se jade. = Nous avons envie de manger.\n  VI se jade. = Vous avez envie de manger.\n  IM se jade. = Ils ont envie de manger.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nLISTE DES CONSTRUCTIONS COURANTES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  mi se jade/pie  — j'ai envie de manger/boire\n  mi se saka     — j'ai envie de... / je veux (désir moins fort que sakam)\n  mi se spie     — j'ai sommeil\n  mi se plache   — j'ai envie de pleurer\n  mi se smee     — j'ai envie de rire\n  mi se plashi   — j'ai peur (litt. la peur me vient)\n  mi se soni     — je rêve / j'ai envie de rêver\n  mi se siedи    — j'ai envie de m'asseoir\n  mi se odi      — j'ai envie d'aller / je veux y aller\n  mi se ucham    — j'ai envie d'étudier\n\nAvec OBJET spécifié :\n  Mi se saka kafe. = J'ai envie d'un café.\n  Mi se jade pizza. = J'ai envie de pizza.\n  Mu se ide vo kino. = Il a envie d'aller au cinéma.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nNÉGATION — ne mi se...\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Ne mi se jade. = Je n'ai pas envie de manger.\n  Ne mi se odi. = Je n'ai pas envie d'y aller.\n  Ne mu se raboti. = Il n'a pas envie de travailler.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nDOPAGJA — plaire (construction similaire)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Mi se dopaga muzika. = J'aime la musique. (litt. la musique me plaît)\n  Ti se dopaga ovaa pesna? = Tu aimes cette chanson ?\n  Mu se dopaga Makedonija. = Il aime la Macédoine.\n\n⚠️ Contraste : Sakam = je veux (actif, décision). Mi se saka = j'ai envie (passif, désir naturel).",
+    "table": [
+      { "french": "j'ai envie de manger", "macedonian": "Mi se jade", "example_mk": "Mi se jade pizza", "example_fr": "J'ai envie de manger une pizza" },
+      { "french": "j'ai sommeil", "macedonian": "Mi se spie", "example_mk": "Mi se spie, odam doma", "example_fr": "J'ai sommeil, je rentre chez moi" },
+      { "french": "j'ai envie de pleurer", "macedonian": "Mi se plache", "example_mk": "Zoshto ti se plache?", "example_fr": "Pourquoi as-tu envie de pleurer ?" },
+      { "french": "j'ai envie de rire", "macedonian": "Mi se smee", "example_mk": "Mnogu mi se smee", "example_fr": "J'ai vraiment envie de rire" },
+      { "french": "il n'a pas envie de travailler", "macedonian": "Ne mu se raboti", "example_mk": "Denes ne mu se raboti", "example_fr": "Aujourd'hui il n'a pas envie de travailler" },
+      { "french": "j'aime la musique (dopagja)", "macedonian": "Mi se dopaga muzika", "example_mk": "Mi se dopaga folk muzika", "example_fr": "J'aime la musique folk" },
+      { "french": "as-tu envie de... ?", "macedonian": "Ti se... ?", "example_mk": "Ti se jade neshto?", "example_fr": "As-tu envie de manger quelque chose ?" },
+      { "french": "il a envie de café", "macedonian": "Mu se saka kafe", "example_mk": "Sekoja utro mu se saka kafe", "example_fr": "Chaque matin il a envie d'un café" }
+    ],
+    "notes_fr": [
+      "⚠️ Structure : DATIF + se + verbe (3e sg.) — la personne est en datif, pas nominatif",
+      "💡 Sakam = je veux (actif, décision consciente). Mi se saka = j'ai envie (désir spontané/corporel)",
+      "⚠️ Dopagja = plaire. Mi se dopaga = me plaît. Très courant pour exprimer les goûts",
+      "💡 Négation : ne mi se jade = je n'ai pas envie. 'ne' avant mi",
+      "⚠️ Le verbe reste à la 3e sg. quel que soit le datif (mi/ti/mu/i/ni/vi/im)"
+    ],
+    "cyrillic_reference": "mi se=ми се, mi se jade=ми се јаде, se dopaga=се допаѓа"
+  },
+  "exercises": [
+    {
+      "id": "ex_sv01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quelle est la traduction de 'Mi se spie' ?",
+      "question": "Mi se spie =",
+      "options": ["Je dors", "J'ai sommeil", "Il dort", "Je veux dormir"],
+      "correct_answer": "J'ai sommeil",
+      "accept_alternatives": [],
+      "explanation_fr": "Mi se spie = j'ai sommeil (litt. le dormir se fait en moi). Mi = à moi (datif 1re sg.).",
+      "common_mistakes_fr": ["Mi se spie (état naturel) ≠ Sakam da spijam (décision de dormir)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sv01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Comment exprimer 'il n'a pas envie de travailler' ?",
+      "question": "Il n'a pas envie de travailler =",
+      "options": ["Ne sakam da raboti", "Ne mu se raboti", "Ne se mu raboti", "Mu ne se raboti"],
+      "correct_answer": "Ne mu se raboti",
+      "accept_alternatives": [],
+      "explanation_fr": "Structure négative : ne + datif + se + verbe. Ne mu se raboti = il n'a pas envie de travailler.",
+      "common_mistakes_fr": ["Ordre : ne (mu se) raboti — ne et le clitique datif restent ensemble"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_sv01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Mu se dopaga makedonska muzika",
+      "correct_answer": "Il aime la musique macédonienne",
+      "accept_alternatives": ["La musique macédonienne lui plaît"],
+      "explanation_fr": "Mu se dopaga = il aime / ça lui plaît (mu = à lui). Makedonska muzika = musique macédonienne.",
+      "common_mistakes_fr": ["Dopagja = plaire. Mi se dopaga = me plaît / j'aime"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sv01_004", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Complétez avec le bon clitique datif.",
+      "sentence": "___ se jade pizza. (Elle a envie de manger une pizza.)",
+      "correct_answer": "I",
+      "accept_alternatives": [],
+      "explanation_fr": "Elle = 3e sg. féminin → clitique datif féminin = i. I se jade pizza = elle a envie de pizza.",
+      "common_mistakes_fr": ["Datif 3e sg. fém. = i (pas mu qui est masculin)"],
+      "verbs_present": ["jade"]
+    },
+    {
+      "id": "ex_sv01_005", "phase": 2, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Nous n'avons pas envie d'étudier aujourd'hui.",
+      "correct_answer": "Denes ne ni se ucha",
+      "accept_alternatives": ["Ne ni se ucham denes"],
+      "explanation_fr": "Ne ni se ucha = nous n'avons pas envie d'étudier. Ni = datif 1re pl. (à nous).",
+      "common_mistakes_fr": ["Ni = datif pluriel première personne (à nous)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sv01_006", "phase": 3, "type": "spot_the_difference", "level": 4,
+      "instruction_fr": "Quelle est la nuance ?",
+      "sentence_a": "Sakam da jadam pizza.",
+      "sentence_b": "Mi se jade pizza.",
+      "correct_answer": "a = je veux manger une pizza (décision active, intention), b = j'ai envie de pizza (désir naturel, envie corporelle)",
+      "accept_alternatives": ["actif/décision vs passif/désir spontané"],
+      "expected_keywords_fr": ["décision", "envie", "actif", "passif"],
+      "explanation_fr": "Sakam (je veux) = décision consciente. Mi se jade (j'ai envie) = désir spontané, sensation corporelle. Nuance subtile mais réelle.",
+      "common_mistakes_fr": ["La différence est modale et émotionnelle — les deux sont correctes dans différents contextes"],
+      "verbs_present": ["saka", "jade"]
+    }
+  ]
+}

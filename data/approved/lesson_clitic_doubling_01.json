@@ -1,0 +1,107 @@
+{
+  "id": "lesson_clitic_doubling_01",
+  "topic": "clitic_doubling",
+  "category": "grammar",
+  "title": "Le doublement des clitiques — système complet",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "objet direct défini + clitique, objet indirect + na + clitique, ordre complet, futur avec clitiques",
+  "rules": {
+    "explanation_fr": "Le doublement des clitiques est une caractéristique fondamentale du macédonien (et des langues balkaniques). Il est OBLIGATOIRE dans plusieurs situations.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÈGLE 1 — Objet direct DÉFINI = clitique obligatoire\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nQuand l'objet direct est défini (avec article), le clitique est obligatoire :\n\n  Ja chitam KNIGATA.     (Je la lis, la livre.) ✓\n  Chitam KNIGATA.         (incorrect en standard) ✗\n  Chitam EDNA KNIGA.      (Je lis un livre — indéfini, pas de clitique) ✓\n\n  Go gledav FILMOT.      (Je le regardais, le film.) ✓\n  Gi vidov DECATA.        (Je les vis, les enfants.) ✓\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nRÈGLE 2 — Objet indirect NOMMÉ = clitique + na\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nQuand l'objet indirect est nommé, clitique ET na sont obligatoires :\n\n  MU davam pari NA Marko.     (Je donne de l'argent à Marko.)\n  I nosam kafe NA Biljana.     (J'apporte du café à Biljana.)\n  Im citam prikazni NA decata. (Je leur lis des histoires aux enfants.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nORDRE COMPLET DES CLITIQUES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nOrdre STRICT : (ne) + DATIF + ACCUSATIF + verbe\n\n  Marija I JA nosi knigata NA nastavnickata.\n  Marija ne I JA nosi knigata NA nastavnickata.\n  Marija is (not) bringing the book to the teacher.\n\n  Mu GI dаvam parite NA tatko mi.\n  Ne mu GI dаvam parite NA tatko mi.\n  I (don't) give the money to my father.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAVEC LE FUTUR : ke + clitiques + verbe\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  ke + datif + accusatif + verbe\n\n  Ke MI GO donese.          (Il me l'apportera.)\n  Liljana ke TI GI pokаzhe slikite. (Liljana te les montrera.)\n  Ke IM JA dаdam knigata.   (Je la leur donnerai, la livre.)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAVEC L'IMPÉRATIF : clitique après le verbe\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  Daj MI GO! (Donne-le-moi!) — clitiques après l'impératif\n  Pokаzhi MI JA! (Montre-la-moi!)\n  Izmij SE! (Lave-toi!) — réfléchi aussi après\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSYNTHÈSE — QUAND clitique est-il obligatoire ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n  1. Objet direct DÉFINI → clitique acc. obligatoire\n  2. Objet indirect NOMMÉ → clitique dat. + na obligatoires\n  3. Emphase sur pronom → forme forte + clitique\n  4. Pronom seul (sans nom) → clitique seul\n  5. Objet direct INDÉFINI → pas de clitique nécessaire",
+    "table": [
+      { "french": "Je la lis (défini)", "macedonian": "JA chitam knigata", "example_mk": "Ja chitam knigata sekoja vecher", "example_fr": "Je lis le livre chaque soir" },
+      { "french": "Je lis un livre (indéfini)", "macedonian": "Chitam edna kniga", "example_mk": "Chitam edna interesna kniga", "example_fr": "Je lis un livre intéressant (pas de clitique)" },
+      { "french": "Je lui donne à Marko", "macedonian": "MU davam NA Marko", "example_mk": "Mu davam pari na Marko", "example_fr": "Je donne de l'argent à Marko" },
+      { "french": "Il me le donnera", "macedonian": "Ke mi go donese", "example_mk": "Ke mi go donese utre", "example_fr": "Il me l'apportera demain" },
+      { "french": "Je ne la lui ai pas donnée", "macedonian": "Ne mu ja dadov", "example_mk": "Ne mu ja dadov knigata", "example_fr": "Je ne lui ai pas donné le livre" },
+      { "french": "Donne-le-moi ! (impératif)", "macedonian": "Daj mi go!", "example_mk": "Daj mi go toa!", "example_fr": "Donne-le-moi !" },
+      { "french": "Marija le leur apporte", "macedonian": "Marija im go nosi", "example_mk": "Marija im go nosi kafeto", "example_fr": "Marija leur apporte le café" },
+      { "french": "Liljana te les montrera", "macedonian": "Liljana ke ti gi pokazhe", "example_mk": "Liljana ke ti gi pokаzhe slikite", "example_fr": "Liljana te montrera les photos" }
+    ],
+    "notes_fr": [
+      "⚠️ RÈGLE CARDINALE : objet défini = clitique OBLIGATOIRE — c'est la propriété la plus distinctive du macédonien",
+      "⚠️ Objet indirect nommé : TOUJOURS datif + na (les deux ensemble)",
+      "💡 Ordre strict : (ne) + datif + accusatif + verbe — jamais inversé",
+      "💡 Futur : ke + datif + accusatif + verbe",
+      "⚠️ Impératif : clitique APRÈS le verbe (Daj mi go! pas Mi go daj!)",
+      "💡 Indéfini (eden/edna/edno) = pas de clitique accusatif nécessaire"
+    ],
+    "cyrillic_reference": "doublement=удвојување на клитики"
+  },
+  "exercises": [
+    {
+      "id": "ex_cd01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Objet défini — faut-il un clitique ?",
+      "question": "Je lis le livre (défini). = ___",
+      "options": ["Chitam knigata", "Ja chitam kniga", "Ja chitam knigata", "Chitam ja knigata"],
+      "correct_answer": "Ja chitam knigata",
+      "accept_alternatives": [],
+      "explanation_fr": "Knigata = défini (avec article -ta) → clitique ja OBLIGATOIRE avant chitam. Chitam knigata sans ja est incorrect en standard.",
+      "common_mistakes_fr": ["Défini = clitique obligatoire. Indéfini = pas nécessaire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cd01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Objet indéfini — faut-il un clitique ?",
+      "question": "Je lis un livre (indéfini). = ___",
+      "options": ["Ja chitam edna kniga", "Chitam edna kniga", "Ja chitam kniga", "Gi chitam edna kniga"],
+      "correct_answer": "Chitam edna kniga",
+      "accept_alternatives": [],
+      "explanation_fr": "Edna kniga = indéfini → pas de clitique nécessaire. Chitam edna kniga est correct et naturel.",
+      "common_mistakes_fr": ["Indéfini (edna/eden) = pas de clitique accusatif obligatoire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cd01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Marija i ja nosi knigata na nastavnickata",
+      "correct_answer": "Marija apporte le livre à la professeure",
+      "accept_alternatives": ["Marija lui apporte le livre, à la professeure"],
+      "explanation_fr": "I (datif fém.) + ja (accusatif fém.) + nosi. Na nastavnickata = à la professeure (doublement).",
+      "common_mistakes_fr": ["Deux clitiques : i (à elle, datif) + ja (la, accusatif) — datif avant accusatif"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cd01_004", "phase": 2, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez l'ordre des clitiques.",
+      "sentence": "Toj go mu dade pismoto.",
+      "correct_answer": "Toj mu go dade pismoto",
+      "accept_alternatives": [],
+      "explanation_fr": "Ordre : datif (mu) AVANT accusatif (go). Mu go dade = il le lui donna.",
+      "common_mistakes_fr": ["DATIF toujours avant ACCUSATIF — ordre impossible à inverser"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cd01_005", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Ajoutez le clitique manquant.",
+      "sentence": "Ke ___ ___ donese kafeto. (Il m'apportera le café.)",
+      "correct_answer": "mi go",
+      "accept_alternatives": [],
+      "explanation_fr": "Futur avec clitiques : ke + mi (datif) + go (accusatif) + donese. Kafeto = défini (clitique go obligatoire).",
+      "common_mistakes_fr": ["Futur : ke + datif + accusatif + verbe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cd01_006", "phase": 3, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez avec tous les clitiques.",
+      "sentence_fr": "Liljana te les montrera les photos.",
+      "correct_answer": "Liljana ke ti gi pokаzhe fotografiite",
+      "accept_alternatives": ["Liljana ke ti gi pokаzhe slikite"],
+      "explanation_fr": "Ke + ti (datif 2e sg.) + gi (accusatif pl.) + pokаzhe. Fotografiite = les photos (défini pl.).",
+      "common_mistakes_fr": ["Gi = accusatif pluriel. Ti = datif 2e sg. Ordre ke + ti + gi + verbe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cd01_007", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Transformez en impératif avec clitiques.",
+      "sentence": "Ke mi go dadesh.",
+      "transformation_instruction_fr": "Donne-le-moi ! (impératif)",
+      "correct_answer": "Daj mi go!",
+      "accept_alternatives": [],
+      "explanation_fr": "Impératif : verbe + clitiques après. Daj (impératif de dade) + mi + go. Pas mi go daj!",
+      "common_mistakes_fr": ["Impératif : clitiques APRÈS le verbe (daj MI GO!) — ordre inversé par rapport à la déclarative"],
+      "verbs_present": []
+    }
+  ]
+}
