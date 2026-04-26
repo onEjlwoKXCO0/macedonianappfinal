@@ -1,0 +1,140 @@
+{
+  "id": "lesson_ordinals_01",
+  "topic": "ordinals",
+  "category": "thematic",
+  "title": "Les nombres ordinaux",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "premier, deuxieme, troisieme... formation et accord en genre",
+  "rules": {
+    "explanation_fr": "Les ordinaux macedoniens se forment generalement en ajoutant -ti/-ta/-to au nombre cardinal.\n\nOrdinaux de base :\n• prv/prva/prvo — premier/premiere\n• vtor/vtora/vtoro — deuxieme\n• tret/treta/treto — troisieme\n• chetvrti/chetvрta — quatrieme\n• petti/petta — cinquieme\n• shesti/shesta — sixieme\n• sedmi/sedma — septieme\n• osmi/osma — huitieme\n• devetti/devetta — neuvieme\n• desetti/desetta — dixieme\n\nAccord : comme les adjectifs, les ordinaux s accord en genre avec le nom.\nEx : prvata lekcija (la premiere lecon, f.), prviot den (le premier jour, m.)",
+    "table": [
+      { "french": "1er / 1ere", "macedonian": "prv / prva", "example_mk": "Prviot den", "example_fr": "Le premier jour" },
+      { "french": "2e", "macedonian": "vtor / vtora", "example_mk": "Vtorata lekcija", "example_fr": "La deuxieme lecon" },
+      { "french": "3e", "macedonian": "tret / treta", "example_mk": "Tretiot pat", "example_fr": "La troisieme fois" },
+      { "french": "4e", "macedonian": "chetvrti / chetvрta", "example_mk": "Chеtvrtata ulica", "example_fr": "La quatrieme rue" },
+      { "french": "5e", "macedonian": "petti / petta", "example_mk": "Pettiot sprat", "example_fr": "Le cinquieme etage" },
+      { "french": "10e", "macedonian": "desetti / desetta", "example_mk": "Desetettiot april", "example_fr": "Le dix avril" },
+      { "french": "dernier", "macedonian": "posleden / posledna", "example_mk": "Poslednata stanica", "example_fr": "Le dernier arret" },
+      { "french": "prochain", "macedonian": "idniot / idnata", "example_mk": "Idnata nedela", "example_fr": "La semaine prochaine" }
+    ],
+    "notes_fr": [
+      "Prv/prva/prvo est le seul irregulier — tous les autres se forment regulierement",
+      "Accord obligatoire : prviot den (m.), prvata lekcija (f.), prvoto dete (n.)",
+      "Chetvrti (4e) contient ch (Ch) — ne pas oublier le h",
+      "Sprat = etage — utile pour les adresses"
+    ],
+    "cyrillic_reference": "prv=прв, vtor=втор, tret=трет, chetvrti=четврти, petti=петти"
+  },
+  "exercises": [
+    {
+      "id": "ex_ord01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on premier (masculin) ?",
+      "question": "premier (m.) =",
+      "options": ["vtor", "prv", "tret", "petti"],
+      "correct_answer": "prv",
+      "accept_alternatives": ["prviot"],
+      "explanation_fr": "Prv = premier (m.). Vtor = deuxieme, tret = troisieme, petti = cinquieme.",
+      "common_mistakes_fr": ["Prv est irregulier — tous les autres se forment avec un suffixe"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ord01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle est la forme feminine de vtor ?",
+      "question": "deuxieme (f.) =",
+      "options": ["vtori", "vtorot", "vtora", "vtore"],
+      "correct_answer": "vtora",
+      "accept_alternatives": ["vtorata"],
+      "explanation_fr": "Vtor (m.) -> vtora (f.) -> vtoro (n.). Comme les adjectifs, les ordinaux s accordent en genre.",
+      "common_mistakes_fr": ["Feminin des ordinaux = -a : vtora, treta, chetvrtа"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ord01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Prvata lekcija e lесna",
+      "correct_answer": "La premiere lecon est facile",
+      "accept_alternatives": ["La premiere lecon est simple"],
+      "explanation_fr": "Prvata (premiere, f. definie) + lekcija (lecon, f.) + e lesna (est facile, f.).",
+      "common_mistakes_fr": ["Prvata = la premiere (feminin defini avec article -ta)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ord01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Zivеam na trettiot sprat",
+      "correct_answer": "J habite au troisieme etage",
+      "accept_alternatives": ["Je vis au troisieme etage"],
+      "explanation_fr": "Ziveam = j habite, na = au, trettiot (troisieme, m. defini) + sprat (etage, m.).",
+      "common_mistakes_fr": ["Sprat = etage — important pour les adresses"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ord01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez avec le bon ordinal.",
+      "sentence": "Toa e ___ pat. (C est la deuxieme fois.)",
+      "correct_answer": "vtoriot",
+      "accept_alternatives": ["vtor"],
+      "explanation_fr": "Vtoriot = le deuxieme (m. defini). Pat = fois/chemin.",
+      "common_mistakes_fr": ["Ordinal masculin defini : vtor + iot = vtoriot"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ord01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "La semaine prochaine je vais a Paris.",
+      "correct_answer": "Idnata nedela odam vo Pariz",
+      "accept_alternatives": ["Idnata nedelа kje odam vo Pariz"],
+      "explanation_fr": "Idnata nedela = la semaine prochaine, odam = je vais, vo Pariz = a Paris.",
+      "common_mistakes_fr": ["Idnata = la prochaine (f. defini avec -ta)"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_ord01_007", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez chaque ordinal a sa traduction.",
+      "pairs": [
+        { "mk": "prv", "fr": "1er" },
+        { "mk": "vtor", "fr": "2e" },
+        { "mk": "tret", "fr": "3e" },
+        { "mk": "chetvrti", "fr": "4e" },
+        { "mk": "petti", "fr": "5e" }
+      ],
+      "correct_answer": "prv=1er,vtor=2e,tret=3e,chetvrti=4e,petti=5e",
+      "accept_alternatives": [],
+      "explanation_fr": "Les cinq premiers ordinaux — prv est irregulier, les autres suivent un schema.",
+      "common_mistakes_fr": ["Prv (1er) est le seul totalement irregulier"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ord01_008", "phase": 3, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez l accord.",
+      "sentence": "Prviot lekcija e lesna.",
+      "correct_answer": "Prvata lekcija e lesna",
+      "accept_alternatives": [],
+      "explanation_fr": "Lekcija est feminin -> ordinal feminin : prvata (pas prviot qui est masculin).",
+      "common_mistakes_fr": ["L ordinal s accorde avec le genre du nom — lekcija (f.) -> prvata"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ord01_009", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : Je suis au cinquieme etage.",
+      "scrambled_words": ["Sum", "na", "pettiot", "sprat", "vtoriot", "tretiot"],
+      "correct_answer": "Sum na pettiot sprat",
+      "accept_alternatives": [],
+      "explanation_fr": "Sum na pettiot sprat = Je suis au cinquieme etage. Vtoriot (2e) et tretiot (3e) sont des intrus.",
+      "common_mistakes_fr": ["Pettiot = le cinquieme (m. defini)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ord01_010", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "C est la premiere fois que je parle macedonien.",
+      "correct_answer": "Toa e prviot pat shto zboruvam makedonski",
+      "accept_alternatives": ["Prviot pat zboruvam makedonski"],
+      "explanation_fr": "Prviot pat (la premiere fois, m.) + shto (que) + zboruvam makedonski (je parle macedonien).",
+      "common_mistakes_fr": ["Shto = que (conjonction apres ordinal dans les subordonnees)"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

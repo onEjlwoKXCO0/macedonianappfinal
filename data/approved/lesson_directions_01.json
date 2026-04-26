@@ -1,0 +1,141 @@
+{
+  "id": "lesson_directions_01",
+  "topic": "directions",
+  "category": "thematic",
+  "title": "Les directions",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "demander et donner des directions, vocabulaire de navigation",
+  "rules": {
+    "explanation_fr": "Pour demander son chemin :\n\nIzvinete, kade e...? = Excusez-moi, ou est... ?\n\nDirections : pravo (tout droit), levo (gauche), desno (droite), nazad (en arriere)\n\nVerbes : svrtete (tournez), pojdete (allez), minete (passez)\n\nE blizu (c est pres), E daleku (c est loin), pesho (a pied)",
+    "table": [
+      { "french": "tout droit", "macedonian": "pravo", "example_mk": "Pojdete pravo", "example_fr": "Allez tout droit" },
+      { "french": "a gauche", "macedonian": "levo", "example_mk": "Svrtete levo", "example_fr": "Tournez a gauche" },
+      { "french": "a droite", "macedonian": "desno", "example_mk": "Svrtete desno", "example_fr": "Tournez a droite" },
+      { "french": "Excusez-moi, ou est ?", "macedonian": "Izvinete, kade e?", "example_mk": "Izvinete, kade e hotelot?", "example_fr": "Excusez-moi, ou est l hotel?" },
+      { "french": "C est pres", "macedonian": "E blizu", "example_mk": "E blizu, pet minuti", "example_fr": "C est pres, cinq minutes" },
+      { "french": "C est loin", "macedonian": "E daleku", "example_mk": "E daleku od tuka", "example_fr": "C est loin d ici" },
+      { "french": "le carrefour", "macedonian": "raskrsnoto", "example_mk": "Na raskrsnoto svrtete levo", "example_fr": "Au carrefour tournez a gauche" },
+      { "french": "a cote de", "macedonian": "pokraj", "example_mk": "Pokraj bankata", "example_fr": "A cote de la banque" }
+    ],
+    "notes_fr": [
+      "Izvinete = excusez-moi (formel). Izvini = excuse-moi (informel)",
+      "Imperatif formel en -te : svrtete (tournez), pojdete (allez), minete (passez)",
+      "Potoa = puis/ensuite — pour enchainer les directions",
+      "Pesho = a pied — cinq minuti pesho = cinq minutes a pied"
+    ],
+    "cyrillic_reference": "pravo=право, levo=лево, desno=десно, blizu=близу, daleku=далеку"
+  },
+  "exercises": [
+    {
+      "id": "ex_dir01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on a gauche ?",
+      "question": "a gauche =",
+      "options": ["desno", "pravo", "levo", "nazad"],
+      "correct_answer": "levo",
+      "accept_alternatives": [],
+      "explanation_fr": "Levo = a gauche. Desno = a droite, pravo = tout droit, nazad = en arriere.",
+      "common_mistakes_fr": ["Levo (gauche) vs desno (droite) — a memoriser en paire"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dir01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment demander ou est l hotel ?",
+      "question": "Excusez-moi, ou est l hotel ?",
+      "options": ["Izvinete, kako e hotelot?", "Izvinete, kade e hotelot?", "Kade e hotelot?", "Koj e hotelot?"],
+      "correct_answer": "Izvinete, kade e hotelot?",
+      "accept_alternatives": ["Kade e hotelot, ve molam?"],
+      "explanation_fr": "Izvinete = excusez-moi, kade = ou, hotelot = l hotel (defini masculin).",
+      "common_mistakes_fr": ["Kade = ou (lieu) — mot interrogatif de lieu"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dir01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez ces directions.",
+      "sentence_mk": "Pojdete pravo, potoa svrtete desno",
+      "correct_answer": "Allez tout droit, puis tournez a droite",
+      "accept_alternatives": ["Allez droit, ensuite tournez a droite"],
+      "explanation_fr": "Pojdete pravo = allez tout droit, potoa = puis, svrtete desno = tournez a droite.",
+      "common_mistakes_fr": ["Potoa = ensuite/puis"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dir01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Bankata e blizu, samo tri minuti pesho",
+      "correct_answer": "La banque est pres, seulement trois minutes a pied",
+      "accept_alternatives": ["La banque est proche, juste trois minutes a pied"],
+      "explanation_fr": "Bankata = la banque, blizu = pres, pesho = a pied, tri minuti = trois minutes.",
+      "common_mistakes_fr": ["Pesho = a pied (adverbe)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dir01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez les directions.",
+      "sentence": "Na raskrsnoto, svrtete ___. (Au carrefour, tournez a gauche.)",
+      "correct_answer": "levo",
+      "accept_alternatives": [],
+      "explanation_fr": "Svrtete levo = tournez a gauche. Raskrsnoto = le carrefour.",
+      "common_mistakes_fr": ["Levo = gauche, pas desno (droite)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dir01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Allez tout droit jusqu a la banque.",
+      "correct_answer": "Pojdete pravo do bankata",
+      "accept_alternatives": [],
+      "explanation_fr": "Pojdete pravo = allez tout droit, do bankata = jusqu a la banque.",
+      "common_mistakes_fr": ["Do = jusqu a (destination)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dir01_007", "phase": 2, "type": "matching", "level": 1,
+      "instruction_fr": "Associez chaque direction a sa traduction.",
+      "pairs": [
+        { "mk": "pravo", "fr": "tout droit" },
+        { "mk": "levo", "fr": "a gauche" },
+        { "mk": "desno", "fr": "a droite" },
+        { "mk": "blizu", "fr": "pres" },
+        { "mk": "daleku", "fr": "loin" }
+      ],
+      "correct_answer": "pravo=tout droit,levo=a gauche,desno=a droite,blizu=pres,daleku=loin",
+      "accept_alternatives": [],
+      "explanation_fr": "Vocabulaire de base des directions.",
+      "common_mistakes_fr": ["Levo/desno — memorisez en paire comme gauche/droite"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dir01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : Excusez-moi, ou est la gare ?",
+      "scrambled_words": ["Izvinete", "kade", "e", "stancijata", "hotelot", "kako"],
+      "correct_answer": "Izvinete kade e stancijata",
+      "accept_alternatives": [],
+      "explanation_fr": "Izvinete + kade + e + stancijata (la gare). Hotelot et kako sont des intrus.",
+      "common_mistakes_fr": ["Stancijata = la gare (defini feminin)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_dir01_009", "phase": 3, "type": "transformation", "level": 2,
+      "instruction_fr": "Passez au tutoiement (imperatif singulier).",
+      "sentence": "Pojdete pravo i svrtete levo.",
+      "transformation_instruction_fr": "Donnez les memes directions a un ami (tu).",
+      "correct_answer": "Pojdi pravo i svrti levo",
+      "accept_alternatives": [],
+      "explanation_fr": "Imperatif formel -> informel : pojdete -> pojdi, svrtete -> svrti. Retirez le -te.",
+      "common_mistakes_fr": ["Retirer -te donne l imperatif singulier informel"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dir01_010", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez le mini-dialogue.",
+      "sentence_fr": "Excusez-moi, ou est le marche ? Allez tout droit puis tournez a droite. C est pres.",
+      "correct_answer": "Izvinete, kade e pijacata? Pojdete pravo, potoa svrtete desno. E blizu.",
+      "accept_alternatives": [],
+      "explanation_fr": "Pijacata = le marche (defini), potoa = puis, svrtete desno = tournez a droite, e blizu = c est pres.",
+      "common_mistakes_fr": ["Pijacata = le marche/la place du marche"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

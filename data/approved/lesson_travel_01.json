@@ -1,0 +1,141 @@
+{
+  "id": "lesson_travel_01",
+  "topic": "travel",
+  "category": "thematic",
+  "title": "Le voyage",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "transports, a l hotel, a l aeroport, billets",
+  "rules": {
+    "explanation_fr": "Vocabulaire de voyage :\n\nTransports : avion (avton), voz (train), avtobus (bus), taksi (taxi), kola (voiture)\nLieux : aerodromot (l aeroport), stancijata (la gare), hotelot (l hotel), sobata (la chambre)\n\nPhrases essentielles :\n• Eden bilet za... ve molam. = Un billet pour... s il vous plait.\n• Vo kolku chasot zaminuva vozot? = A quelle heure part le train ?\n• Kade e mojata soba? = Ou est ma chambre ?\n• Imam rezervacija. = J ai une reservation.\n• Koga pristignuva? = Quand arrive-t-il ?\n• Kolku chasа trае patuvаnjeto? = Combien d heures dure le voyage ?",
+    "table": [
+      { "french": "un billet pour...", "macedonian": "eden bilet za...", "example_mk": "Eden bilet za Ohrid, ve molam", "example_fr": "Un billet pour Ohrid, s il vous plait" },
+      { "french": "A quelle heure part le train ?", "macedonian": "Vo kolku chasot zaminuva vozot?", "example_mk": "Vo kolku chasot zaminuva sledniot voz?", "example_fr": "A quelle heure part le prochain train ?" },
+      { "french": "J ai une reservation", "macedonian": "Imam rezervacija", "example_mk": "Imam rezervacija na imeto...", "example_fr": "J ai une reservation au nom de..." },
+      { "french": "l aeroport", "macedonian": "aerodromot", "example_mk": "Kade e aerodromot?", "example_fr": "Ou est l aeroport ?" },
+      { "french": "la chambre", "macedonian": "sobata", "example_mk": "Sobata e na trettiot sprat", "example_fr": "La chambre est au troisieme etage" },
+      { "french": "aller-retour", "macedonian": "povratno patuvanje", "example_mk": "Eden bilet povratno", "example_fr": "Un billet aller-retour" },
+      { "french": "Quand arrive ?", "macedonian": "Koga pristignuva?", "example_mk": "Koga pristignuva avionot?", "example_fr": "Quand arrive l avion ?" },
+      { "french": "valise", "macedonian": "kofEr", "example_mk": "Mojot kofer e teshok", "example_fr": "Ma valise est lourde" }
+    ],
+    "notes_fr": [
+      "Voz = train (aussi : vozot = le train)",
+      "Zaminuva = part (verbe partir/quitter pour les transports)",
+      "Pristignuva = arrive (verbe arriver pour les transports)",
+      "Rezervacija = reservation (proche du francais)"
+    ],
+    "cyrillic_reference": "voz=воз, bilet=билет, aerodrom=аеродром, soba=соба, rezervacija=резервација"
+  },
+  "exercises": [
+    {
+      "id": "ex_tr01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment commander un billet ?",
+      "question": "Un billet pour Skopje, s il vous plait =",
+      "options": ["Edno selo za Skopje", "Eden bilet za Skopje, ve molam", "Edna soba za Skopje", "Ima li voz za Skopje?"],
+      "correct_answer": "Eden bilet za Skopje, ve molam",
+      "accept_alternatives": [],
+      "explanation_fr": "Eden bilet = un billet (masculin), za = pour, ve molam = s il vous plait.",
+      "common_mistakes_fr": ["Bilet = billet (emprunt international)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tr01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Que signifie Koga pristignuva avionot ?",
+      "question": "Koga pristignuva avionot? =",
+      "options": ["A quelle heure part l avion ?", "Quand arrive l avion ?", "Ou est l avion ?", "Combien coute l avion ?"],
+      "correct_answer": "Quand arrive l avion ?",
+      "accept_alternatives": [],
+      "explanation_fr": "Koga = quand, pristignuva = arrive, avionot = l avion (defini).",
+      "common_mistakes_fr": ["Pristignuva = arrive (zaminuva = part)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tr01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Vo kolku chasot zaminuva sledniot voz za Ohrid?",
+      "correct_answer": "A quelle heure part le prochain train pour Ohrid ?",
+      "accept_alternatives": ["Le prochain train pour Ohrid part a quelle heure ?"],
+      "explanation_fr": "Vo kolku chasot = a quelle heure, zaminuva = part, sledniot voz = le prochain train.",
+      "common_mistakes_fr": ["Sleden = prochain, voz = train"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tr01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Imam rezervacija i moeto ime e Marko",
+      "correct_answer": "J ai une reservation et mon nom est Marko",
+      "accept_alternatives": ["J ai une reservation, mon nom est Marko"],
+      "explanation_fr": "Imam rezervacija = j ai une reservation, moeto ime = mon nom, e Marko = est Marko.",
+      "common_mistakes_fr": ["Moeto ime = mon nom (neutre)"],
+      "verbs_present": ["sum", "ima"]
+    },
+    {
+      "id": "ex_tr01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez.",
+      "sentence": "Kade e ___? (Ou est l aeroport ?)",
+      "correct_answer": "aerodromot",
+      "accept_alternatives": [],
+      "explanation_fr": "Aerodromot = l aeroport (defini masculin avec -ot).",
+      "common_mistakes_fr": ["Aerodrom + ot = aerodromot (article defini masculin)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tr01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Je voudrais deux billets aller-retour pour Skopje.",
+      "correct_answer": "Sakam dva bileti povratno za Skopje",
+      "accept_alternatives": ["Dva bileti povratno za Skopje, ve molam"],
+      "explanation_fr": "Dva bileti = deux billets, povratno = aller-retour, za Skopje = pour Skopje.",
+      "common_mistakes_fr": ["Dva bileti (deux billets) = pluriel de bilet"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_tr01_007", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez.",
+      "pairs": [
+        { "mk": "voz", "fr": "train" },
+        { "mk": "avtobus", "fr": "bus" },
+        { "mk": "taksi", "fr": "taxi" },
+        { "mk": "aerodromot", "fr": "l aeroport" },
+        { "mk": "sobata", "fr": "la chambre" }
+      ],
+      "correct_answer": "voz=train,avtobus=bus,taksi=taxi,aerodromot=l aeroport,sobata=la chambre",
+      "accept_alternatives": [],
+      "explanation_fr": "Transports et lieux de voyage essentiels.",
+      "common_mistakes_fr": ["Voz = train (pas voiture — kola = voiture)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tr01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : La chambre est au troisieme etage.",
+      "scrambled_words": ["Sobata", "e", "na", "trettiot", "sprat", "vtoriot", "vo"],
+      "correct_answer": "Sobata e na trettiot sprat",
+      "accept_alternatives": [],
+      "explanation_fr": "Sobata (la chambre) + e + na (au) + trettiot sprat (troisieme etage). Vtoriot (2e) et vo (dans) sont des intrus.",
+      "common_mistakes_fr": ["Na sprat = a l etage (na, pas vo)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_tr01_009", "phase": 3, "type": "transformation", "level": 3,
+      "instruction_fr": "Passez au futur.",
+      "sentence": "Vozot zaminuva vo devet.",
+      "transformation_instruction_fr": "Le train partira a neuf heures demain.",
+      "correct_answer": "Utre vozot kje zaminuva vo devet",
+      "accept_alternatives": ["Vozot kje zaminuva utre vo devet"],
+      "explanation_fr": "Utre = demain, kje + zaminuva = partira (futur). L ordre est flexible.",
+      "common_mistakes_fr": ["Kje + present = futur — simple ajout de kje"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_tr01_010", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Dialogue a l hotel. Traduisez.",
+      "sentence_fr": "Bonjour. J ai une reservation. Je m appelle Dupont. Ou est ma chambre ?",
+      "correct_answer": "Zdravo. Imam rezervacija. Se vikam Dupont. Kade e mojata soba?",
+      "accept_alternatives": [],
+      "explanation_fr": "Zdravo (bonjour) + imam rezervacija (j ai une reservation) + se vikam (je m appelle) + kade e mojata soba (ou est ma chambre).",
+      "common_mistakes_fr": ["Mojata soba = ma chambre (adjectif possessif feminin avec article)"],
+      "verbs_present": ["ima"]
+    }
+  ]
+}

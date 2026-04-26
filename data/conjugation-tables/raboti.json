@@ -1,0 +1,11 @@
+{
+  "infinitive": "raboti",
+  "meaning_fr": "travailler",
+  "aspect": "imperfective",
+  "tables": {
+    "present": { "jas": "rabotam", "ti": "rabotish", "toj_taa": "raboti", "nie": "rabotиme", "vie": "rabotite", "tie": "rabotat" },
+    "past_imperfect": { "jas": "rabotev", "ti": "rabotese", "toj_taa": "rabotese", "nie": "rabotevme", "vie": "rabotevte", "tie": "rabotea" },
+    "future": { "jas": "kje rabotam", "ti": "kje rabotish", "toj_taa": "kje raboti", "nie": "kje rabotиme", "vie": "kje rabotite", "tie": "kje rabotat" }
+  },
+  "notes_fr": ["💡 'Rabotam' = je travaille — verbe très courant", "⚠️ 'Na rabota' = au travail"]
+}

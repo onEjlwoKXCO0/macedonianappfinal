@@ -1,0 +1,141 @@
+{
+  "id": "lesson_shopping_money_01",
+  "topic": "shopping_money",
+  "category": "thematic",
+  "title": "Les achats et l argent",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "faire des achats, les prix, payer, negocier",
+  "rules": {
+    "explanation_fr": "Vocabulaire essentiel pour faire des achats :\n\nArgent : pari (argent), evra (euros), denari (denars, monnaie macedonienne), cena (prix), popust (remise/reduction)\n\nPhrases cles :\n• Kolku chini? / Kolku chini toa? = Combien ca coute ?\n• Kolku chini ovaa? = Combien coute celle-ci ?\n• Sakam da kupam... = Je veux acheter...\n• Go kupuvam. = Je l achete.\n• Premnogu e skupo. = C est trop cher.\n• Ima li popust? = Y a-t-il une remise ?\n• Moze li da platam so kartica? = Est-ce que je peux payer par carte ?\n• Kade e kasata? = Ou est la caisse ?",
+    "table": [
+      { "french": "Combien ca coute ?", "macedonian": "Kolku chini?", "example_mk": "Kolku chini ova?", "example_fr": "Combien coute ceci ?" },
+      { "french": "C est trop cher", "macedonian": "Premnogu e skupo", "example_mk": "Premnogu e skupo za mene", "example_fr": "C est trop cher pour moi" },
+      { "french": "Je veux acheter", "macedonian": "Sakam da kupam", "example_mk": "Sakam da kupam ova", "example_fr": "Je veux acheter ceci" },
+      { "french": "Je l achete", "macedonian": "Go kupuvam", "example_mk": "Go kupuvam, blagodaram", "example_fr": "Je l achete, merci" },
+      { "french": "Y a-t-il une remise ?", "macedonian": "Ima li popust?", "example_mk": "Ima li nekoj popust?", "example_fr": "Y a-t-il une remise ?" },
+      { "french": "Ou est la caisse ?", "macedonian": "Kade e kasata?", "example_mk": "Izvinete, kade e kasata?", "example_fr": "Excusez-moi, ou est la caisse ?" },
+      { "french": "la monnaie macedonienne", "macedonian": "denar", "example_mk": "Chini sto denari", "example_fr": "Ca coute cent denars" },
+      { "french": "payer par carte", "macedonian": "platam so kartica", "example_mk": "Moze li so kartica?", "example_fr": "Est-ce que je peux payer par carte ?" }
+    ],
+    "notes_fr": [
+      "Kolku chini? = combien ca coute ? (litt. combien vaut-il?)",
+      "Skupo = cher, eftino = pas cher/bon marche",
+      "Sakam da kupam = je veux acheter (da + present = infinitif macedonien)",
+      "Moze li? = est-ce que je peux ? / c est possible ? — tres utile"
+    ],
+    "cyrillic_reference": "pari=пари, cena=цена, skupo=скапо, kupuvam=купувам"
+  },
+  "exercises": [
+    {
+      "id": "ex_sh01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment demander le prix ?",
+      "question": "Combien ca coute ? =",
+      "options": ["Kade e kasata?", "Kolku chini?", "Ima li popust?", "Sakam da kupam"],
+      "correct_answer": "Kolku chini?",
+      "accept_alternatives": ["Kolku chini toa?"],
+      "explanation_fr": "Kolku chini? = combien ca coute? (kolku = combien, chini = ca coute).",
+      "common_mistakes_fr": ["Kolku = combien, chini = vaut/coute"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sh01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Que signifie Premnogu e skupo ?",
+      "question": "Premnogu e skupo =",
+      "options": ["C est tres bon marche", "C est trop cher", "Ca vaut combien ?", "Je veux acheter"],
+      "correct_answer": "C est trop cher",
+      "accept_alternatives": [],
+      "explanation_fr": "Premnogu = trop, skupo = cher. Premnogu e skupo = c est trop cher.",
+      "common_mistakes_fr": ["Skupo = cher, eftino = bon marche — antonymes importants"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_sh01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Sakam da kupam ova, kolku chini?",
+      "correct_answer": "Je veux acheter ceci, combien ca coute ?",
+      "accept_alternatives": ["Je voudrais acheter ceci, c est combien ?"],
+      "explanation_fr": "Sakam da kupam = je veux acheter, ova = ceci, kolku chini = combien ca coute.",
+      "common_mistakes_fr": ["Da + present = construction infinitive macedonienne (comme en francais avec de + infinitif)"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_sh01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Moze li da platam so kartica?",
+      "correct_answer": "Est-ce que je peux payer par carte ?",
+      "accept_alternatives": ["Je peux payer par carte ?"],
+      "explanation_fr": "Moze li = est-ce que je peux / c est possible ?, platam = je paie, so kartica = par carte.",
+      "common_mistakes_fr": ["Moze li? = est-ce possible ? — formule de permission tres courante"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sh01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez.",
+      "sentence": "Ima li nekoj ___? (Y a-t-il une remise ?)",
+      "correct_answer": "popust",
+      "accept_alternatives": [],
+      "explanation_fr": "Popust = remise/reduction. Ima li nekoj popust? = Y a-t-il une remise ?",
+      "common_mistakes_fr": ["Popust = remise (mot courant dans les magasins)"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_sh01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "C est pas cher, je l achete.",
+      "correct_answer": "E eftino, go kupuvam",
+      "accept_alternatives": [],
+      "explanation_fr": "Eftino = pas cher/bon marche, go kupuvam = je l achete (go = clitique direct masculin).",
+      "common_mistakes_fr": ["Go kupuvam = je l achete (go = le, clitique objet direct)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_sh01_007", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez.",
+      "pairs": [
+        { "mk": "skupo", "fr": "cher" },
+        { "mk": "eftino", "fr": "bon marche" },
+        { "mk": "popust", "fr": "remise" },
+        { "mk": "cena", "fr": "prix" },
+        { "mk": "kasata", "fr": "la caisse" }
+      ],
+      "correct_answer": "skupo=cher,eftino=bon marche,popust=remise,cena=prix,kasata=la caisse",
+      "accept_alternatives": [],
+      "explanation_fr": "Vocabulaire de base pour faire des achats.",
+      "common_mistakes_fr": ["Skupo (cher) vs eftino (bon marche) — antonymes"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sh01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : Excusez-moi, ou est la caisse ?",
+      "scrambled_words": ["Izvinete", "kade", "e", "kasata", "cenata", "popustot"],
+      "correct_answer": "Izvinete kade e kasata",
+      "accept_alternatives": [],
+      "explanation_fr": "Izvinete + kade + e + kasata. Cenata (le prix) et popustot (la remise) sont des intrus.",
+      "common_mistakes_fr": ["Kasata = la caisse (defini feminin avec -ta)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_sh01_009", "phase": 3, "type": "transformation", "level": 3,
+      "instruction_fr": "Reagissez au prix trop eleve.",
+      "sentence": "Chini iljada evra.",
+      "transformation_instruction_fr": "Exprimez que c est trop cher et demandez une remise.",
+      "correct_answer": "Premnogu e skupo! Ima li popust?",
+      "accept_alternatives": [],
+      "explanation_fr": "Premnogu e skupo (c est trop cher) + Ima li popust? (Y a-t-il une remise?)",
+      "common_mistakes_fr": ["Deux phrases independantes pour exprimer le refus et demander une reduction"],
+      "verbs_present": ["sum", "ima"]
+    },
+    {
+      "id": "ex_sh01_010", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Dialogue complet au marche.",
+      "sentence_fr": "Combien coutent ces chaussures ? Elles coutent deux cents euros. C est trop cher !",
+      "correct_answer": "Kolku chinаt ovie chevli? Chinаt dveste evra. Premnogu e skupo!",
+      "accept_alternatives": ["Kolku chini ovie chevli? Chini dveste evra. Premnogu e skupo!"],
+      "explanation_fr": "Chinat = ils coutent (pl.), ovie chevli = ces chaussures (pl.), dveste evra = deux cents euros.",
+      "common_mistakes_fr": ["Chini (sing.) vs chinat (pl.) selon le nombre de l objet"],
+      "verbs_present": []
+    }
+  ]
+}

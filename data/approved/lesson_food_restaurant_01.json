@@ -3,139 +3,40 @@
   "topic": "food_restaurant",
   "category": "thematic",
   "title": "La nourriture et le restaurant",
-  "difficulty_level": 2,
-  "created_at": "2026-04-25",
+  "difficulty_level": 1,
+  "created_at": "2026-04-26",
   "status": "approved",
-  "subtopic": "vocabulaire alimentaire, commander au restaurant, expressions utiles",
+  "subtopic": "aliments courants, commander au restaurant, expressions de goût",
   "rules": {
-    "explanation_fr": "Vocabulaire essentiel pour manger en Macédoine :\n\nAliments courants :\n• Leb — pain\n• Meso — viande\n• Piletina — poulet\n• Riba — poisson\n• Zelenchuk — légumes\n• Ovoshje — fruits\n• Jajce — œuf\n• Mleko — lait\n• Sir — fromage\n• Kafe — café\n• Chaj — thé\n• Vino — vin\n• Voda — eau\n\nAu restaurant :\n• Еden sto za dvajca, ве молам — Une table pour deux, s'il vous plaît\n• Shto imate? — Qu'est-ce que vous avez ?\n• Sakam da naracham... — Je voudrais commander...\n• Smetkata, ве молам — L'addition, s'il vous plaît",
+    "explanation_fr": "Vocabulaire essentiel pour manger en Macédoine.\n\nAliments : leb (pain), meso (viande), riba (poisson), sir (fromage), jajce (œuf), supa (soupe)\nBoissons : voda (eau), kafe (café), mleko (lait), sok (jus), pivo (bière), vino (vin)\n\nAu restaurant :\n• Sakam... — Je voudrais...\n• Ve molam — S'il vous plaît\n• Smetkata, ve molam — L'addition, s'il vous plaît\n• Kolku chini? — Combien ça coûte ?\n• E vkusno — C'est délicieux\n• Sum gladen/gladna — J'ai faim",
     "table": [
-      { "french": "pain", "macedonian": "leb", "example_mk": "Sakam leb", "example_fr": "Je veux du pain" },
-      { "french": "viande", "macedonian": "meso", "example_mk": "Nema da jadam meso", "example_fr": "Je ne mangerai pas de viande" },
-      { "french": "poulet", "macedonian": "piletina", "example_mk": "Piletinata e vкusna", "example_fr": "Le poulet est délicieux" },
-      { "french": "poisson", "macedonian": "riba", "example_mk": "Sakam riba so zelenchuk", "example_fr": "Je veux du poisson avec des légumes" },
-      { "french": "eau", "macedonian": "voda", "example_mk": "Edna voda, ве молам", "example_fr": "Une eau, s'il vous plaît" },
-      { "french": "café", "macedonian": "kafe", "example_mk": "Sakam crno kafe", "example_fr": "Je veux un café noir" },
-      { "french": "l'addition", "macedonian": "smetkata", "example_mk": "Smetkata, ве молам", "example_fr": "L'addition, s'il vous plaît" },
-      { "french": "délicieux", "macedonian": "vкusen (m.) / vkusna (f.)", "example_mk": "Supata e vkusna", "example_fr": "La soupe est délicieuse" }
+      { "french": "pain", "macedonian": "leb", "example_mk": "Eden leb, ve molam", "example_fr": "Un pain, s'il vous plaît" },
+      { "french": "eau", "macedonian": "voda", "example_mk": "Edna voda, ve molam", "example_fr": "Une eau, s'il vous plaît" },
+      { "french": "café", "macedonian": "kafe", "example_mk": "Edno kafe", "example_fr": "Un café" },
+      { "french": "je voudrais", "macedonian": "sakam", "example_mk": "Sakam pica", "example_fr": "Je voudrais une pizza" },
+      { "french": "c'est délicieux", "macedonian": "e vkusno", "example_mk": "E mnogu vkusno!", "example_fr": "C'est très délicieux !" },
+      { "french": "l'addition", "macedonian": "smetkata", "example_mk": "Smetkata, ve molam", "example_fr": "L'addition, s'il vous plaît" },
+      { "french": "j'ai faim (m./f.)", "macedonian": "sum gladen / gladna", "example_mk": "Sum mnogu gladen", "example_fr": "J'ai très faim" },
+      { "french": "s'il vous plaît", "macedonian": "ve molam", "example_mk": "Ve molam, edna voda", "example_fr": "S'il vous plaît, une eau" }
     ],
     "notes_fr": [
-      "💡 'Ве молам' = s'il vous plaît (litt. je vous en prie) — formule de politesse indispensable",
-      "⚠️ 'Jajce' (œuf) est neutre — article défini : jajceto (l'œuf)",
-      "💡 'Sakam da naracham' = je voudrais commander (litt. je veux que je commande)",
-      "⚠️ 'Sir' en macédonien = fromage (ne pas confondre avec le français 'sir')"
+      "💡 'Ve molam' = s'il vous plaît (formel). 'Te molam' = s'il te plaît (informel)",
+      "💡 Pour commander : Sakam + aliment, ou Ve molam + edna/eden + aliment",
+      "⚠️ 'Gladen' (m.) / 'gladna' (f.) — accord avec le locuteur",
+      "⚠️ 'Vkusno' contient le son Vk- — prononcer 'vkousno'"
     ],
-    "cyrillic_reference": "leb=леб, meso=месо, voda=вода, kafe=кафе, vkusen=вкусен"
+    "cyrillic_reference": "leb=леб, voda=вода, kafe=кафе, vkusno=вкусно, smetkata=сметката"
   },
   "exercises": [
-    {
-      "id": "ex_food01_001", "phase": 1, "type": "multiple_choice", "level": 1,
-      "instruction_fr": "Comment dit-on 'l'addition' ?",
-      "question": "l'addition = ",
-      "options": ["smetkata", "restoranot", "narachuva", "menito"],
-      "correct_answer": "smetkata",
-      "accept_alternatives": [],
-      "explanation_fr": "'Smetkata' = l'addition (défini de smetka). Expression : 'Smetkata, ве молам' = L'addition, s'il vous plaît.",
-      "common_mistakes_fr": ["'Smetka' = addition/facture — mémorisez avec 'Smetkata, ве молам'"],
-      "verbs_present": []
-    },
-    {
-      "id": "ex_food01_002", "phase": 1, "type": "multiple_choice", "level": 1,
-      "instruction_fr": "Que signifie 'Sakam crno kafe' ?",
-      "question": "Sakam crno kafe =",
-      "options": ["Je veux un thé noir", "Je veux un café blanc", "Je veux un café noir", "J'aime le café"],
-      "correct_answer": "Je veux un café noir",
-      "accept_alternatives": ["Je voudrais un café noir"],
-      "explanation_fr": "'Sakam' = je veux/voudrais, 'crno' = noir (neutre, s'accorde avec 'kafe' neutre), 'kafe' = café.",
-      "common_mistakes_fr": ["'Kafe' est neutre → adjectif neutre 'crno' (pas 'crven')"],
-      "verbs_present": ["saka"]
-    },
-    {
-      "id": "ex_food01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
-      "instruction_fr": "Traduisez en français.",
-      "sentence_mk": "Sakam riba so zelenchuk",
-      "correct_answer": "Je veux du poisson avec des légumes",
-      "accept_alternatives": ["Je voudrais du poisson avec des légumes"],
-      "explanation_fr": "'Riba' = poisson, 'so' = avec, 'zelenchuk' = légumes.",
-      "common_mistakes_fr": ["'So' = avec (préposition), 'bez' = sans"],
-      "verbs_present": ["saka"]
-    },
-    {
-      "id": "ex_food01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
-      "instruction_fr": "Traduisez cette commande au restaurant.",
-      "sentence_mk": "Edna voda i edna kafe, ве молam",
-      "correct_answer": "Une eau et un café, s'il vous plaît",
-      "accept_alternatives": ["Un verre d'eau et un café, s'il vous plaît"],
-      "explanation_fr": "'Edna voda' = une eau (edna = une, fém.), 'edna kafe' = un café (kafe est neutre mais edna est courant), 'ве молам' = s'il vous plaît.",
-      "common_mistakes_fr": ["'Ве молам' = s'il vous plaît (pluriel/formel) — à utiliser dans les restaurants"],
-      "verbs_present": []
-    },
-    {
-      "id": "ex_food01_005", "phase": 2, "type": "fill_blank", "level": 2,
-      "instruction_fr": "Complétez la commande.",
-      "sentence": "Sakam da ___. (Je voudrais commander.)",
-      "correct_answer": "naracham",
-      "accept_alternatives": [],
-      "explanation_fr": "'Sakam da naracham' = je voudrais commander. 'Naracham' = que je commande (subjonctif/présent perfectif).",
-      "common_mistakes_fr": ["'Da + présent' = structure pour exprimer une intention"],
-      "verbs_present": ["saka"]
-    },
-    {
-      "id": "ex_food01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
-      "instruction_fr": "Traduisez au restaurant.",
-      "sentence_fr": "Le poulet est délicieux.",
-      "correct_answer": "Piletinata e vkusna",
-      "accept_alternatives": ["Piletinata е vkusna"],
-      "explanation_fr": "'Piletinata' = le poulet (défini féminin -ta), 'vkusna' = délicieuse (féminin).",
-      "common_mistakes_fr": ["'Piletina' est féminin → 'vkusna' (fém.), article -ta"],
-      "verbs_present": ["sum"]
-    },
-    {
-      "id": "ex_food01_007", "phase": 2, "type": "matching", "level": 1,
-      "instruction_fr": "Associez chaque aliment à sa traduction.",
-      "pairs": [
-        { "mk": "leb", "fr": "pain" },
-        { "mk": "riba", "fr": "poisson" },
-        { "mk": "mleko", "fr": "lait" },
-        { "mk": "sir", "fr": "fromage" },
-        { "mk": "chaj", "fr": "thé" }
-      ],
-      "correct_answer": "leb=pain,riba=poisson,mleko=lait,sir=fromage,chaj=thé",
-      "accept_alternatives": [],
-      "explanation_fr": "Aliments de base : leb (pain), meso (viande), riba (poisson), mleko (lait), sir (fromage), jajce (œuf).",
-      "common_mistakes_fr": ["'Sir' = fromage (pas 'sir' en anglais!)"],
-      "verbs_present": []
-    },
-    {
-      "id": "ex_food01_008", "phase": 3, "type": "sentence_builder", "level": 2,
-      "instruction_fr": "Construisez 'Je ne mangerai pas de viande.'",
-      "scrambled_words": ["Nema", "da", "jadam", "meso", "riba", "sakam"],
-      "correct_answer": "Nema da jadam meso",
-      "accept_alternatives": [],
-      "explanation_fr": "Nema da (futur négatif) + jadam (je mange) + meso (viande). 'Riba' et 'sakam' sont des intrus.",
-      "common_mistakes_fr": ["'Nema da jadam' = je ne mangerai pas (futur négatif)"],
-      "verbs_present": []
-    },
-    {
-      "id": "ex_food01_009", "phase": 3, "type": "translate_to_mk", "level": 2,
-      "instruction_fr": "Commandez au restaurant.",
-      "sentence_fr": "Une table pour deux, s'il vous plaît.",
-      "correct_answer": "Eden sto za dvajca, ве молам",
-      "accept_alternatives": ["Sto za dvajca, ве молам"],
-      "explanation_fr": "'Eden sto' = une table, 'za dvajca' = pour deux, 'ве молам' = s'il vous plaît.",
-      "common_mistakes_fr": ["'Dvajca' = deux (pour les personnes, forme masculine)"],
-      "verbs_present": []
-    },
-    {
-      "id": "ex_food01_010", "phase": 3, "type": "transformation", "level": 3,
-      "instruction_fr": "Transformez en commande polie.",
-      "sentence": "Sakam voda.",
-      "transformation_instruction_fr": "Rendez la demande plus polie avec 'ве молам'.",
-      "correct_answer": "Sakam voda, ве молам",
-      "accept_alternatives": ["Edna voda, ве молам"],
-      "explanation_fr": "Ajoutez 'ве молам' (s'il vous plaît) à la fin. Ou commandez directement : 'Edna voda, ве молам'.",
-      "common_mistakes_fr": ["'Ве молам' se place généralement à la fin de la demande"],
-      "verbs_present": ["saka"]
-    }
+    { "id": "ex_fr01_001", "phase": 1, "type": "multiple_choice", "level": 1, "instruction_fr": "Comment demander l'addition ?", "question": "L'addition, s'il vous plaît =", "options": ["Voda, ve molam", "Smetkata, ve molam", "Sakam kafe", "E vkusno"], "correct_answer": "Smetkata, ve molam", "accept_alternatives": [], "explanation_fr": "'Smetkata' = l'addition. 'Ve molam' = s'il vous plaît.", "common_mistakes_fr": ["'Smetkata' = la note/l'addition", "'Ve molam' toujours en fin ou début de demande"], "verbs_present": [] },
+    { "id": "ex_fr01_002", "phase": 1, "type": "multiple_choice", "level": 1, "instruction_fr": "Comment commander une pizza ?", "question": "Je voudrais une pizza =", "options": ["E vkusno pica", "Sakam pica", "Ima li pica?", "Kolku chini pica?"], "correct_answer": "Sakam pica", "accept_alternatives": ["Ve molam, edna pica"], "explanation_fr": "'Sakam' = je veux/je voudrais — formule standard pour commander.", "common_mistakes_fr": ["'Sakam' sert à la fois pour 'je veux' et 'je voudrais'"], "verbs_present": ["saka"] },
+    { "id": "ex_fr01_003", "phase": 1, "type": "translate_to_fr", "level": 1, "instruction_fr": "Traduisez en français.", "sentence_mk": "E mnogu vkusno, blagodaram", "correct_answer": "C'est très délicieux, merci", "accept_alternatives": ["C'est très bon, merci"], "explanation_fr": "'Mnogu' = très, 'vkusno' = délicieux, 'blagodaram' = merci.", "common_mistakes_fr": ["'Vkusno' = délicieux (neutre)"], "verbs_present": ["sum"] },
+    { "id": "ex_fr01_004", "phase": 1, "type": "translate_to_fr", "level": 1, "instruction_fr": "Traduisez.", "sentence_mk": "Sum mnogu gladna", "correct_answer": "J'ai très faim (locutrice féminine)", "accept_alternatives": ["Je suis très affamée"], "explanation_fr": "'Gladna' est féminin. Si c'est un homme : 'Sum mnogu gladen'.", "common_mistakes_fr": ["'Gladen' (m.) / 'gladna' (f.)"], "verbs_present": ["sum"] },
+    { "id": "ex_fr01_005", "phase": 2, "type": "fill_blank", "level": 1, "instruction_fr": "Complétez la commande.", "sentence": "___, edna kafe i edna voda. (S'il vous plaît, un café et une eau.)", "correct_answer": "Ve molam", "accept_alternatives": ["ve molam"], "explanation_fr": "'Ve molam' = s'il vous plaît (formel).", "common_mistakes_fr": ["'Ve molam' (vous formel) vs 'te molam' (tu informel)"], "verbs_present": [] },
+    { "id": "ex_fr01_006", "phase": 2, "type": "translate_to_mk", "level": 2, "instruction_fr": "Traduisez la commande.", "sentence_fr": "Je voudrais de la soupe et du pain, s'il vous plaît.", "correct_answer": "Sakam supa i leb, ve molam", "accept_alternatives": ["Ve molam, sakam supa i leb"], "explanation_fr": "'Supa' = soupe, 'leb' = pain. 'Sakam + aliment'.", "common_mistakes_fr": ["Pas d'article indéfini à ajouter pour commander"], "verbs_present": ["saka"] },
+    { "id": "ex_fr01_007", "phase": 2, "type": "matching", "level": 1, "instruction_fr": "Associez.", "pairs": [{"mk": "meso", "fr": "viande"}, {"mk": "riba", "fr": "poisson"}, {"mk": "sir", "fr": "fromage"}, {"mk": "jajce", "fr": "œuf"}, {"mk": "mleko", "fr": "lait"}], "correct_answer": "meso=viande,riba=poisson,sir=fromage,jajce=œuf,mleko=lait", "accept_alternatives": [], "explanation_fr": "Aliments de base en macédonien.", "common_mistakes_fr": ["'Sir' = fromage (pas monsieur !)"], "verbs_present": [] },
+    { "id": "ex_fr01_008", "phase": 3, "type": "sentence_builder", "level": 2, "instruction_fr": "Construisez 'Je voudrais de la viande avec du pain.'", "scrambled_words": ["Sakam", "meso", "so", "leb", "vo", "pivo"], "correct_answer": "Sakam meso so leb", "accept_alternatives": [], "explanation_fr": "Sakam + meso + so (avec) + leb. 'Vo' et 'pivo' sont des intrus.", "common_mistakes_fr": ["'So' = avec pour les accompagnements"], "verbs_present": ["saka"] },
+    { "id": "ex_fr01_009", "phase": 3, "type": "transformation", "level": 2, "instruction_fr": "Posez la question sur le prix.", "sentence": "Sakam edno kafe.", "transformation_instruction_fr": "Demandez d'abord combien coûte le café.", "correct_answer": "Kolku chini kafeto?", "accept_alternatives": [], "explanation_fr": "'Kolku chini kafeto?' = Combien coûte le café ? 'Kafeto' = le café (défini neutre).", "common_mistakes_fr": ["'Kafeto' (défini) dans les questions de prix"], "verbs_present": [] },
+    { "id": "ex_fr01_010", "phase": 3, "type": "translate_to_mk", "level": 2, "instruction_fr": "Scénario complet.", "sentence_fr": "J'ai faim. Je voudrais de la viande avec du pain. C'est combien ?", "correct_answer": "Sum gladen. Sakam meso so leb. Kolku chini?", "accept_alternatives": ["Sum gladna. Sakam meso so leb. Kolku chini?"], "explanation_fr": "Trois phrases : état + commande + prix.", "common_mistakes_fr": ["Gladen (m.) ou gladna (f.) selon le locuteur", "'So' = avec"], "verbs_present": ["sum", "saka"] }
   ]
 }

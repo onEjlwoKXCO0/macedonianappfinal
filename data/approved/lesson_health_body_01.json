@@ -1,0 +1,140 @@
+{
+  "id": "lesson_health_body_01",
+  "topic": "health_body",
+  "category": "thematic",
+  "title": "La sante et le corps",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "parties du corps, expressions de maladie, chez le medecin",
+  "rules": {
+    "explanation_fr": "Parties du corps : glava (tete), raka (main/bras), noga (pied/jambe), oko (oeil), nos (nez), usta (bouche), uvo (oreille), grlo (gorge), stomak (ventre), grb (dos), srce (coeur)\n\nExpressions de sante :\n• Me boli glavata. = J ai mal a la tete. (litt. La tete me fait mal)\n• Me boli grloto. = J ai mal a la gorge.\n• Me boli stomakot. = J ai mal au ventre.\n• Sum bolен / bolna. = Je suis malade.\n• Imam temperatura. = J ai de la fievre.\n• Povrakjam. = Je vomis.\n• Kasnav se. = Je me suis coupe.\n\nConstruction cle : ME boli + nom defini = j ai mal a...\nLe verbe boli (fait mal) s accorde avec la partie du corps.",
+    "table": [
+      { "french": "J ai mal a la tete", "macedonian": "Me boli glavata", "example_mk": "Me boli glavata mnogu", "example_fr": "J ai tres mal a la tete" },
+      { "french": "J ai mal a la gorge", "macedonian": "Me boli grloto", "example_mk": "Me boli grloto i imam temperatura", "example_fr": "J ai mal a la gorge et de la fievre" },
+      { "french": "je suis malade", "macedonian": "sum bolen (m.) / bolna (f.)", "example_mk": "Sum bolen denes", "example_fr": "Je suis malade aujourd hui" },
+      { "french": "j ai de la fievre", "macedonian": "imam temperatura", "example_mk": "Imam visoka temperatura", "example_fr": "J ai une forte fievre" },
+      { "french": "le medecin", "macedonian": "doktor", "example_mk": "Treba da odam kaj doktor", "example_fr": "Je dois aller chez le medecin" },
+      { "french": "la pharmacie", "macedonian": "aptekata", "example_mk": "Kade e aptekata?", "example_fr": "Ou est la pharmacie ?" },
+      { "french": "le medicament", "macedonian": "lek", "example_mk": "Treba mi lek", "example_fr": "J ai besoin d un medicament" },
+      { "french": "Appelez le medecin !", "macedonian": "Vikajte doktor!", "example_mk": "Brzo, vikajte doktor!", "example_fr": "Vite, appelez le medecin !" }
+    ],
+    "notes_fr": [
+      "Construction : ME boli + article defini du nom = j ai mal a... (le sujet grammatical est la partie du corps)",
+      "Bolen (m.) / bolna (f.) = malade — accord avec le locuteur",
+      "Treba da + verbe = il faut que / je dois — construction tres utile",
+      "Treba mi = j ai besoin de (treba mi lek = j ai besoin d un medicament)"
+    ],
+    "cyrillic_reference": "boli=боли, bolen=болен, temperatura=температура, doktor=доктор, lek=лек"
+  },
+  "exercises": [
+    {
+      "id": "ex_hb01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dire j ai mal a la tete ?",
+      "question": "J ai mal a la tete =",
+      "options": ["Imam glavata", "Sum bolna", "Me boli glavata", "Imam temperatura"],
+      "correct_answer": "Me boli glavata",
+      "accept_alternatives": [],
+      "explanation_fr": "Me boli glavata = la tete me fait mal (litt.). Construction : me boli + nom defini.",
+      "common_mistakes_fr": ["Me boli = me fait mal. Le sujet grammatical est la partie du corps, pas je"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_hb01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Que signifie Imam visoka temperatura ?",
+      "question": "Imam visoka temperatura =",
+      "options": ["Je suis tres malade", "J ai une forte fievre", "J ai tres mal", "J ai un grand medicament"],
+      "correct_answer": "J ai une forte fievre",
+      "accept_alternatives": [],
+      "explanation_fr": "Imam = j ai, visoka = haute/forte (f.), temperatura = fievre/temperature.",
+      "common_mistakes_fr": ["Temperatura = fievre ET temperature (meme mot en macedonien)"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_hb01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Sum bolna i me boli grloto",
+      "correct_answer": "Je suis malade et j ai mal a la gorge",
+      "accept_alternatives": ["Je suis malade (f.) et j ai mal a la gorge"],
+      "explanation_fr": "Sum bolna = je suis malade (f.), me boli grloto = j ai mal a la gorge.",
+      "common_mistakes_fr": ["Bolna = feminin de bolen (malade)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_hb01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Treba da odam kaj doktor",
+      "correct_answer": "Je dois aller chez le medecin",
+      "accept_alternatives": ["Il faut que j aille chez le medecin"],
+      "explanation_fr": "Treba da = il faut / je dois, odam = j aille/je vais, kaj doktor = chez le medecin.",
+      "common_mistakes_fr": ["Treba da + present = devoir/falloir en macedonien"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_hb01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez la plainte.",
+      "sentence": "Me ___ stomakot. (J ai mal au ventre.)",
+      "correct_answer": "boli",
+      "accept_alternatives": [],
+      "explanation_fr": "Me boli stomakot = j ai mal au ventre. Boli est le verbe (fait mal).",
+      "common_mistakes_fr": ["Structure invariable : me boli + partie du corps definie"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_hb01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Ou est la pharmacie ? J ai besoin d un medicament.",
+      "correct_answer": "Kade e aptekata? Treba mi lek.",
+      "accept_alternatives": [],
+      "explanation_fr": "Kade e aptekata? = Ou est la pharmacie? Treba mi lek = j ai besoin d un medicament.",
+      "common_mistakes_fr": ["Treba mi = j ai besoin de (litt. il me faut)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_hb01_007", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez chaque partie du corps a sa traduction.",
+      "pairs": [
+        { "mk": "glava", "fr": "tete" },
+        { "mk": "raka", "fr": "main / bras" },
+        { "mk": "noga", "fr": "jambe / pied" },
+        { "mk": "srce", "fr": "coeur" },
+        { "mk": "grlo", "fr": "gorge" }
+      ],
+      "correct_answer": "glava=tete,raka=main/bras,noga=jambe/pied,srce=coeur,grlo=gorge",
+      "accept_alternatives": [],
+      "explanation_fr": "Parties du corps en macedonien.",
+      "common_mistakes_fr": ["Raka = main ET bras (un seul mot)", "Noga = jambe ET pied (un seul mot)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_hb01_008", "phase": 3, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez la phrase.",
+      "sentence": "Me boli glava.",
+      "correct_answer": "Me boli glavata",
+      "accept_alternatives": [],
+      "explanation_fr": "Avec me boli, la partie du corps prend l article defini : glava -> glavata.",
+      "common_mistakes_fr": ["Me boli toujours suivi du nom DEFINI (avec article)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_hb01_009", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : Je suis malade, j ai de la fievre et mal a la tete.",
+      "scrambled_words": ["Sum", "bolen", "imam", "temperatura", "i", "me", "boli", "glavata", "grloto"],
+      "correct_answer": "Sum bolen imam temperatura i me boli glavata",
+      "accept_alternatives": ["Sum bolen, imam temperatura i me boli glavata"],
+      "explanation_fr": "Sum bolen (je suis malade) + imam temperatura (j ai de la fievre) + me boli glavata (mal a la tete). Grloto (gorge) est un intrus.",
+      "common_mistakes_fr": ["Bolen (m.) — utilisez bolna si le locuteur est feminin"],
+      "verbs_present": ["sum", "ima"]
+    },
+    {
+      "id": "ex_hb01_010", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Dialogue chez le medecin.",
+      "sentence_fr": "Bonjour docteur. Je suis malade depuis deux jours. J ai mal a la gorge et de la fievre.",
+      "correct_answer": "Dobar den doktor. Sum bolen od dva dena. Me boli grloto i imam temperatura.",
+      "accept_alternatives": ["Zdravo doktor. Sum bolen dva dena. Me boli grloto i imam temperatura."],
+      "explanation_fr": "Od dva dena = depuis deux jours, me boli grloto = mal a la gorge, imam temperatura = de la fievre.",
+      "common_mistakes_fr": ["Od + periode = depuis (origine temporelle)"],
+      "verbs_present": ["sum", "ima"]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "lesson_weather_01",
+  "topic": "weather",
+  "category": "thematic",
+  "title": "La météo",
+  "difficulty_level": 1,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "vocabulaire météo, expressions impersonnelles, saisons",
+  "rules": {
+    "explanation_fr": "La météo en macédonien utilise surtout des tournures impersonnelles :\n\n• Vrne doshd — Il pleut (litt. 'il tombe de la pluie')\n• Vrne sneg — Il neige\n• E toplo — Il fait chaud\n• E studeno — Il fait froid\n• E oblachno — Il fait nuageux\n• Sonce gree — Le soleil brille\n• Duva veter — Le vent souffle\n• E vetrovito — Il y a du vent\n\nSaisons : prolet (printemps), leto (été), esen (automne), zima (hiver)\nMois : januari, fevruari, mart, april, maj, juni, juli, avgust, septemvri, oktomvri, noemvri, dekemvri",
+    "table": [
+      { "french": "Il pleut", "macedonian": "Vrne doshd", "example_mk": "Denes vrne doshd", "example_fr": "Aujourd'hui il pleut" },
+      { "french": "Il neige", "macedonian": "Vrne sneg", "example_mk": "Vrne sneg nadvor", "example_fr": "Il neige dehors" },
+      { "french": "Il fait chaud", "macedonian": "E toplo", "example_mk": "Denes e mnogu toplo", "example_fr": "Aujourd'hui il fait très chaud" },
+      { "french": "Il fait froid", "macedonian": "E studeno", "example_mk": "Nadvor e studeno", "example_fr": "Il fait froid dehors" },
+      { "french": "Le soleil brille", "macedonian": "Sonce gree", "example_mk": "Denes sonce gree ubavo", "example_fr": "Aujourd'hui le soleil brille bien" },
+      { "french": "Il fait nuageux", "macedonian": "E oblachno", "example_mk": "Utre kje e oblachno", "example_fr": "Demain il fera nuageux" },
+      { "french": "printemps", "macedonian": "prolet", "example_mk": "Vo prolet vrne mnogu", "example_fr": "Au printemps il pleut beaucoup" },
+      { "french": "été", "macedonian": "leto", "example_mk": "Letoto e toplo", "example_fr": "L'été est chaud" }
+    ],
+    "notes_fr": [
+      "💡 'Vrne' = il tombe/il pleut/il neige — verbe impersonnel très utile",
+      "⚠️ 'Doshd' (pluie) — le 'sh' = Ш, 'd' final ne se prononce pas toujours",
+      "💡 'Denes' = aujourd'hui, 'utre' = demain, 'vчera' = hier",
+      "⚠️ 'Oblachno' contient 'ch' (Ч) et 'no' — ne pas écrire 'oblakno'"
+    ],
+    "cyrillic_reference": "doshd=дожд, sneg=снег, toplo=топло, studeno=студено, sonce=сонце"
+  },
+  "exercises": [
+    {
+      "id": "ex_wt01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on 'Il pleut' ?",
+      "question": "Il pleut =",
+      "options": ["Vrne sneg", "Vrne doshd", "Duva veter", "E toplo"],
+      "correct_answer": "Vrne doshd",
+      "accept_alternatives": [],
+      "explanation_fr": "'Vrne doshd' = il pleut (litt. il tombe de la pluie). 'Doshd' = pluie, 'sneg' = neige.",
+      "common_mistakes_fr": ["'Vrne' est le même verbe pour pluie et neige — c'est le nom qui change", "'Doshd' (pluie) vs 'sneg' (neige)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_wt01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Que signifie 'E studeno nadvor' ?",
+      "question": "E studeno nadvor =",
+      "options": ["Il fait chaud dehors", "Il pleut dehors", "Il fait froid dehors", "Il y a du vent dehors"],
+      "correct_answer": "Il fait froid dehors",
+      "accept_alternatives": [],
+      "explanation_fr": "'Studeno' = froid, 'nadvor' = dehors. 'E studeno' = il fait froid (tournure impersonnelle).",
+      "common_mistakes_fr": ["'Studeno' (froid) ≠ 'toplo' (chaud)", "'Nadvor' = dehors, 'vnatre' = dedans"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_wt01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Denes sonce gree i e toplo",
+      "correct_answer": "Aujourd'hui le soleil brille et il fait chaud",
+      "accept_alternatives": ["Aujourd'hui il fait soleil et chaud"],
+      "explanation_fr": "'Denes' = aujourd'hui, 'sonce gree' = le soleil brille, 'e toplo' = il fait chaud.",
+      "common_mistakes_fr": ["'Sonce' = soleil, 'gree' = brille/réchauffe"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_wt01_004", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Vo zima vrne sneg i e studeno",
+      "correct_answer": "En hiver il neige et il fait froid",
+      "accept_alternatives": ["En hiver, il neige et il fait froid"],
+      "explanation_fr": "'Vo zima' = en hiver, 'vrne sneg' = il neige, 'studeno' = froid.",
+      "common_mistakes_fr": ["'Vo' + saison = en (saison) : vo zima, vo leto, vo prolet, vo esen"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_wt01_005", "phase": 2, "type": "fill_blank", "level": 1,
+      "instruction_fr": "Complétez la phrase météo.",
+      "sentence": "Denes ___ mnogu veter. (Aujourd'hui il y a beaucoup de vent.)",
+      "correct_answer": "duva",
+      "accept_alternatives": ["ima"],
+      "explanation_fr": "'Duva veter' = le vent souffle. 'Mnogu' = beaucoup.",
+      "common_mistakes_fr": ["'Duva veter' = il y a du vent (litt. le vent souffle)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_wt01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Demain il fera nuageux et froid.",
+      "correct_answer": "Utre kje e oblachno i studeno",
+      "accept_alternatives": ["Utre kje bide oblachno i studeno"],
+      "explanation_fr": "'Utre' = demain, 'kje e' = il fera (futur de 'e'), 'oblachno' = nuageux, 'studeno' = froid.",
+      "common_mistakes_fr": ["Futur météo : kje + e + adjectif", "'Oblachno' contient 'ch' (Ч)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_wt01_007", "phase": 2, "type": "matching", "level": 1,
+      "instruction_fr": "Associez chaque saison à sa traduction.",
+      "pairs": [
+        { "mk": "prolet", "fr": "printemps" },
+        { "mk": "leto", "fr": "été" },
+        { "mk": "esen", "fr": "automne" },
+        { "mk": "zima", "fr": "hiver" },
+        { "mk": "doshd", "fr": "pluie" }
+      ],
+      "correct_answer": "prolet=printemps,leto=été,esen=automne,zima=hiver,doshd=pluie",
+      "accept_alternatives": [],
+      "explanation_fr": "Les 4 saisons et la pluie — vocabulaire de base pour parler de la météo.",
+      "common_mistakes_fr": ["'Esen' (automne) commence par une voyelle — à ne pas confondre avec 'eden' (un)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_wt01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez 'En été il fait chaud et le soleil brille.'",
+      "scrambled_words": ["Vo", "leto", "e", "toplo", "i", "sonce", "gree", "studeno"],
+      "correct_answer": "Vo leto e toplo i sonce gree",
+      "accept_alternatives": [],
+      "explanation_fr": "Vo leto (en été) + e toplo (il fait chaud) + i (et) + sonce gree (le soleil brille). 'Studeno' (froid) est un intrus.",
+      "common_mistakes_fr": ["'Leto' = été (chaud), 'zima' = hiver (froid)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_wt01_009", "phase": 3, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Il pleuvait hier mais aujourd'hui le soleil brille.",
+      "correct_answer": "Vчera vrnese doshd no denes sonce gree",
+      "accept_alternatives": ["Vчera vrnese doshd ama denes sonce gree"],
+      "explanation_fr": "'Vchera vrnese' = il pleuvait hier (imparfait), 'no/ama' = mais, 'denes sonce gree' = aujourd'hui le soleil brille.",
+      "common_mistakes_fr": ["'Vrnese' est le passé imperfectif de 'vrne' (il tombait)", "'No' ou 'ama' = mais"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_wt01_010", "phase": 3, "type": "spot_the_difference", "level": 2,
+      "instruction_fr": "Quelle différence de sens ?",
+      "sentence_a": "E toplo denes.",
+      "sentence_b": "E topla kuka.",
+      "correct_answer": "E toplo = il fait chaud (impersonnel météo), e topla = elle est chaude (adjectif accordé avec kuka, féminin)",
+      "accept_alternatives": ["toplo = météo impersonnel, topla = adjectif féminin accordé"],
+      "expected_keywords_fr": ["impersonnel", "accord", "féminin"],
+      "explanation_fr": "'Toplo' seul = forme neutre/impersonnelle pour la météo. 'Topla kuka' = maison chaude (adjectif accordé au féminin avec 'kuka').",
+      "common_mistakes_fr": ["Adjectif météo = neutre invariable. Adjectif attribut = accordé avec le nom"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

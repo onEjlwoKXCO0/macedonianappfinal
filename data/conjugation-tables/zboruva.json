@@ -1,0 +1,11 @@
+{
+  "infinitive": "zboruva",
+  "meaning_fr": "parler",
+  "aspect": "imperfective",
+  "tables": {
+    "present": { "jas": "zboruvam", "ti": "zboruvash", "toj_taa": "zboruva", "nie": "zboruvame", "vie": "zboruvate", "tie": "zboruvaat" },
+    "past_imperfect": { "jas": "zboruvav", "ti": "zboruvase", "toj_taa": "zboruvase", "nie": "zboruvavme", "vie": "zboruvavte", "tie": "zboruvaa" },
+    "future": { "jas": "kje zboruvam", "ti": "kje zboruvash", "toj_taa": "kje zboruva", "nie": "kje zboruvame", "vie": "kje zboruvate", "tie": "kje zboruvaat" }
+  },
+  "notes_fr": ["💡 Impératif : zboruvaj! (parle!) / zboruvajte! (parlez!)", "💡 'Zboruvam makedonski' = je parle macédonien"]
+}

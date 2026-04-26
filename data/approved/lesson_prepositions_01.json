@@ -1,0 +1,140 @@
+{
+  "id": "lesson_prepositions_01",
+  "topic": "prepositions",
+  "category": "grammar",
+  "title": "Les prépositions essentielles",
+  "difficulty_level": 2,
+  "created_at": "2026-04-25",
+  "status": "approved",
+  "subtopic": "vo, na, od, do, so, za, pred, zad, gore, dolu",
+  "rules": {
+    "explanation_fr": "Les prépositions macédoniennes les plus courantes :\n\n• vo — dans, en, à (lieu fermé) : vo Skopje, vo kuka\n• na — sur, à (surface ou destination) : na masata, na pazar\n• od — de, depuis (origine) : od Francija, od utre\n• do — jusqu'à, vers : do gradot, od doma do rabota\n• so — avec : so prijatel, so mleko\n• za — pour, en direction de : za mene, za eden chas\n• pred — devant, avant : pred kukata, pred dva dena\n• zad — derrière : zad masata\n• gore — en haut, au-dessus : gore po ulicata\n• dolu — en bas : dolu po skali\n• blizu — près de : blizu do parkot\n• daleku — loin de : daleku od doma",
+    "table": [
+      { "french": "dans / en / à (fermé)", "macedonian": "vo", "example_mk": "Sum vo Skopje", "example_fr": "Je suis à Skopje" },
+      { "french": "sur / à (surface)", "macedonian": "na", "example_mk": "Knigata e na masata", "example_fr": "Le livre est sur la table" },
+      { "french": "de / depuis", "macedonian": "od", "example_mk": "Sum od Francija", "example_fr": "Je suis de France" },
+      { "french": "jusqu'à / vers", "macedonian": "do", "example_mk": "Od doma do rabota", "example_fr": "De chez moi au travail" },
+      { "french": "avec", "macedonian": "so", "example_mk": "Odam so prijatel", "example_fr": "Je vais avec un ami" },
+      { "french": "pour / pendant", "macedonian": "za", "example_mk": "Za eden chas", "example_fr": "Dans une heure / pour une heure" },
+      { "french": "devant / avant", "macedonian": "pred", "example_mk": "Pred kukata", "example_fr": "Devant la maison" },
+      { "french": "derrière", "macedonian": "zad", "example_mk": "Zad masata", "example_fr": "Derrière la table" }
+    ],
+    "notes_fr": [
+      "⚠️ 'Vo' vs 'na' : vo = intérieur (dans la ville, dans la maison) ; na = surface ou marché (na pazar = au marché)",
+      "💡 'Od...do' = de...à (distance ou temps) : od ponedelnik do petok = du lundi au vendredi",
+      "⚠️ 'Za' peut signifier 'pour' (za mene = pour moi) ou 'dans X temps' (za eden chas = dans une heure)",
+      "💡 'Pred' = devant (espace) ET avant (temps) : pred kukata (devant la maison) / pred dva dena (il y a deux jours)"
+    ],
+    "cyrillic_reference": "vo=во, na=на, od=од, do=до, so=со, za=за, pred=пред, zad=зад"
+  },
+  "exercises": [
+    {
+      "id": "ex_prep01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Choisissez la bonne préposition.",
+      "question": "Je suis à Skopje = Sum ___ Skopje",
+      "options": ["na", "vo", "od", "do"],
+      "correct_answer": "vo",
+      "accept_alternatives": [],
+      "explanation_fr": "'Vo' = dans/à pour un lieu fermé ou une ville. 'Sum vo Skopje' = Je suis à Skopje.",
+      "common_mistakes_fr": ["'Vo' pour les villes et lieux fermés", "'Na' pour les surfaces et marchés"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_prep01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Quelle préposition manque ?",
+      "question": "Le livre est sur la table = Knigata e ___ masata",
+      "options": ["vo", "zad", "na", "so"],
+      "correct_answer": "na",
+      "accept_alternatives": [],
+      "explanation_fr": "'Na masata' = sur la table. 'Na' indique une surface ou une position.",
+      "common_mistakes_fr": ["'Na' = sur (surface), 'vo' = dans (intérieur)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_prep01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Odam so prijatel vo kino",
+      "correct_answer": "Je vais avec un ami au cinéma",
+      "accept_alternatives": ["Je vais au cinéma avec un ami"],
+      "explanation_fr": "'So prijatel' = avec un ami, 'vo kino' = au cinéma. 'So' = avec.",
+      "common_mistakes_fr": ["'So' = avec (pas 'i' qui = et)"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_prep01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez en français.",
+      "sentence_mk": "Od Pariz do Skopje",
+      "correct_answer": "De Paris à Skopje",
+      "accept_alternatives": ["De Paris jusqu'à Skopje"],
+      "explanation_fr": "'Od' = de (point de départ), 'do' = jusqu'à (destination). Structure 'od...do' = de...à.",
+      "common_mistakes_fr": ["'Od...do' = de...à, comme en français"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_prep01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Complétez avec la bonne préposition.",
+      "sentence": "Taa raboti ___ bolnica. (Elle travaille dans un hôpital.)",
+      "correct_answer": "vo",
+      "accept_alternatives": [],
+      "explanation_fr": "'Vo bolnica' = dans un hôpital. 'Bolnica' est un lieu fermé → 'vo'.",
+      "common_mistakes_fr": ["Lieu fermé = 'vo', surface = 'na'"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_prep01_006", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Complétez.",
+      "sentence": "Kukata e ___ parkot. (La maison est près du parc.)",
+      "correct_answer": "blizu do",
+      "accept_alternatives": ["blizu"],
+      "explanation_fr": "'Blizu do parkot' = près du parc. 'Blizu' = près (de), souvent suivi de 'do'.",
+      "common_mistakes_fr": ["'Blizu do' = près de", "'Daleku od' = loin de"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_prep01_007", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Il est de France.",
+      "correct_answer": "Toj e od Francija",
+      "accept_alternatives": ["E od Francija"],
+      "explanation_fr": "'Od Francija' = de France. 'Od' = de (origine).",
+      "common_mistakes_fr": ["'Od' = de (origine/provenance)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_prep01_008", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez chaque préposition à sa traduction.",
+      "pairs": [
+        { "mk": "vo", "fr": "dans / à (lieu fermé)" },
+        { "mk": "so", "fr": "avec" },
+        { "mk": "za", "fr": "pour / dans (temps)" },
+        { "mk": "pred", "fr": "devant / avant" },
+        { "mk": "zad", "fr": "derrière" }
+      ],
+      "correct_answer": "vo=dans/à,so=avec,za=pour/dans,pred=devant/avant,zad=derrière",
+      "accept_alternatives": [],
+      "explanation_fr": "Prépositions de lieu et de temps — à mémoriser par groupes.",
+      "common_mistakes_fr": ["'Pred' = devant (espace) ET avant (temps) — double sens"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_prep01_009", "phase": 3, "type": "error_correction", "level": 2,
+      "instruction_fr": "Corrigez la préposition.",
+      "sentence": "Knigata e vo masata.",
+      "correct_answer": "Knigata e na masata",
+      "accept_alternatives": [],
+      "explanation_fr": "Un livre est sur la table (surface) → 'na masata'. 'Vo masata' signifierait 'dans la table' (à l'intérieur), ce qui est incorrect.",
+      "common_mistakes_fr": ["Sur une surface = 'na', à l'intérieur = 'vo'"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_prep01_010", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez en macédonien.",
+      "sentence_fr": "Il travaille du lundi au vendredi pour une grande entreprise.",
+      "correct_answer": "Raboti od ponedelnik do petok za golema kompanija",
+      "accept_alternatives": ["Toj raboti od ponedelnik do petok za golema kompanija"],
+      "explanation_fr": "'Od ponedelnik do petok' = du lundi au vendredi. 'Za golema kompanija' = pour une grande entreprise.",
+      "common_mistakes_fr": ["'Od...do' pour la durée/période", "'Za' = pour (destinataire/employeur)"],
+      "verbs_present": ["raboti"]
+    }
+  ]
+}

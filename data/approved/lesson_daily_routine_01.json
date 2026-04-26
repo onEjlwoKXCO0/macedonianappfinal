@@ -1,0 +1,141 @@
+{
+  "id": "lesson_daily_routine_01",
+  "topic": "daily_routine",
+  "category": "thematic",
+  "title": "La routine quotidienne",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "verbes de la vie quotidienne, heures de la journee, sequencement",
+  "rules": {
+    "explanation_fr": "Verbes de la routine quotidienne :\n\n• se budi / stanuva — se reveiller / se lever\n• se mie — se laver\n• se oblekuva — s habiller\n• jade doručok — prendre le petit-dejeuner\n• odi na rabota / uchilishte — aller au travail / a l ecole\n• se vrakja — rentrer\n• jade — manger\n• gledat televizija — regarder la television\n• chita — lire\n• se leznuva / spie — se coucher / dormir\n\nExpressions temporelles :\nNautro (le matin), na podne (a midi), popladne (l apres-midi), na vecher (le soir), noke (cette nuit)",
+    "table": [
+      { "french": "se reveiller", "macedonian": "se budi", "example_mk": "Se budам vo sedum chasot", "example_fr": "Je me reveille a sept heures" },
+      { "french": "se lever", "macedonian": "stanuva", "example_mk": "Stanuvam brzo", "example_fr": "Je me leve vite" },
+      { "french": "se laver", "macedonian": "se mie", "example_mk": "Se miem pred doručok", "example_fr": "Je me lave avant le petit-dejeuner" },
+      { "french": "prendre le petit-dejeuner", "macedonian": "jade doručok", "example_mk": "Jadam doručok vo osum", "example_fr": "Je prends le petit-dejeuner a huit heures" },
+      { "french": "aller au travail", "macedonian": "odi na rabota", "example_mk": "Odam na rabota vo devet", "example_fr": "Je vais au travail a neuf heures" },
+      { "french": "rentrer", "macedonian": "se vrakja", "example_mk": "Se vrakjam vo pet chasot", "example_fr": "Je rentre a cinq heures" },
+      { "french": "se coucher", "macedonian": "se leznuva", "example_mk": "Se leznjuvam vo edinaeset", "example_fr": "Je me couche a onze heures" },
+      { "french": "dormir", "macedonian": "spie", "example_mk": "Spijam osум chasа", "example_fr": "Je dors huit heures" }
+    ],
+    "notes_fr": [
+      "Se + verbe = verbe reflechi en macedonien (se budi, se mie, se oblekuva)",
+      "Doručok = petit-dejeuner (mot unique, pas deux mots)",
+      "Nautro = le matin, popladne = l apres-midi, na vecher = le soir",
+      "Potoa = puis/ensuite — pour raconter une sequence d actions"
+    ],
+    "cyrillic_reference": "doručok=доручок, stanuva=станува, se mie=се мие, spie=спие"
+  },
+  "exercises": [
+    {
+      "id": "ex_dr01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on se reveiller ?",
+      "question": "se reveiller =",
+      "options": ["se leznuva", "se budi", "se mie", "stanuva"],
+      "correct_answer": "se budi",
+      "accept_alternatives": [],
+      "explanation_fr": "Se budi = se reveiller. Se leznuva = se coucher, se mie = se laver, stanuva = se lever.",
+      "common_mistakes_fr": ["Se budi (se reveiller) vient avant stanuva (se lever)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dr01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Traduisez : Se leznuvam vo edinaeset.",
+      "question": "Se leznuvam vo edinaeset =",
+      "options": ["Je me leve a onze heures", "Je me couche a onze heures", "Je me lave a onze heures", "Je rentre a onze heures"],
+      "correct_answer": "Je me couche a onze heures",
+      "accept_alternatives": [],
+      "explanation_fr": "Se leznuvam = je me couche, vo edinaeset = a onze heures.",
+      "common_mistakes_fr": ["Se leznuva (se coucher) vs se budi (se reveiller) — opposites"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dr01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Nautro stanuvam, se miem i jadam doručok",
+      "correct_answer": "Le matin je me leve, je me lave et je prends le petit-dejeuner",
+      "accept_alternatives": ["Le matin je me leve, me lave et prends le petit-dejeuner"],
+      "explanation_fr": "Nautro = le matin, stanuvam = je me leve, se miem = je me lave, jadam doručok = je prends le petit-dejeuner.",
+      "common_mistakes_fr": ["Sequence logique : se lever -> se laver -> petit-dejeuner"],
+      "verbs_present": ["jade"]
+    },
+    {
+      "id": "ex_dr01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Se vrakjam od rabota vo pet i potoa gledam televizija",
+      "correct_answer": "Je rentre du travail a cinq heures et ensuite je regarde la television",
+      "accept_alternatives": ["Je rentre a cinq heures du travail et regarde la tele ensuite"],
+      "explanation_fr": "Se vrakjam od rabota = je rentre du travail, vo pet = a cinq heures, potoa = ensuite, gledam televizija = je regarde la television.",
+      "common_mistakes_fr": ["Se vrakja = rentrer (verbe reflechi)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dr01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez.",
+      "sentence": "Jadam ___ vo osdum chasot nautro. (Je prends le petit-dejeuner a huit heures le matin.)",
+      "correct_answer": "doručok",
+      "accept_alternatives": [],
+      "explanation_fr": "Doručok = petit-dejeuner. Jadam doručok = je prends le petit-dejeuner.",
+      "common_mistakes_fr": ["Doručok = petit-dejeuner (mot macedonien specifique)"],
+      "verbs_present": ["jade"]
+    },
+    {
+      "id": "ex_dr01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Je me reveille a sept heures et demie.",
+      "correct_answer": "Se budam vo sedum i pol",
+      "accept_alternatives": ["Se budаm vo sedum i pol chasot"],
+      "explanation_fr": "Se budam = je me reveille, vo sedum i pol = a sept heures et demie.",
+      "common_mistakes_fr": ["Sedum i pol = sept heures et demie"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dr01_007", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez chaque verbe a sa traduction.",
+      "pairs": [
+        { "mk": "se budi", "fr": "se reveiller" },
+        { "mk": "se mie", "fr": "se laver" },
+        { "mk": "se oblekuva", "fr": "s habiller" },
+        { "mk": "se vrakja", "fr": "rentrer" },
+        { "mk": "spie", "fr": "dormir" }
+      ],
+      "correct_answer": "se budi=se reveiller,se mie=se laver,se oblekuva=s habiller,se vrakja=rentrer,spie=dormir",
+      "accept_alternatives": [],
+      "explanation_fr": "Verbes reflexifs de la routine : se + verbe pour les actions sur soi-meme.",
+      "common_mistakes_fr": ["La plupart des actions sur soi-meme utilisent se + verbe en macedonien"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_dr01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : Je vais au travail a neuf heures.",
+      "scrambled_words": ["Odam", "na", "rabota", "vo", "devet", "chasot", "se", "vrakjam"],
+      "correct_answer": "Odam na rabota vo devet chasot",
+      "accept_alternatives": ["Odam na rabota vo devet"],
+      "explanation_fr": "Odam + na rabota + vo devet chasot. Se vrakjam (je rentre) est un intrus.",
+      "common_mistakes_fr": ["Odam na rabota = aller au travail, se vrakjam od rabota = rentrer du travail"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_dr01_009", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Decrivez votre matinee.",
+      "sentence_fr": "Je me leve a six heures, je me lave, je prends le petit-dejeuner et je vais au travail.",
+      "correct_answer": "Stanuvam vo shest, se miem, jadam doručok i odam na rabota",
+      "accept_alternatives": ["Vo shest stanuvam, potoa se miem, jadam doručok i odam na rabota"],
+      "explanation_fr": "Sequence : stanuvam (me lever) + se miem (me laver) + jadam doručok (petit-dejeuner) + odam na rabota (aller au travail).",
+      "common_mistakes_fr": ["Shest = six — le sh vient de Sh"],
+      "verbs_present": ["jade", "odi"]
+    },
+    {
+      "id": "ex_dr01_010", "phase": 3, "type": "transformation", "level": 3,
+      "instruction_fr": "Transformez a la 3e personne (il).",
+      "sentence": "Stanuvam, se miem i jadam doručok.",
+      "transformation_instruction_fr": "Il se leve, se lave et prend le petit-dejeuner.",
+      "correct_answer": "Stanuva, se mie i jade doručok",
+      "accept_alternatives": ["Toj stanuva, se mie i jade doručok"],
+      "explanation_fr": "1re pers. -> 3e pers. : stanuvam -> stanuva, se miem -> se mie, jadam -> jade.",
+      "common_mistakes_fr": ["3e pers. sing. = forme de base du verbe sans suffixe"],
+      "verbs_present": ["jade"]
+    }
+  ]
+}

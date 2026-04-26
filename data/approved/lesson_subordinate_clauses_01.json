@@ -1,0 +1,141 @@
+{
+  "id": "lesson_subordinate_clauses_01",
+  "topic": "subordinate_clauses",
+  "category": "grammar",
+  "title": "Les propositions subordonnees",
+  "difficulty_level": 4,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "deka (que), shto (qui/que), ako (si), koga (quand/lorsque), za da (pour que)",
+  "rules": {
+    "explanation_fr": "Les conjonctions de subordination en macedonien :\n\n• deka — que (apres verbes de pensee, parole, sentiment)\n  Mislam deka... = Je pense que...\n  Kazа deka... = Il a dit que...\n\n• shto — qui / que (relatif, complément d information)\n  Chovekot shto go videv = L homme que j ai vu\n\n• ako — si (conditionnel)\n  Ako imas vreme, dojdi. = Si tu as le temps, viens.\n\n• koga — quand / lorsque (temporel)\n  Koga dojde, kje mu kazam. = Quand il viendra, je lui dirai.\n\n• za da — pour que / afin de\n  Ucham za da znam. = J apprends pour savoir.\n\n• bidejkji — parce que\n  Ne dojdov bidejkji bev bolen. = Je ne suis pas venu parce que j etais malade.",
+    "table": [
+      { "french": "Je pense que...", "macedonian": "Mislam deka...", "example_mk": "Mislam deka e vistina", "example_fr": "Je pense que c est vrai" },
+      { "french": "il a dit que", "macedonian": "kaza deka", "example_mk": "Toj kaza deka kje dojde", "example_fr": "Il a dit qu il viendrait" },
+      { "french": "si (cond.)", "macedonian": "ako", "example_mk": "Ako imas vreme, dojdi", "example_fr": "Si tu as le temps, viens" },
+      { "french": "quand (temp.)", "macedonian": "koga", "example_mk": "Koga ke dojde kje mu kazam", "example_fr": "Quand il viendra je lui dirai" },
+      { "french": "pour que / afin de", "macedonian": "za da", "example_mk": "Ucham za da znam", "example_fr": "J apprends pour savoir" },
+      { "french": "parce que", "macedonian": "bidejkji", "example_mk": "Ne dojdov bidejkji sum bolen", "example_fr": "Je ne suis pas venu parce que je suis malade" },
+      { "french": "l homme que j ai vu", "macedonian": "chovekot shto go videv", "example_mk": "Chovekot shto go videv e tuka", "example_fr": "L homme que j ai vu est ici" },
+      { "french": "bien que / meme si", "macedonian": "makаr shto / iako", "example_mk": "Iako e studeno, odam", "example_fr": "Meme s il fait froid, je vais" }
+    ],
+    "notes_fr": [
+      "Deka = que (apres mislam, kazuvam, znam, sakam) — comme en francais",
+      "Shto = qui/que (relatif) — ne pas confondre avec shto (quoi?) interrogatif",
+      "Ako + present = si + present en francais (conditionnel)",
+      "Bidejkji = parce que — attention a l orthographe (bide-jkji)"
+    ],
+    "cyrillic_reference": "deka=дека, shto=што, ako=ако, bidejkji=бидејќи, za da=за да"
+  },
+  "exercises": [
+    {
+      "id": "ex_sc01_001", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Quelle conjonction utiliser apres mislam (je pense) ?",
+      "question": "Je pense qu il viendra = Mislam ___ kje dojde",
+      "options": ["shto", "ako", "deka", "bidejkji"],
+      "correct_answer": "deka",
+      "accept_alternatives": [],
+      "explanation_fr": "Deka = que apres les verbes de pensee/parole : mislam deka, znam deka, kazuvam deka.",
+      "common_mistakes_fr": ["Deka = que (apres verbe cognitif), shto = qui/que (relatif)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sc01_002", "phase": 1, "type": "multiple_choice", "level": 3,
+      "instruction_fr": "Choisissez la bonne traduction.",
+      "question": "Ako imas vreme, dojdi =",
+      "options": ["Quand tu as le temps, viens", "Si tu as le temps, viens", "Pour que tu aies du temps, viens", "Parce que tu as du temps, viens"],
+      "correct_answer": "Si tu as le temps, viens",
+      "accept_alternatives": [],
+      "explanation_fr": "Ako = si (conditionnel). Ako + present + imperatif = si + present + imperatif.",
+      "common_mistakes_fr": ["Ako = si (conditionnel), koga = quand (temporel)"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_sc01_003", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Ne dojdov bidejkji bev bolen",
+      "correct_answer": "Je ne suis pas venu parce que j etais malade",
+      "accept_alternatives": ["Je ne suis pas venu car j etais malade"],
+      "explanation_fr": "Ne dojdov = je ne suis pas venu (passe negatif), bidejkji = parce que, bev bolen = j etais malade.",
+      "common_mistakes_fr": ["Bidejkji = parce que (cause)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_sc01_004", "phase": 1, "type": "translate_to_fr", "level": 4,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Ucham makedonski za da mozam da zboruvam so Makedoncite",
+      "correct_answer": "J apprends le macedonien pour pouvoir parler avec les Macedoniens",
+      "accept_alternatives": ["J apprends le macedonien afin de pouvoir parler aux Macedoniens"],
+      "explanation_fr": "Za da mozam = pour pouvoir, zboruvam = parler, so Makedoncite = avec les Macedoniens.",
+      "common_mistakes_fr": ["Za da = pour que / afin de + pouvoir (mozam)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sc01_005", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Completez avec la bonne conjonction.",
+      "sentence": "Toj kaza ___ kje dojde utre. (Il a dit qu il viendrait demain.)",
+      "correct_answer": "deka",
+      "accept_alternatives": [],
+      "explanation_fr": "Apres kaza (il a dit), on utilise deka (que).",
+      "common_mistakes_fr": ["Verbes de parole + deka : kaza deka, kazuvam deka"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sc01_006", "phase": 2, "type": "fill_blank", "level": 3,
+      "instruction_fr": "Completez.",
+      "sentence": "Chovekot ___ go videv e moj prijatel. (L homme que j ai vu est mon ami.)",
+      "correct_answer": "shto",
+      "accept_alternatives": [],
+      "explanation_fr": "Relatif = shto. Chovekot shto go videv = l homme que j ai vu (shto = que, go = le, clitique).",
+      "common_mistakes_fr": ["Shto = relatif (qui/que) dans les propositions relatives"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_sc01_007", "phase": 2, "type": "translate_to_mk", "level": 4,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Je sais que tu parles macedonien.",
+      "correct_answer": "Znam deka zboruvash makedonski",
+      "accept_alternatives": [],
+      "explanation_fr": "Znam deka = je sais que, zboruvash makedonski = tu parles macedonien.",
+      "common_mistakes_fr": ["Znam deka = je sais que (verbe de connaissance + deka)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sc01_008", "phase": 3, "type": "matching", "level": 4,
+      "instruction_fr": "Associez chaque conjonction a sa fonction.",
+      "pairs": [
+        { "mk": "deka", "fr": "que (cognitif)" },
+        { "mk": "ako", "fr": "si (conditionnel)" },
+        { "mk": "bidejkji", "fr": "parce que" },
+        { "mk": "za da", "fr": "pour que / afin de" },
+        { "mk": "iako", "fr": "bien que / meme si" }
+      ],
+      "correct_answer": "deka=que cognitif,ako=si conditionnel,bidejkji=parce que,za da=pour que,iako=bien que",
+      "accept_alternatives": [],
+      "explanation_fr": "Les conjonctions de subordination et leurs fonctions.",
+      "common_mistakes_fr": ["Iako (bien que) vs bidejkji (parce que) — opposition vs cause"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_sc01_009", "phase": 3, "type": "transformation", "level": 4,
+      "instruction_fr": "Combinez les deux phrases avec la bonne conjonction.",
+      "sentence": "Ne odam na rabota. Sum bolen.",
+      "transformation_instruction_fr": "Je ne vais pas au travail parce que je suis malade.",
+      "correct_answer": "Ne odam na rabota bidejkji sum bolen",
+      "accept_alternatives": [],
+      "explanation_fr": "Bidejkji = parce que. Relie la cause (sum bolen) a la consequence (ne odam).",
+      "common_mistakes_fr": ["Cause = bidejkji. Consequence = proposition principale"],
+      "verbs_present": ["sum", "odi"]
+    },
+    {
+      "id": "ex_sc01_010", "phase": 3, "type": "translate_to_mk", "level": 5,
+      "instruction_fr": "Traduisez cette phrase complexe.",
+      "sentence_fr": "Je pense que si tu etudies chaque jour, tu pourras parler macedonien dans trois mois.",
+      "correct_answer": "Mislam deka ako ucish sekoj den, kje mozesh da zboruvash makedonski za tri meseci",
+      "accept_alternatives": [],
+      "explanation_fr": "Mislam deka (je pense que) + ako ucish sekoj den (si tu etudies chaque jour) + kje mozesh da zboruvash (tu pourras parler) + za tri meseci (dans trois mois).",
+      "common_mistakes_fr": ["Proposition imbriquee : deka + ako — deux conjonctions peuvent se combiner"],
+      "verbs_present": []
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "lesson_possessives_01",
+  "topic": "possessives",
+  "category": "grammar",
+  "title": "Les possessifs — adjectifs et clitiques",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "adjectifs possessifs complets, clitiques possessifs mi/ti/mu/i/ni/vi/im",
+  "rules": {
+    "explanation_fr": "Deux systemes pour exprimer la possession en macedonien :\n\n1. ADJECTIFS POSSESSIFS COMPLETS (avec article) :\n• moj/mojot (mon, m.) / moja/mojata (ma, f.) / moe/moeto (mon, n.) / moi/moite (mes, pl.)\n• tvoj/tvoja/tvoe/tvoi — ton/ta/tes\n• negov/negova/negovo — son/sa (masc. possesseur)\n• nejzin/nejzina — son/sa (fem. possesseur)\n• nash/nasha/nashe — notre/nos\n• vash/vasha — votre/vos\n• nivniot/nivnata — leur/leurs\n\n2. CLITIQUES POSSESSIFS (apres le nom, sans article sur le nom) :\n• mi = mon/ma (1re sg.) : kniga mi (mon livre)\n• ti = ton/ta (2e sg.) : kniga ti (ton livre)\n• mu = son/sa (3e sg. m.) : kniga mu (son livre a lui)\n• i = son/sa (3e sg. f.) : kniga i (son livre a elle)\n• ni = notre : kniga ni (notre livre)\n• vi = votre : kniga vi (votre livre)\n• im = leur : kniga im (leur livre)\n\nLe clitique est plus courant a l oral, surtout avec les membres de la famille.",
+    "table": [
+      { "french": "mon (m.)", "macedonian": "mojot / mi", "example_mk": "Mojot brat / brat mi", "example_fr": "Mon frere (long/court)" },
+      { "french": "ta (f.)", "macedonian": "tvojata / ti", "example_mk": "Tvojata kuka / kuka ti", "example_fr": "Ta maison (long/court)" },
+      { "french": "son (m. possesseur)", "macedonian": "negoviot / mu", "example_mk": "Negoviot sin / sin mu", "example_fr": "Son fils (a lui)" },
+      { "french": "sa (f. possesseur)", "macedonian": "nejziniot / i", "example_mk": "Nejzinata kuka / kuka i", "example_fr": "Sa maison (a elle)" },
+      { "french": "notre", "macedonian": "nashiot / ni", "example_mk": "Nashiot jazik / jazik ni", "example_fr": "Notre langue" },
+      { "french": "votre", "macedonian": "vashata / vi", "example_mk": "Vashata adresa / adresa vi", "example_fr": "Votre adresse" },
+      { "french": "leur", "macedonian": "nivniot / im", "example_mk": "Nivnata kuka / kuka im", "example_fr": "Leur maison" },
+      { "french": "C est le mien", "macedonian": "Toa e moe", "example_mk": "Toa e moe, ne tvoe", "example_fr": "C est le mien, pas le tien" }
+    ],
+    "notes_fr": [
+      "Deux facons correctes : mojot brat (long) = brat mi (court/clitique) — meme sens",
+      "Le clitique se place apres le nom defini OU apres un nom nu : brat mi (frere + mi)",
+      "Negov = son (possesseur masculin), nejzin = son (possesseur feminin) — distinction que le francais n a pas",
+      "Les adjectifs possessifs s accordent avec le nom possede, pas avec le possesseur"
+    ],
+    "cyrillic_reference": "moj=мој, tvoj=твој, negov=негов, nejzin=нејзин, nash=наш"
+  },
+  "exercises": [
+    {
+      "id": "ex_pos01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quel clitique signifie son (a lui) ?",
+      "question": "son livre (a un homme) = kniga ___",
+      "options": ["mi", "i", "mu", "ni"],
+      "correct_answer": "mu",
+      "accept_alternatives": [],
+      "explanation_fr": "Mu = son/sa (possesseur masculin). I = son/sa (possesseur feminin). Distinction que le francais n a pas.",
+      "common_mistakes_fr": ["Mu (possesseur = homme) vs i (possesseur = femme)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pos01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle est la forme correcte de mon au feminin ?",
+      "question": "ma maison (m. long) =",
+      "options": ["mojot kuka", "mojata kuka", "moeto kuka", "moite kuka"],
+      "correct_answer": "mojata kuka",
+      "accept_alternatives": ["kuka mi"],
+      "explanation_fr": "Kuka est feminin -> possessif feminin : mojata (moja + ta). Moja -> mojata (defini f.).",
+      "common_mistakes_fr": ["Possessif + article : moja -> mojata (feminin defini)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pos01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Negovata kuka e golema",
+      "correct_answer": "Sa maison est grande (a lui)",
+      "accept_alternatives": ["Sa maison est grande"],
+      "explanation_fr": "Negovata = sa (possesseur masculin, f. defini). A distinguer de nejzinata (possesseur feminin).",
+      "common_mistakes_fr": ["Negov = son/sa (l homme possede), nejzin = son/sa (la femme possede)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pos01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Zborot ni e makedonski",
+      "correct_answer": "Notre langue est le macedonien",
+      "accept_alternatives": ["Notre langue est macedonien"],
+      "explanation_fr": "Zborot ni = notre langue (zborot = la langue, ni = notre clitique). E makedonski = est le macedonien.",
+      "common_mistakes_fr": ["Clitique ni = notre — place apres le nom"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pos01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez avec le clitique possessif.",
+      "sentence": "Kniga ___ e interesna. (Son livre a elle est interessant.)",
+      "correct_answer": "i",
+      "accept_alternatives": [],
+      "explanation_fr": "I = son/sa (possesseur feminin). Kniga i = son livre (a elle).",
+      "common_mistakes_fr": ["I = possesseur feminin. Mu = possesseur masculin"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pos01_006", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Utilisez la forme longue.",
+      "sentence_fr": "Notre maison est plus grande que votre maison.",
+      "correct_answer": "Nashata kuka e po-golema od vashata kuka",
+      "accept_alternatives": ["Kuka ni e po-golema od kuka vi"],
+      "explanation_fr": "Nashata (notre, f. def.) + kuka + e po-golema od (est plus grande que) + vashata kuka (votre maison).",
+      "common_mistakes_fr": ["Nash/vash s accordent en genre avec le nom possede"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pos01_007", "phase": 2, "type": "matching", "level": 3,
+      "instruction_fr": "Associez chaque clitique a sa traduction.",
+      "pairs": [
+        { "mk": "mi", "fr": "mon/ma (1re sg.)" },
+        { "mk": "ti", "fr": "ton/ta (2e sg.)" },
+        { "mk": "mu", "fr": "son/sa (possesseur m.)" },
+        { "mk": "i", "fr": "son/sa (possesseur f.)" },
+        { "mk": "im", "fr": "leur (pl.)" }
+      ],
+      "correct_answer": "mi=mon/ma,ti=ton/ta,mu=son/sa m.,i=son/sa f.,im=leur",
+      "accept_alternatives": [],
+      "explanation_fr": "Les 7 clitiques possessifs : mi, ti, mu, i, ni, vi, im.",
+      "common_mistakes_fr": ["Mu/i distinguent le genre du possesseur — unique en macedonien"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_pos01_008", "phase": 3, "type": "transformation", "level": 3,
+      "instruction_fr": "Passez de la forme longue au clitique.",
+      "sentence": "Mojata sestra e doma.",
+      "transformation_instruction_fr": "Utilisez le clitique possessif a la place de mojata.",
+      "correct_answer": "Sestra mi e doma",
+      "accept_alternatives": [],
+      "explanation_fr": "Mojata sestra (long) = sestra mi (clitique). Le nom n a pas d article defini avec le clitique.",
+      "common_mistakes_fr": ["Avec le clitique, le nom est sans article : sestra mi (pas sestrata mi)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pos01_009", "phase": 3, "type": "error_correction", "level": 4,
+      "instruction_fr": "Corrigez l erreur.",
+      "sentence": "Nejziniot kuka e nova.",
+      "correct_answer": "Nejzinata kuka e nova",
+      "accept_alternatives": [],
+      "explanation_fr": "Kuka est feminin -> possessif feminin : nejzinata. Nejziniot est masculin (ne s utilise qu avec des noms masculins).",
+      "common_mistakes_fr": ["Le possessif s accorde avec le NOM POSSEDE, pas avec le possesseur"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_pos01_010", "phase": 3, "type": "spot_the_difference", "level": 4,
+      "instruction_fr": "Expliquez la difference.",
+      "sentence_a": "Negovata kuka e golema.",
+      "sentence_b": "Nejzinata kuka e golema.",
+      "correct_answer": "a = sa maison (possesseur masculin, lui), b = sa maison (possesseur feminin, elle) — meme traduction en francais",
+      "accept_alternatives": ["negov = possesseur homme, nejzin = possesseur femme"],
+      "expected_keywords_fr": ["possesseur", "masculin", "feminin", "distinction"],
+      "explanation_fr": "En macedonien (comme en anglais : his/her), on distingue le genre du POSSESSEUR. En francais son/sa ne fait pas cette distinction.",
+      "common_mistakes_fr": ["Difference majeure macedonien/francais : gender of possessor matters in Macedonian"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

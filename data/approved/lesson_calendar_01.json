@@ -1,0 +1,142 @@
+{
+  "id": "lesson_calendar_01",
+  "topic": "calendar",
+  "category": "thematic",
+  "title": "Le calendrier — jours, mois, dates",
+  "difficulty_level": 1,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "jours de la semaine, mois de l annee, exprimer la date",
+  "rules": {
+    "explanation_fr": "Jours de la semaine (nedela = semaine) :\nponedelnik (lundi), vtornik (mardi), sreda (mercredi), chetvrtok (jeudi), petok (vendredi), sabota (samedi), nedela (dimanche)\n\nMois :\njanUari, fevruari, mart, april, maj, juni, juli, avgust, septemvri, oktomvri, noemvri, dekemvri\n\nExprimer la date :\nDenes e ponedelnik. (Aujourd hui c est lundi.)\nDenes e prviot april. (Aujourd hui c est le premier avril.)\n\nPhrases utiles :\nKoj den e denes? = Quel jour est-on aujourd hui ?\nKoja data e denes? = Quelle est la date aujourd hui ?",
+    "table": [
+      { "french": "lundi", "macedonian": "ponedelnik", "example_mk": "Vo ponedelnik odam na rabota", "example_fr": "Le lundi je vais au travail" },
+      { "french": "mardi", "macedonian": "vtornik", "example_mk": "Vo vtornik imam chas", "example_fr": "Le mardi j ai cours" },
+      { "french": "mercredi", "macedonian": "sreda", "example_mk": "Vo sreda e sloboden den", "example_fr": "Le mercredi est un jour libre" },
+      { "french": "jeudi", "macedonian": "chetvrtok", "example_mk": "Vo chetvrtok odime vo kino", "example_fr": "Le jeudi on va au cinema" },
+      { "french": "vendredi", "macedonian": "petok", "example_mk": "Vo petok e vikend", "example_fr": "Le vendredi c est le week-end" },
+      { "french": "samedi", "macedonian": "sabota", "example_mk": "Vo sabota spijam dolgo", "example_fr": "Le samedi je dors longtemps" },
+      { "french": "dimanche", "macedonian": "nedela", "example_mk": "Vo nedela odmоruvame", "example_fr": "Le dimanche on se repose" },
+      { "french": "aujourd hui", "macedonian": "denes", "example_mk": "Denes e sreda", "example_fr": "Aujourd hui c est mercredi" }
+    ],
+    "notes_fr": [
+      "Vo + jour = le + jour : vo ponedelnik = le lundi",
+      "Nedela = a la fois dimanche et semaine — contexte obligatoire pour distinguer",
+      "Chetvrtok (jeudi) contient ch (Ch) — meme racine que chetvrti (quatrieme)",
+      "Denes (aujourd hui), utre (demain), vchera (hier), po utre (apres-demain)"
+    ],
+    "cyrillic_reference": "ponedelnik=понеделник, sreda=среда, chetvrtok=четврток, petok=петок, sabota=сабота"
+  },
+  "exercises": [
+    {
+      "id": "ex_cal01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Quel jour vient apres mardi ?",
+      "question": "Apres vtornik (mardi) vient :",
+      "options": ["ponedelnik", "sreda", "chetvrtok", "petok"],
+      "correct_answer": "sreda",
+      "accept_alternatives": [],
+      "explanation_fr": "Ordre des jours : ponedelnik, vtornik, sreda, chetvrtok, petok, sabota, nedela.",
+      "common_mistakes_fr": ["Memorisez dans l ordre : pon-vtor-sreda-chetv-petok-sabota-nedela"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cal01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on aujourd hui c est vendredi ?",
+      "question": "Aujourd hui c est vendredi =",
+      "options": ["Denes e sabota", "Denes e petok", "Denes e vtornik", "Denes e nedela"],
+      "correct_answer": "Denes e petok",
+      "accept_alternatives": [],
+      "explanation_fr": "Petok = vendredi. Denes e petok = Aujourd hui c est vendredi.",
+      "common_mistakes_fr": ["Petok (vendredi) vs sabota (samedi) — jours consecutifs"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_cal01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Vo ponedelnik odam na rabota",
+      "correct_answer": "Le lundi je vais au travail",
+      "accept_alternatives": ["Lundi je vais au travail"],
+      "explanation_fr": "Vo ponedelnik = le lundi, odam = je vais, na rabota = au travail.",
+      "common_mistakes_fr": ["Vo + jour = le + jour de la semaine"],
+      "verbs_present": ["odi"]
+    },
+    {
+      "id": "ex_cal01_004", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Denes e prviot juni",
+      "correct_answer": "Aujourd hui c est le premier juin",
+      "accept_alternatives": ["Aujourd hui c est le 1er juin"],
+      "explanation_fr": "Denes e = aujourd hui c est, prviot = le premier (m. defini), juni = juin.",
+      "common_mistakes_fr": ["Pour les dates : ordinal defini + mois"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_cal01_005", "phase": 2, "type": "fill_blank", "level": 1,
+      "instruction_fr": "Completez.",
+      "sentence": "Denes e ___. (Aujourd hui c est jeudi.)",
+      "correct_answer": "chetvrtok",
+      "accept_alternatives": [],
+      "explanation_fr": "Chetvrtok = jeudi. Denes e chetvrtok = Aujourd hui c est jeudi.",
+      "common_mistakes_fr": ["Chetvrtok contient ch (Ch) et vr"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_cal01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Le samedi et le dimanche c est le week-end.",
+      "correct_answer": "Vo sabota i nedela e vikend",
+      "accept_alternatives": ["Sabota i nedela e vikend"],
+      "explanation_fr": "Vo sabota i nedela = le samedi et le dimanche, e vikend = c est le week-end.",
+      "common_mistakes_fr": ["Vikend = week-end (emprunt a l anglais)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_cal01_007", "phase": 2, "type": "matching", "level": 1,
+      "instruction_fr": "Associez chaque jour a sa traduction.",
+      "pairs": [
+        { "mk": "ponedelnik", "fr": "lundi" },
+        { "mk": "sreda", "fr": "mercredi" },
+        { "mk": "petok", "fr": "vendredi" },
+        { "mk": "sabota", "fr": "samedi" },
+        { "mk": "nedela", "fr": "dimanche" }
+      ],
+      "correct_answer": "ponedelnik=lundi,sreda=mercredi,petok=vendredi,sabota=samedi,nedela=dimanche",
+      "accept_alternatives": [],
+      "explanation_fr": "Les sept jours de la semaine : pon-vtor-sreda-chetv-petok-sabota-nedela.",
+      "common_mistakes_fr": ["Nedela = dimanche ET semaine selon le contexte"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_cal01_008", "phase": 3, "type": "sentence_builder", "level": 2,
+      "instruction_fr": "Construisez : Aujourd hui c est le quinze mars.",
+      "scrambled_words": ["Denes", "e", "petnaesettiot", "mart", "april", "vtoriot"],
+      "correct_answer": "Denes e petnaesettiot mart",
+      "accept_alternatives": [],
+      "explanation_fr": "Denes e + ordinal defini + mois. Petnaesettiot = le quinzieme. April et vtoriot sont des intrus.",
+      "common_mistakes_fr": ["Format de date : ordinal + mois (sans article supplementaire)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_cal01_009", "phase": 3, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Je travaille du lundi au vendredi.",
+      "correct_answer": "Rabotam od ponedelnik do petok",
+      "accept_alternatives": [],
+      "explanation_fr": "Rabotam = je travaille, od ponedelnik = du lundi, do petok = au vendredi.",
+      "common_mistakes_fr": ["Od...do = de...a (periode)"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_cal01_010", "phase": 3, "type": "spot_the_difference", "level": 2,
+      "instruction_fr": "Quelle est la difference ?",
+      "sentence_a": "Ova nedela sum sloboden.",
+      "sentence_b": "Vo nedela sum sloboden.",
+      "correct_answer": "ova nedela = cette semaine (nedela = semaine), vo nedela = le dimanche (nedela = dimanche)",
+      "accept_alternatives": ["nedela = semaine dans a, dimanche dans b"],
+      "expected_keywords_fr": ["semaine", "dimanche", "deux sens"],
+      "explanation_fr": "Nedela a deux sens : semaine et dimanche. Ova nedela = cette semaine. Vo nedela = le dimanche.",
+      "common_mistakes_fr": ["Nedela = semaine (contexte temporal) ou dimanche (jour de la semaine)"],
+      "verbs_present": ["sum"]
+    }
+  ]
+}

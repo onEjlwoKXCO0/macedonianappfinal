@@ -1,0 +1,142 @@
+{
+  "id": "lesson_work_school_01",
+  "topic": "work_school",
+  "category": "thematic",
+  "title": "Le travail et l ecole",
+  "difficulty_level": 2,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "professions, lieu de travail, vocabulaire scolaire",
+  "rules": {
+    "explanation_fr": "Professions courantes : doktor (medecin), nastavnik (professeur), student (etudiant), rabotnik (ouvrier), inzhener (ingenieur), pravnik (avocat), pisatel (ecrivain), novinar (journaliste)\n\nLieu de travail : raboti vo... = travaille dans...\nEx : Raboti vo bolnica (travaille dans un hopital), raboti vo shkolo (travaille dans une ecole)\n\nVocabulaire scolaire : uchilishte (ecole), fakultet (universite), chas (cours/heure), lekcija (lecon), ucheник (eleve), student (etudiant), ocena (note)\n\nPhrases utiles :\n• Shto rabotat? = Qu est-ce que tu fais comme travail ?\n• Rabotam kako... = Je travaille comme...\n• Ucham... = J etudie / j apprends\n• Imam chas vo... = J ai cours a...",
+    "table": [
+      { "french": "medecin", "macedonian": "doktor", "example_mk": "Toj raboti kako doktor", "example_fr": "Il travaille comme medecin" },
+      { "french": "professeur", "macedonian": "nastavnik", "example_mk": "Mojata nastavnicka e dobra", "example_fr": "Mon professeur est bonne" },
+      { "french": "etudiant(e)", "macedonian": "student / studentka", "example_mk": "Sum student na prv kurs", "example_fr": "Je suis etudiant en premiere annee" },
+      { "french": "ecole", "macedonian": "uchilishte", "example_mk": "Odam na uchilishte", "example_fr": "Je vais a l ecole" },
+      { "french": "universite", "macedonian": "fakultet", "example_mk": "Studiram na fakultet", "example_fr": "J etudie a l universite" },
+      { "french": "cours / heure", "macedonian": "chas", "example_mk": "Imam chas vo devet", "example_fr": "J ai cours a neuf heures" },
+      { "french": "je travaille comme", "macedonian": "rabotam kako", "example_mk": "Rabotam kako inzhener", "example_fr": "Je travaille comme ingenieur" },
+      { "french": "j apprends", "macedonian": "ucham", "example_mk": "Ucham makedonski", "example_fr": "J apprends le macedonien" }
+    ],
+    "notes_fr": [
+      "Raboti kako + profession = travaille comme + profession (pas d article en macedonien)",
+      "Nastavnik (m.) / nastavnicka (f.) = professeur — formes distinctes selon le genre",
+      "Student (m.) / studentka (f.) = etudiant(e)",
+      "Ucham = j apprends / j etudie (verbe general)"
+    ],
+    "cyrillic_reference": "raboti=работи, doktor=доктор, uchilishte=училиште, chas=час, ucham=учам"
+  },
+  "exercises": [
+    {
+      "id": "ex_ws01_001", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Comment dit-on je travaille comme medecin ?",
+      "question": "Je travaille comme medecin =",
+      "options": ["Sum doktor", "Rabotam kako doktor", "Odam kaj doktor", "Imam doktor"],
+      "correct_answer": "Rabotam kako doktor",
+      "accept_alternatives": ["Sum doktor"],
+      "explanation_fr": "Rabotam kako + profession = je travaille comme. Pas d article apres kako.",
+      "common_mistakes_fr": ["Pas d article apres kako (pas de eden/edna devant la profession)"],
+      "verbs_present": ["raboti", "sum"]
+    },
+    {
+      "id": "ex_ws01_002", "phase": 1, "type": "multiple_choice", "level": 1,
+      "instruction_fr": "Que signifie Ucham makedonski ?",
+      "question": "Ucham makedonski =",
+      "options": ["J enseigne le macedonien", "J apprends le macedonien", "Je parle macedonien", "Je comprends le macedonien"],
+      "correct_answer": "J apprends le macedonien",
+      "accept_alternatives": ["J etudie le macedonien"],
+      "explanation_fr": "Ucham = j apprends/j etudie. Makedonski = le macedonien.",
+      "common_mistakes_fr": ["Ucham (apprendre) vs predavam (enseigner) — sens oppose"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ws01_003", "phase": 1, "type": "translate_to_fr", "level": 1,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Taa raboti kako nastavnicka vo uchilishte",
+      "correct_answer": "Elle travaille comme professeur dans une ecole",
+      "accept_alternatives": ["Elle est professeur dans une ecole"],
+      "explanation_fr": "Nastavnicka = professeur (feminin), vo uchilishte = dans une ecole.",
+      "common_mistakes_fr": ["Nastavnicka = professeur feminin (nastavnik = masculin)"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_ws01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Sum student na prv kurs na filozofskiot fakultet",
+      "correct_answer": "Je suis etudiant en premiere annee de la faculte de philosophie",
+      "accept_alternatives": ["Je suis en premiere annee a la fac de philo"],
+      "explanation_fr": "Student na prv kurs = etudiant en premiere annee, filozofskiot fakultet = la faculte de philosophie.",
+      "common_mistakes_fr": ["Kurs = annee/cours a l universite"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_ws01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez.",
+      "sentence": "Imam ___ vo devet chasot. (J ai cours a neuf heures.)",
+      "correct_answer": "chas",
+      "accept_alternatives": [],
+      "explanation_fr": "Chas = cours/heure. Imam chas = j ai cours.",
+      "common_mistakes_fr": ["Chas = cours ET heure (meme mot)"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_ws01_006", "phase": 2, "type": "translate_to_mk", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Mon pere travaille comme ingenieur dans une grande entreprise.",
+      "correct_answer": "Tatko mi raboti kako inzhener vo golema kompanija",
+      "accept_alternatives": [],
+      "explanation_fr": "Tatko mi = mon pere, raboti kako inzhener = travaille comme ingenieur, vo golema kompanija = dans une grande entreprise.",
+      "common_mistakes_fr": ["Inzhener = ingenieur (proche du francais)"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_ws01_007", "phase": 2, "type": "matching", "level": 2,
+      "instruction_fr": "Associez chaque profession a sa traduction.",
+      "pairs": [
+        { "mk": "doktor", "fr": "medecin" },
+        { "mk": "nastavnik", "fr": "professeur" },
+        { "mk": "pravnik", "fr": "avocat" },
+        { "mk": "novinar", "fr": "journaliste" },
+        { "mk": "inzhener", "fr": "ingenieur" }
+      ],
+      "correct_answer": "doktor=medecin,nastavnik=professeur,pravnik=avocat,novinar=journaliste,inzhener=ingenieur",
+      "accept_alternatives": [],
+      "explanation_fr": "Professions courantes en macedonien.",
+      "common_mistakes_fr": ["Pravnik = avocat (pas pravonik)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_ws01_008", "phase": 3, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Presentez-vous professionnellement.",
+      "sentence_fr": "Bonjour, je m appelle Marie. Je travaille comme journaliste. J apprends le macedonien depuis un an.",
+      "correct_answer": "Zdravo, se vikam Marie. Rabotam kako novinar. Ucham makedonski od edna godina.",
+      "accept_alternatives": [],
+      "explanation_fr": "Od edna godina = depuis un an (od = depuis, edna godina = un an).",
+      "common_mistakes_fr": ["Od + duree = depuis + periode"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_ws01_009", "phase": 3, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez la phrase.",
+      "sentence": "Taa raboti kako eden doktor.",
+      "correct_answer": "Taa raboti kako doktor",
+      "accept_alternatives": [],
+      "explanation_fr": "Pas d article indefini apres kako devant une profession : raboti kako doktor (pas eden doktor).",
+      "common_mistakes_fr": ["Jamais d article apres kako devant une profession"],
+      "verbs_present": ["raboti"]
+    },
+    {
+      "id": "ex_ws01_010", "phase": 3, "type": "spot_the_difference", "level": 3,
+      "instruction_fr": "Quelle est la difference ?",
+      "sentence_a": "Ucham vo uchilishte.",
+      "sentence_b": "Studiram na fakultet.",
+      "correct_answer": "ucham vo uchilishte = j apprends a l ecole (eleve), studiram na fakultet = j etudie a l universite (etudiant)",
+      "accept_alternatives": ["ecole secondaire vs universite"],
+      "expected_keywords_fr": ["ecole", "universite", "eleve", "etudiant"],
+      "explanation_fr": "Ucham = apprendre (ecole primaire/secondaire). Studiram = etudier (universite). Deux verbes distincts selon le niveau.",
+      "common_mistakes_fr": ["Ucham (eleve) vs studiram (etudiant universitaire)"],
+      "verbs_present": []
+    }
+  ]
+}

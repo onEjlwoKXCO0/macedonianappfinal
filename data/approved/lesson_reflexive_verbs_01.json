@@ -1,0 +1,146 @@
+{
+  "id": "lesson_reflexive_verbs_01",
+  "topic": "reflexive_verbs",
+  "category": "grammar",
+  "title": "Les verbes reflexifs",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "construction se + verbe, verbes pronominaux et reciproques",
+  "rules": {
+    "explanation_fr": "Les verbes reflexifs en macedonien utilisent la particule SE placee juste avant ou apres le verbe.\n\nTypes de verbes reflexifs :\n1. Actions sur soi-meme : se mie (se laver), se oblekuva (s habiller), se budi (se reveiller)\n2. Actions reciproques : se sakaat (ils s aiment), se poznavaat (ils se connaissent)\n3. Verbes intrinsecquement reflexifs : se smeе (rire), se plaши (avoir peur), se nadevam (esperer)\n\nPosition de SE :\n• Toujours avant le verbe : se miem (je me lave)\n• Avec la negation : ne se miem (je ne me lave pas)\n• Au passe : se meal / se mila (masc./fem.) = il/elle s est lave(e)\n\nImperatif reflexif :\n• Izmij se! = Lave-toi ! (izmij + se apres l imperatif)\n• Obleci se! = Habille-toi !",
+    "table": [
+      { "french": "se laver", "macedonian": "se mie", "example_mk": "Se miem sekoe utro", "example_fr": "Je me lave chaque matin" },
+      { "french": "s habiller", "macedonian": "se oblekuva", "example_mk": "Se oblekuvam brzo", "example_fr": "Je m habille vite" },
+      { "french": "se reveiller", "macedonian": "se budi", "example_mk": "Se budam rano", "example_fr": "Je me reveille tot" },
+      { "french": "rire", "macedonian": "se smee", "example_mk": "Se smee mnogu", "example_fr": "Il/elle rit beaucoup" },
+      { "french": "avoir peur", "macedonian": "se plashi", "example_mk": "Se plasham od pauci", "example_fr": "J ai peur des araignees" },
+      { "french": "ils s aiment", "macedonian": "se sakaat", "example_mk": "Nie se sakame", "example_fr": "Nous nous aimons" },
+      { "french": "esperer", "macedonian": "se nadevam", "example_mk": "Se nadevam deka kje dojde", "example_fr": "J espere qu il viendra" },
+      { "french": "Lave-toi !", "macedonian": "Izmij se!", "example_mk": "Izmij se pred jadewe!", "example_fr": "Lave-toi avant de manger !" }
+    ],
+    "notes_fr": [
+      "SE precede toujours le verbe (jamais apres) sauf a l imperatif et l infinitif",
+      "Negation : ne SE verb (ex. ne se miem = je ne me lave pas)",
+      "Verbes reciproques (pluriel) : se sakaat (ils s aiment l un l autre)",
+      "A l imperatif, SE se place apres le verbe : izmij SE!, obleci SE!"
+    ],
+    "cyrillic_reference": "se=се, se mie=се мие, se smee=се смее, se plashi=се плаши"
+  },
+  "exercises": [
+    {
+      "id": "ex_rv01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle est la traduction correcte ?",
+      "question": "Se plasham od temnicata =",
+      "options": ["Je fais peur a l obscurite", "J ai peur de l obscurite", "L obscurite me fait rire", "Je deteste l obscurite"],
+      "correct_answer": "J ai peur de l obscurite",
+      "accept_alternatives": [],
+      "explanation_fr": "Se plasham = j ai peur (de), od temnicata = de l obscurite. Se plashi est un verbe reflexif intrinseque.",
+      "common_mistakes_fr": ["Se plashi od = avoir peur de (od = de apres plashi)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Que signifie Nie se sakame ?",
+      "question": "Nie se sakame =",
+      "options": ["Nous voulons aller", "Nous nous aimons", "Nous ne nous aimons pas", "Nous nous connaissons"],
+      "correct_answer": "Nous nous aimons",
+      "accept_alternatives": [],
+      "explanation_fr": "Se sakame = nous nous aimons (reciproque). Saka = vouloir/aimer, se = marqueur reciproque au pluriel.",
+      "common_mistakes_fr": ["Pluriel + se saka = action reciproque (l un l autre)"],
+      "verbs_present": ["saka"]
+    },
+    {
+      "id": "ex_rv01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Se nadevam deka utre kje e ubavo vreme",
+      "correct_answer": "J espere qu il fera beau demain",
+      "accept_alternatives": ["J espere que demain il fera beau"],
+      "explanation_fr": "Se nadevam deka = j espere que, utre = demain, kje e ubavo vreme = il fera beau (futur de e ubavo).",
+      "common_mistakes_fr": ["Se nadevam deka + phrase = j espere que + proposition"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_rv01_004", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Ne se miem pred da spijam",
+      "correct_answer": "Je ne me lave pas avant de dormir",
+      "accept_alternatives": [],
+      "explanation_fr": "Ne se miem = je ne me lave pas (negation + reflexif), pred da spijam = avant de dormir.",
+      "common_mistakes_fr": ["Negation reflexive : ne SE verb (ne jamais : ne verb se)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Completez avec la bonne forme reflexive.",
+      "sentence": "___ smee koga gledat komedija. (Ils rient quand ils regardent une comedie.)",
+      "correct_answer": "Se",
+      "accept_alternatives": [],
+      "explanation_fr": "Se smee = il/elle rit. Verbe intrinsecquement reflexif. SE toujours avant le verbe.",
+      "common_mistakes_fr": ["SE precede le verbe, jamais apres (sauf imperatif)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_006", "phase": 2, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez la position de SE.",
+      "sentence": "Jadam se pred da odam na rabota.",
+      "correct_answer": "Jadam pred da odam na rabota",
+      "accept_alternatives": [],
+      "explanation_fr": "Jade (manger) n est pas reflexif — pas besoin de SE. Se jadewe n existe pas. Jadam = je mange, sans SE.",
+      "common_mistakes_fr": ["Tous les verbes ne sont pas reflexifs — ne pas ajouter SE partout"],
+      "verbs_present": ["jade", "odi"]
+    },
+    {
+      "id": "ex_rv01_007", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Habille-toi vite, on est en retard !",
+      "correct_answer": "Obleci se brzo, docnime!",
+      "accept_alternatives": ["Obleci se brzo, sme docna!"],
+      "explanation_fr": "Obleci se = habille-toi (imperatif reflexif — SE apres le verbe), brzo = vite, docnime = nous sommes en retard.",
+      "common_mistakes_fr": ["A l imperatif, SE se place APRES le verbe : obleci SE! (pas se obleci!)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_rv01_008", "phase": 3, "type": "matching", "level": 3,
+      "instruction_fr": "Associez chaque verbe reflexif a sa traduction.",
+      "pairs": [
+        { "mk": "se mie", "fr": "se laver" },
+        { "mk": "se smee", "fr": "rire" },
+        { "mk": "se plashi", "fr": "avoir peur" },
+        { "mk": "se nadevam", "fr": "esperer" },
+        { "mk": "se oblekuva", "fr": "s habiller" }
+      ],
+      "correct_answer": "se mie=se laver,se smee=rire,se plashi=avoir peur,se nadevam=esperer,se oblekuva=s habiller",
+      "accept_alternatives": [],
+      "explanation_fr": "Verbes reflexifs — certains ont un equivalent reflexif en francais, d autres non (rire, avoir peur).",
+      "common_mistakes_fr": ["Se smee = rire (pas se rire qui n existe pas en francais)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_009", "phase": 3, "type": "transformation", "level": 3,
+      "instruction_fr": "Mettez a la forme negative.",
+      "sentence": "Se budam rano.",
+      "transformation_instruction_fr": "Je ne me reveille pas tot.",
+      "correct_answer": "Ne se budam rano",
+      "accept_alternatives": [],
+      "explanation_fr": "Negation reflexive : ne + se + verbe. Ne se budam = je ne me reveille pas.",
+      "common_mistakes_fr": ["Ordre : ne + se + verbe (ne se budam, pas ne budam se)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_rv01_010", "phase": 3, "type": "transformation_chain", "level": 4,
+      "instruction_fr": "Transformations du verbe reflexif se mie.",
+      "base_sentence": "se mie (se laver — infinitif/3e sing.)",
+      "steps": [
+        { "instruction_fr": "1re personne singulier (je me lave)", "expected_answer": "se miem" },
+        { "instruction_fr": "Forme negative (je ne me lave pas)", "expected_answer": "ne se miem" },
+        { "instruction_fr": "Imperatif singulier (lave-toi !)", "expected_answer": "Izmij se!" }
+      ],
+      "correct_answer": "Izmij se!",
+      "accept_alternatives": [],
+      "explanation_fr": "se mie -> se miem (1re sg.) -> ne se miem (neg.) -> Izmij se! (imp. avec SE apres). Izmij est la forme perfective de mie.",
+      "common_mistakes_fr": ["A l imperatif, SE se deplace apres le verbe"],
+      "verbs_present": []
+    }
+  ]
+}

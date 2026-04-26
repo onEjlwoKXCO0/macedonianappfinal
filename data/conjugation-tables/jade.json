@@ -1,0 +1,11 @@
+{
+  "infinitive": "jade",
+  "meaning_fr": "manger",
+  "aspect": "imperfective",
+  "tables": {
+    "present": { "jas": "jadam", "ti": "jadesh", "toj_taa": "jade", "nie": "jademe", "vie": "jadete", "tie": "jadat" },
+    "past_imperfect": { "jas": "jadev", "ti": "jadese", "toj_taa": "jadese", "nie": "jadevme", "vie": "jadevte", "tie": "jadea" },
+    "future": { "jas": "kje jadam", "ti": "kje jadesh", "toj_taa": "kje jade", "nie": "kje jademe", "vie": "kje jadete", "tie": "kje jadat" }
+  },
+  "notes_fr": ["💡 Perfectif : 'izede' (finir de manger)", "💡 Impératif : jadi! (mange!) / jadete! (mangez!)"]
+}

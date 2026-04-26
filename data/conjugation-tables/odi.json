@@ -1,0 +1,11 @@
+{
+  "infinitive": "odi",
+  "meaning_fr": "aller / marcher",
+  "aspect": "imperfective",
+  "tables": {
+    "present": { "jas": "odam", "ti": "odish", "toj_taa": "odi", "nie": "odime", "vie": "odite", "tie": "odat" },
+    "past_imperfect": { "jas": "odev", "ti": "odese", "toj_taa": "odese", "nie": "odevme", "vie": "odevte", "tie": "odea" },
+    "future": { "jas": "kje odam", "ti": "kje odish", "toj_taa": "kje odi", "nie": "kje odime", "vie": "kje odite", "tie": "kje odat" }
+  },
+  "notes_fr": ["💡 Perfectif : 'otide' (aller une fois et arriver)", "⚠️ Impératif : odi! (va!) / odete! (allez!)"]
+}

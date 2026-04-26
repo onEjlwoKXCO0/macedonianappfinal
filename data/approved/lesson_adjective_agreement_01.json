@@ -1,0 +1,142 @@
+{
+  "id": "lesson_adjective_agreement_01",
+  "topic": "adjective_agreement",
+  "category": "grammar",
+  "title": "L accord des adjectifs",
+  "difficulty_level": 3,
+  "created_at": "2026-04-26",
+  "status": "approved",
+  "subtopic": "accord en genre et nombre, adjectifs definis et indefinis",
+  "rules": {
+    "explanation_fr": "En macedonien, les adjectifs s accordent obligatoirement en genre et nombre avec le nom.\n\nFormes de l adjectif INDEFINI (sans article) :\n• Masc. : ubav, golem, crven, star\n• Fem. : ubava, golema, crvena, stara\n• Neutre : ubavo, golemo, crveno, staro\n• Pluriel : ubavi, golemi, crveni, stari\n\nFormes DEFINIS (avec article integre) :\n• Masc. : ubaviot, golemiot (article -iot)\n• Fem. : ubavata, golemata (article -ata)\n• Neutre : ubavoto, golemoto (article -oto)\n• Pluriel : ubavite, golemite (article -ite)\n\nPosition : l adjectif precede toujours le nom en macedonien.\nEx : ubava kuka (une belle maison), ubavata kuka (la belle maison)",
+    "table": [
+      { "french": "une belle maison (indef.)", "macedonian": "ubava kuka", "example_mk": "Ima ubava kuka", "example_fr": "Il y a une belle maison" },
+      { "french": "la belle maison (def.)", "macedonian": "ubavata kuka", "example_mk": "Ubavata kuka e golema", "example_fr": "La belle maison est grande" },
+      { "french": "un grand homme (indef.)", "macedonian": "golem chovek", "example_mk": "Toj e golem chovek", "example_fr": "Il est un grand homme" },
+      { "french": "le grand homme (def.)", "macedonian": "golemiot chovek", "example_mk": "Golemiot chovek e tuka", "example_fr": "Le grand homme est ici" },
+      { "french": "un petit enfant (indef.)", "macedonian": "malo dete", "example_mk": "Ima malo dete tuka", "example_fr": "Il y a un petit enfant ici" },
+      { "french": "les belles maisons (def.)", "macedonian": "ubavite kuki", "example_mk": "Ubavite kuki se skupi", "example_fr": "Les belles maisons sont cheres" },
+      { "french": "vieux (m. indef.)", "macedonian": "star", "example_mk": "Star chovek", "example_fr": "Un vieil homme" },
+      { "french": "vieille (f. indef.)", "macedonian": "stara", "example_mk": "Stara kuka", "example_fr": "Une vieille maison" }
+    ],
+    "notes_fr": [
+      "L adjectif precede TOUJOURS le nom en macedonien (contrairement au francais qui est variable)",
+      "Indefini = adjectif seul. Defini = adjectif + article integre (-iot/-ata/-oto/-ite)",
+      "Le pluriel est identique pour tous les genres : ubavi, golemi",
+      "Quand l adjectif est attribut (apres etre), il reste indefini : kukata e ubava (pas ubavata)"
+    ],
+    "cyrillic_reference": "ubav=убав, golem=голем, star=стар, mal=мал, nov=нов"
+  },
+  "exercises": [
+    {
+      "id": "ex_aa01_001", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Choisissez la forme correcte.",
+      "question": "Une vieille maison (indefini, feminin) =",
+      "options": ["star kuka", "stara kuka", "staro kuka", "stari kuka"],
+      "correct_answer": "stara kuka",
+      "accept_alternatives": [],
+      "explanation_fr": "Kuka est feminin -> adjectif feminin : stara. Star (m.), stara (f.), staro (n.), stari (pl.).",
+      "common_mistakes_fr": ["Kuka = feminin -> stara (feminin de star)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aa01_002", "phase": 1, "type": "multiple_choice", "level": 2,
+      "instruction_fr": "Quelle est la forme definie correcte ?",
+      "question": "La belle maison (defini) =",
+      "options": ["ubava kukata", "ubavata kuka", "ubaviot kuka", "ubavite kuka"],
+      "correct_answer": "ubavata kuka",
+      "accept_alternatives": [],
+      "explanation_fr": "Defini feminin : ubava + ata = ubavata. La belle maison = ubavata kuka.",
+      "common_mistakes_fr": ["Defini feminin : adjectif + ata (ex. ubavata, golemata, starata)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aa01_003", "phase": 1, "type": "translate_to_fr", "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Golemiot grad e daleku",
+      "correct_answer": "La grande ville est loin",
+      "accept_alternatives": [],
+      "explanation_fr": "Golemiot = le grand (m. defini), grad = ville (m.), e daleku = est loin.",
+      "common_mistakes_fr": ["Defini masculin : adjectif + iot (golemiot, ubaviot, noviot)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_aa01_004", "phase": 1, "type": "translate_to_fr", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Ubavite kuki se skupi",
+      "correct_answer": "Les belles maisons sont cheres",
+      "accept_alternatives": [],
+      "explanation_fr": "Ubavite = les belles (pl. defini avec -ite), kuki = maisons (pl.), se skupi = sont cheres.",
+      "common_mistakes_fr": ["Pluriel defini : adjectif + ite (ubavite, golemite, starite)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_aa01_005", "phase": 2, "type": "fill_blank", "level": 2,
+      "instruction_fr": "Accordez l adjectif.",
+      "sentence": "Ima ___ avtobus. (Il y a un grand bus. — avtobus est masculin.)",
+      "correct_answer": "golem",
+      "accept_alternatives": [],
+      "explanation_fr": "Avtobus = masculin indefini -> golem (pas golema ni golemo).",
+      "common_mistakes_fr": ["Masculin indefini = forme de base sans suffixe : golem, ubav, star"],
+      "verbs_present": ["ima"]
+    },
+    {
+      "id": "ex_aa01_006", "phase": 2, "type": "error_correction", "level": 3,
+      "instruction_fr": "Corrigez l accord.",
+      "sentence": "Toj e ubaviot.",
+      "correct_answer": "Toj e ubav",
+      "accept_alternatives": [],
+      "explanation_fr": "Adjectif attribut (apres etre) = forme indefinie. On dit toj e ubav (pas ubaviot). La forme definie s utilise seulement quand l adjectif est epithete (avant le nom).",
+      "common_mistakes_fr": ["Attribut = indefini. Epithete definie = defini"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_aa01_007", "phase": 2, "type": "translate_to_mk", "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Le nouveau livre est interessant.",
+      "correct_answer": "Novata kniga e interesna",
+      "accept_alternatives": [],
+      "explanation_fr": "Kniga = feminin. Nov -> nova (indef. f.) -> novata (def. f.). Interesna = attribut indefini feminin.",
+      "common_mistakes_fr": ["Epithete definie (novata) vs attribut indefini (interesna)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_aa01_008", "phase": 3, "type": "matching", "level": 3,
+      "instruction_fr": "Associez chaque forme a sa description.",
+      "pairs": [
+        { "mk": "ubav", "fr": "beau (m. indef.)" },
+        { "mk": "ubavata", "fr": "la belle (f. def.)" },
+        { "mk": "ubavi", "fr": "beaux/belles (pl. indef.)" },
+        { "mk": "ubaviot", "fr": "le beau (m. def.)" },
+        { "mk": "ubavite", "fr": "les beaux/belles (pl. def.)" }
+      ],
+      "correct_answer": "ubav=beau m.indef.,ubavata=la belle f.def.,ubavi=pl.indef.,ubaviot=le beau m.def.,ubavite=les pl.def.",
+      "accept_alternatives": [],
+      "explanation_fr": "Tableau complet des formes de l adjectif ubav (beau).",
+      "common_mistakes_fr": ["Distinguer indefini (sans article) et defini (avec article integre)"],
+      "verbs_present": []
+    },
+    {
+      "id": "ex_aa01_009", "phase": 3, "type": "sentence_builder", "level": 3,
+      "instruction_fr": "Construisez : La petite ville est belle.",
+      "scrambled_words": ["Malata", "gradot", "e", "ubava", "ubavata", "mal"],
+      "correct_answer": "Malata gradot e ubava",
+      "accept_alternatives": [],
+      "explanation_fr": "Malata (la petite, f. def.) + gradot (la ville, m... attends — grad est masculin, donc maliot gradot). En fait gradot est masculin, donc : Maliot gradot e ubav.",
+      "common_mistakes_fr": ["Grad est masculin -> maliot gradot (pas malata)"],
+      "verbs_present": ["sum"]
+    },
+    {
+      "id": "ex_aa01_010", "phase": 3, "type": "spot_the_difference", "level": 4,
+      "instruction_fr": "Expliquez la difference grammaticale.",
+      "sentence_a": "Ubava kuka.",
+      "sentence_b": "Ubavata kuka.",
+      "correct_answer": "ubava kuka = une belle maison (indefini), ubavata kuka = la belle maison (defini avec article integre -ata)",
+      "accept_alternatives": ["indefini vs defini", "article absent vs article integre dans l adjectif"],
+      "expected_keywords_fr": ["indefini", "defini", "article"],
+      "explanation_fr": "Ubava kuka = une belle maison (pas d article). Ubavata kuka = la belle maison (l article -ata est integre a l adjectif).",
+      "common_mistakes_fr": ["L article defini s integre a l adjectif epithete en macedonien"],
+      "verbs_present": []
+    }
+  ]
+}
