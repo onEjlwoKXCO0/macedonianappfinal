@@ -7,6 +7,7 @@ const NAV = [
   { href: '/lessons', label: 'Leçons', icon: '📘' },
   { href: '/daily', label: 'Aujourd\'hui', icon: '📅' },
   { href: '/review', label: 'Révision', icon: '🔄' },
+  { href: '/practice', label: 'Exercices', icon: '⚡' },
   { href: '/stats', label: 'Stats', icon: '📊' },
 ];
 

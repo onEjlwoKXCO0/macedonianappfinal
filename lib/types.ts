@@ -1,3 +1,5 @@
+export type { CardState, Rating } from './spaced-repetition';
+
 export type ExerciseType =
   | 'multiple_choice'
   | 'fill_blank'
