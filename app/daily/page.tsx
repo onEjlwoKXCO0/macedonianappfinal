@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { getProgress, saveProgress, getGlobalMastery } from '@/lib/progress-tracker';
+import { getProgress } from '@/lib/progress-tracker';
 import { getDueItems } from '@/lib/spaced-repetition';
 import { getDistractorMemory, saveDistractorMemory } from '@/lib/distractor-engine';
 import type { Lesson, Exercise } from '@/lib/types';
@@ -33,7 +33,6 @@ export default function DailyPage() {
     const progress = getProgress();
     const mem = getDistractorMemory();
 
-    // Check for pending micro-lesson (distractor with count >= 3)
     const pendingConfusion = mem.confusions.find((c) => {
       const microId = `micro_${c.correct}_vs_${c.chosen_instead}`.replace(/[^a-zA-Z0-9_]/g, '_').slice(0, 60);
       return c.count >= 3 && !mem.micro_lessons_injected.includes(microId);
@@ -52,7 +51,6 @@ export default function DailyPage() {
         mem.micro_lessons_injected.push(microId);
         saveDistractorMemory(mem);
 
-        // Load and serve the micro lesson immediately
         const lessonRes = await fetch(`/api/lesson/${microId}`);
         if (lessonRes.ok) {
           const micro = await lessonRes.json();
@@ -68,7 +66,6 @@ export default function DailyPage() {
       }
     }
 
-    // Fetch all lessons
     const res = await fetch('/api/lessons');
     const allLessons: Lesson[] = await res.json();
     if (allLessons.length === 0) { setLoading(false); return; }
@@ -77,23 +74,20 @@ export default function DailyPage() {
     const dueIds = new Set(due.map((d) => d.item_id));
     const goalMinutes = progress.user.daily_goal_minutes;
 
-    // Part 1 (40%) — SR exercises from due items
     const srExercises: Exercise[] = allLessons
       .flatMap((l) => l.exercises.map((ex) => ({ ex, lesson: l })))
       .filter(({ ex }) => dueIds.has(ex.id))
       .slice(0, Math.max(1, Math.round((goalMinutes / 15) * 4)))
       .map(({ ex }) => ex);
 
-    // Part 2 (40%) — next unfinished lesson in active topic
     const practicedTopics = Object.keys(progress.topics);
     const completedLessonIds = new Set(
       progress.session_history.flatMap((s) => s.lessons_completed)
     );
-    let nextLesson = allLessons.find(
+    const nextLesson = allLessons.find(
       (l) => practicedTopics.includes(l.topic) && !completedLessonIds.has(l.id) && !l.id.startsWith('micro_')
     ) ?? allLessons.find((l) => !l.id.startsWith('micro_'));
 
-    // Part 3 (20%) — challenge from a mastered topic at higher level
     const masteredTopics = Object.entries(progress.topics)
       .filter(([, tp]) => tp.mastery_percent > 70)
       .map(([id]) => id);
@@ -102,7 +96,6 @@ export default function DailyPage() {
       .flatMap((l) => l.exercises.filter((ex) => ex.phase === 3))
       .slice(0, 2);
 
-    // Combine into synthetic session lesson if we have SR or challenge items
     if ((srExercises.length > 0 || challengeExercises.length > 0) && nextLesson) {
       const combinedExercises = [
         ...srExercises,
@@ -136,23 +129,23 @@ export default function DailyPage() {
   const progress = getProgress();
 
   if (loading) return (
-    <div style={{ maxWidth: 680, margin: '4rem auto', padding: '1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-      <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>⏳</div>
+    <div className="max-w-[680px] mx-auto mt-16 px-4 text-center text-[var(--text-muted)]">
+      <div className="text-[2rem] mb-3">⏳</div>
       Préparation de votre session...
     </div>
   );
 
   if (sessionDone) return (
-    <div style={{ maxWidth: 680, margin: '4rem auto', padding: '1.5rem 1rem', textAlign: 'center' }}>
-      <div style={{ fontSize: '3rem', marginBottom: '0.75rem' }}>🎉</div>
-      <h2 style={{ fontWeight: 800, fontSize: '1.75rem', marginBottom: '0.5rem' }}>Session terminée !</h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
+    <div className="max-w-[680px] mx-auto mt-16 px-4 py-6 text-center">
+      <div className="text-5xl mb-3">🎉</div>
+      <h2 className="font-extrabold text-[1.75rem] mb-2">Session terminée !</h2>
+      <p className="text-[var(--text-muted)] mb-4">
         Score : {finalScore.score}/{finalScore.total}
       </p>
-      <div style={{ marginBottom: '1.5rem' }}>
+      <div className="mb-6">
         <StreakCounter streak={getProgress().user.streak_current} animate />
       </div>
-      <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div className="flex gap-3 justify-center flex-wrap">
         <button className="btn-primary" onClick={() => { setSessionDone(false); setLoading(true); buildDailyMix(); }}>
           🔄 Nouvelle session
         </button>
@@ -163,9 +156,9 @@ export default function DailyPage() {
   );
 
   if (!lesson) return (
-    <div style={{ maxWidth: 680, margin: '4rem auto', padding: '1rem', textAlign: 'center' }}>
-      <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>📭</div>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>Aucune leçon disponible.</p>
+    <div className="max-w-[680px] mx-auto mt-16 px-4 text-center">
+      <div className="text-[2rem] mb-3">📭</div>
+      <p className="text-[var(--text-muted)] mb-4">Aucune leçon disponible.</p>
       <button className="btn-primary" onClick={() => router.push('/lessons')}>Voir les leçons</button>
     </div>
   );
@@ -173,20 +166,19 @@ export default function DailyPage() {
   return (
     <div>
       {mixInfo?.microAlert && (
-        <div style={{
-          background: 'rgba(249,115,22,0.12)', borderBottom: '1px solid rgba(249,115,22,0.3)',
-          padding: '0.75rem 1.5rem', fontSize: '0.875rem',
-        }}>
+        <div
+          className="px-6 py-3 text-sm border-b"
+          style={{ background: 'rgba(249,115,22,0.12)', borderColor: 'rgba(249,115,22,0.3)' }}
+        >
           ⚠️ <strong>Point faible détecté</strong> — {mixInfo.microAlert} Voici 3 exercices ciblés.
         </div>
       )}
 
       {mixInfo && !mixInfo.microAlert && (
-        <div style={{
-          background: 'rgba(74,158,255,0.08)', borderBottom: '1px solid rgba(74,158,255,0.2)',
-          padding: '0.6rem 1.5rem', fontSize: '0.8rem', color: 'var(--text-muted)',
-          display: 'flex', gap: '1rem', flexWrap: 'wrap',
-        }}>
+        <div
+          className="px-6 py-[0.6rem] text-[0.8rem] text-[var(--text-muted)] border-b flex gap-4 flex-wrap"
+          style={{ background: 'rgba(74,158,255,0.08)', borderColor: 'rgba(74,158,255,0.2)' }}
+        >
           <span>📅 Session du jour — ~{progress.user.daily_goal_minutes} min</span>
           {mixInfo.srCount > 0 && <span>🔄 {mixInfo.srCount} révision{mixInfo.srCount > 1 ? 's' : ''}</span>}
           {mixInfo.lessonCount > 0 && <span>📘 {mixInfo.lessonCount} exercice{mixInfo.lessonCount > 1 ? 's' : ''} leçon</span>}

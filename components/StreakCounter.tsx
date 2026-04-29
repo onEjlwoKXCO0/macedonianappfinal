@@ -18,15 +18,10 @@ export default function StreakCounter({ streak, animate = false }: Props) {
   }, [animate, streak]);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-      <span
-        className={pulse ? 'streak-pulse' : ''}
-        style={{ fontSize: '1.5rem', display: 'inline-block' }}
-      >
-        🔥
-      </span>
-      <span style={{ fontWeight: 700, fontSize: '1.25rem' }}>{streak}</span>
-      <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
+    <div className="flex items-center gap-[0.4rem]">
+      <span className={`text-2xl inline-block${pulse ? ' streak-pulse' : ''}`}>🔥</span>
+      <span className="font-bold text-xl">{streak}</span>
+      <span className="text-sm text-[var(--text-muted)]">
         {streak === 1 ? 'jour' : 'jours'}
       </span>
     </div>

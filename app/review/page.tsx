@@ -5,16 +5,17 @@ import type { Exercise, Lesson } from '@/lib/types';
 import type { CardState, Rating } from '@/lib/spaced-repetition';
 import {
   getDueCards, getNewCards, getDueCount, getNewCount,
-  applyRating, upsertCard, ensureCardsForLesson, getIntervalLabel,
+  applyRating, upsertCard, getIntervalLabel, markCardIntroduced,
 } from '@/lib/spaced-repetition';
 import { evaluateExercise } from '@/lib/exercise-evaluator';
 import ExerciseRenderer from '@/components/ExerciseRenderer';
+import { pushCard } from '@/lib/sync';
 
 const RATING_CONFIG = [
-  { rating: 0 as Rating, label: 'Encore', emoji: '🔴', bg: 'rgba(239,68,68,0.15)', border: 'rgba(239,68,68,0.5)', color: 'var(--accent-red)' },
+  { rating: 0 as Rating, label: 'Encore',   emoji: '🔴', bg: 'rgba(239,68,68,0.15)',  border: 'rgba(239,68,68,0.5)',  color: 'var(--accent-red)' },
   { rating: 1 as Rating, label: 'Difficile', emoji: '🟠', bg: 'rgba(249,115,22,0.15)', border: 'rgba(249,115,22,0.5)', color: 'var(--accent-orange)' },
-  { rating: 2 as Rating, label: 'Bien', emoji: '🟢', bg: 'rgba(34,197,94,0.15)', border: 'rgba(34,197,94,0.5)', color: 'var(--accent-green)' },
-  { rating: 3 as Rating, label: 'Facile', emoji: '🔵', bg: 'rgba(74,158,255,0.15)', border: 'rgba(74,158,255,0.4)', color: 'var(--accent-blue)' },
+  { rating: 2 as Rating, label: 'Bien',      emoji: '🟢', bg: 'rgba(34,197,94,0.15)',  border: 'rgba(34,197,94,0.5)',  color: 'var(--accent-green)' },
+  { rating: 3 as Rating, label: 'Facile',    emoji: '🔵', bg: 'rgba(74,158,255,0.15)', border: 'rgba(74,158,255,0.4)', color: 'var(--accent-blue)' },
 ];
 
 interface CardWithExercise {
@@ -39,14 +40,14 @@ export default function ReviewPage() {
     fetch('/api/lessons')
       .then((r) => r.json())
       .then((lessons: Lesson[]) => {
-        // Register all lesson exercises as cards
-        for (const lesson of lessons) {
-          ensureCardsForLesson(lesson.id, lesson.topic, lesson.exercises.map((e) => e.id), today);
-        }
-        // Build queue: due cards first, then new cards
-        const due = getDueCards(today, 50);
-        const newCards = getNewCards(20);
-        const all = [...due, ...newCards].slice(0, 30);
+        // Cards are only registered on lesson completion (ensureCardsForLesson
+        // is called in LessonFlow). Here we just read what exists.
+        const due = getDueCards(today, 200);
+        const newCards = getNewCards(today); // respects 15/day cap
+        const all = [...due, ...newCards];
+
+        // Mark new cards as introduced today (deduct from daily quota)
+        newCards.forEach(() => markCardIntroduced(today));
 
         const exerciseMap = new Map<string, { exercise: Exercise; lesson: Lesson }>();
         for (const lesson of lessons) {
@@ -83,17 +84,17 @@ export default function ReviewPage() {
     if (!item) return;
     const updated = applyRating(item.card, rating, today);
     upsertCard(updated);
+    void pushCard(updated); // fire-and-forget background sync
 
     setSessionStats((s) => ({
       ...s,
       total: s.total + 1,
       again: rating === 0 ? s.again + 1 : s.again,
-      hard: rating === 1 ? s.hard + 1 : s.hard,
-      good: rating === 2 ? s.good + 1 : s.good,
-      easy: rating === 3 ? s.easy + 1 : s.easy,
+      hard:  rating === 1 ? s.hard  + 1 : s.hard,
+      good:  rating === 2 ? s.good  + 1 : s.good,
+      easy:  rating === 3 ? s.easy  + 1 : s.easy,
     }));
 
-    // If "Again", re-insert at end of queue
     if (rating === 0) {
       setQueue((q) => [...q, { ...item, card: updated }]);
     }
@@ -109,8 +110,8 @@ export default function ReviewPage() {
   };
 
   if (loading) return (
-    <div style={{ maxWidth: 680, margin: '4rem auto', padding: '1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-      <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>⏳</div>
+    <div className="max-w-[680px] mx-auto mt-16 px-4 text-center text-[var(--text-muted)]">
+      <div className="text-[2rem] mb-3">⏳</div>
       Chargement des cartes...
     </div>
   );
@@ -118,13 +119,13 @@ export default function ReviewPage() {
   if (done) return <SessionSummary stats={sessionStats} onRestart={() => router.push('/review')} onHome={() => router.push('/')} />;
 
   if (queue.length === 0) return (
-    <div style={{ maxWidth: 680, margin: '4rem auto', padding: '1.5rem 1rem', textAlign: 'center' }}>
-      <div style={{ fontSize: '3rem', marginBottom: '0.75rem' }}>🎉</div>
-      <h2 style={{ fontWeight: 800, fontSize: '1.75rem', marginBottom: '0.5rem' }}>Tout est à jour !</h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+    <div className="max-w-[680px] mx-auto mt-16 px-4 py-6 text-center">
+      <div className="text-5xl mb-3">🎉</div>
+      <h2 className="font-extrabold text-[1.75rem] mb-2">Tout est à jour !</h2>
+      <p className="text-[var(--text-muted)] mb-6">
         Aucune carte à réviser. Revenez demain ou faites de nouvelles leçons.
       </p>
-      <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div className="flex gap-3 justify-center flex-wrap">
         <button className="btn-primary" onClick={() => router.push('/practice')}>⚡ Exercices ciblés</button>
         <button className="btn-secondary" onClick={() => router.push('/lessons')}>📘 Nouvelles leçons</button>
       </div>
@@ -138,14 +139,14 @@ export default function ReviewPage() {
   const remaining = queue.length - current;
 
   return (
-    <div style={{ maxWidth: 680, margin: '0 auto', padding: '1rem', paddingBottom: '2rem' }}>
+    <div className="max-w-[680px] mx-auto px-4 py-4 pb-8">
       {/* Header */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-        <div style={{ flex: 1 }}>
-          <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '0.4rem' }}>
+      <div className="flex items-center gap-4 mb-4">
+        <div className="flex-1">
+          <div className="flex gap-3 mb-[0.4rem]">
             <span className="badge badge-red">{dueCount} à réviser</span>
             <span className="badge badge-blue">{newCount} nouvelles</span>
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginLeft: 'auto' }}>
+            <span className="text-[0.8rem] text-[var(--text-muted)] ml-auto">
               {current + 1} / {remaining + current}
             </span>
           </div>
@@ -156,75 +157,66 @@ export default function ReviewPage() {
       </div>
 
       {/* Card type indicator */}
-      <div style={{ marginBottom: '0.75rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+      <div className="mb-3 flex gap-2 items-center">
         {item.card.new && <span className="badge badge-blue">🆕 Nouvelle carte</span>}
         {!item.card.new && <span className="badge badge-orange">🔄 Révision</span>}
-        <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{item.lesson.title}</span>
+        <span className="text-xs text-[var(--text-muted)]">{item.lesson.title}</span>
         {item.card.lapses > 0 && (
-          <span style={{ fontSize: '0.75rem', color: 'var(--accent-red)', marginLeft: 'auto' }}>
+          <span className="text-xs ml-auto text-[var(--accent-red)]">
             ⚠️ {item.card.lapses} lapse{item.card.lapses > 1 ? 's' : ''}
           </span>
         )}
       </div>
 
       {/* Exercise card */}
-      <div className={`card ${answered ? (evaluation?.correct ? 'animate-flash-green' : 'animate-flash-red') : ''}`} style={{ padding: '1.5rem', marginBottom: '1rem' }}>
-        <ExerciseRenderer
-          exercise={item.exercise}
-          onAnswer={handleAnswer}
-          disabled={answered}
-        />
+      <div className={`card p-6 mb-4 ${answered ? (evaluation?.correct ? 'animate-flash-green' : 'animate-flash-red') : ''}`}>
+        <ExerciseRenderer exercise={item.exercise} onAnswer={handleAnswer} disabled={answered} />
       </div>
 
       {/* Feedback + rating */}
       {answered && evaluation && (
-        <div className="card" style={{ padding: '1.25rem', marginBottom: '1rem', border: `1px solid ${evaluation.correct ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}` }}>
-          <div style={{ fontWeight: 700, marginBottom: '0.5rem', color: evaluation.correct ? 'var(--accent-green)' : 'var(--accent-red)' }}>
+        <div
+          className="card p-5 mb-4"
+          style={{ border: `1px solid ${evaluation.correct ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}` }}
+        >
+          <div className="font-bold mb-2" style={{ color: evaluation.correct ? 'var(--accent-green)' : 'var(--accent-red)' }}>
             {evaluation.correct ? '✅ Correct !' : '❌ Incorrect'}
           </div>
           {!evaluation.correct && (
-            <div style={{ marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              <span style={{ color: 'var(--text-muted)' }}>Réponse : </span>
-              <span style={{ fontWeight: 600, color: 'var(--accent-green)' }}>{evaluation.correctAnswer}</span>
+            <div className="mb-2 text-[0.9rem]">
+              <span className="text-[var(--text-muted)]">Réponse : </span>
+              <span className="font-semibold text-[var(--accent-green)]">{evaluation.correctAnswer}</span>
             </div>
           )}
-          <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '0.5rem' }}>
+          <p className="text-[0.9rem] text-[var(--text-muted)] leading-normal mb-2">
             {evaluation.explanation_fr}
           </p>
           {evaluation.common_mistakes_fr.length > 0 && (
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-              {evaluation.common_mistakes_fr.map((m, i) => <li key={i}>• {m}</li>)}
+            <ul className="list-none p-0 m-0 text-[0.82rem] text-[var(--text-muted)]">
+              {evaluation.common_mistakes_fr.map((m, i) => (
+                <li key={`${m}_${i}`}>• {m}</li>
+              ))}
             </ul>
           )}
 
           {/* SM-2 Rating buttons */}
-          <div style={{ marginTop: '1.25rem' }}>
-            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.6rem', textAlign: 'center' }}>
+          <div className="mt-5">
+            <p className="text-xs text-[var(--text-muted)] mb-[0.6rem] text-center">
               Comment était ce rappel ?
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem' }}>
+            <div className="grid grid-cols-4 gap-2">
               {RATING_CONFIG.map(({ rating, label, emoji, bg, border, color }) => (
                 <button
                   key={rating}
                   onClick={() => handleRate(rating)}
-                  style={{
-                    padding: '0.6rem 0.4rem',
-                    borderRadius: 8,
-                    border: `1px solid ${border}`,
-                    background: bg,
-                    cursor: 'pointer',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '0.15rem',
-                    transition: 'transform 0.1s',
-                  }}
+                  className="flex flex-col items-center gap-[0.15rem] py-[0.6rem] px-[0.4rem] rounded-lg cursor-pointer transition-transform duration-100"
+                  style={{ background: bg, border: `1px solid ${border}` }}
                   onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.03)')}
                   onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
                 >
-                  <span style={{ fontSize: '1.25rem' }}>{emoji}</span>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color }}>{label}</span>
-                  <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)' }}>
+                  <span className="text-xl">{emoji}</span>
+                  <span className="text-[0.8rem] font-bold" style={{ color }}>{label}</span>
+                  <span className="text-[0.65rem] text-[var(--text-muted)]">
                     {getIntervalLabel(rating, item.card)}
                   </span>
                 </button>
@@ -235,11 +227,11 @@ export default function ReviewPage() {
       )}
 
       {/* Session progress */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-        <span style={{ color: 'var(--accent-red)' }}>🔴 {sessionStats.again}</span>
-        <span style={{ color: 'var(--accent-orange)' }}>🟠 {sessionStats.hard}</span>
-        <span style={{ color: 'var(--accent-green)' }}>🟢 {sessionStats.good}</span>
-        <span style={{ color: 'var(--accent-blue)' }}>🔵 {sessionStats.easy}</span>
+      <div className="flex justify-center gap-6 text-[0.8rem] text-[var(--text-muted)]">
+        <span className="text-[var(--accent-red)]">🔴 {sessionStats.again}</span>
+        <span className="text-[var(--accent-orange)]">🟠 {sessionStats.hard}</span>
+        <span className="text-[var(--accent-green)]">🟢 {sessionStats.good}</span>
+        <span className="text-[var(--accent-blue)]">🔵 {sessionStats.easy}</span>
       </div>
     </div>
   );
@@ -253,30 +245,31 @@ function SessionSummary({ stats, onRestart, onHome }: { stats: StatsShape; onRes
   const pct = total > 0 ? Math.round((retained / total) * 100) : 0;
 
   return (
-    <div style={{ maxWidth: 480, margin: '4rem auto', padding: '1.5rem 1rem', textAlign: 'center' }}>
-      <div style={{ fontSize: '3rem', marginBottom: '0.75rem' }}>
+    <div className="max-w-[480px] mx-auto mt-16 px-4 py-6 text-center">
+      <div className="text-5xl mb-3">
         {pct >= 80 ? '🏆' : pct >= 60 ? '📈' : '💪'}
       </div>
-      <h2 style={{ fontWeight: 800, fontSize: '1.75rem', marginBottom: '0.5rem' }}>Session terminée !</h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+      <h2 className="font-extrabold text-[1.75rem] mb-2">Session terminée !</h2>
+      <p className="text-[var(--text-muted)] mb-6">
         {total} cartes révisées · {pct}% de rétention
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem', marginBottom: '1.5rem' }}>
+      <div className="grid grid-cols-4 gap-3 mb-6">
         {RATING_CONFIG.map(({ label, emoji, color, rating }) => (
-          <div key={rating} className="card" style={{ padding: '0.75rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '1.25rem' }}>{emoji}</div>
-            <div style={{ fontSize: '1.25rem', fontWeight: 800, color }}>{stats[(['again', 'hard', 'good', 'easy'] as const)[rating]]}</div>
-            <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{label}</div>
+          <div key={rating} className="card p-3 text-center">
+            <div className="text-xl">{emoji}</div>
+            <div className="text-xl font-extrabold" style={{ color }}>
+              {stats[(['again', 'hard', 'good', 'easy'] as const)[rating]]}
+            </div>
+            <div className="text-[0.7rem] text-[var(--text-muted)]">{label}</div>
           </div>
         ))}
       </div>
 
-      <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div className="flex gap-3 justify-center flex-wrap">
         <button className="btn-primary" onClick={onRestart}>🔄 Nouvelle session</button>
         <button className="btn-secondary" onClick={onHome}>🏠 Accueil</button>
       </div>
     </div>
   );
 }
-

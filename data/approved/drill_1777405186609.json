@@ -1,0 +1,227 @@
+{
+  "id": "drill_1777405186609",
+  "topic": "comparative_superlative",
+  "category": "grammar",
+  "title": "⚡ Drill ciblé — comparative superlative",
+  "difficulty_level": 3,
+  "created_at": "2026-04-28",
+  "status": "approved",
+  "subtopic": "10 exercices sélectionnés d'après votre historique",
+  "rules": {
+    "explanation_fr": "Exercices ciblés sur le topic : comparative superlative. Ces exercices ont été sélectionnés pour renforcer vos points faibles.",
+    "table": [],
+    "notes_fr": [
+      "💡 Prenez le temps de relire les explications de chaque exercice."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "drill_1777405186609_ex1",
+      "phase": 3,
+      "type": "matching",
+      "level": 3,
+      "instruction_fr": "Associez comparatif et superlatif.",
+      "pairs": [
+        {
+          "mk": "po-ubav",
+          "fr": "plus beau"
+        },
+        {
+          "mk": "naj-golem",
+          "fr": "le plus grand"
+        },
+        {
+          "mk": "po-mal",
+          "fr": "plus petit"
+        },
+        {
+          "mk": "naj-eftino",
+          "fr": "le moins cher"
+        },
+        {
+          "mk": "po-brzo",
+          "fr": "plus vite"
+        }
+      ],
+      "correct_answer": "po-ubav=plus beau,naj-golem=le plus grand,po-mal=plus petit,naj-eftino=le moins cher,po-brzo=plus vite",
+      "accept_alternatives": [],
+      "explanation_fr": "po- = plus (comparatif), naj- = le plus (superlatif).",
+      "common_mistakes_fr": [
+        "Naj-eftino = le moins cher (pas le plus cher qui serait naj-skupo)"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777405186609_ex2",
+      "phase": 3,
+      "type": "transformation",
+      "level": 3,
+      "instruction_fr": "Formez le superlatif.",
+      "sentence": "Taa e ubava.",
+      "transformation_instruction_fr": "Elle est la plus belle.",
+      "correct_answer": "Taa e naj-ubava",
+      "accept_alternatives": [],
+      "explanation_fr": "Ubava -> naj-ubava (superlatif feminin). Taa e naj-ubava = Elle est la plus belle.",
+      "common_mistakes_fr": [
+        "Naj-ubava (f.) vs naj-ubav (m.) — l adjectif s accorde toujours"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex3",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 4,
+      "instruction_fr": "Traduisez cette comparaison complexe.",
+      "sentence_fr": "Skopje est plus petit que Paris mais c est la plus grande ville de Macedoine.",
+      "correct_answer": "Skopje e pomalo od Pariz no e naj-golemo vo Makedonija",
+      "accept_alternatives": [
+        "Skopje e po-malo od Pariz ama e naj-golemo vo Makedonija"
+      ],
+      "explanation_fr": "Pomalo/po-malo od = plus petit que, no/ama = mais, naj-golemo = le plus grand (neutre car Skopje est neutre grammaticalement).",
+      "common_mistakes_fr": [
+        "Skopje est grammaticalement neutre en macedonien -> adjectif neutre"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex4",
+      "phase": 2,
+      "type": "fill_blank",
+      "level": 2,
+      "instruction_fr": "Formez le comparatif.",
+      "sentence": "Ovaa kola e ___ od onaa. (Cette voiture est plus rapide que celle-la.)",
+      "correct_answer": "po-brza",
+      "accept_alternatives": [
+        "po brza"
+      ],
+      "explanation_fr": "Po-brza = plus rapide (f., car kola est feminin). Brz -> po-brza (comparatif feminin).",
+      "common_mistakes_fr": [
+        "L adjectif apres po- s accorde toujours en genre avec le nom"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex5",
+      "phase": 2,
+      "type": "translate_to_mk",
+      "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Ma soeur est plus agee que mon frere.",
+      "correct_answer": "Sestra mi e postara od brat mi",
+      "accept_alternatives": [
+        "Mojata sestra e postara od mojot brat"
+      ],
+      "explanation_fr": "Postara = plus agee (f., comparatif de stara), od = que, brat mi = mon frere.",
+      "common_mistakes_fr": [
+        "Star (vieux/age) -> postar (m.) / postara (f.) = plus age/agee"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex6",
+      "phase": 2,
+      "type": "error_correction",
+      "level": 3,
+      "instruction_fr": "Corrigez l erreur.",
+      "sentence": "Toj e po-ubav najgolem.",
+      "correct_answer": "Toj e naj-ubav",
+      "accept_alternatives": [
+        "Toj e po-golem"
+      ],
+      "explanation_fr": "On ne peut pas combiner po- (comparatif) et naj- (superlatif) — choisissez l un ou l autre selon le sens voulu.",
+      "common_mistakes_fr": [
+        "Po- et naj- ne se combinent pas — l un OU l autre"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex7",
+      "phase": 2,
+      "type": "translate_to_fr",
+      "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Pariz e po-golem od Skopje",
+      "correct_answer": "Paris est plus grand que Skopje",
+      "accept_alternatives": [],
+      "explanation_fr": "Po-golem = plus grand (comparatif), od = que (pour la comparaison).",
+      "common_mistakes_fr": [
+        "Od apres un comparatif = que (pas de)"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex8",
+      "phase": 2,
+      "type": "translate_to_fr",
+      "level": 3,
+      "instruction_fr": "Traduisez.",
+      "sentence_mk": "Taa e naj-ubavata zhena vo gradot",
+      "correct_answer": "Elle est la plus belle femme de la ville",
+      "accept_alternatives": [],
+      "explanation_fr": "Naj-ubavata = la plus belle (superlatif feminin defini), zhena = femme, vo gradot = de la ville.",
+      "common_mistakes_fr": [
+        "Le superlatif defini : naj-ubava + ta = naj-ubavata"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777405186609_ex9",
+      "phase": 2,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Quel est le comparatif de golem (grand) ?",
+      "question": "plus grand =",
+      "options": [
+        "naj-golem",
+        "po-golem",
+        "golem-po",
+        "golem-naj"
+      ],
+      "correct_answer": "po-golem",
+      "accept_alternatives": [],
+      "explanation_fr": "Comparatif = po + adjectif : po-golem = plus grand. Naj-golem = le plus grand (superlatif).",
+      "common_mistakes_fr": [
+        "po- = comparatif (plus), naj- = superlatif (le plus)"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777405186609_ex10",
+      "phase": 2,
+      "type": "multiple_choice",
+      "level": 2,
+      "instruction_fr": "Choisissez la traduction correcte.",
+      "question": "Toj e naj-visok vo klasot =",
+      "options": [
+        "Il est plus grand dans la classe",
+        "Il est le plus grand de la classe",
+        "Il est grand dans la classe",
+        "Il est tres grand"
+      ],
+      "correct_answer": "Il est le plus grand de la classe",
+      "accept_alternatives": [],
+      "explanation_fr": "Naj-visok = le plus grand (superlatif). Vo klasot = dans la classe / de la classe.",
+      "common_mistakes_fr": [
+        "Naj- = superlatif absolu (le plus...)"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    }
+  ]
+}

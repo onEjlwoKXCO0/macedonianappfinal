@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 const NAV = [
   { href: '/', label: 'Accueil', icon: '🏠' },
   { href: '/lessons', label: 'Leçons', icon: '📘' },
-  { href: '/daily', label: 'Aujourd\'hui', icon: '📅' },
+  { href: '/daily', label: "Aujourd'hui", icon: '📅' },
   { href: '/review', label: 'Révision', icon: '🔄' },
   { href: '/practice', label: 'Exercices', icon: '⚡' },
   { href: '/stats', label: 'Stats', icon: '📊' },
@@ -17,14 +17,12 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop sidebar */}
-      <nav className="side-nav" style={{
-        position: 'fixed', top: 0, left: 0, bottom: 0, width: 220,
-        background: 'var(--bg-card)', borderRight: '1px solid var(--border)',
-        flexDirection: 'column', padding: '1.5rem 0', zIndex: 50,
-      }}>
-        <div style={{ padding: '0 1.25rem', marginBottom: '2rem' }}>
-          <span style={{ fontWeight: 800, fontSize: '1.25rem', color: 'var(--accent-blue)' }}>MK Learn</span>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>Apprentissage Macédonien</div>
+      <nav
+        className="side-nav fixed top-0 left-0 bottom-0 w-[220px] flex-col py-6 z-50 bg-[var(--bg-card)] border-r border-[var(--border)]"
+      >
+        <div className="px-5 mb-8">
+          <span className="font-extrabold text-xl text-[var(--accent-blue)]">MK Learn</span>
+          <div className="text-xs text-[var(--text-muted)] mt-[0.2rem]">Apprentissage Macédonien</div>
         </div>
         {NAV.map((item) => {
           const active = path === item.href || (item.href !== '/' && path.startsWith(item.href));
@@ -32,14 +30,12 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
+              className="flex items-center gap-3 py-3 px-5 no-underline text-[0.9rem] transition-all duration-[150ms]"
               style={{
-                display: 'flex', alignItems: 'center', gap: '0.75rem',
-                padding: '0.75rem 1.25rem', textDecoration: 'none',
                 color: active ? 'var(--accent-blue)' : 'var(--text-muted)',
                 background: active ? 'rgba(74,158,255,0.1)' : 'transparent',
-                fontWeight: active ? 700 : 400, fontSize: '0.9rem',
+                fontWeight: active ? 700 : 400,
                 borderRight: active ? '3px solid var(--accent-blue)' : '3px solid transparent',
-                transition: 'all 0.15s',
               }}
             >
               <span>{item.icon}</span>
@@ -47,12 +43,11 @@ export default function Navbar() {
             </Link>
           );
         })}
-        <div style={{ flex: 1 }} />
-        <Link href="/settings" style={{
-          display: 'flex', alignItems: 'center', gap: '0.75rem',
-          padding: '0.75rem 1.25rem', textDecoration: 'none',
-          color: 'var(--text-muted)', fontSize: '0.9rem',
-        }}>
+        <div className="flex-1" />
+        <Link
+          href="/settings"
+          className="flex items-center gap-3 py-3 px-5 no-underline text-[0.9rem] text-[var(--text-muted)]"
+        >
           ⚙️ Paramètres
         </Link>
       </nav>
@@ -65,14 +60,10 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              style={{
-                flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center',
-                padding: '0.6rem 0', textDecoration: 'none',
-                color: active ? 'var(--accent-blue)' : 'var(--text-muted)',
-                fontSize: '0.7rem', gap: '0.2rem',
-              }}
+              className="flex-1 flex flex-col items-center py-[0.6rem] no-underline text-[0.7rem] gap-[0.2rem]"
+              style={{ color: active ? 'var(--accent-blue)' : 'var(--text-muted)' }}
             >
-              <span style={{ fontSize: '1.25rem' }}>{item.icon}</span>
+              <span className="text-xl">{item.icon}</span>
               <span>{item.label}</span>
             </Link>
           );

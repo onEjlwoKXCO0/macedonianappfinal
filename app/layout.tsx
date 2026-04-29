@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import ThemeProvider from '@/components/ThemeProvider';
+import AuthProvider from '@/components/AuthProvider';
 
 export const metadata: Metadata = {
   title: 'MK Learn — Macédonien',
@@ -11,12 +12,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body style={{ minHeight: '100vh' }}>
-        <ThemeProvider />
-        <Navbar />
-        <main className="main-content" style={{ paddingBottom: '5rem' }}>
-          {children}
-        </main>
+      <body>
+        <AuthProvider>
+          <ThemeProvider />
+          <Navbar />
+          <main className="main-content pb-20">
+            {children}
+          </main>
+        </AuthProvider>
       </body>
     </html>
   );

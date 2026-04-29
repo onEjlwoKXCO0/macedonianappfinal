@@ -1,0 +1,266 @@
+{
+  "id": "drill_1777402357841",
+  "topic": "relative_clauses",
+  "category": "grammar",
+  "title": "⚡ Drill ciblé — relative clauses",
+  "difficulty_level": 3,
+  "created_at": "2026-04-28",
+  "status": "approved",
+  "subtopic": "10 exercices sélectionnés d'après votre historique",
+  "rules": {
+    "explanation_fr": "Exercices ciblés sur le topic : relative clauses. Ces exercices ont été sélectionnés pour renforcer vos points faibles.",
+    "table": [],
+    "notes_fr": [
+      "💡 Prenez le temps de relire les explications de chaque exercice."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "drill_1777402357841_ex1",
+      "phase": 3,
+      "type": "matching",
+      "level": 3,
+      "instruction_fr": "Associez chaque forme a sa description.",
+      "pairs": [
+        {
+          "mk": "ubav",
+          "fr": "beau (m. indef.)"
+        },
+        {
+          "mk": "ubavata",
+          "fr": "la belle (f. def.)"
+        },
+        {
+          "mk": "ubavi",
+          "fr": "beaux/belles (pl. indef.)"
+        },
+        {
+          "mk": "ubaviot",
+          "fr": "le beau (m. def.)"
+        },
+        {
+          "mk": "ubavite",
+          "fr": "les beaux/belles (pl. def.)"
+        }
+      ],
+      "correct_answer": "ubav=beau m.indef.,ubavata=la belle f.def.,ubavi=pl.indef.,ubaviot=le beau m.def.,ubavite=les pl.def.",
+      "accept_alternatives": [],
+      "explanation_fr": "Tableau complet des formes de l adjectif ubav (beau).",
+      "common_mistakes_fr": [
+        "Distinguer indefini (sans article) et defini (avec article integre)"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex2",
+      "phase": 3,
+      "type": "sentence_builder",
+      "level": 3,
+      "instruction_fr": "Construisez : La petite ville est belle.",
+      "scrambled_words": [
+        "Malata",
+        "gradot",
+        "e",
+        "ubava",
+        "ubavata",
+        "mal"
+      ],
+      "correct_answer": "Malata gradot e ubava",
+      "accept_alternatives": [],
+      "explanation_fr": "Malata (la petite, f. def.) + gradot (la ville, m... attends — grad est masculin, donc maliot gradot). En fait gradot est masculin, donc : Maliot gradot e ubav.",
+      "common_mistakes_fr": [
+        "Grad est masculin -> maliot gradot (pas malata)"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777402357841_ex3",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 4,
+      "instruction_fr": "Expliquez la difference grammaticale.",
+      "sentence_a": "Ubava kuka.",
+      "sentence_b": "Ubavata kuka.",
+      "correct_answer": "ubava kuka = une belle maison (indefini), ubavata kuka = la belle maison (defini avec article integre -ata)",
+      "accept_alternatives": [
+        "indefini vs defini",
+        "article absent vs article integre dans l adjectif"
+      ],
+      "expected_keywords_fr": [
+        "indefini",
+        "defini",
+        "article"
+      ],
+      "explanation_fr": "Ubava kuka = une belle maison (pas d article). Ubavata kuka = la belle maison (l article -ata est integre a l adjectif).",
+      "common_mistakes_fr": [
+        "L article defini s integre a l adjectif epithete en macedonien"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex4",
+      "phase": 3,
+      "type": "multiple_choice",
+      "level": 4,
+      "instruction_fr": "Quel passé exprime une action RAPPORTÉE (non-témoin) ?",
+      "question": "On m'a dit qu'il est allé à Ohrid. Laquelle est correcte ?",
+      "options": [
+        "Toj otide vo Ohrid.",
+        "Toj otishol vo Ohrid.",
+        "Toj ke otide vo Ohrid.",
+        "Toj otidov vo Ohrid."
+      ],
+      "correct_answer": "Toj otishol vo Ohrid.",
+      "accept_alternatives": [],
+      "explanation_fr": "Otishol = passé en L (masculin), qui exprime une action rapportée ou dont le locuteur n'est pas témoin. Otide = aoriste, action personnellement vécue.",
+      "common_mistakes_fr": [
+        "Aoriste = j'y étais, je l'ai vu. Passé en L = on me l'a dit, ou c'est une information générale"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex5",
+      "phase": 3,
+      "type": "transformation",
+      "level": 4,
+      "instruction_fr": "Conjuguez à toutes les personnes.",
+      "sentence": "dojde (venir, E-O) — donnez l'aoriste complet",
+      "transformation_instruction_fr": "Jas, Ti, Toj, Nie, Vie, Tie — donnez la forme de la 1re sg.",
+      "correct_answer": "dojdov",
+      "accept_alternatives": [],
+      "explanation_fr": "Aoriste complet de dojde (E-O) : dojdov / dojde / dojde / dojdovme / dojdovte / dojdoa. Pattern E-O : -ov/-e/-e/-ovme/-ovte/-oa.",
+      "common_mistakes_fr": [
+        "Pattern E-O mémo : -ov/-e/-e/-ovme/-ovte/-oa",
+        "Dojdoa (3e pl.) sans -j contrairement au groupe I (napravija)"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex6",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Transformations sur le même verbe.",
+      "base_sentence": "Toj napravi vecherа. (Il prépare le dîner — présent)",
+      "steps": [
+        {
+          "instruction_fr": "Aoriste — Il a préparé le dîner.",
+          "expected_answer": "Toj napravi vecherа"
+        },
+        {
+          "instruction_fr": "Futur — Il préparera le dîner.",
+          "expected_answer": "Toj ke napravi vecherа"
+        },
+        {
+          "instruction_fr": "Passé en L — On dit qu'il a préparé le dîner.",
+          "expected_answer": "Toj napravil vecherа"
+        }
+      ],
+      "correct_answer": "Toj napravil vecherа",
+      "accept_alternatives": [],
+      "explanation_fr": "Napravi : présent (napravi) = aoriste 3e sg (napravi) = même forme ! Futur : ke napravi. Passé en L : napravil (l-form masculin).",
+      "common_mistakes_fr": [
+        "Pour les verbes perfectifs du groupe I, présent/aoriste 3e sg. sont identiques",
+        "Seul le contexte (ke, passé ou présent) distingue le temps"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex7",
+      "phase": 3,
+      "type": "matching",
+      "level": 4,
+      "instruction_fr": "Associez chaque verbe à son perfectif.",
+      "pairs": [
+        {
+          "mk": "jade (manger en cours)",
+          "fr": "izede"
+        },
+        {
+          "mk": "gleda (regarder)",
+          "fr": "vidi"
+        },
+        {
+          "mk": "slusha (écouter)",
+          "fr": "chue"
+        },
+        {
+          "mk": "dava (donner habit.)",
+          "fr": "dade"
+        },
+        {
+          "mk": "pishuva (écrire)",
+          "fr": "napíshe"
+        }
+      ],
+      "correct_answer": "jade=izede,gleda=vidi,slusha=chue,dava=dade,piShuva=napíshe",
+      "accept_alternatives": [],
+      "explanation_fr": "Paires suppletives : gleda/vidi, slusha/chue. Paires préfixées : jade/izede, pishuva/napíshe.",
+      "common_mistakes_fr": [
+        "Vidi ≠ gleda (suppletifs) — deux verbes entièrement différents"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex8",
+      "phase": 3,
+      "type": "transformation",
+      "level": 4,
+      "instruction_fr": "Exprimez la même action en imperfectif (habitude) puis perfectif (une fois).",
+      "sentence": "Sekoja vecher pie mleko. (habitude)",
+      "transformation_instruction_fr": "Ce soir-là, il a bu tout le lait (une fois, complètement).",
+      "correct_answer": "Taa vecher go ispie mlekoto",
+      "accept_alternatives": [
+        "Taa vecher go ispiev mlekoto"
+      ],
+      "explanation_fr": "Habitude 'pie' (imperfectif) → action unique 'ispie/ispiev' (perfectif). Mlekoto (défini) = tout le lait.",
+      "common_mistakes_fr": [
+        "Pie (imperfectif) → ispie (perfectif) : le préfixe is- ajoute l'idée de complétion"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777402357841_ex9",
+      "phase": 3,
+      "type": "sentence_builder",
+      "level": 2,
+      "instruction_fr": "Construisez : Aujourd hui c est le quinze mars.",
+      "scrambled_words": [
+        "Denes",
+        "e",
+        "petnaesettiot",
+        "mart",
+        "april",
+        "vtoriot"
+      ],
+      "correct_answer": "Denes e petnaesettiot mart",
+      "accept_alternatives": [],
+      "explanation_fr": "Denes e + ordinal defini + mois. Petnaesettiot = le quinzieme. April et vtoriot sont des intrus.",
+      "common_mistakes_fr": [
+        "Format de date : ordinal + mois (sans article supplementaire)"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777402357841_ex10",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 2,
+      "instruction_fr": "Traduisez.",
+      "sentence_fr": "Je travaille du lundi au vendredi.",
+      "correct_answer": "Rabotam od ponedelnik do petok",
+      "accept_alternatives": [],
+      "explanation_fr": "Rabotam = je travaille, od ponedelnik = du lundi, do petok = au vendredi.",
+      "common_mistakes_fr": [
+        "Od...do = de...a (periode)"
+      ],
+      "verbs_present": [
+        "raboti"
+      ]
+    }
+  ]
+}

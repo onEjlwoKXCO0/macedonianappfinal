@@ -1,11 +1,13 @@
 'use client';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import type { Exercise, Lesson } from '@/lib/types';
 import { evaluateExercise } from '@/lib/exercise-evaluator';
 import { getProgress, saveProgress, recordExerciseResult, recordSession } from '@/lib/progress-tracker';
 import { applyLevelProgression } from '@/lib/difficulty-engine';
 import { recordWrongAnswer, getForcedDistractors } from '@/lib/distractor-engine';
-import { addOrUpdateWeakItem } from '@/lib/spaced-repetition';
+import { addOrUpdateWeakItem, ensureCardsForLesson } from '@/lib/spaced-repetition';
+import { pushProgress, pushAllCards } from '@/lib/sync';
 import RuleExplanation from './RuleExplanation';
 import ExerciseRenderer from './ExerciseRenderer';
 import ConjugationPanel from './ConjugationPanel';
@@ -45,7 +47,6 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
 
   const exercises = lesson.exercises;
   const current = exercises[exIndex];
-
   const today = new Date().toISOString().slice(0, 10);
 
   const handleAnswer = useCallback(
@@ -63,33 +64,17 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
       setLastResult(result);
       setAnswered(true);
 
-      // Flash animation
       setFlashClass(evaluation.correct ? 'animate-flash-green' : 'animate-flash-red animate-shake');
       setTimeout(() => setFlashClass(''), 700);
 
-      // Record distractor
       if (!evaluation.correct && current.type === 'multiple_choice') {
-        recordWrongAnswer(
-          current.correct_answer,
-          evaluation.userAnswer,
-          lesson.topic,
-          current.type,
-          lesson.id
-        );
+        recordWrongAnswer(current.correct_answer, evaluation.userAnswer, lesson.topic, current.type, lesson.id);
       }
 
-      // Update spaced repetition
       let progress = getProgress();
       progress = {
         ...progress,
-        weak_items: addOrUpdateWeakItem(
-          progress.weak_items,
-          current.id,
-          lesson.id,
-          lesson.topic,
-          evaluation.correct,
-          today
-        ),
+        weak_items: addOrUpdateWeakItem(progress.weak_items, current.id, lesson.id, lesson.topic, evaluation.correct, today),
       };
       progress = recordExerciseResult(progress, lesson.topic, evaluation.correct, today);
       saveProgress(progress);
@@ -104,11 +89,9 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
     setAnswered(false);
 
     if (exIndex + 1 >= exercises.length) {
-      // Done — record session & level progression
       const score = results.filter((r) => r.correct).length + (lastResult.correct ? 1 : 0);
       const total = exercises.length;
       const pct = Math.round((score / total) * 100);
-
       const elapsed = Math.round((Date.now() - startTime) / 60000);
       let progress = getProgress();
       progress = recordSession(progress, {
@@ -121,6 +104,9 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
       });
       saveProgress(progress);
       applyLevelProgression(lesson.topic, pct);
+      ensureCardsForLesson(lesson.id, lesson.topic, exercises.map((e) => e.id), today);
+      // Background sync — fire-and-forget, does not block the UI
+      void Promise.all([pushProgress(), pushAllCards()]);
       onFinish?.(score, total);
       setScreen('results');
     } else {
@@ -139,13 +125,13 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
     ? getForcedDistractors(current.correct_answer).map((c) => c.chosen_instead)
     : [];
 
-  const openEditor = (exId?: string) => {
-    setEditorExId(exId);
-    setEditorOpen(true);
-  };
+  const openEditor = (exId?: string) => { setEditorExId(exId); setEditorOpen(true); };
 
   return (
-    <div style={{ maxWidth: 680, margin: '0 auto', padding: '1rem', paddingBottom: screen === 'exercises' ? '6rem' : '2rem' }}>
+    <div
+      className="max-w-[680px] mx-auto px-4 py-4"
+      style={{ paddingBottom: screen === 'exercises' ? '6rem' : '2rem' }}
+    >
       {/* Rules screen */}
       {screen === 'rules' && (
         <RuleExplanation rules={lesson.rules} onStart={() => setScreen('exercises')} />
@@ -155,56 +141,72 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
       {screen === 'exercises' && current && (
         <>
           {/* Header */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-            <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+          <div className="flex items-center justify-between mb-4">
+            <div className="text-sm text-[var(--text-muted)]">
               Exercice {exIndex + 1} / {exercises.length}
             </div>
-            <div style={{ flex: 1, margin: '0 1rem' }}>
+            <div className="flex-1 mx-4">
               <div className="progress-bar">
-                <div className="progress-bar-fill" style={{ width: `${((exIndex) / exercises.length) * 100}%`, background: 'var(--accent-blue)' }} />
+                <div
+                  className="progress-bar-fill"
+                  style={{ width: `${(exIndex / exercises.length) * 100}%`, background: 'var(--accent-blue)' }}
+                />
               </div>
             </div>
           </div>
 
-          {/* Exercise card */}
-          <div key={animKey} className={`card slide-enter ${flashClass}`} style={{ padding: '1.5rem', marginBottom: '1rem' }}>
-            <ExerciseRenderer
-              exercise={current}
-              forcedDistractors={forcedDistractors}
-              onAnswer={handleAnswer}
-              disabled={answered}
-            />
-          </div>
-
-          {/* Feedback after answering */}
-          {answered && lastResult && (
-            <div
-              className="card"
-              style={{
-                padding: '1.25rem',
-                marginBottom: '1rem',
-                border: `1px solid ${lastResult.correct ? 'var(--accent-green)' : 'var(--accent-red)'}`,
-              }}
+          {/* Exercise card — slides in from the right on each new question */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={animKey}
+              initial={{ opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -24 }}
+              transition={{ duration: 0.18 }}
+              className={`card p-6 mb-4 ${flashClass}`}
             >
-              <div style={{ fontWeight: 700, marginBottom: '0.5rem', color: lastResult.correct ? 'var(--accent-green)' : 'var(--accent-red)' }}>
+              <ExerciseRenderer
+                exercise={current}
+                forcedDistractors={forcedDistractors}
+                onAnswer={handleAnswer}
+                disabled={answered}
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Feedback — springs up when answer is submitted */}
+          {answered && lastResult && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              className="card p-5 mb-4"
+              style={{ border: `1px solid ${lastResult.correct ? 'var(--accent-green)' : 'var(--accent-red)'}` }}
+            >
+              <div
+                className="font-bold mb-2"
+                style={{ color: lastResult.correct ? 'var(--accent-green)' : 'var(--accent-red)' }}
+              >
                 {lastResult.correct ? '✅ Correct !' : '❌ Incorrect'}
               </div>
               {!lastResult.correct && (
-                <div style={{ marginBottom: '0.5rem' }}>
-                  <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>Réponse correcte : </span>
-                  <span className="mk-text" style={{ fontSize: '1rem' }}>{lastResult.correctAnswer}</span>
+                <div className="mb-2">
+                  <span className="text-[var(--text-muted)] text-sm">Réponse correcte : </span>
+                  <span className="mk-text text-base">{lastResult.correctAnswer}</span>
                 </div>
               )}
-              <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '0.5rem' }}>{lastResult.explanation_fr}</p>
+              <p className="text-[0.9rem] leading-relaxed mb-2">{lastResult.explanation_fr}</p>
               {!lastResult.correct && lastResult.common_mistakes_fr.length > 0 && (
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                  {lastResult.common_mistakes_fr.map((m, i) => <li key={i}>• {m}</li>)}
+                <ul className="list-none p-0 m-0 text-[0.85rem] text-[var(--text-muted)]">
+                  {lastResult.common_mistakes_fr.map((m, i) => (
+                    <li key={`${m}_${i}`}>• {m}</li>
+                  ))}
                 </ul>
               )}
-              <button onClick={handleNext} className="btn-primary" style={{ marginTop: '1rem', width: '100%' }}>
+              <button onClick={handleNext} className="btn-primary mt-4 w-full">
                 {exIndex + 1 >= exercises.length ? 'Voir les résultats →' : 'Exercice suivant →'}
               </button>
-            </div>
+            </motion.div>
           )}
 
           {/* Floating action buttons */}
@@ -219,11 +221,11 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
       {/* Results screen */}
       {screen === 'results' && (
         <div>
-          <div className="card" style={{ padding: '2rem', textAlign: 'center', marginBottom: '1.5rem' }}>
-            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>
+          <div className="card p-8 text-center mb-6">
+            <div className="text-5xl mb-2">
               {score / exercises.length >= 0.8 ? '🏆' : score / exercises.length >= 0.5 ? '📘' : '📚'}
             </div>
-            <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+            <h2 className="text-[2rem] font-extrabold mb-2">
               {score} / {exercises.length}
             </h2>
             <div className="stars">
@@ -231,42 +233,45 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
                 <span key={s} className={`star ${score / exercises.length >= s / 3 ? 'filled' : 'empty'}`}>★</span>
               ))}
             </div>
-            <p style={{ color: 'var(--text-muted)', marginTop: '0.75rem' }}>
-              {score / exercises.length >= 0.8 ? 'Excellent travail !' : score / exercises.length >= 0.5 ? 'Bon travail, continuez !' : 'Révisez les points difficiles !'}
+            <p className="text-[var(--text-muted)] mt-3">
+              {score / exercises.length >= 0.8
+                ? 'Excellent travail !'
+                : score / exercises.length >= 0.5
+                ? 'Bon travail, continuez !'
+                : 'Révisez les points difficiles !'}
             </p>
           </div>
 
-          {allResults.map((r, i) => (
+          {allResults.map((r) => (
             <div
-              key={i}
-              className="card"
-              style={{
-                padding: '1.25rem', marginBottom: '0.75rem',
-                border: `1px solid ${r.correct ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}`,
-              }}
+              key={r.exercise.id}
+              className="card p-5 mb-3"
+              style={{ border: `1px solid ${r.correct ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}` }}
             >
-              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.5rem' }}>
-                <div style={{ flex: 1 }}>
-                  <span style={{ marginRight: '0.5rem' }}>{r.correct ? '✅' : '❌'}</span>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{r.exercise.type}</span>
+              <div className="flex items-start justify-between gap-2">
+                <div className="flex-1">
+                  <span className="mr-2">{r.correct ? '✅' : '❌'}</span>
+                  <span className="text-[0.8rem] text-[var(--text-muted)]">{r.exercise.type}</span>
                   {r.correct ? (
-                    <div style={{ marginTop: '0.25rem', fontSize: '0.9rem' }}>
-                      Votre réponse : <span style={{ color: 'var(--accent-green)' }}>{r.userAnswer}</span>
+                    <div className="mt-1 text-[0.9rem]">
+                      Votre réponse : <span className="text-[var(--accent-green)]">{r.userAnswer}</span>
                     </div>
                   ) : (
                     <div>
-                      <div style={{ marginTop: '0.25rem', fontSize: '0.9rem' }}>
-                        Votre réponse : <span style={{ color: 'var(--accent-red)' }}>{r.userAnswer}</span>
+                      <div className="mt-1 text-[0.9rem]">
+                        Votre réponse : <span className="text-[var(--accent-red)]">{r.userAnswer}</span>
                       </div>
-                      <div style={{ fontSize: '0.9rem', marginTop: '0.15rem' }}>
-                        Correct : <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>{r.correctAnswer}</span>
+                      <div className="text-[0.9rem] mt-[0.15rem]">
+                        Correct : <span className="font-semibold text-[var(--accent-green)]">{r.correctAnswer}</span>
                       </div>
-                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem', lineHeight: 1.5 }}>
+                      <p className="text-[0.85rem] text-[var(--text-muted)] mt-2 leading-normal">
                         {r.explanation_fr}
                       </p>
                       {r.common_mistakes_fr.length > 0 && (
-                        <ul style={{ listStyle: 'none', padding: 0, margin: '0.35rem 0 0', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                          {r.common_mistakes_fr.map((m, mi) => <li key={mi}>• {m}</li>)}
+                        <ul className="list-none p-0 m-0 mt-[0.35rem] text-[0.8rem] text-[var(--text-muted)]">
+                          {r.common_mistakes_fr.map((m, i) => (
+                            <li key={`${m}_${i}`}>• {m}</li>
+                          ))}
                         </ul>
                       )}
                     </div>
@@ -274,8 +279,8 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
                 </div>
                 <button
                   onClick={() => openEditor(r.exercise.id)}
-                  className="btn-ghost"
-                  style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', flexShrink: 0 }}
+                  className="btn-ghost shrink-0 text-xs"
+                  style={{ padding: '0.25rem 0.5rem' }}
                 >
                   ✏️
                 </button>
@@ -283,23 +288,18 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
             </div>
           ))}
 
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+          <div className="flex gap-3 flex-wrap mt-4">
             <button
               onClick={() => { setScreen('exercises'); setExIndex(0); setResults([]); setLastResult(null); setAnswered(false); }}
-              className="btn-secondary"
-              style={{ flex: 1 }}
+              className="btn-secondary flex-1"
             >
               🔄 Refaire
             </button>
             {onNextLesson && (
-              <button onClick={onNextLesson} className="btn-primary" style={{ flex: 1 }}>
-                📘 Leçon suivante
-              </button>
+              <button onClick={onNextLesson} className="btn-primary flex-1">📘 Leçon suivante</button>
             )}
             {onHome && (
-              <button onClick={onHome} className="btn-secondary" style={{ flex: 1 }}>
-                🏠 Accueil
-              </button>
+              <button onClick={onHome} className="btn-secondary flex-1">🏠 Accueil</button>
             )}
           </div>
         </div>

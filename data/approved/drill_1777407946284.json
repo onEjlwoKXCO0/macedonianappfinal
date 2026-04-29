@@ -1,0 +1,256 @@
+{
+  "id": "drill_1777407946284",
+  "topic": "reflexive_verbs",
+  "category": "grammar",
+  "title": "🔥 Défi ultime — Phase 3 uniquement",
+  "difficulty_level": 5,
+  "created_at": "2026-04-28",
+  "status": "approved",
+  "subtopic": "10 exercices phase 3 — le plus difficile",
+  "rules": {
+    "explanation_fr": "Exercices de niveau maximal (phase 3) tirés au hasard dans tous les topics. Aucune aide — production libre uniquement.",
+    "table": [],
+    "notes_fr": [
+      "🔥 Phase 3 = production libre sans indices. Concentrez-vous sur la précision."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "drill_1777407946284_ex1",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 4,
+      "instruction_fr": "Transformations du verbe reflexif se mie.",
+      "base_sentence": "se mie (se laver — infinitif/3e sing.)",
+      "steps": [
+        {
+          "instruction_fr": "1re personne singulier (je me lave)",
+          "expected_answer": "se miem"
+        },
+        {
+          "instruction_fr": "Forme negative (je ne me lave pas)",
+          "expected_answer": "ne se miem"
+        },
+        {
+          "instruction_fr": "Imperatif singulier (lave-toi !)",
+          "expected_answer": "Izmij se!"
+        }
+      ],
+      "correct_answer": "Izmij se!",
+      "accept_alternatives": [],
+      "explanation_fr": "se mie -> se miem (1re sg.) -> ne se miem (neg.) -> Izmij se! (imp. avec SE apres). Izmij est la forme perfective de mie.",
+      "common_mistakes_fr": [
+        "A l imperatif, SE se deplace apres le verbe"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777407946284_ex2",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 3,
+      "instruction_fr": "Quelle est la différence entre ces deux phrases ?",
+      "sentence_a": "Nema vreme.",
+      "sentence_b": "Nemam vreme.",
+      "correct_answer": "Nema est impersonnel (il n'y a pas de temps), Nemam est à la 1re personne (je n'ai pas de temps)",
+      "accept_alternatives": [
+        "nema = il n'y a pas, nemam = je n'ai pas",
+        "Nema = impersonnel, nemam = 1re personne"
+      ],
+      "expected_keywords_fr": [
+        "impersonnel",
+        "je",
+        "première personne"
+      ],
+      "explanation_fr": "'Nema' = il n'y a pas (impersonnel, comme le français 'il n'y a pas'). 'Nemam' = je n'ai pas (1re pers. sing.). Les deux viennent de 'ima' mais indiquent des sujets différents.",
+      "common_mistakes_fr": [
+        "Ne pas confondre ces deux formes — très fréquentes dans la conversation quotidienne"
+      ],
+      "verbs_present": [
+        "ima"
+      ]
+    },
+    {
+      "id": "drill_1777407946284_ex3",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 3,
+      "instruction_fr": "Racontez une séquence : il est arrivé, est entré, a mangé et est reparti.",
+      "base_sentence": "Toj (arriver, entrer, manger, repartir)",
+      "steps": [
+        {
+          "instruction_fr": "Il est arrivé.",
+          "expected_answer": "Toj dojde"
+        },
+        {
+          "instruction_fr": "Il entra.",
+          "expected_answer": "Vleze"
+        },
+        {
+          "instruction_fr": "Il mangea.",
+          "expected_answer": "Jade"
+        },
+        {
+          "instruction_fr": "Il repartit.",
+          "expected_answer": "Otide si"
+        }
+      ],
+      "correct_answer": "Otide si",
+      "accept_alternatives": [],
+      "explanation_fr": "Séquence d'aoristes perfectifs : dojde → vleze → jade → otide si. Tous perfectifs car actions uniques et séquentielles.",
+      "common_mistakes_fr": [
+        "Séquence narrative = perfectifs. Otide si = il est parti (emphase sur la séparation)"
+      ],
+      "verbs_present": [
+        "jade"
+      ]
+    },
+    {
+      "id": "drill_1777407946284_ex4",
+      "phase": 3,
+      "type": "transformation",
+      "level": 2,
+      "instruction_fr": "Transformez en remplaçant le nom par le clitique possessif.",
+      "sentence": "Mojot brat e student.",
+      "transformation_instruction_fr": "Utilisez le clitique 'mi' à la place de 'mojot'.",
+      "correct_answer": "Brat mi e student",
+      "accept_alternatives": [],
+      "explanation_fr": "'Mojot brat' (forme longue) → 'brat mi' (forme clitique). Les deux signifient 'mon frère' mais le clitique est plus naturel à l'oral.",
+      "common_mistakes_fr": [
+        "Le clitique 'mi' se place APRÈS le nom (pas avant)",
+        "Structure : nom + mi (pas mi + nom)"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777407946284_ex5",
+      "phase": 3,
+      "type": "transformation",
+      "level": 4,
+      "instruction_fr": "Ajoutez le doublement de clitique.",
+      "sentence": "Davam pari na tatko mi.",
+      "transformation_instruction_fr": "Ajoutez le clitique datif obligatoire.",
+      "correct_answer": "Mu davam pari na tatko mi",
+      "accept_alternatives": [],
+      "explanation_fr": "Na tatko mi (à mon père = masc.) → clitique mu obligatoire avant le verbe.",
+      "common_mistakes_fr": [
+        "Na + nom = doublement obligatoire → clitique mu/i/im avant le verbe"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777407946284_ex6",
+      "phase": 3,
+      "type": "transformation",
+      "level": 2,
+      "instruction_fr": "Passez de la forme informelle à la forme formelle.",
+      "sentence": "Zdravo! Kako si?",
+      "transformation_instruction_fr": "Utilisez la forme formelle (vous).",
+      "correct_answer": "Dobar den! Kako ste?",
+      "accept_alternatives": [
+        "Dobra vecher! Kako ste?",
+        "Dobro utro! Kako ste?"
+      ],
+      "explanation_fr": "Forme formelle : 'Zdravo' (informel) → 'Dobar den' (formel), 'Kako si' (tu) → 'Kako ste' (vous formel).",
+      "common_mistakes_fr": [
+        "'Kako ste' = comment allez-vous (formel/pluriel), 'Kako si' = comment vas-tu (informel)"
+      ],
+      "verbs_present": [
+        "sum"
+      ]
+    },
+    {
+      "id": "drill_1777407946284_ex7",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 5,
+      "instruction_fr": "Expliquez la différence grammaticale.",
+      "sentence_a": "Ne znam nichto.",
+      "sentence_b": "Nichto ne znam.",
+      "correct_answer": "Les deux sont correctes mais b met l'emphase sur 'rien' en le plaçant en début de phrase",
+      "accept_alternatives": [
+        "même sens, ordre différent, emphase différente",
+        "a = neutre, b = emphase sur nichto"
+      ],
+      "expected_keywords_fr": [
+        "emphase",
+        "ordre",
+        "même sens",
+        "début"
+      ],
+      "explanation_fr": "Les deux phrases sont grammaticalement correctes et signifient 'Je ne sais rien'. La différence est stylistique : mettre 'nichto' en début de phrase accentue le 'rien'. C'est comme dire en français 'Rien, je ne sais' vs 'Je ne sais rien'.",
+      "common_mistakes_fr": [
+        "Les deux formes sont correctes — il n'y a pas d'erreur dans les deux cas",
+        "L'ordre des mots en macédonien est relativement flexible pour l'emphase"
+      ],
+      "verbs_present": [
+        "znae"
+      ]
+    },
+    {
+      "id": "drill_1777407946284_ex8",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Série de transformations.",
+      "base_sentence": "Toj sekogash jade tamu.",
+      "steps": [
+        {
+          "instruction_fr": "Mettez à la forme négative simple (il ne mange pas là-bas)",
+          "expected_answer": "Toj ne jade tamu"
+        },
+        {
+          "instruction_fr": "Transformez 'ne... pas' en 'ne... jamais' avec nikogash",
+          "expected_answer": "Toj nikogash ne jade tamu"
+        },
+        {
+          "instruction_fr": "Ajoutez 'nigde' (nulle part) : il ne mange jamais nulle part là-bas",
+          "expected_answer": "Toj nikogash nigde ne jade tamu"
+        }
+      ],
+      "correct_answer": "Toj nikogash nigde ne jade tamu",
+      "accept_alternatives": [],
+      "explanation_fr": "Étape 1 : simple négation. Étape 2 : ajout de nikogash (jamais) + maintien de ne. Étape 3 : ajout de nigde (nulle part) — le 'ne' reste unique devant le verbe.",
+      "common_mistakes_fr": [
+        "Ne pas dupliquer 'ne' pour chaque négatif — un seul 'ne' devant le verbe",
+        "'Sekogash' = toujours (opposé de 'nikogash' = jamais)"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777407946284_ex9",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 4,
+      "instruction_fr": "Traduisez avec tous les clitiques corrects.",
+      "sentence_fr": "Je ne lui ai pas montré les photos.",
+      "correct_answer": "Ne mu gi pokazav fotografiite",
+      "accept_alternatives": [
+        "Ne i gi pokazav fotografiite (si féminin)"
+      ],
+      "explanation_fr": "Ne + mu (datif masc.) + gi (accusatif pl.) + pokazav. Fotografiite = les photos (défini pl.).",
+      "common_mistakes_fr": [
+        "Ordre : ne + mu + gi + verbe. Jamais : ne + gi + mu"
+      ],
+      "verbs_present": []
+    },
+    {
+      "id": "drill_1777407946284_ex10",
+      "phase": 3,
+      "type": "transformation",
+      "level": 2,
+      "instruction_fr": "Posez la question sur le prix.",
+      "sentence": "Sakam edno kafe.",
+      "transformation_instruction_fr": "Demandez d'abord combien coûte le café.",
+      "correct_answer": "Kolku chini kafeto?",
+      "accept_alternatives": [],
+      "explanation_fr": "'Kolku chini kafeto?' = Combien coûte le café ? 'Kafeto' = le café (défini neutre).",
+      "common_mistakes_fr": [
+        "'Kafeto' (défini) dans les questions de prix"
+      ],
+      "verbs_present": []
+    }
+  ]
+}
