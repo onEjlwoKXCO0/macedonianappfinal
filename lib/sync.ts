@@ -12,7 +12,8 @@ import { getDistractorMemory, saveDistractorMemory } from './distractor-engine';
 import type { CardState } from './spaced-repetition';
 
 async function getUser() {
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { user }, error } = await supabase.auth.getUser();
+  if (error) console.error('[sync] getUser error:', error.message);
   return user;
 }
 

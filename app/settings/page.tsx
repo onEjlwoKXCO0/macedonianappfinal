@@ -4,6 +4,8 @@ import { useRouter } from 'next/navigation';
 import { getProgress, saveProgress, DEFAULT_PROGRESS } from '@/lib/progress-tracker';
 import { getSettings, saveSettings, type AppSettings } from '@/lib/settings';
 import { useAuth } from '@/components/AuthProvider';
+import { pushAllCards, pushProgress, pushDistractorMemory, syncAll } from '@/lib/sync';
+import { getAllCards } from '@/lib/spaced-repetition';
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -15,6 +17,8 @@ export default function SettingsPage() {
   });
   const [confirmReset, setConfirmReset] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [syncStatus, setSyncStatus] = useState('');
+  const [syncing, setSyncing] = useState(false);
 
   useEffect(() => {
     const s = getSettings();
@@ -29,6 +33,21 @@ export default function SettingsPage() {
     saveProgress(p);
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
+  };
+
+  const handleForceSync = async () => {
+    setSyncing(true);
+    setSyncStatus('');
+    try {
+      const cardCount = Object.keys(getAllCards()).length;
+      await Promise.all([pushAllCards(), pushProgress(), pushDistractorMemory()]);
+      await syncAll();
+      setSyncStatus(`✅ ${cardCount} carte${cardCount > 1 ? 's' : ''} synchronisée${cardCount > 1 ? 's' : ''}`);
+    } catch (e) {
+      setSyncStatus(`❌ Erreur : ${String(e)}`);
+    } finally {
+      setSyncing(false);
+    }
   };
 
   const handleExport = () => {
@@ -64,12 +83,26 @@ export default function SettingsPage() {
       <div className="card p-5 mb-4">
         <h2 className="font-bold text-base mb-3">Synchronisation</h2>
         {user ? (
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="text-sm font-semibold text-[var(--accent-green)]">✅ Connecté</div>
-              <div className="text-xs text-[var(--text-muted)] mt-[2px]">{user.email}</div>
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <div>
+                <div className="text-sm font-semibold text-[var(--accent-green)]">✅ Connecté</div>
+                <div className="text-xs text-[var(--text-muted)] mt-[2px]">{user.email}</div>
+              </div>
+              <button className="btn-ghost text-sm" onClick={signOut}>Se déconnecter</button>
             </div>
-            <button className="btn-ghost text-sm" onClick={signOut}>Se déconnecter</button>
+            <button
+              className="btn-secondary w-full text-sm"
+              onClick={handleForceSync}
+              disabled={syncing}
+            >
+              {syncing ? '⏳ Synchronisation...' : '🔄 Forcer la synchronisation'}
+            </button>
+            {syncStatus && (
+              <p className="text-xs mt-2 text-center" style={{ color: syncStatus.startsWith('✅') ? 'var(--accent-green)' : 'var(--accent-red)' }}>
+                {syncStatus}
+              </p>
+            )}
           </div>
         ) : (
           <div className="flex items-center justify-between">

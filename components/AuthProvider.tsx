@@ -28,6 +28,8 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
       setLoading(false);
+      // Sync on app load if already logged in (e.g. returning user, different device)
+      if (session?.user) void syncAll();
     });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
