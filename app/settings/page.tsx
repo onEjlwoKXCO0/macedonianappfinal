@@ -6,6 +6,7 @@ import { getSettings, saveSettings, type AppSettings } from '@/lib/settings';
 import { useAuth } from '@/components/AuthProvider';
 import { pushAllCards, pushProgress, pushDistractorMemory, syncAll } from '@/lib/sync';
 import { getAllCards } from '@/lib/spaced-repetition';
+import { supabase } from '@/lib/supabase';
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -39,12 +40,27 @@ export default function SettingsPage() {
     setSyncing(true);
     setSyncStatus('');
     try {
+      // 1. Vérifier l'auth
+      const { data: { user: u }, error: authErr } = await supabase.auth.getUser();
+      if (authErr || !u) {
+        setSyncStatus(`❌ Auth échouée : ${authErr?.message ?? 'non connecté'}`);
+        return;
+      }
+
+      // 2. Tester la connexion Supabase
+      const { error: testErr } = await supabase.from('cards').select('exercise_id').limit(1);
+      if (testErr) {
+        setSyncStatus(`❌ Supabase inaccessible : ${testErr.message}`);
+        return;
+      }
+
+      // 3. Sync
       const cardCount = Object.keys(getAllCards()).length;
       await Promise.all([pushAllCards(), pushProgress(), pushDistractorMemory()]);
       await syncAll();
-      setSyncStatus(`✅ ${cardCount} carte${cardCount > 1 ? 's' : ''} synchronisée${cardCount > 1 ? 's' : ''}`);
+      setSyncStatus(`✅ ${cardCount} carte${cardCount !== 1 ? 's' : ''} locale${cardCount !== 1 ? 's' : ''} envoyée${cardCount !== 1 ? 's' : ''}`);
     } catch (e) {
-      setSyncStatus(`❌ Erreur : ${String(e)}`);
+      setSyncStatus(`❌ ${String(e)}`);
     } finally {
       setSyncing(false);
     }
