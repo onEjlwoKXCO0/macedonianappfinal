@@ -9,6 +9,7 @@ const NAV = [
   { href: '/review', label: 'Révision', icon: '🔄' },
   { href: '/practice', label: 'Exercices', icon: '⚡' },
   { href: '/stats', label: 'Stats', icon: '📊' },
+  { href: '/settings', label: 'Réglages', icon: '⚙️' },
 ];
 
 export default function Navbar() {
@@ -17,9 +18,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop sidebar */}
-      <nav
-        className="side-nav fixed top-0 left-0 bottom-0 w-[220px] flex-col py-6 z-50 bg-[var(--bg-card)] border-r border-[var(--border)]"
-      >
+      <nav className="side-nav fixed top-0 left-0 bottom-0 w-[220px] flex-col py-6 z-50 bg-[var(--bg-card)] border-r border-[var(--border)]">
         <div className="px-5 mb-8">
           <span className="font-extrabold text-xl text-[var(--accent-blue)]">MK Learn</span>
           <div className="text-xs text-[var(--text-muted)] mt-[0.2rem]">Apprentissage Macédonien</div>
@@ -43,13 +42,6 @@ export default function Navbar() {
             </Link>
           );
         })}
-        <div className="flex-1" />
-        <Link
-          href="/settings"
-          className="flex items-center gap-3 py-3 px-5 no-underline text-[0.9rem] text-[var(--text-muted)]"
-        >
-          ⚙️ Paramètres
-        </Link>
       </nav>
 
       {/* Mobile bottom nav */}

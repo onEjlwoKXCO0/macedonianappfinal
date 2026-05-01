@@ -7,6 +7,15 @@ import AuthProvider from '@/components/AuthProvider';
 export const metadata: Metadata = {
   title: 'MK Learn — Macédonien',
   description: 'Application personnelle d\'apprentissage du macédonien',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'MK Learn',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
