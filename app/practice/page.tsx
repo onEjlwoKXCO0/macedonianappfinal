@@ -109,21 +109,6 @@ export default function PracticePage() {
         Drills générés d'après votre historique d'erreurs — pour maximiser la rétention.
       </p>
 
-      {/* Hard drill */}
-      <div className="card p-5 mb-5" style={{ background: 'rgba(239,68,68,0.04)', borderColor: 'rgba(239,68,68,0.25)' }}>
-        <h2 className="font-bold text-base mb-1">🔥 Défi ultime</h2>
-        <p className="text-sm text-[var(--text-muted)] mb-4">
-          10 exercices phase 3 tirés au hasard dans tous les topics — production libre, aucune aide.
-        </p>
-        <button
-          className="btn-primary w-full"
-          onClick={() => generateDrill({ hardOnly: true })}
-          disabled={generating}
-        >
-          {generating ? '⏳ Génération...' : '🔥 Générer 10 exercices difficiles'}
-        </button>
-      </div>
-
       {/* SM-2 overview */}
       <div className="grid grid-cols-2 gap-3 mb-6">
         <div

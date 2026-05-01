@@ -42,7 +42,10 @@ export default function LessonsPage() {
     setRegisteredExIds(new Set(Object.keys(cards)));
   }, []);
 
-  const byCategory = lessons.reduce<Record<string, Lesson[]>>((acc, l) => {
+  const regularLessons = lessons.filter(l => !l.id.startsWith('challenge_'));
+  const challengeLessons = lessons.filter(l => l.id.startsWith('challenge_'));
+
+  const byCategory = regularLessons.reduce<Record<string, Lesson[]>>((acc, l) => {
     if (!acc[l.category]) acc[l.category] = [];
     acc[l.category].push(l);
     return acc;
@@ -117,6 +120,42 @@ export default function LessonsPage() {
           </div>
         </div>
       ))}
+
+      {/* Challenge packs C2+ */}
+      {challengeLessons.length > 0 && (
+        <div className="mb-8">
+          <h2 className="font-bold text-base mb-1 uppercase tracking-[0.05em]" style={{ color: 'var(--accent-red)' }}>
+            🔥 Défis C2+
+          </h2>
+          <p className="text-xs text-[var(--text-muted)] mb-3">Production libre — aucune aide — niveau natif</p>
+          <div className="flex flex-col gap-[0.6rem]">
+            {challengeLessons.map((lesson) => {
+              const done = completedIds.has(lesson.id);
+              return (
+                <Link key={lesson.id} href={`/lessons/${lesson.id}`} className="no-underline">
+                  <div
+                    className="card p-4 flex items-center gap-4 cursor-pointer transition-all duration-[150ms]"
+                    style={{ borderColor: 'rgba(239,68,68,0.35)', background: 'rgba(239,68,68,0.04)' }}
+                  >
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        {done && <span className="text-[0.8rem] text-[var(--accent-green)]">✅</span>}
+                        <span className="font-semibold">{lesson.title}</span>
+                      </div>
+                      <div className="text-[0.8rem] text-[var(--text-muted)]">{lesson.subtopic}</div>
+                    </div>
+                    <div className="flex gap-[0.4rem] items-center shrink-0">
+                      <span className="badge badge-red">C2+</span>
+                      <span className="badge badge-red">Niv. {lesson.difficulty_level}</span>
+                      <span className="text-xl text-[var(--accent-red)]">›</span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,0 +1,317 @@
+{
+  "id": "challenge_verbal_aspect_01",
+  "topic": "verbal_aspect",
+  "category": "grammar",
+  "title": "🔥 Défi C2 — Aspect verbal",
+  "difficulty_level": 5,
+  "created_at": "2026-05-01",
+  "status": "approved",
+  "subtopic": "20 exercices C2+ — distinctions aspectuelles fines, registre soutenu",
+  "rules": {
+    "explanation_fr": "Niveau C2+ : ces exercices testent les nuances aspectuelles les plus fines du macédonien. L'aspect perfectif exprime une action complète et délimitée ; l'imperfectif exprime la durée, l'habitude ou une action en cours. À ce niveau, le choix d'aspect change le sens de façon subtile et souvent non intuitive pour un francophone. Aucune aide — production libre uniquement.",
+    "table": [],
+    "notes_fr": [
+      "🔥 C2+ : toutes les réponses attendent une précision aspectuelle totale.",
+      "Les verbes perfectifs ne s'utilisent jamais au présent pour exprimer une habitude.",
+      "L'imperfectif peut exprimer une tentative échouée (ex: go barav — je l'ai cherché sans succès)."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ch_va_01",
+      "phase": 3,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Transformez à l'imperfectif passé pour exprimer une tentative échouée : Ja najdov kluèot.",
+      "sentence": "Ja najdov kluèot.",
+      "transformation_instruction_fr": "→ imperfectif passé (tentative sans résultat)",
+      "correct_answer": "Go barav kluèot.",
+      "accept_alternatives": ["Го барав клучот"],
+      "explanation_fr": "Najdov (perfectif) = j'ai trouvé (succès). Barav (imperfectif) = je cherchais / j'ai cherché sans trouver. La nuance aspectuelle change entièrement le résultat de l'action.",
+      "common_mistakes_fr": ["Confondre barav (cherchais) et najdov (trouvai)", "Oublier le clitique go pour l'objet masculin"],
+      "verbs_present": ["bara", "najde"]
+    },
+    {
+      "id": "ch_va_02",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Corrigez l'erreur aspectuelle dans cette phrase (contexte : action habituelle quotidienne).",
+      "sentence": "Sekoe utro go izèitam vesnikot za deset minuti.",
+      "correct_answer": "Sekoe utro go èitam vesnikot deset minuti.",
+      "accept_alternatives": [],
+      "explanation_fr": "Izèitam (perfectif) ne peut pas exprimer une habitude régulière. Pour les actions habituelles, on utilise obligatoirement l'imperfectif èitam. Le perfectif implique l'achèvement définitif, incompatible avec sekoe utro.",
+      "common_mistakes_fr": ["Utiliser le perfectif avec sekoe (chaque)", "Oublier que les habitudes = imperfectif"],
+      "verbs_present": ["èita", "izèita"]
+    },
+    {
+      "id": "ch_va_03",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez en insistant sur l'aspect correct : 'Il était en train de traverser la rue quand la voiture est arrivée.'",
+      "sentence_fr": "Il était en train de traverser la rue quand la voiture est arrivée.",
+      "correct_answer": "Ja premin ulikata koga pristignа kolata.",
+      "accept_alternatives": ["Minuvaše preku ulicata koga pristigne kolata", "Ja minuvaše ulikata koga kolata pristigna"],
+      "explanation_fr": "Action en cours (traverser) = imperfectif minuvaše. Action soudaine qui interrompt (arriver) = perfectif pristígna. La simultanéité entre une action continue et un événement ponctuel est une structure aspectuelle fondamentale.",
+      "common_mistakes_fr": ["Mettre les deux verbes au même aspect", "Confondre pristigne (présent) et pristígna (passé perfectif)"],
+      "verbs_present": ["minuva", "pristigne"]
+    },
+    {
+      "id": "ch_va_04",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Transformez cette phrase en trois étapes aspectuelles.",
+      "base_sentence": "Ja piše pismoto.",
+      "steps": [
+        {
+          "instruction_fr": "Étape 1 : passé imperfectif (action en cours dans le passé)",
+          "expected_answer": "Ja pišeše pismoto."
+        },
+        {
+          "instruction_fr": "Étape 2 : passé perfectif (action complétée)",
+          "expected_answer": "Ja napiša pismoto."
+        },
+        {
+          "instruction_fr": "Étape 3 : passé imperfectif de tentative (a essayé d'écrire sans finir)",
+          "expected_answer": "Pišuvaše pismoto no ne go dovrši."
+        }
+      ],
+      "correct_answer": "Pišuvaše pismoto no ne go dovrši.",
+      "accept_alternatives": [],
+      "explanation_fr": "Trois aspects distincts : présent imperfectif (piše), passé imperfectif (pišeše), passé perfectif (napiša), et l'imperfectif de tentative avec négation du perfectif.",
+      "common_mistakes_fr": ["Confondre pišeše et napiša", "Oublier le préfixe na- pour le perfectif de pišuva"],
+      "verbs_present": ["piše", "napiše"]
+    },
+    {
+      "id": "ch_va_05",
+      "phase": 3,
+      "type": "multiple_choice",
+      "level": 5,
+      "instruction_fr": "Choisissez la forme correcte selon le contexte : 'Pendant trois heures, il _____ le rapport.'",
+      "question": "Tri èasa toj go _____ izveštajot.",
+      "options": ["napiša", "pišuvaše", "piše", "napi­šuva"],
+      "correct_answer": "pišuvaše",
+      "accept_alternatives": [],
+      "explanation_fr": "Tri èasa (pendant trois heures) indique une durée → imperfectif obligatoire. Pišuvaše = écrivait (action continue sur une durée). Napiša serait incorrect car le perfectif ne se combine pas avec une durée délimitée.",
+      "common_mistakes_fr": ["Confondre piše (présent) et pišuvaše (passé imperfectif)", "Utiliser le perfectif avec une expression de durée"],
+      "verbs_present": ["piše", "napiše"]
+    },
+    {
+      "id": "ch_va_06",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 5,
+      "instruction_fr": "Expliquez la différence aspectuelle et son impact sur le sens.",
+      "sentence_a": "Vèera go gledav toj film.",
+      "sentence_b": "Vèera go pogledav toj film.",
+      "expected_keywords_fr": ["commencé", "fini", "entier", "partiellement", "incomplet", "completé"],
+      "correct_answer": "Gledav = j'ai regardé (partiellement, sans nécessairement finir). Pogledav = j'ai regardé en entier (action complète et terminée).",
+      "accept_alternatives": ["gledav imperfectif pogledav perfectif", "regardé partiellement vs en entier"],
+      "explanation_fr": "Le préfixe po- perfectivise le verbe gleda. Gledav implique que tu as regardé pendant un moment mais pas nécessairement jusqu'à la fin. Pogledav confirme que tu as vu le film en entier.",
+      "common_mistakes_fr": ["Ne pas reconnaître l'effet perfectivisant du préfixe po-"],
+      "verbs_present": ["gleda", "pogleda"]
+    },
+    {
+      "id": "ch_va_07",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Complétez avec l'aspect correct (context : conseil général, valeur universelle).",
+      "sentence": "Ako sakaš da nauèiš jazik, sekojden treba da _____ po sto novi zborovi.",
+      "correct_answer": "uèiš",
+      "accept_alternatives": ["nauèiš"],
+      "explanation_fr": "Sekojden (chaque jour) + conseil général → imperfectif uèiš. Nauèiš (perfectif) serait possible mais changerait le sens : 'apprendre entièrement' 100 mots chaque jour, ce qui est plus exigeant sémantiquement.",
+      "common_mistakes_fr": ["Hésiter entre uèiš et nauèiš selon le contexte conseils/habitude"],
+      "verbs_present": ["uèi", "nauèi"]
+    },
+    {
+      "id": "ch_va_08",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Corrigez la phrase (contexte : action ponctuelle du passé avec résultat visible maintenant).",
+      "sentence": "Nekoj go kršeše prozorecot i sega e student.",
+      "correct_answer": "Nekoj go kršeše prozorecot... → Nekoj go skrši prozorecot i sega e skršen.",
+      "accept_alternatives": ["Nekoj go skrši prozorecot"],
+      "explanation_fr": "Kršeše (imperfectif) = cassait (processus). Mais le résultat visible maintenant (la fenêtre est cassée) exige le perfectif skrši. De plus, 'sega e student' est incohérent — on attend 'sega e skršen' (il est cassé maintenant).",
+      "common_mistakes_fr": ["Ne pas reconnaître que le résultat présent exige le perfectif passé", "Incohérence logique de la phrase originale"],
+      "verbs_present": ["krši", "skrši"]
+    },
+    {
+      "id": "ch_va_09",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez avec la précision aspectuelle requise : 'J'essayais de lui téléphoner toute la matinée mais il ne répondait jamais.'",
+      "sentence_fr": "J'essayais de lui téléphoner toute la matinée mais il ne répondait jamais.",
+      "correct_answer": "Celo utro se obiduvav da mu telefonìram no nikogaš ne odgovaraše.",
+      "accept_alternatives": ["Celo utro mu telefonìrav no nikogaš ne odgovoraše"],
+      "explanation_fr": "Telefonìrav / se obiduvav (imperfectif) = essayais de téléphoner (tentatives répétées non abouties). Ne odgovaraše (imperfectif) = ne répondait jamais (état négatif continu). Aucun perfectif ici car aucune action n'aboutit.",
+      "common_mistakes_fr": ["Utiliser le perfectif pour les tentatives échouées répétées", "Oublier l'imperfectif pour les états négatifs continus"],
+      "verbs_present": ["telefoniira", "odgovori"]
+    },
+    {
+      "id": "ch_va_10",
+      "phase": 3,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Reformulez pour exprimer que l'action a été répétée plusieurs fois avec succès à chaque fois.",
+      "sentence": "Go napiša pismoto.",
+      "transformation_instruction_fr": "→ action réussie répétée plusieurs fois",
+      "correct_answer": "Sekojpat go napišuvaše pismoto.",
+      "accept_alternatives": ["Poveke pati go napišuvaše pismoto", "Go napišuvaše pismoto sekogaš"],
+      "explanation_fr": "Napišuvaše est l'imperfectif de napiša — il exprime la répétition d'une action dont chaque instance est complète. C'est la différence entre 'il écrivait la lettre' (processus) et 'il écrivait des lettres (chaque fois complètes, de manière répétée)'.",
+      "common_mistakes_fr": ["Confondre répétition d'action complète (imperfectif itératif) et action unique complète (perfectif)"],
+      "verbs_present": ["piše", "napiše"]
+    },
+    {
+      "id": "ch_va_11",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Complétez avec l'aspect et le temps corrects (context : moment précis dans le futur).",
+      "sentence": "Utre vo deset èasot, jas veḱe _____ go toj projekt.",
+      "correct_answer": "kje go dovrši",
+      "accept_alternatives": ["kje sum go završil", "kje go završam"],
+      "explanation_fr": "Futur perfectif (kje + dovrši) exprime une action qui sera achevée à un moment précis futur. Le futur antérieur (kje sum go završil) est aussi correct. L'imperfectif kje go dovrša serait incorrect ici car on parle d'achèvement.",
+      "common_mistakes_fr": ["Ne pas maîtriser le futur perfectif en macédonien", "Confondre dovrši (finir) et dovrša (inusité)"],
+      "verbs_present": ["dovrši", "završi"]
+    },
+    {
+      "id": "ch_va_12",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez ce proverbe en choisissant les aspects corrects : 'Qui cherche, trouve.'",
+      "sentence_fr": "Qui cherche, trouve.",
+      "correct_answer": "Koj bara, naogja.",
+      "accept_alternatives": ["Koj bara toj naogja"],
+      "explanation_fr": "Bara (imperfectif) = cherche (habitude/généralité). Naogja (imperfectif) = trouve (résultat habituel). Dans les proverbes et vérités générales, le macédonien utilise l'imperfectif même quand le français sous-entend un résultat.",
+      "common_mistakes_fr": ["Utiliser najde (perfectif) au lieu de naogja dans les proverbes", "Confondre bara et bara selon l'accentuation"],
+      "verbs_present": ["bara", "naogja"]
+    },
+    {
+      "id": "ch_va_13",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Cette phrase contient une erreur aspectuelle grave. Identifiez et corrigez.",
+      "sentence": "Koga kje pristigne, mu kje rekov deka treba da zamine.",
+      "correct_answer": "Koga kje pristigne, kje mu rèam deka treba da zamine.",
+      "accept_alternatives": ["Koga pristigne, kje mu kazhe deka treba da zamine"],
+      "explanation_fr": "Rekov est le passé perfectif — on ne peut pas l'utiliser pour une action future. Kje rèam (futur imperfectif) ou kje mu kazhe (futur perfectif) sont corrects. La confusion passé/futur est une erreur grave de niveau A2 qui persiste même chez des apprenants avancés.",
+      "common_mistakes_fr": ["Utiliser le passé perfectif au lieu du futur", "Confondre rekov (dis-je, passé) et kje rèam (je dirai)"],
+      "verbs_present": ["reèe", "kazhe"]
+    },
+    {
+      "id": "ch_va_14",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 5,
+      "instruction_fr": "Nuance C2 : expliquez la différence pragmatique entre ces deux refus.",
+      "sentence_a": "Ne mu go dadov parite.",
+      "sentence_b": "Ne mu gi davav parite.",
+      "expected_keywords_fr": ["refus", "décision", "incapacité", "tentative", "ne pas vouloir", "essayé"],
+      "correct_answer": "Dadov (perfectif) = je ne lui ai pas donné l'argent (action définitive, refus clair). Davav (imperfectif) = j'essayais de lui donner / je lui donnais mais quelque chose m'en a empêché.",
+      "accept_alternatives": ["perfectif refus definitif imperfectif tentative"],
+      "explanation_fr": "Ne mu go dadov = refus délibéré, décision ferme. Ne mu gi davav = je n'arrivais pas à lui donner / tentative empêchée. La différence est cruciale en pragmatique : responsabilité vs circonstance.",
+      "common_mistakes_fr": ["Ne pas reconnaître la nuance responsabilité/circonstance dans la négation aspectuelle"],
+      "verbs_present": ["dava", "dade"]
+    },
+    {
+      "id": "ch_va_15",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Reformulez cette action en trois registres aspectuels différents.",
+      "base_sentence": "Ja uèeše makedonski.",
+      "steps": [
+        {
+          "instruction_fr": "Étape 1 : perfectif passé (a fini d'apprendre, maîtrise acquise)",
+          "expected_answer": "Ja izuèi makedonski."
+        },
+        {
+          "instruction_fr": "Étape 2 : imperfectif itératif (apprenait régulièrement, habitude passée)",
+          "expected_answer": "Sekoja nedela uèeše makedonski."
+        },
+        {
+          "instruction_fr": "Étape 3 : futur perfectif (aura complètement appris)",
+          "expected_answer": "Kje go izuèi makedonski."
+        }
+      ],
+      "correct_answer": "Kje go izuèi makedonski.",
+      "accept_alternatives": ["Kje izuèi makedonski"],
+      "explanation_fr": "Progression aspectuelle : uèeše (imparfait en cours) → izuèi (perfectif accompli) → sekoja nedela uèeše (itératif habituel) → kje izuèi (futur perfectif). Maîtriser ces quatre formes sur un même verbe est un marqueur de niveau C2.",
+      "common_mistakes_fr": ["Confondre izuèi (perfectif) et uèi (présent imperfectif)", "Ne pas savoir former le futur perfectif"],
+      "verbs_present": ["uèi", "izuèi"]
+    },
+    {
+      "id": "ch_va_16",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez ce passage littéraire en préservant toutes les nuances aspectuelles.",
+      "sentence_fr": "Il lisait depuis des heures quand soudain il ferma le livre, se leva et sortit sans dire un mot.",
+      "correct_answer": "Èitaše so ègasovi koga odednaš ja zatvorì knigata, stana i izleze bez da kaže ni zbor.",
+      "accept_alternatives": ["Od ègasovi èitaše koga iznenadejna ja zatvorì knigata stana i izleze"],
+      "explanation_fr": "Èitaše (imperfectif continu) pour l'action de fond. Zatvorì, stana, izleze (tous perfectifs) pour les actions ponctuelles successives qui brisent la continuité. C'est le schéma narratif classique : fond imperfectif + événements perfectifs.",
+      "common_mistakes_fr": ["Mettre les actions narratives ponctuelles en imperfectif", "Oublier que le schéma fond/événement est aspectuellement obligatoire"],
+      "verbs_present": ["èita", "zatvori", "stane", "izleze"]
+    },
+    {
+      "id": "ch_va_17",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Complétez avec l'aspect correct dans cette promesse formelle.",
+      "sentence": "Ti se vetuvam deka sekoj den kje _____ po edna lekcija.",
+      "correct_answer": "uèam",
+      "accept_alternatives": ["izuèam", "uèat"],
+      "explanation_fr": "Sekoj den (chaque jour) dans une promesse d'action habituelle future → imperfectif uèam. Une promesse de type 'je vais faire X chaque jour' utilise le futur imperfectif en macédonien, pas le perfectif.",
+      "common_mistakes_fr": ["Utiliser le perfectif pour une habitude future", "Confondre uèam (j'apprends, imperfectif) et izuèam (inusité au présent)"],
+      "verbs_present": ["uèi", "izuèi"]
+    },
+    {
+      "id": "ch_va_18",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Corrigez cette phrase au niveau C2 (deux erreurs aspectuelles).",
+      "sentence": "Dodeka go èekav, go isprativ pismoto i go rekov na site.",
+      "correct_answer": "Dodeka go èekav, go isprativ pismoto i im rekav na site.",
+      "accept_alternatives": ["Dodeka go èekav, go pratev pismoto i im govorev na site"],
+      "explanation_fr": "Isprativ (perfectif) et rekav (imperfectif) sont corrects pour des actions dans une période de fond (dodeka = pendant que). Mais 'rekov na site' manque le datif pluriel im (leur). Erreur 1 : pronom datif manquant. Erreur 2 : rekov (je dis, ponctuel) vs rekav/kazhuval (je disais, dans la durée).",
+      "common_mistakes_fr": ["Oublier le clitique datif im avec 'na site'", "Confondre rekov (ponctuel) et rekav (duratif) dans la durée"],
+      "verbs_present": ["reèe", "isprati"]
+    },
+    {
+      "id": "ch_va_19",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Niveau C2 : 'Chaque fois qu'il essayait de lui expliquer, elle s'en allait avant qu'il ait fini.'",
+      "sentence_fr": "Chaque fois qu'il essayait de lui expliquer, elle s'en allait avant qu'il ait fini.",
+      "correct_answer": "Sekojpat koga se obideše da i objasni, taa si otideše pred da završi.",
+      "accept_alternatives": ["Sekoj pat koga se obidoval da objasni taa si odela pred da dovrši"],
+      "explanation_fr": "Se obideše (imperfectif itératif) = essayait à chaque fois. Da i objasni (perfectif subjonctif) = d'expliquer (action potentiellement complète). Otideše (imperfectif itératif) = s'en allait à chaque fois. Završi (perfectif subjonctif après pred da) = avant d'avoir fini.",
+      "common_mistakes_fr": ["Ne pas maîtriser l'imperfectif itératif avec sekojpat", "Confondre pred da + perfectif et pred da + imperfectif"],
+      "verbs_present": ["objasni", "odi", "završi"]
+    },
+    {
+      "id": "ch_va_20",
+      "phase": 3,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Transformez cette description en récit narratif littéraire en changeant les aspects appropriés.",
+      "sentence": "Sekoj den uèi, jade, spie i ne pravi nisto drugo.",
+      "transformation_instruction_fr": "→ passé narratif (un jour spécifique du passé, actions successives et complètes)",
+      "correct_answer": "Toj den uèeše, jadeše, spieše i ne praveše nisto drugo.",
+      "accept_alternatives": ["Toj den izuèi, jade, zaspa i ne napravi nisto drugo"],
+      "explanation_fr": "Pour une journée type décrite au passé sans achèvement particulier → imperfectifs ponctuels passés (uèeše, jadeše, spieše). Si on insiste sur l'achèvement de chaque action → perfectifs (izuèi, jade, zaspa). Les deux sont corrects selon la nuance voulue.",
+      "common_mistakes_fr": ["Ne pas distinguer description de journée type (imperfectif) et narration d'actions accomplies (perfectif)"],
+      "verbs_present": ["uèi", "jade", "spie"]
+    }
+  ]
+}

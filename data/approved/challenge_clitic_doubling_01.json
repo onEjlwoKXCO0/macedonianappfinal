@@ -1,0 +1,313 @@
+{
+  "id": "challenge_clitic_doubling_01",
+  "topic": "clitic_doubling",
+  "category": "grammar",
+  "title": "🔥 Défi C2 — Doublement des clitiques",
+  "difficulty_level": 5,
+  "created_at": "2026-05-01",
+  "status": "approved",
+  "subtopic": "20 exercices C2+ — doublement obligatoire, clitiques multiples, registre soutenu",
+  "rules": {
+    "explanation_fr": "Le doublement des clitiques est une caractéristique typologique unique du macédonien. L'objet nominal est repris obligatoirement par un pronom clitique dans la plupart des contextes. À C2+, on maîtrise les cas d'absence de doublement, les clitiques multiples (acc + dat simultanés), et les registres formels où le doublement varie.",
+    "table": [],
+    "notes_fr": [
+      "🔥 C2+ : le doublement est obligatoire sauf avec les indéfinis et en phrase négative partielle.",
+      "Ordre des clitiques : datif AVANT accusatif (mu go, i go, im go).",
+      "Le doublement est absent avec nekoj, nešto en position objet direct."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ch_cd_01",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Complétez avec les clitiques obligatoires (datif + accusatif) :",
+      "sentence": "Na Ana, Petar ___ ___ ja kaza vistinata vèera.",
+      "correct_answer": "i ja",
+      "accept_alternatives": ["й ja", "i ja kaza"],
+      "explanation_fr": "Na Ana = datif → clitique i (lui, féminin). Vistinata = objet direct défini féminin → clitique ja. Ordre obligatoire : datif i + accusatif ja. Le doublement de l'objet défini est obligatoire.",
+      "common_mistakes_fr": ["Inverser l'ordre ja i (incorrect)", "Oublier le clitique datif i avec na Ana"],
+      "verbs_present": ["kaza"]
+    },
+    {
+      "id": "ch_cd_02",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Corrigez toutes les erreurs de doublement dans cette phrase.",
+      "sentence": "Go dadov knigata na bratot i toj be mnogu sreken.",
+      "correct_answer": "Mu ja dadov knigata na bratot i toj beše mnogu sreken.",
+      "accept_alternatives": ["Na bratot mu ja dadov knigata"],
+      "explanation_fr": "Knigata (défini féminin, objet direct) → ja obligatoire. Na bratot (datif) → mu obligatoire. Go est masculin accusatif et ne correspond pas à knigata (féminin). Deux erreurs : mauvais genre du clitique ACC + manque du clitique DAT.",
+      "common_mistakes_fr": ["Utiliser go pour un objet féminin (knigata = ja)", "Oublier le clitique datif mu avec na bratot"],
+      "verbs_present": ["dade"]
+    },
+    {
+      "id": "ch_cd_03",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez avec doublement complet : 'Je leur ai montré les photos à mes parents.'",
+      "sentence_fr": "Je leur ai montré les photos à mes parents.",
+      "correct_answer": "Im gi pokaazav fotografiite na moite roditeli.",
+      "accept_alternatives": ["Na moite roditeli im gi pokaazav fotografiite", "Fotografiite im gi pokaazav na moite roditeli"],
+      "explanation_fr": "Fotografiite (défini pluriel) → clitique gi. Na moite roditeli (datif pluriel) → clitique im. Ordre : im gi (datif avant accusatif). Le doublement des deux objets simultanément est exigé.",
+      "common_mistakes_fr": ["Confondre gi (ACC pluriel) et im (DAT pluriel)", "Mettre im et gi dans le mauvais ordre"],
+      "verbs_present": ["pokaazhe"]
+    },
+    {
+      "id": "ch_cd_04",
+      "phase": 3,
+      "type": "multiple_choice",
+      "level": 5,
+      "instruction_fr": "Quelle phrase est grammaticalement correcte en macédonien standard ?",
+      "question": "Laquelle est correcte ?",
+      "options": [
+        "Go vidov nekoj èovek na ulikata.",
+        "Nekoj èovek go vidov na ulikata.",
+        "Vidov nekoj èovek na ulikata.",
+        "Nekoj èovek vidov na ulikata."
+      ],
+      "correct_answer": "Vidov nekoj èovek na ulikata.",
+      "accept_alternatives": [],
+      "explanation_fr": "Avec nekoj (quelqu'un, indéfini), le doublement est ABSENT. On n'utilise pas go avec un indéfini en position objet direct. Vidov nekoj èovek (sans clitique) est la seule forme correcte.",
+      "common_mistakes_fr": ["Doubler un objet indéfini (nekoj, nešto, nekoja) — c'est incorrect", "Confondre défini (doublement obligatoire) et indéfini (doublement absent)"],
+      "verbs_present": ["vidi"]
+    },
+    {
+      "id": "ch_cd_05",
+      "phase": 3,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Topicalisez l'objet en tête de phrase avec doublement correct.",
+      "sentence": "Ja videv Ana na pазarot.",
+      "transformation_instruction_fr": "→ Ana en position topique (tête de phrase)",
+      "correct_answer": "Ana ja videv na pazarot.",
+      "accept_alternatives": ["Ana, ja videv na pazarot"],
+      "explanation_fr": "Quand l'objet direct est topicalisé (mis en tête), le doublement devient OBLIGATOIRE même s'il était optionnel. Ana (défini, féminin) → ja. La topicalisation force le doublement en macédonien.",
+      "common_mistakes_fr": ["Oublier ja quand Ana est en position topique", "Ne pas savoir que la topicalisation force le doublement"],
+      "verbs_present": ["vidi"]
+    },
+    {
+      "id": "ch_cd_06",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Complétez cette phrase complexe avec tous les clitiques nécessaires.",
+      "sentence": "Profesorot ___ ___ go objasni zadaèata na site studenti.",
+      "correct_answer": "im ja",
+      "accept_alternatives": ["im ja go"],
+      "explanation_fr": "Na site studenti (datif pluriel) → im. Zadaèata (féminin défini singulier, objet direct) → ja. Ordre : im (DAT) + ja (ACC). Le go dans la phrase originale est une erreur car zadaèata est féminin.",
+      "common_mistakes_fr": ["Mettre go au lieu de ja pour zadaèata (féminin)", "Inverser l'ordre des clitiques DAT + ACC"],
+      "verbs_present": ["objasni"]
+    },
+    {
+      "id": "ch_cd_07",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 5,
+      "instruction_fr": "Expliquez pourquoi l'une est grammaticale et l'autre non.",
+      "sentence_a": "Knigata ja pèitav tri pati.",
+      "sentence_b": "Edna kniga pèitav tri pati.",
+      "expected_keywords_fr": ["défini", "indéfini", "obligatoire", "absent", "article", "doublement"],
+      "correct_answer": "A est correct : knigata (défini) → doublement ja obligatoire. B est correct : edna kniga (indéfini) → pas de doublement.",
+      "accept_alternatives": ["A défini ja obligatoire B indéfini sans clitique"],
+      "explanation_fr": "Le doublement dépend du caractère défini ou indéfini de l'objet. Knigata (avec article défini -ta) → ja obligatoire. Edna kniga (article indéfini edna) → pas de clitique. C'est une règle fondamentale souvent violée.",
+      "common_mistakes_fr": ["Doubler un objet avec article indéfini", "Ne pas doubler un objet avec article défini"],
+      "verbs_present": ["èita"]
+    },
+    {
+      "id": "ch_cd_08",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez avec la syntaxe de clitiques correcte (contexte formel/écrit) : 'Le ministre a présenté le projet au président.'",
+      "sentence_fr": "Le ministre a présenté le projet au président.",
+      "correct_answer": "Ministerot mu go prezentiraše proektot na pretsedatelot.",
+      "accept_alternatives": ["Na pretsedatelot mu go prezentiraše proektot ministerot"],
+      "explanation_fr": "Proektot (masculin défini) → go. Na pretsedatelot (datif) → mu. Ordre mu go obligatoire. En registre formel/journalistique, l'ordre SOV est commun avec le sujet postposé.",
+      "common_mistakes_fr": ["Placer mu go dans le mauvais ordre", "Oublier un des deux clitiques"],
+      "verbs_present": ["prezentira"]
+    },
+    {
+      "id": "ch_cd_09",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Cette phrase contient une erreur de clitique réflexif. Corrigez.",
+      "sentence": "Toj go misli deka e najpameten.",
+      "correct_answer": "Toj si misli deka e najpameten.",
+      "accept_alternatives": ["Toj misli deka e najpameten"],
+      "explanation_fr": "Mísli (penser à soi-même, se croire) utilise le clitique réflexif si, pas go. 'Si misli' = se penser, s'imaginer (avec sujet = objet). 'Go misli' serait 'il le pense (quelqu'un d'autre)'. Le réflexif si est obligatoire ici.",
+      "common_mistakes_fr": ["Confondre go (accusatif 3e personne) et si (réflexif)", "Ignorer le clitique réflexif si dans les verbes pronominaux"],
+      "verbs_present": ["misli"]
+    },
+    {
+      "id": "ch_cd_10",
+      "phase": 3,
+      "type": "transformation_chain",
+      "level": 5,
+      "instruction_fr": "Transformez la phrase en changeant le référent du clitique datif.",
+      "base_sentence": "Mu go dadov na Ivan.",
+      "steps": [
+        {
+          "instruction_fr": "Étape 1 : même phrase mais avec Ana comme destinataire (féminin singulier)",
+          "expected_answer": "I go dadov na Ana."
+        },
+        {
+          "instruction_fr": "Étape 2 : avec Ivan et Ana ensemble comme destinataires (pluriel)",
+          "expected_answer": "Im go dadov na Ivan i na Ana."
+        },
+        {
+          "instruction_fr": "Étape 3 : destinataire indéfini (à quelqu'un) — sans doublement datif",
+          "expected_answer": "Go dadov na nekoj."
+        }
+      ],
+      "correct_answer": "Go dadov na nekoj.",
+      "accept_alternatives": ["Dadov na nekoj"],
+      "explanation_fr": "Progression : mu (DAT masc sg) → i (DAT fém sg) → im (DAT pluriel) → Ø (pas de clitique DAT avec indéfini nekoj). La dernière étape confirme l'absence de doublement avec les indéfinis.",
+      "common_mistakes_fr": ["Utiliser im avec nekoj (incorrect, nekoj est indéfini)", "Confondre i (DAT fém) et ja (ACC fém)"],
+      "verbs_present": ["dade"]
+    },
+    {
+      "id": "ch_cd_11",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Phrase avec objet indirect réflexif et objet direct — complétez les deux clitiques.",
+      "sentence": "Taa ___ ___ kupi nova obleka za Bozhik.",
+      "correct_answer": "si ja",
+      "accept_alternatives": ["si ja kupi"],
+      "explanation_fr": "Si = clitique réflexif datif (elle s'est achetée pour elle-même). Ja = clitique ACC féminin pour obleka. Ordre : DAT réflexif si + ACC ja. 'Si ja kupi' = elle s'est acheté (pour elle).",
+      "common_mistakes_fr": ["Oublier le si réflexif pour l'achat pour soi-même", "Mettre go au lieu de ja pour obleka (féminin)"],
+      "verbs_present": ["kupi"]
+    },
+    {
+      "id": "ch_cd_12",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez avec la hiérarchie clitique complète : 'Il nous l'a dit avant-hier.'",
+      "sentence_fr": "Il nous l'a dit avant-hier.",
+      "correct_answer": "Ni go kaza prekvèera.",
+      "accept_alternatives": ["Prekvèera ni go kaza", "Go ni kaza prekvèera"],
+      "explanation_fr": "Ni = DAT 1ère personne pluriel (nous, datif). Go = ACC 3e personne masculin (le/l'). Ordre : ni (DAT) + go (ACC). Prekvèera = avant-hier.",
+      "common_mistakes_fr": ["Confondre ni (nous, DAT) et ne (nous, ACC)", "Inverser l'ordre go ni (incorrect)"],
+      "verbs_present": ["kaza"]
+    },
+    {
+      "id": "ch_cd_13",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Phrase littéraire avec deux erreurs de clitiques. Corrigez.",
+      "sentence": "Vèera Marija go i raskaza prikaznata na deteto.",
+      "correct_answer": "Vèera Marija mu ja raskaza prikaznata na deteto.",
+      "accept_alternatives": ["Na deteto mu ja raskaza prikaznata Marija vèera"],
+      "explanation_fr": "Prikaznata (féminin défini) → ja (pas go). Na deteto (datif singulier neutre/masculin) → mu (pas i, qui est féminin datif). Double erreur : genre du clitique ACC et genre du clitique DAT.",
+      "common_mistakes_fr": ["Confondre le genre de prikaznata (féminin, pas masculin)", "Confondre i (DAT féminin) et mu (DAT masculin/neutre)"],
+      "verbs_present": ["raskaza"]
+    },
+    {
+      "id": "ch_cd_14",
+      "phase": 3,
+      "type": "multiple_choice",
+      "level": 5,
+      "instruction_fr": "Phrase interrogative — quelle est la position correcte des clitiques ?",
+      "question": "Laquelle est grammaticalement correcte ?",
+      "options": [
+        "Zošto mu go si go dal?",
+        "Zošto si mu go dal?",
+        "Zošto go mu si dal?",
+        "Zošto dal si mu go?"
+      ],
+      "correct_answer": "Zošto si mu go dal?",
+      "accept_alternatives": [],
+      "explanation_fr": "Ordre des clitiques en macédonien : AUX (si) + DAT (mu) + ACC (go) + participe (dal). L'auxiliaire réflexif si précède toujours les autres clitiques. Les clitiques forment un groupe inséparable après le mot wh-.",
+      "common_mistakes_fr": ["Séparer les clitiques", "Mettre si après mu ou go", "Inverser mu et go"],
+      "verbs_present": ["dade"]
+    },
+    {
+      "id": "ch_cd_15",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Niveau C2 : 'Ne le lui rends pas — garde-le pour toi.'",
+      "sentence_fr": "Ne le lui rends pas — garde-le pour toi.",
+      "correct_answer": "Ne mu go vrakjaj — zadrži go za sebe.",
+      "accept_alternatives": ["Ne mu go vraḱaj, zadrži go za sebe si"],
+      "explanation_fr": "Ne mu go vrakjaj : négation + DAT mu + ACC go + impératif imperfectif vrakjaj (ne pas rendre, habituellement). Zadrži go : impératif perfectif + ACC go (garde-le, action unique). Za sebe (pour toi-même).",
+      "common_mistakes_fr": ["Utiliser l'impératif perfectif pour la négation (ne + imperfectif obligatoire)", "Oublier go dans zadrži go"],
+      "verbs_present": ["vrakja", "zadrži"]
+    },
+    {
+      "id": "ch_cd_16",
+      "phase": 3,
+      "type": "fill_blank",
+      "level": 5,
+      "instruction_fr": "Complétez le dialogue formel avec les clitiques corrects.",
+      "sentence": "— Dali mu ___ go kažavte na direktorot za problemot? — Da, vèera ___ go informiravme.",
+      "correct_answer": "ste / go",
+      "accept_alternatives": ["ste go kažavte / go informiravme"],
+      "explanation_fr": "Première phrase : mu go kažavte → mu (DAT, direktorot) + go (ACC, problemot) + ste (AUX 2e pers pl). Deuxième : go informiravme → go (ACC, direktorot maintenant devenu objet). Le référent change entre les deux répliques.",
+      "common_mistakes_fr": ["Ne pas remarquer que le référent de go change entre les deux phrases", "Confondre l'auxiliaire ste avec les clitiques pronominaux"],
+      "verbs_present": ["kažhe", "informira"]
+    },
+    {
+      "id": "ch_cd_17",
+      "phase": 3,
+      "type": "transformation",
+      "level": 5,
+      "instruction_fr": "Transformez en phrase passive avec maintien des clitiques corrects.",
+      "sentence": "Sudijata mu go objasni presudava na obvinetiót.",
+      "transformation_instruction_fr": "→ passif (se-passif macédonien)",
+      "correct_answer": "Na obvinetiót mu se objasni presudava.",
+      "accept_alternatives": ["Presudava mu se objasni na obvinetiót"],
+      "explanation_fr": "Au passif en se, l'agent disparaît mais le bénéficiaire (datif mu) reste. Le se de passif se place après le sujet sémantique. Le clitique datif mu reste obligatoire car na obvinetiót est maintenu.",
+      "common_mistakes_fr": ["Supprimer le clitique mu dans la transformation passive", "Confondre se réflexif et se passif"],
+      "verbs_present": ["objasni"]
+    },
+    {
+      "id": "ch_cd_18",
+      "phase": 3,
+      "type": "spot_the_difference",
+      "level": 5,
+      "instruction_fr": "Ces deux phrases ont des clitiques différents. Expliquez la différence de sens.",
+      "sentence_a": "Mu go rekoa.",
+      "sentence_b": "Go rekoa.",
+      "expected_keywords_fr": ["à lui", "datif", "bénéficiaire", "absent", "quelqu'un", "direct"],
+      "correct_answer": "A : mu go rekoa = ils le lui ont dit (à lui spécifiquement, datif mu présent). B : go rekoa = ils l'ont dit (sans précision de destinataire, objet direct seul).",
+      "accept_alternatives": ["A avec destinataire B sans destinataire"],
+      "explanation_fr": "La présence ou absence du clitique datif change entièrement le sens. Mu = à lui (quelqu'un reçoit l'information). Sans mu, l'information est simplement communiquée sans destinataire précis.",
+      "common_mistakes_fr": ["Ne pas reconnaître la distinction avec/sans bénéficiaire datif"],
+      "verbs_present": ["reèe"]
+    },
+    {
+      "id": "ch_cd_19",
+      "phase": 3,
+      "type": "translate_to_mk",
+      "level": 5,
+      "instruction_fr": "Traduisez ce passage formel avec tous les doublings : 'Le directeur leur a remis les diplômes aux diplômés lors de la cérémonie.'",
+      "sentence_fr": "Le directeur leur a remis les diplômes aux diplômés lors de la cérémonie.",
+      "correct_answer": "Direktorot im gi im gi vreèe diplomite na diplomantite na ceremonijata.",
+      "accept_alternatives": ["Na diplomantite im gi vreèe diplomite direktorot", "Im gi vreèe diplomite na diplomantite direktorot na ceremonijata"],
+      "explanation_fr": "Diplomantite (datif pluriel) → im. Diplomite (ACC féminin pluriel) → gi. Ordre im gi obligatoire. En registre formel, l'objet indirect na diplomantite peut rester explicite même avec im.",
+      "common_mistakes_fr": ["Confondre gi (ACC fém pluriel) et im (DAT pluriel)", "Oublier que diplomite (féminin pluriel) → gi et non gi"],
+      "verbs_present": ["vreèe"]
+    },
+    {
+      "id": "ch_cd_20",
+      "phase": 3,
+      "type": "error_correction",
+      "level": 5,
+      "instruction_fr": "Phrase C2 avec trois erreurs de clitiques. Identifiez et corrigez toutes.",
+      "sentence": "Vèera go i go rekoa na Ana i na Petar deka treba da zaminar.",
+      "correct_answer": "Vèera im go rekoa na Ana i na Petar deka treba da zaminat.",
+      "accept_alternatives": ["Na Ana i na Petar im go rekoa vèera deka treba da zaminat"],
+      "explanation_fr": "Trois erreurs : 1) 'go i go' incompréhensible → im go (DAT pluriel + ACC masc). 2) Na Ana i na Petar = datif pluriel → im (pas i). 3) Zaminar (infinitif inexistant en macédonien) → zaminat (3e pers pl présent dans la subordonnée). Le macédonien n'a pas d'infinitif.",
+      "common_mistakes_fr": ["Répéter go pour deux objets différents", "Utiliser un pseudo-infinitif en -ar (n'existe pas en macédonien)", "Confondre i (DAT fém sg) et im (DAT pluriel)"],
+      "verbs_present": ["reèe", "zamini"]
+    }
+  ]
+}
