@@ -10,6 +10,7 @@ import {
 import { evaluateExercise } from '@/lib/exercise-evaluator';
 import ExerciseRenderer from '@/components/ExerciseRenderer';
 import { pushCard } from '@/lib/sync';
+import { getTopicLabel } from '@/lib/topic-labels';
 
 const RATING_CONFIG = [
   { rating: 0 as Rating, label: 'Encore',   emoji: '🔴', bg: 'rgba(239,68,68,0.15)',  border: 'rgba(239,68,68,0.5)',  color: 'var(--accent-red)' },
@@ -156,16 +157,24 @@ export default function ReviewPage() {
         </div>
       </div>
 
-      {/* Card type indicator */}
-      <div className="mb-3 flex gap-2 items-center">
-        {item.card.new && <span className="badge badge-blue">🆕 Nouvelle carte</span>}
-        {!item.card.new && <span className="badge badge-orange">🔄 Révision</span>}
-        <span className="text-xs text-[var(--text-muted)]">{item.lesson.title}</span>
-        {item.card.lapses > 0 && (
-          <span className="text-xs ml-auto text-[var(--accent-red)]">
-            ⚠️ {item.card.lapses} lapse{item.card.lapses > 1 ? 's' : ''}
-          </span>
-        )}
+      {/* Card context */}
+      <div className="card p-3 mb-3" style={{ background: 'var(--bg-input)' }}>
+        <div className="flex items-center gap-2 flex-wrap mb-1">
+          {item.card.state === 'new' && <span className="badge badge-blue">🆕 Nouvelle</span>}
+          {item.card.state === 'learning' && <span className="badge badge-orange">📖 Apprentissage</span>}
+          {item.card.state === 'review' && <span className="badge badge-green">🔄 Révision</span>}
+          {item.card.state === 'relearning' && <span className="badge badge-red">🔁 Ré-apprentissage</span>}
+          {item.card.lapses > 0 && (
+            <span className="text-xs text-[var(--accent-red)]">⚠️ {item.card.lapses}×</span>
+          )}
+          {item.card.state === 'review' && (
+            <span className="text-xs text-[var(--text-muted)] ml-auto">
+              stabilité {Math.round(item.card.stability)} j
+            </span>
+          )}
+        </div>
+        <div className="text-xs font-semibold">{item.lesson.title}</div>
+        <div className="text-xs text-[var(--text-muted)]">{getTopicLabel(item.lesson.topic)}</div>
       </div>
 
       {/* Exercise card */}
