@@ -2,196 +2,167 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { getProgress } from '@/lib/progress-tracker';
-import { getDueItems } from '@/lib/spaced-repetition';
-import { getDistractorMemory, saveDistractorMemory } from '@/lib/distractor-engine';
-import type { Lesson, Exercise } from '@/lib/types';
+import { getDueCount, getNewCount, getRemainingNewToday } from '@/lib/spaced-repetition';
+import type { Lesson } from '@/lib/types';
 import LessonFlow from '@/components/LessonFlow';
-import StreakCounter from '@/components/StreakCounter';
 
-interface MixInfo {
-  srCount: number;
-  lessonCount: number;
-  challengeCount: number;
-  microAlert?: string;
-  microLessonId?: string;
+interface DayPlan {
+  dueCount: number;
+  newCount: number;
+  remainingNew: number;
+  nextLesson: Lesson | null;
+  lessonsCompletedToday: number;
 }
 
 export default function DailyPage() {
   const router = useRouter();
-  const [lesson, setLesson] = useState<Lesson | null>(null);
+  const [plan, setPlan] = useState<DayPlan | null>(null);
+  const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
   const [loading, setLoading] = useState(true);
-  const [mixInfo, setMixInfo] = useState<MixInfo | null>(null);
-  const [sessionDone, setSessionDone] = useState(false);
-  const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
 
-  useEffect(() => {
-    buildDailyMix();
-  }, []);
+  const today = new Date().toISOString().slice(0, 10);
 
-  async function buildDailyMix() {
-    const today = new Date().toISOString().slice(0, 10);
+  useEffect(() => { buildPlan(); }, []);
+
+  async function buildPlan() {
+    setLoading(true);
     const progress = getProgress();
-    const mem = getDistractorMemory();
+    const completedIds = new Set(progress.session_history.flatMap((s) => s.lessons_completed));
+    const todaySessions = progress.session_history.filter((s) => s.date === today);
+    const lessonsCompletedToday = todaySessions.reduce((sum, s) => sum + s.lessons_completed.length, 0);
 
-    const pendingConfusion = mem.confusions.find((c) => {
-      const microId = `micro_${c.correct}_vs_${c.chosen_instead}`.replace(/[^a-zA-Z0-9_]/g, '_').slice(0, 60);
-      return c.count >= 3 && !mem.micro_lessons_injected.includes(microId);
+    let nextLesson: Lesson | null = null;
+    try {
+      const res = await fetch('/api/lessons');
+      const lessons: Lesson[] = await res.json();
+      const available = lessons.filter(
+        (l) => !l.id.startsWith('drill_') && !l.id.startsWith('micro_') && !completedIds.has(l.id)
+      );
+      // Prefer lessons in topics already started, then any lesson
+      const practicedTopics = new Set(Object.keys(progress.topics));
+      nextLesson = available.find((l) => practicedTopics.has(l.topic)) ?? available[0] ?? null;
+    } catch { /* offline */ }
+
+    setPlan({
+      dueCount: getDueCount(today),
+      newCount: getNewCount(),
+      remainingNew: getRemainingNewToday(today),
+      nextLesson,
+      lessonsCompletedToday,
     });
-
-    if (pendingConfusion) {
-      const res = await fetch('/api/micro-lesson', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ confusion: pendingConfusion, distractorMemory: mem }),
-      });
-      const data = await res.json();
-      if (data.generated) {
-        const microId = `micro_${pendingConfusion.correct}_vs_${pendingConfusion.chosen_instead}`
-          .replace(/[^a-zA-Z0-9_]/g, '_').slice(0, 60);
-        mem.micro_lessons_injected.push(microId);
-        saveDistractorMemory(mem);
-
-        const lessonRes = await fetch(`/api/lesson/${microId}`);
-        if (lessonRes.ok) {
-          const micro = await lessonRes.json();
-          setMixInfo({
-            srCount: 0, lessonCount: 0, challengeCount: 0,
-            microAlert: `Tu confonds souvent « ${pendingConfusion.correct} » et « ${pendingConfusion.chosen_instead} » — ${pendingConfusion.count} fois détecté.`,
-            microLessonId: microId,
-          });
-          setLesson(micro);
-          setLoading(false);
-          return;
-        }
-      }
-    }
-
-    const res = await fetch('/api/lessons');
-    const allLessons: Lesson[] = await res.json();
-    if (allLessons.length === 0) { setLoading(false); return; }
-
-    const due = getDueItems(progress.weak_items, today);
-    const dueIds = new Set(due.map((d) => d.item_id));
-    const goalMinutes = progress.user.daily_goal_minutes;
-
-    const srExercises: Exercise[] = allLessons
-      .flatMap((l) => l.exercises.map((ex) => ({ ex, lesson: l })))
-      .filter(({ ex }) => dueIds.has(ex.id))
-      .slice(0, Math.max(1, Math.round((goalMinutes / 15) * 4)))
-      .map(({ ex }) => ex);
-
-    const practicedTopics = Object.keys(progress.topics);
-    const completedLessonIds = new Set(
-      progress.session_history.flatMap((s) => s.lessons_completed)
-    );
-    const nextLesson = allLessons.find(
-      (l) => practicedTopics.includes(l.topic) && !completedLessonIds.has(l.id) && !l.id.startsWith('micro_')
-    ) ?? allLessons.find((l) => !l.id.startsWith('micro_'));
-
-    const masteredTopics = Object.entries(progress.topics)
-      .filter(([, tp]) => tp.mastery_percent > 70)
-      .map(([id]) => id);
-    const challengeExercises: Exercise[] = allLessons
-      .filter((l) => masteredTopics.includes(l.topic) && l.difficulty_level >= 3 && !l.id.startsWith('micro_'))
-      .flatMap((l) => l.exercises.filter((ex) => ex.phase === 3))
-      .slice(0, 2);
-
-    if ((srExercises.length > 0 || challengeExercises.length > 0) && nextLesson) {
-      const combinedExercises = [
-        ...srExercises,
-        ...(nextLesson?.exercises ?? []),
-        ...challengeExercises,
-      ].slice(0, Math.max(6, Math.round(goalMinutes * 0.8)));
-
-      const synthetic: Lesson = {
-        id: 'daily_mix',
-        topic: nextLesson?.topic ?? 'mixed',
-        category: 'grammar',
-        title: `Session du ${today}`,
-        difficulty_level: 2,
-        created_at: today,
-        status: 'approved',
-        subtopic: `${srExercises.length} révisions + ${nextLesson?.exercises.length ?? 0} leçon + ${challengeExercises.length} défis`,
-        rules: nextLesson?.rules ?? { explanation_fr: 'Session quotidienne mixte.', table: [], notes_fr: [] },
-        exercises: combinedExercises,
-      };
-
-      setMixInfo({ srCount: srExercises.length, lessonCount: nextLesson?.exercises.length ?? 0, challengeCount: challengeExercises.length });
-      setLesson(synthetic);
-    } else if (nextLesson) {
-      setMixInfo({ srCount: 0, lessonCount: nextLesson.exercises.length, challengeCount: 0 });
-      setLesson(nextLesson);
-    }
-
     setLoading(false);
   }
-
-  const progress = getProgress();
 
   if (loading) return (
     <div className="max-w-[680px] mx-auto mt-16 px-4 text-center text-[var(--text-muted)]">
       <div className="text-[2rem] mb-3">⏳</div>
-      Préparation de votre session...
+      Préparation du plan du jour...
     </div>
   );
 
-  if (sessionDone) return (
-    <div className="max-w-[680px] mx-auto mt-16 px-4 py-6 text-center">
-      <div className="text-5xl mb-3">🎉</div>
-      <h2 className="font-extrabold text-[1.75rem] mb-2">Session terminée !</h2>
-      <p className="text-[var(--text-muted)] mb-4">
-        Score : {finalScore.score}/{finalScore.total}
-      </p>
-      <div className="mb-6">
-        <StreakCounter streak={getProgress().user.streak_current} animate />
-      </div>
-      <div className="flex gap-3 justify-center flex-wrap">
-        <button className="btn-primary" onClick={() => { setSessionDone(false); setLoading(true); buildDailyMix(); }}>
-          🔄 Nouvelle session
-        </button>
-        <button className="btn-secondary" onClick={() => router.push('/')}>🏠 Accueil</button>
-        <button className="btn-secondary" onClick={() => router.push('/review')}>🔄 Révisions</button>
-      </div>
-    </div>
+  // Lesson in progress
+  if (activeLesson) return (
+    <LessonFlow
+      lesson={activeLesson}
+      onFinish={() => { setActiveLesson(null); buildPlan(); }}
+      onHome={() => { setActiveLesson(null); router.push('/'); }}
+      onNextLesson={() => { setActiveLesson(null); buildPlan(); }}
+    />
   );
 
-  if (!lesson) return (
-    <div className="max-w-[680px] mx-auto mt-16 px-4 text-center">
-      <div className="text-[2rem] mb-3">📭</div>
-      <p className="text-[var(--text-muted)] mb-4">Aucune leçon disponible.</p>
-      <button className="btn-primary" onClick={() => router.push('/lessons')}>Voir les leçons</button>
-    </div>
-  );
+  const { dueCount, newCount, remainingNew, nextLesson, lessonsCompletedToday } = plan!;
+  const totalWork = dueCount + Math.min(newCount, remainingNew);
+  const allDone = totalWork === 0 && lessonsCompletedToday > 0;
 
   return (
-    <div>
-      {mixInfo?.microAlert && (
-        <div
-          className="px-6 py-3 text-sm border-b"
-          style={{ background: 'rgba(249,115,22,0.12)', borderColor: 'rgba(249,115,22,0.3)' }}
-        >
-          ⚠️ <strong>Point faible détecté</strong> — {mixInfo.microAlert} Voici 3 exercices ciblés.
+    <div className="max-w-[680px] mx-auto px-4 py-6">
+      <h1 className="font-extrabold text-2xl mb-1">📅 Aujourd'hui</h1>
+      <p className="text-[var(--text-muted)] text-sm mb-6">
+        {new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })}
+      </p>
+
+      {allDone && (
+        <div className="card p-6 mb-5 text-center" style={{ background: 'rgba(34,197,94,0.07)', borderColor: 'rgba(34,197,94,0.3)' }}>
+          <div className="text-4xl mb-2">🏆</div>
+          <h2 className="font-bold text-base mb-1">Tout est fait pour aujourd'hui !</h2>
+          <p className="text-sm text-[var(--text-muted)]">Revenez demain pour de nouvelles révisions.</p>
         </div>
       )}
 
-      {mixInfo && !mixInfo.microAlert && (
-        <div
-          className="px-6 py-[0.6rem] text-[0.8rem] text-[var(--text-muted)] border-b flex gap-4 flex-wrap"
-          style={{ background: 'rgba(74,158,255,0.08)', borderColor: 'rgba(74,158,255,0.2)' }}
-        >
-          <span>📅 Session du jour — ~{progress.user.daily_goal_minutes} min</span>
-          {mixInfo.srCount > 0 && <span>🔄 {mixInfo.srCount} révision{mixInfo.srCount > 1 ? 's' : ''}</span>}
-          {mixInfo.lessonCount > 0 && <span>📘 {mixInfo.lessonCount} exercice{mixInfo.lessonCount > 1 ? 's' : ''} leçon</span>}
-          {mixInfo.challengeCount > 0 && <span>⚡ {mixInfo.challengeCount} défi{mixInfo.challengeCount > 1 ? 's' : ''}</span>}
+      {/* FSRS reviews */}
+      <div
+        className="card p-5 mb-4 cursor-pointer transition-all duration-150"
+        style={{
+          background: dueCount > 0 ? 'rgba(239,68,68,0.06)' : 'rgba(34,197,94,0.05)',
+          borderColor: dueCount > 0 ? 'rgba(239,68,68,0.3)' : 'rgba(34,197,94,0.2)',
+        }}
+        onClick={() => router.push('/review')}
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="font-bold text-base mb-1">🔄 Révisions FSRS</h2>
+            <div className="flex gap-3 text-sm">
+              {dueCount > 0
+                ? <span className="text-[var(--accent-red)] font-semibold">{dueCount} carte{dueCount > 1 ? 's' : ''} à réviser</span>
+                : <span className="text-[var(--accent-green)]">✓ Aucune révision en attente</span>
+              }
+              {remainingNew > 0 && (
+                <span className="text-[var(--text-muted)]">+ {remainingNew} nouvelle{remainingNew > 1 ? 's' : ''}</span>
+              )}
+            </div>
+          </div>
+          <span className="text-xl text-[var(--text-muted)]">›</span>
+        </div>
+        {dueCount > 0 && (
+          <button className="btn-primary w-full mt-3" onClick={(e) => { e.stopPropagation(); router.push('/review'); }}>
+            Commencer les révisions →
+          </button>
+        )}
+      </div>
+
+      {/* Next lesson */}
+      {nextLesson && (
+        <div className="card p-5 mb-4" style={{ background: 'rgba(74,158,255,0.06)', borderColor: 'rgba(74,158,255,0.25)' }}>
+          <h2 className="font-bold text-base mb-1">📘 Prochaine leçon</h2>
+          <p className="text-sm text-[var(--text-muted)] mb-1">{nextLesson.title}</p>
+          <p className="text-xs text-[var(--text-muted)] mb-3">{nextLesson.subtopic}</p>
+          <div className="flex gap-2">
+            <span className="badge badge-blue">Niv. {nextLesson.difficulty_level}</span>
+            <span className="badge badge-green">{nextLesson.exercises.length} exercices</span>
+          </div>
+          <button
+            className="btn-primary w-full mt-3"
+            onClick={() => setActiveLesson(nextLesson)}
+          >
+            Commencer la leçon →
+          </button>
         </div>
       )}
 
-      <LessonFlow
-        lesson={lesson}
-        onFinish={(score, total) => { setFinalScore({ score, total }); setSessionDone(true); }}
-        onHome={() => router.push('/')}
-        onNextLesson={() => router.push('/lessons')}
-      />
+      {!nextLesson && (
+        <div className="card p-5 mb-4 text-center">
+          <div className="text-[2rem] mb-2">🎓</div>
+          <p className="text-sm text-[var(--text-muted)]">Toutes les leçons disponibles sont complétées.</p>
+        </div>
+      )}
+
+      {/* Today's stats */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="card p-4 text-center">
+          <div className="text-xl font-extrabold" style={{ color: dueCount === 0 ? 'var(--accent-green)' : 'var(--accent-red)' }}>
+            {dueCount}
+          </div>
+          <div className="text-xs text-[var(--text-muted)] mt-1">cartes dues</div>
+        </div>
+        <div className="card p-4 text-center">
+          <div className="text-xl font-extrabold text-[var(--accent-blue)]">{newCount}</div>
+          <div className="text-xs text-[var(--text-muted)] mt-1">cartes nouvelles</div>
+        </div>
+        <div className="card p-4 text-center">
+          <div className="text-xl font-extrabold text-[var(--accent-green)]">{lessonsCompletedToday}</div>
+          <div className="text-xs text-[var(--text-muted)] mt-1">leçon{lessonsCompletedToday !== 1 ? 's' : ''} aujourd'hui</div>
+        </div>
+      </div>
     </div>
   );
 }
