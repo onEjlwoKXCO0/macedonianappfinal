@@ -105,7 +105,7 @@ export default function SettingsPage() {
                 <div className="text-sm font-semibold text-[var(--accent-green)]">✅ Connecté</div>
                 <div className="text-xs text-[var(--text-muted)] mt-[2px]">{user.email}</div>
               </div>
-              <button className="btn-ghost text-sm" onClick={signOut}>Se déconnecter</button>
+              <button className="btn-ghost text-sm" onClick={async () => { await signOut(); window.location.href = '/'; }}>Se déconnecter</button>
             </div>
             <button
               className="btn-secondary w-full text-sm"
@@ -179,7 +179,11 @@ export default function SettingsPage() {
           {(['dark', 'light'] as const).map((t) => (
             <button
               key={t}
-              onClick={() => setSettings((s) => ({ ...s, theme: t }))}
+              onClick={() => {
+                const next = { ...settings, theme: t };
+                setSettings(next);
+                saveSettings(next);
+              }}
               className="flex-1 py-3 rounded-lg border-2 text-sm font-semibold transition-all duration-150 cursor-pointer"
               style={{
                 background: settings.theme === t ? 'rgba(74,158,255,0.12)' : 'var(--bg-input)',

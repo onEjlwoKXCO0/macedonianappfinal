@@ -47,9 +47,6 @@ export default function ReviewPage() {
         const newCards = getNewCards(today); // respects 15/day cap
         const all = [...due, ...newCards];
 
-        // Mark new cards as introduced today (deduct from daily quota)
-        newCards.forEach(() => markCardIntroduced(today));
-
         const exerciseMap = new Map<string, { exercise: Exercise; lesson: Lesson }>();
         for (const lesson of lessons) {
           for (const ex of lesson.exercises) {
@@ -83,6 +80,7 @@ export default function ReviewPage() {
 
   const handleRate = (rating: Rating) => {
     if (!item) return;
+    if (item.card.state === 'new') markCardIntroduced(today);
     const updated = applyRating(item.card, rating, today);
     upsertCard(updated);
     void pushCard(updated); // fire-and-forget background sync

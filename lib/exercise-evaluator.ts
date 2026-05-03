@@ -9,6 +9,16 @@ export interface EvaluationResult {
   common_mistakes_fr: string[];
 }
 
+function normalizeKeyword(text: string): string {
+  return text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
+function matchesKeywords(answer: string, keywords: string[]): boolean {
+  const norm = normalizeKeyword(answer);
+  const found = keywords.filter((kw) => norm.includes(normalizeKeyword(kw)));
+  return found.length >= 2;
+}
+
 export function evaluateExercise(
   exercise: Exercise,
   userAnswer: string | string[] | Record<string, string>
@@ -22,14 +32,22 @@ export function evaluateExercise(
   switch (exercise.type) {
     case 'multiple_choice':
     case 'translate_to_fr':
-    case 'error_correction':
-    case 'spot_the_difference': {
+    case 'error_correction': {
       const answer = String(userAnswer);
       return {
         ...base,
         correct: answersMatch(answer, exercise.correct_answer, exercise.accept_alternatives),
         userAnswer: answer,
       };
+    }
+
+    case 'spot_the_difference': {
+      const answer = String(userAnswer);
+      const keywords = exercise.expected_keywords_fr ?? [];
+      const correct = keywords.length >= 2
+        ? matchesKeywords(answer, keywords)
+        : answersMatch(answer, exercise.correct_answer, exercise.accept_alternatives);
+      return { ...base, correct, userAnswer: answer };
     }
 
     case 'fill_blank':

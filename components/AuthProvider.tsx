@@ -55,7 +55,10 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
   };
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    try {
+      // scope:'local' supprime le token localStorage sans appel réseau — toujours fiable
+      await supabase.auth.signOut({ scope: 'local' });
+    } catch { /* ignore */ }
     setUser(null);
   };
 

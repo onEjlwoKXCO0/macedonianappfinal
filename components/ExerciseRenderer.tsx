@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import type { Exercise } from '@/lib/types';
 import { answersMatch, getHintColor } from '@/lib/romanization-normalizer';
 import DistractorBadge from './DistractorBadge';
@@ -146,7 +146,9 @@ function TextInput({ exercise, onAnswer, disabled }: Props) {
 function Matching({ exercise, onAnswer }: Props) {
   const pairs = exercise.pairs ?? [];
   const mkItems = pairs.map((p) => p.mk);
-  const frItems = [...pairs.map((p) => p.fr)].sort(() => Math.random() - 0.5);
+  const [frItems] = useState<string[]>(() =>
+    [...pairs.map((p) => p.fr)].sort(() => Math.random() - 0.5)
+  );
 
   const [selectedMk, setSelectedMk] = useState<string | null>(null);
   const [matched, setMatched] = useState<Record<string, string>>({});
@@ -282,6 +284,8 @@ function SentenceBuilder({ exercise, onAnswer }: Props) {
 
 function SpotTheDifference({ exercise, onAnswer, disabled }: Props) {
   const [selected, setSelected] = useState<string | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const keywords = exercise.expected_keywords_fr ?? [];
 
   const handle = (choice: string) => {
     if (selected || disabled) return;
@@ -304,7 +308,15 @@ function SpotTheDifference({ exercise, onAnswer, disabled }: Props) {
           <p className="mk-text text-lg mt-1">{exercise.sentence_b}</p>
         </div>
       </div>
+      {keywords.length > 0 && (
+        <p className="text-[0.75rem] text-[var(--text-muted)] mb-3">
+          Indices : {keywords.map((kw, i) => (
+            <span key={i} className="inline-block bg-[var(--surface-2)] rounded px-1.5 py-0.5 mr-1 mb-1">{kw}</span>
+          ))}
+        </p>
+      )}
       <input
+        ref={inputRef}
         className="input-mk"
         style={{ fontSize: '1rem' }}
         placeholder="Décrivez la différence en français..."
@@ -316,9 +328,8 @@ function SpotTheDifference({ exercise, onAnswer, disabled }: Props) {
       {!selected && (
         <button
           className="btn-primary mt-3 w-full"
-          onClick={(e) => {
-            const input = (e.currentTarget.previousElementSibling as HTMLInputElement);
-            if (input?.value) handle(input.value);
+          onClick={() => {
+            if (inputRef.current?.value) handle(inputRef.current.value);
           }}
         >
           Valider

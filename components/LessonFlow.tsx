@@ -1,5 +1,6 @@
 'use client';
 import { useState, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Exercise, Lesson } from '@/lib/types';
 import { evaluateExercise } from '@/lib/exercise-evaluator';
@@ -32,6 +33,7 @@ interface Props {
 }
 
 export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLesson, onHome }: Props) {
+  const router = useRouter();
   const [lesson, setLesson] = useState(initialLesson);
   const [screen, setScreen] = useState<Screen>('rules');
   const [exIndex, setExIndex] = useState(0);
@@ -77,9 +79,28 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
         weak_items: addOrUpdateWeakItem(progress.weak_items, current.id, lesson.id, lesson.topic, evaluation.correct, today),
       };
       progress = recordExerciseResult(progress, lesson.topic, evaluation.correct, today);
+
+      // Dès la réponse au dernier exercice : enregistre session + cartes sans attendre le bouton
+      if (exIndex + 1 >= exercises.length) {
+        const score = results.filter((r) => r.correct).length + (evaluation.correct ? 1 : 0);
+        const total = exercises.length;
+        const pct = Math.round((score / total) * 100);
+        const elapsed = Math.round((Date.now() - startTime) / 60000);
+        progress = recordSession(progress, {
+          date: today,
+          duration_minutes: elapsed,
+          lessons_completed: [lesson.id],
+          exercises_done: total,
+          exercises_correct: score,
+          topics_practiced: [lesson.topic],
+        });
+        applyLevelProgression(lesson.topic, pct);
+        ensureCardsForLesson(lesson.id, lesson.topic, exercises.map((e) => e.id), today);
+      }
+
       saveProgress(progress);
     },
-    [answered, current, lesson, today]
+    [answered, current, lesson, today, exIndex, exercises, results, startTime]
   );
 
   const handleNext = useCallback(() => {
@@ -91,21 +112,7 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
     if (exIndex + 1 >= exercises.length) {
       const score = results.filter((r) => r.correct).length + (lastResult.correct ? 1 : 0);
       const total = exercises.length;
-      const pct = Math.round((score / total) * 100);
-      const elapsed = Math.round((Date.now() - startTime) / 60000);
-      let progress = getProgress();
-      progress = recordSession(progress, {
-        date: today,
-        duration_minutes: elapsed,
-        lessons_completed: [lesson.id],
-        exercises_done: total,
-        exercises_correct: score,
-        topics_practiced: [lesson.topic],
-      });
-      saveProgress(progress);
-      applyLevelProgression(lesson.topic, pct);
-      ensureCardsForLesson(lesson.id, lesson.topic, exercises.map((e) => e.id), today);
-      // Background sync — fire-and-forget, does not block the UI
+      // Session déjà enregistrée dans handleAnswer — on sync en arrière-plan et on navigue
       void Promise.all([pushProgress(), pushAllCards()]);
       onFinish?.(score, total);
       setScreen('results');
@@ -113,7 +120,7 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
       setExIndex((i) => i + 1);
       setAnimKey((k) => k + 1);
     }
-  }, [lastResult, exIndex, exercises.length, results, lesson, today, startTime, onFinish]);
+  }, [lastResult, exIndex, exercises.length, results, onFinish]);
 
   const allResults = screen === 'results'
     ? [...results, lastResult].filter(Boolean) as ExResult[]
@@ -287,6 +294,18 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
               </div>
             </div>
           ))}
+
+          <div
+            className="card p-4 mb-4 flex items-center justify-between cursor-pointer"
+            style={{ background: 'rgba(74,158,255,0.07)', borderColor: 'rgba(74,158,255,0.3)' }}
+            onClick={() => router.push('/review')}
+          >
+            <div>
+              <div className="font-bold text-[0.95rem] mb-[0.2rem]">🔄 Exercices ajoutés à la révision</div>
+              <div className="text-[0.8rem] text-[var(--text-muted)]">Réviser maintenant pour ancrer en mémoire</div>
+            </div>
+            <span className="text-[1.1rem] text-[var(--text-muted)]">›</span>
+          </div>
 
           <div className="flex gap-3 flex-wrap mt-4">
             <button

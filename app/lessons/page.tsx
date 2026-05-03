@@ -17,7 +17,7 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 export default function LessonsPage() {
   const [lessons, setLessons] = useState<Lesson[]>([]);
-  const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
+  const [lessonCounts, setLessonCounts] = useState<Record<string, number>>({});
   const [registeredExIds, setRegisteredExIds] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
 
@@ -34,10 +34,12 @@ export default function LessonsPage() {
       .finally(() => setLoading(false));
 
     const progress = getProgress();
-    const done = new Set(progress.session_history.flatMap((s) => s.lessons_completed));
-    setCompletedIds(done);
+    const counts: Record<string, number> = {};
+    progress.session_history.forEach((s) =>
+      s.lessons_completed.forEach((id) => { counts[id] = (counts[id] ?? 0) + 1; })
+    );
+    setLessonCounts(counts);
 
-    // Which exercise IDs already have FSRS cards
     const cards = getAllCards();
     setRegisteredExIds(new Set(Object.keys(cards)));
   }, []);
@@ -65,7 +67,7 @@ export default function LessonsPage() {
         <h1 className="font-extrabold text-2xl">📘 Toutes les leçons</h1>
         {lessons.length > 0 && (
           <span className="text-[0.8rem] text-[var(--text-muted)]">
-            {completedIds.size} / {lessons.length} terminées
+            {Object.keys(lessonCounts).length} / {lessons.length} terminées
           </span>
         )}
       </div>
@@ -87,19 +89,25 @@ export default function LessonsPage() {
           </h2>
           <div className="flex flex-col gap-[0.6rem]">
             {catLessons.map((lesson) => {
-              const done = completedIds.has(lesson.id);
+              const count = lessonCounts[lesson.id] ?? 0;
+              const done = count > 0;
               const cardsRegistered = lesson.exercises.filter(e => registeredExIds.has(e.id)).length;
               const totalCards = lesson.exercises.length;
               return (
                 <Link key={lesson.id} href={`/lessons/${lesson.id}`} className="no-underline">
                   <div
                     className="card p-4 flex items-center gap-4 cursor-pointer transition-all duration-[150ms]"
-                    style={{ opacity: done ? 0.75 : 1 }}
+                    style={done ? { borderColor: 'rgba(34,197,94,0.5)', borderLeftWidth: '3px' } : {}}
                   >
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        {done && <span className="text-[0.8rem] text-[var(--accent-green)]">✅</span>}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <span className="font-semibold">{lesson.title}</span>
+                        {done && (
+                          <span className="text-[0.7rem] font-bold px-[0.4rem] py-[0.1rem] rounded-full shrink-0"
+                            style={{ background: 'rgba(34,197,94,0.15)', color: 'var(--accent-green)' }}>
+                            ✓ {count}×
+                          </span>
+                        )}
                       </div>
                       <div className="text-[0.8rem] text-[var(--text-muted)] mb-1">{lesson.subtopic}</div>
                       <div className="text-xs text-[var(--text-muted)]">
@@ -131,17 +139,25 @@ export default function LessonsPage() {
           <p className="text-xs text-[var(--text-muted)] mb-3">Exercices supplémentaires — structures complexes — niveau avancé</p>
           <div className="flex flex-col gap-[0.6rem]">
             {extraLessons.map((lesson) => {
-              const done = completedIds.has(lesson.id);
+              const count = lessonCounts[lesson.id] ?? 0;
+              const done = count > 0;
               return (
                 <Link key={lesson.id} href={`/lessons/${lesson.id}`} className="no-underline">
                   <div
                     className="card p-4 flex items-center gap-4 cursor-pointer transition-all duration-[150ms]"
-                    style={{ borderColor: 'rgba(74,158,255,0.3)', background: 'rgba(74,158,255,0.04)' }}
+                    style={done
+                      ? { borderColor: 'rgba(34,197,94,0.5)', borderLeftWidth: '3px', background: 'rgba(74,158,255,0.04)' }
+                      : { borderColor: 'rgba(74,158,255,0.3)', background: 'rgba(74,158,255,0.04)' }}
                   >
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        {done && <span className="text-[0.8rem] text-[var(--accent-green)]">✅</span>}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <span className="font-semibold">{lesson.title}</span>
+                        {done && (
+                          <span className="text-[0.7rem] font-bold px-[0.4rem] py-[0.1rem] rounded-full shrink-0"
+                            style={{ background: 'rgba(34,197,94,0.15)', color: 'var(--accent-green)' }}>
+                            ✓ {count}×
+                          </span>
+                        )}
                       </div>
                       <div className="text-[0.8rem] text-[var(--text-muted)]">{lesson.subtopic}</div>
                     </div>
@@ -167,17 +183,25 @@ export default function LessonsPage() {
           <p className="text-xs text-[var(--text-muted)] mb-3">Production libre — aucune aide — niveau natif</p>
           <div className="flex flex-col gap-[0.6rem]">
             {challengeLessons.map((lesson) => {
-              const done = completedIds.has(lesson.id);
+              const count = lessonCounts[lesson.id] ?? 0;
+              const done = count > 0;
               return (
                 <Link key={lesson.id} href={`/lessons/${lesson.id}`} className="no-underline">
                   <div
                     className="card p-4 flex items-center gap-4 cursor-pointer transition-all duration-[150ms]"
-                    style={{ borderColor: 'rgba(239,68,68,0.35)', background: 'rgba(239,68,68,0.04)' }}
+                    style={done
+                      ? { borderColor: 'rgba(34,197,94,0.5)', borderLeftWidth: '3px', background: 'rgba(239,68,68,0.04)' }
+                      : { borderColor: 'rgba(239,68,68,0.35)', background: 'rgba(239,68,68,0.04)' }}
                   >
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        {done && <span className="text-[0.8rem] text-[var(--accent-green)]">✅</span>}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <span className="font-semibold">{lesson.title}</span>
+                        {done && (
+                          <span className="text-[0.7rem] font-bold px-[0.4rem] py-[0.1rem] rounded-full shrink-0"
+                            style={{ background: 'rgba(34,197,94,0.15)', color: 'var(--accent-green)' }}>
+                            ✓ {count}×
+                          </span>
+                        )}
                       </div>
                       <div className="text-[0.8rem] text-[var(--text-muted)]">{lesson.subtopic}</div>
                     </div>
