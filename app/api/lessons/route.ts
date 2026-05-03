@@ -10,8 +10,13 @@ export async function GET() {
     const files = await readdir(APPROVED_DIR);
     const lessons: Lesson[] = [];
     for (const file of files.filter((f) => f.endsWith('.json'))) {
-      const content = await readFile(path.join(APPROVED_DIR, file), 'utf-8');
-      lessons.push(JSON.parse(content) as Lesson);
+      try {
+        const content = await readFile(path.join(APPROVED_DIR, file), 'utf-8');
+        lessons.push(JSON.parse(content) as Lesson);
+      } catch {
+        // Skip malformed files without crashing the whole endpoint
+        console.error(`Skipping malformed lesson file: ${file}`);
+      }
     }
     return NextResponse.json(lessons);
   } catch {
