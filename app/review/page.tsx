@@ -83,7 +83,7 @@ export default function ReviewPage() {
     if (item.card.state === 'new') markCardIntroduced(today);
     const updated = applyRating(item.card, rating, today);
     upsertCard(updated);
-    void pushCard(updated); // fire-and-forget background sync
+    void pushCard(updated);
 
     setSessionStats((s) => ({
       ...s,
@@ -107,6 +107,19 @@ export default function ReviewPage() {
       setEvaluation(null);
     }
   };
+
+  // Raccourcis clavier : 1/2/3/4 pour noter quand la réponse est affichée
+  useEffect(() => {
+    if (!answered) return;
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === '1') handleRate(0);
+      else if (e.key === '2') handleRate(1);
+      else if (e.key === '3') handleRate(2);
+      else if (e.key === '4') handleRate(3);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [answered, item, current, queue.length]); // item/current/queue captures fresh handleRate closure
 
   if (loading) return (
     <div className="max-w-[680px] mx-auto mt-16 px-4 text-center text-[var(--text-muted)]">
@@ -206,7 +219,7 @@ export default function ReviewPage() {
             </ul>
           )}
 
-          {/* SM-2 Rating buttons */}
+          {/* Rating buttons */}
           <div className="mt-5">
             <p className="text-xs text-[var(--text-muted)] mb-[0.6rem] text-center">
               Comment était ce rappel ?
@@ -225,6 +238,9 @@ export default function ReviewPage() {
                   <span className="text-[0.8rem] font-bold" style={{ color }}>{label}</span>
                   <span className="text-[0.65rem] text-[var(--text-muted)]">
                     {getIntervalLabel(rating, item.card)}
+                  </span>
+                  <span className="text-[0.6rem] text-[var(--text-muted)] opacity-50">
+                    [{rating + 1}]
                   </span>
                 </button>
               ))}
