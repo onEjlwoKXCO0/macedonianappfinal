@@ -49,7 +49,7 @@ export default function Dashboard() {
         <StreakCounter streak={progress.user.streak_current} />
       </div>
 
-      {/* SM-2 review alert */}
+      {/* FSRS review alert */}
       {(dueCount > 0 || newCount > 0) && (
         <div
           className="card p-4 mb-5 flex items-center justify-between cursor-pointer"
@@ -159,7 +159,7 @@ export default function Dashboard() {
         <Link href="/review" className="no-underline">
           <div className="card p-4 text-center cursor-pointer">
             <div className="text-2xl">🔄</div>
-            <div className="font-semibold mt-[0.4rem] text-[0.9rem]">Révision SM-2</div>
+            <div className="font-semibold mt-[0.4rem] text-[0.9rem]">Révision</div>
           </div>
         </Link>
       </div>

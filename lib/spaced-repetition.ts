@@ -424,37 +424,3 @@ function daysBetween(a: string, b: string): number {
   return Math.round((new Date(b).getTime() - new Date(a).getTime()) / 86_400_000);
 }
 
-// ─── Legacy helpers (backward compat with daily/page.tsx) ─────────────────────
-
-export function addOrUpdateWeakItem(
-  weakItems: import('./types').WeakItem[],
-  exerciseId: string,
-  lessonId: string,
-  topic: string,
-  wasCorrect: boolean,
-  today: string
-): import('./types').WeakItem[] {
-  if (wasCorrect) return weakItems;
-  const existing = weakItems.find((w) => w.item_id === exerciseId);
-  if (existing) {
-    return weakItems.map((w) =>
-      w.item_id === exerciseId
-        ? { ...w, wrong_count: w.wrong_count + 1, last_wrong: today, next_review: today, interval_days: 1 }
-        : w
-    );
-  }
-  return [...weakItems, {
-    item_id: exerciseId, lesson_id: lessonId, topic,
-    last_wrong: today, wrong_count: 1, next_review: today,
-    interval_days: 1, ease_factor: 2.5,
-  }];
-}
-
-export function getDueItems(
-  weakItems: import('./types').WeakItem[],
-  today: string
-): import('./types').WeakItem[] {
-  return weakItems
-    .filter((w) => w.next_review <= today)
-    .sort((a, b) => a.next_review.localeCompare(b.next_review));
-}

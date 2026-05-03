@@ -7,7 +7,7 @@ import { evaluateExercise } from '@/lib/exercise-evaluator';
 import { getProgress, saveProgress, recordExerciseResult, recordSession } from '@/lib/progress-tracker';
 import { applyLevelProgression } from '@/lib/difficulty-engine';
 import { recordWrongAnswer, getForcedDistractors } from '@/lib/distractor-engine';
-import { addOrUpdateWeakItem, ensureCardsForLesson } from '@/lib/spaced-repetition';
+import { ensureCardsForLesson } from '@/lib/spaced-repetition';
 import { pushProgress, pushAllCards } from '@/lib/sync';
 import RuleExplanation from './RuleExplanation';
 import ExerciseRenderer from './ExerciseRenderer';
@@ -74,10 +74,6 @@ export default function LessonFlow({ lesson: initialLesson, onFinish, onNextLess
       }
 
       let progress = getProgress();
-      progress = {
-        ...progress,
-        weak_items: addOrUpdateWeakItem(progress.weak_items, current.id, lesson.id, lesson.topic, evaluation.correct, today),
-      };
       progress = recordExerciseResult(progress, lesson.topic, evaluation.correct, today);
 
       // Dès la réponse au dernier exercice : enregistre session + cartes sans attendre le bouton
